@@ -269,3 +269,567 @@ Based on the search results, the current CEO of OpenAI is **Sam Altman**. Here's
 
 The overwhelming consensus across multiple independent sources, including OpenAI's own official announcements, confirms that **Sam Altman** is the current Chief Executive Officer (CEO) of OpenAI. This follows his reinstatement to the position after a brief departure in late 2023.
 2026-03-12 07:50:25,566 - DeepResearch - INFO - 用户退出程序
+2026-03-12 22:48:40,394 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://example.com
+2026-03-12 22:48:40,771 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 367
+2026-03-12 22:49:03,513 - DeepResearch - DEBUG - 提取的关键信息: 根据用户问题“What is this example domain about?”（这个示例域是关于什么的？），我从提供的网页内容中提取了以下关键点。内容直接相关，因此提取了3个关键点，每个点简明扼要：
+
+1. **用于文档中的说明性示例**：该域专门设计用于在文档中创建示例场景，以说明概念或用法。  
+2. **可在文献中自由使用**：用户可以在书籍、文章或其他文献中使用此域，无需事先获得许可或协调。  
+3. **无需请求许可**：使用该域时，用户不需要提前联系或申请授权，简化了示例的创建过程。
+2026-03-12 22:52:28,033 - DeepResearch - INFO - 程序启动
+2026-03-12 22:52:30,170 - DeepResearch - INFO - 收到用户新问题: 一位欧洲学者的某项开源硬件项目，其灵感源于一个著名的元胞自动机，该项目的一个早期物理设计从四边形框架演变为更稳固的三角形结构。这位在机械工程某一分支领域深耕的学者，从大学教职岗位上引退后，继续领导一个与该项目相关的商业实体。该实体在21世纪10年代中期停止了在其欧洲本土的主要交易，但其在一个亚洲国家的业务得以延续。这个商业实体的英文名称是什么？要求格式形如：Alibaba  Group Limited。
+2026-03-12 22:52:30,171 - DeepResearch - INFO - 开始拆解用户问题: 一位欧洲学者的某项开源硬件项目，其灵感源于一个著名的元胞自动机，该项目的一个早期物理设计从四边形框架演变为更稳固的三角形结构。这位在机械工程某一分支领域深耕的学者，从大学教职岗位上引退后，继续领导一个与该项目相关的商业实体。该实体在21世纪10年代中期停止了在其欧洲本土的主要交易，但其在一个亚洲国家的业务得以延续。这个商业实体的英文名称是什么？要求格式形如：Alibaba  Group Limited。
+2026-03-12 22:53:14,791 - DeepResearch - DEBUG - LLM 拆解问题原始响应: ["European scholar open-source hardware project cellular automaton inspiration", "hardware physical design quadrilateral to triangular frame evolution", "mechanical engineering scholar retired leads business entity", "company ceased European operations 2010s Asian business continuation"]
+2026-03-12 22:53:14,791 - DeepResearch - INFO - 生成的子查询列表: ['European scholar open-source hardware project cellular automaton inspiration', 'hardware physical design quadrilateral to triangular frame evolution', 'mechanical engineering scholar retired leads business entity', 'company ceased European operations 2010s Asian business continuation']
+2026-03-12 22:53:14,792 - DeepResearch - INFO - 最终去重后的搜索查询列表: ['company ceased European operations 2010s Asian business continuation', 'mechanical engineering scholar retired leads business entity', '一位欧洲学者的某项开源硬件项目，其灵感源于一个著名的元胞自动机，该项目的一个早期物理设计从四边形框架演变为更稳固的三角形结构。这位在机械工程某一分支领域深耕的学者，从大学教职岗位上引退后，继续领导一个与该项目相关的商业实体。该实体在21世纪10年代中期停止了在其欧洲本土的主要交易，但其在一个亚洲国家的业务得以延续。这个商业实体的英文名称是什么？要求格式形如：Alibaba \xa0Group Limited。', 'European scholar open-source hardware project cellular automaton inspiration', 'hardware physical design quadrilateral to triangular frame evolution']
+2026-03-12 22:53:14,792 - DeepResearch - INFO - 正在执行搜索查询: company ceased European operations 2010s Asian business continuation
+2026-03-12 22:53:14,793 - DeepResearch - INFO - 正在执行搜索查询: mechanical engineering scholar retired leads business entity
+2026-03-12 22:53:14,793 - DeepResearch - INFO - 正在执行搜索查询: 一位欧洲学者的某项开源硬件项目，其灵感源于一个著名的元胞自动机，该项目的一个早期物理设计从四边形框架演变为更稳固的三角形结构。这位在机械工程某一分支领域深耕的学者，从大学教职岗位上引退后，继续领导一个与该项目相关的商业实体。该实体在21世纪10年代中期停止了在其欧洲本土的主要交易，但其在一个亚洲国家的业务得以延续。这个商业实体的英文名称是什么？要求格式形如：Alibaba  Group Limited。
+2026-03-12 22:53:14,796 - DeepResearch - INFO - 正在执行搜索查询: European scholar open-source hardware project cellular automaton inspiration
+2026-03-12 22:53:14,796 - DeepResearch - INFO - 正在执行搜索查询: hardware physical design quadrilateral to triangular frame evolution
+2026-03-12 22:53:16,298 - DeepResearch - DEBUG - 搜索查询 'hardware physical design quadrilateral to triangular frame evolution' 的原始结果:
+{
+  "query": "hardware physical design quadrilateral to triangular frame evolution",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.researchgate.net/profile/Steven-Owen-2/publication/221561698_Advancing_Front_Quadrilateral_Meshing_Using_Triangle_Transformations/links/0046352cee8df0718b000000/Advancing-Front-Quadrilateral-Meshing-Using-Triangle-Transformations.pdf",
+      "title": "[PDF] Advancing Front Quadrilateral Meshing Using Triangle ...",
+      "content": "Quad-morphing is a new technique used for generating quadrilaterals from an existing triangle mesh. Beginning with an initial triangulation, triangles are",
+      "score": 0.9888419,
+      "raw_content": null
+    },
+    {
+      "url": "https://forums.autodesk.com/t5/autocad-forum/convert-quadrilateral-mesh-into-triangular-mesh/td-p/7389387",
+      "title": "Convert Quadrilateral Mesh into Triangular Mesh",
+      "content": "# Convert Quadrilateral Mesh into Triangular Mesh. ## Convert Quadrilateral Mesh into Triangular Mesh. ## Convert Quadrilateral Mesh into Triangular Mesh. I have a mesh that is composed of quadrilaterals, but I really need it to be composed of triangles. To elaborate, I started out with a few defining splines, which I then used EDGESURF to create a mesh. My end goal as I mentioned above is to create a triangular mesh, which I can hopefully explode into a series of triangular 3D faces. I've been stuck on this for a while now. \"A smooth mesh cannot be created from at least one of the selected objects. Smooth meshes can be created only from 3d solids, 3d surfaces, 3d faces, polygon meshes, polyface meshes, regions, and closed polylines.\". This is the mesh that was created using EDGESURF. thank you for your feedback, good to know you've got it working!",
+      "score": 0.9722044,
+      "raw_content": null
+    },
+    {
+      "url": "https://research.tue.nl/files/4304810/469130.pdf",
+      "title": "[PDF] Generation of graded triangular and quadrilateral mesh",
+      "content": "A simple and fast triangular and quadrilateral mesh generation method has been developed in this report. The method garantees the generation of",
+      "score": 0.8198933,
+      "raw_content": null
+    },
+    {
+      "url": "http://home.pf.jcu.cz/~sbml/wp-content/uploads/Surynkova.pdf",
+      "title": "[PDF] CONSTRUCTIONS OF QUADRILATERAL MESHES",
+      "content": "The method for constructing of quadrilateral mesh starts with a given triangular mesh of n-sided region and aims at combining triangles into quadrilaterals, see Figure 4. More precisely, an algorithm will enumerate all possible QUADRILATERAL MESHES 47 quad layouts with respect to the number of internal vertices with the given va-lences and the duplications will be ﬁltered out within a further post-processing for computed set of meshes. We construct a concrete quadrilateral mesh M ∈MI(n3, n4, n5), i.e. a mesh with n internal vertices where the types of valences are distinguished, incrementally starting from a trivial mesh with one internal vertex, see Figure 7. We presented a framework of a new constructing method for generating of all possible unique quadrilateral meshes of a certain class for the given number of internal vertices.",
+      "score": 0.44552955,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.mdpi.com/2078-2489/14/5/273",
+      "title": "Quadrilateral Mesh Generation Method Based on Convolutional ...",
+      "content": "A convolutional neural network model is proposed to identify the singular structure inside the model contained in the frame field.",
+      "score": 0.2798285,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.88,
+  "request_id": "ed7494e3-c1c6-47b0-8e15-9defe3420971"
+}
+2026-03-12 22:53:16,704 - DeepResearch - DEBUG - 搜索查询 'company ceased European operations 2010s Asian business continuation' 的原始结果:
+{
+  "query": "company ceased European operations 2010s Asian business continuation",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.facebook.com/TheCSRJournal/posts/the-east-india-company-has-ceased-its-operations-as-a-luxury-retailer-in-london-/1241133651441354/",
+      "title": "The East India Company has ceased its operations as a luxury ...",
+      "content": "The East India Company has ceased its operations as a luxury retailer in London and declared bankruptcy after a brief revival that began in 2010",
+      "score": 0.43295085,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.businessinsider.com/41-asian-companies-that-may-be-dumped-as-europe-deleverages-2012-7",
+      "title": "41 Asian Companies That May Be Dumped As Europe Deleverages",
+      "content": "Some Asian companies will likely be sold by European shareholders as Europe deleverage. This idea is consistently with out belief that Asian markets are not",
+      "score": 0.17313468,
+      "raw_content": null
+    },
+    {
+      "url": "https://quartr.com/insights/edge/the-rise-and-fall-of-wirecard",
+      "title": "The Rise and Fall of Wirecard - Quartr",
+      "content": "These were partners who processed payments on Wirecard's behalf in local markets where the company lacked licenses or infrastructure. The regulatory body had shifted its perception of Wirecard and was at last doing what it should've done a long time ago: it opened an investigation into Wirecard following a series of statements made by the company in the days leading up to the KPMG report. In auditing Wirecard, EY faced the challenge of verifying not just operations in Germany, but the company's sprawling global presence. Yet rather than insisting on full transparency or seeking third-party corroboration of Wirecard's reported overseas revenues, EY often relied on documentation provided directly by Wirecard itself or from intermediaries with a vested interest in the company's success. Following the collapse, BaFin's failure to investigate Wirecard and its repeated defense of the company in the face of mounting public evidence of misconduct became a scandal in its own right.",
+      "score": 0.15353677,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.frequentbusinesstraveler.com/2024/02/26-airlines-that-went-out-of-business-in-the-first-two-decades-of-the-21st-century/",
+      "title": "26 Airlines That Went Out of Business in the First Two Decades of ...",
+      "content": "Air Berlin, which was founded as a U.S. company based in Oregon in 1978 to operate charter flights in and out of West Berlin, flew its final flight on October 28, 2017 after almost 40 years of plying the skies as Europe’s fourth largest carrier and an airline that was not quite a low-cost carrier and nor was it a full frills airline. **COMPASS AIRLINES** Compass Airlines, a U.S. regional carrier, shut down in April 2020 after ending operations in partnership with both American Airlines and Delta Air Lines. Air Canada Airline and Hotel Operating and Financial Reports Alaska Airlines American Airlines Apple Boeing Boeing 787 Dreamliner Boston: News Broadway California: News Canada: News Chicago: News China China: News Coronavirus Delta Florida: News France: News Germany Germany: News Hilton Hyatt Japan: News JetBlue JFK Lobby Bar London London: News Los Angeles Los Angeles: News Marriott New Airline Routes New Hotels New York New York: News Passenger Experience Plays Shows and Concerts San Francisco: News Southwest Airlines Starwood Storms Hurricanes Tornadoes and Typhoons United Airlines United Kingdom: News Washington DC: News Winter Storms.",
+      "score": 0.11603103,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.alternativeairlines.com/ceased-airlines",
+      "title": "Airlines That Are No Longer Operating - Alternative Airlines",
+      "content": "## Ceased Airlines Directory. Want to find out which airlines have ceased operations? Take a look at our list below - this up-to-date list consists of all ceased/defunct airlines that are no longer operating. Click on any of these airlines to find out more about the airline itself, why it ceased operations and alternative airlines that you can fly with! ## **Ceased Airlines 2020-2025**. There are many reasons as to why airlines cease operations and stop flying. Many airlines have ceased operations over the years - for a full list of ceased airlines, please take a look at the list above. We have ordered this by year that the airline has ceased operations. Airlines stop flying for several reasons. If you booked your flights through Alternative Airlines and the airline has now ceased operations, please contact us immediately - our friendly customer service team will be happy to help you solve this issue. ## All Ceased Airlines Pre-2020.",
+      "score": 0.081996456,
+      "raw_content": null
+    }
+  ],
+  "response_time": 1.33,
+  "request_id": "b13cc778-ea22-4770-93cd-9dd5b99c39f6"
+}
+2026-03-12 22:53:16,954 - DeepResearch - DEBUG - 搜索查询 'European scholar open-source hardware project cellular automaton inspiration' 的原始结果:
+{
+  "query": "European scholar open-source hardware project cellular automaton inspiration",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://medium.com/@lady_shapes/cellular-automata-76dd6ff25173",
+      "title": "Cellular Automata - by Alan MacLeod - Medium",
+      "content": "The idea is that each iteration or generation builds on the previous, growing, adapting and evolving into something new.",
+      "score": 0.99740905,
+      "raw_content": null
+    },
+    {
+      "url": "https://link.springer.com/rwe/10.1007/978-3-642-27737-5_673-1",
+      "title": "Cellular Automata Hardware Implementation | Springer Nature Link",
+      "content": "In: Proceedings of third international workshop on crowds and cellular automata (C&CA-2010) organized within the 9th international conference on cellular automata for research and industry (ACRI2010), Ascoli-Pizeno, pp 455–464. * Sirakoulis GC, Karafyllidis I, Soudris D, Georgoulas N, Thanailakis A (1999) A new simulator for the oxidation process in integrated circuit fabrication based on cellular automata. * Sirakoulis GC, Karafyllidis I, Thanailakis A, Mardiris V (2001) A methodology for VLSI implementation of cellular automata algorithms using VHDL. * Sirakoulis GC, Karafyllidis I, Thanailakis A (2003) A CAD system for the construction and VLSI implementation of cellular automata algorithms using VHDL. * Tzionas P, Tsalides P, Thanailakis A (1992) Design and VLSI implementation of a pattern classifier using pseudo 2D cellular automata. * Sirakoulis GC, S Bandini (2012) Cellular automata – proceedings of 10th international conference on cellular automata for research and industry, ACRI 2012, Springer. Cellular automata – proceedings of 11th international conference on cellular automata for research and industry, ACRI 2014.",
+      "score": 0.99722075,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.seeedstudio.com/blog/2021/12/22/ufmg-use-cellular-automata-to-challenge-ai-and-create-computational-art-with-the-seeed-fusion-pcb-assembly-service/?srsltid=AfmBOopnOhFSZGtlsxuzI6iKQvqa872mOD5sdB3wL5w_Roguv1RZeUtE",
+      "title": "UFMG Researchers Use Cellular Automata to Create Computational ...",
+      "content": "Sandro designed these boards for students and artists to experiment with Cellular Automata projects, and had them produced using the Seeed Fusion PCBA service.",
+      "score": 0.99440175,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.qeios.com/read/HX4713",
+      "title": "Functional Information of a Driven Cellular Automaton - Qeios",
+      "content": "There is a newer version available for this {{ publicationType }}. ### Field. ### Subfield. ### Open Peer Review. Copyright: © {{ publicationYear }} {{ publication.presentation\\_authors[0].full\\_name + (publication.presentation\\_authors.length > 1 ? This is an open access publication distributed under the terms of the CC BY 4.0 License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited. Check the {{ publicationType | capitalize }} Source for copyright and license information. # {{ publication.title }}. ### Abstract. ### Source.",
+      "score": 0.92523,
+      "raw_content": null
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9215349/",
+      "title": "Cellular Automata Can Reduce Memory Requirements of Collective ...",
+      "content": "Here we show that an elementary cellular automaton with rule 90 (CA90) enables space-time tradeoff for collective-state computing models that use random dense binary representations, i.e., memory requirements can be traded off with computation running CA90. Based on these analyses we discuss how to optimize a collective-state computing model, in which CA90 expands representations on the fly from short seed patterns – rather than storing the full set of random patterns. Our experimental results show that collective-state computing with CA90 expansion performs similarly compared to traditional collective-state models, in which random patterns are generated initially by a pseudo-random number generator and then stored in a large memory. We demonstrate in the context of RC and VSAs that collective-state computing at full performance is possible by storing only short random seed patterns, which are then expanded “on the fly” to the full required dimension by running rule CA90.",
+      "score": 0.8529355,
+      "raw_content": null
+    }
+  ],
+  "response_time": 1.56,
+  "request_id": "97fb2bc9-c6da-4661-b0d4-f970a3954f89"
+}
+2026-03-12 22:53:18,956 - DeepResearch - DEBUG - 搜索查询 'mechanical engineering scholar retired leads business entity' 的原始结果:
+{
+  "query": "mechanical engineering scholar retired leads business entity",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "title": "Ownership of Engineering Firm Transfers Over Time - Husch Blackwell",
+      "url": "https://www.huschblackwell.com/clientsuccesses/ownership-of-engineering-firm-transfers-over-time",
+      "content": "Nov 2, 2016 · The largest owner of a successful consulting engineering firm wanted to retire in five years and diversify his retirement savings. Missing: mechanical scholar leads entity",
+      "score": 0.6493346,
+      "raw_content": null
+    },
+    {
+      "title": "Chief mechanical engineer's business success after retirement - Facebook",
+      "url": "https://www.facebook.com/groups/769782850345135/posts/1696039701052774/",
+      "content": "Apr 9, 2025 · My old friend, a Chief Mechanical Engineer started his own business after our company folded. Years later at a gathering he then younger than ... Missing: scholar | Show results with: scholar",
+      "score": 0.53065056,
+      "raw_content": null
+    },
+    {
+      "title": "Mechanical Engineer to Business Owner : r/MechanicalEngineering - Reddit",
+      "url": "https://www.reddit.com/r/MechanicalEngineering/comments/1hmal1q/mechanical_engineer_to_business_owner/",
+      "content": "Dec 25, 2024 · I was wondering if anyone with a mechanical engineering background/experience has successfully leveraged their skills to create their own business, or done ... Missing: scholar entity",
+      "score": 0.50329643,
+      "raw_content": null
+    },
+    {
+      "title": "Distinguished Alumni – Mechanical and Aerospace Engineering",
+      "url": "https://mae.ncsu.edu/alumni/distinguished-alumni/",
+      "content": "This distinguished graduate earned his bachelor’s degree in mechanical engineering in 1984 from North Carolina State University. This distinguished graduate earned his bachelor’s degree in mechanical engineering with an aeronautical option from North Carolina State University in 1959. He rose through the company holding various positions, including manager of Rates and Service Practices, vice president of Fuel and Materials Management, and senior vice president of Operations Support before taking his current position.A leader in volunteerism, he serves as vice president of the North Carolina Engineering Foundation and has worked with the Campaign for NC State Students. This outstanding 1954 Mechanical Engineering graduate is chairman of Carolina Tractor and Equipment Company, headquartered in Charlotte, North Carolina, and has held that position since 1991.As an active member of Charlotte’s business community, he has served as a director for Wachovia Bank and Trust Company in Charlotte for almost 25 years and is now a director for both the University of North Carolina at Charlotte Business Advisory Council and the Presbyterian Hospital Foundation.",
+      "score": 0.4562407,
+      "raw_content": null
+    },
+    {
+      "title": "Case Engineering, Inc. Celebrating 30th Anniversary, New Leadership, Retiring Founder Darrell Case, PE, LEED AP",
+      "url": "https://caseengineeringinc.com/news/case-engineering-inc-celebrating-30th-anniversary-new-leadership-retiring-founder-darrell-case-pe-leed-ap/",
+      "content": "Under the new leadership, Matt Case says he and the firm’s ownership group (Principal/Senior Mechanical Engineer James Eyre, PE, LEED AP; Principal/Manager of Plumbing Engineering Nicholas Hipp, CPD; Principal/Senior Structural Engineer Kyle Linenfelser, PE, SE, LEED AP; Principal/Senior Structural Engineer Ardie Mansouri, PE; Principal/Senior Mechanical Engineer John Virtudazo; and Principal/Senior Mechanical Engineer Luke Wild, PE) plan to continue his father’s legacy of providing the highest level of service to the firm’s clients, employees and the community, and promoting the welcoming, culturally diverse work environment that Darrell Case created. Since its founding 30 years ago, Case Engineering has grown the firm to over 100 employees, which include 18 registered professional engineers, structural engineers, mechanical/electrical/plumbing/fire protection engineers, lighting designers, CAD designer/drafters and office support. Case Engineering has registrations in 49 U.S. states and the District of Columbia and experience designing engineering systems for new construction and renovation of institutional and commercial projects nationwide, with specialized expertise in restaurants, retail, workplace, healthcare, multi-family housing, distribution centers, education, energy management, laboratory facilities and industrial buildings. Looking for a Senior Mechanical Engineer with at least 5 years of experience designing mechanical systems for commercial buildings.",
+      "score": 0.40457857,
+      "raw_content": null
+    }
+  ],
+  "response_time": 3.78,
+  "request_id": "ed48ecf5-3073-4b4d-9acc-18e56e855947"
+}
+2026-03-12 22:53:19,651 - DeepResearch - DEBUG - 搜索查询 '一位欧洲学者的某项开源硬件项目，其灵感源于一个著名的元胞自动机，该项目的一个早期物理设计从四边形框架演变为更稳固的三角形结构。这位在机械工程某一分支领域深耕的学者，从大学教职岗位上引退后，继续领导一个与该项目相关的商业实体。该实体在21世纪10年代中期停止了在其欧洲本土的主要交易，但其在一个亚洲国家的业务得以延续。这个商业实体的英文名称是什么？要求格式形如：Alibaba  Group Limited。' 的原始结果:
+{
+  "query": "一位欧洲学者的某项开源硬件项目，其灵感源于一个著名的元胞自动机，该项目的一个早期物理设计从四边形框架演变为更稳固的三角形结构。这位在机械工程某一分支领域深耕的学者，从大学教职岗位上引退后，继续领导一个与该项目相关的商业实体。该实体在21世纪10年代中期停止了在其欧洲本土的主要交易，但其在一个亚洲国家的业务得以延续。这个商业实体的英文名称是什么？要求格式形如：Alibaba  Group Limited。",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.scribd.com/document/863575973/%E9%BB%84%E4%BB%81%E5%8B%8B-%E8%8B%B1%E4%BC%9F%E8%BE%BE%E4%B9%8B%E8%8A%AF-%E7%BE%8E-%E6%96%AF%E8%92%82%E8%8A%AC-%E5%A8%81%E7%89%B9-StephenWitt-%E8%91%97-%E5%91%A8%E5%81%A5%E5%B7%A5-%E8%AF%91",
+      "title": "黄仁勋：英伟达之芯( (美) 斯蒂芬· 威特(StephenWitt) 著周健工译)",
+      "content": "0 ratings0% found this document useful (0 votes). 黄仁勋：英伟达之芯 ( (美) 斯蒂芬 · 威特 (StephenWitt) 著 周健工 译). 《黄仁勋：英伟达之芯》是关于黄仁勋及其领导的英伟达公司如何在人工智能和计算领域取得突破的传记。书中探讨了黄仁勋的创业历程、对技术的远见以及他在推动算力革命中的重要角色。该书不仅展示了黄仁勋的个人魅力和幽默感，也反映了他对未来科技发展的深刻思考。. ## Uploaded by. 0 ratings0% found this document useful (0 votes). # 黄仁勋：英伟达之芯 ( (美) 斯蒂芬 · 威特 (StephenWitt) 著 周健工 译). 《黄仁勋：英伟达之芯》是关于黄仁勋及其领导的英伟达公司如何在人工智能和计算领域取得突破的传记。书中探讨了黄仁勋的创业历程、对技术的远见以及他在推动算力革命中的重要角色。该书不仅展示了黄仁勋的个人魅力和幽默感，也反映了他对未来科技发展的深刻思考。. 0 ratings0% found this document useful (0 votes). 黄仁勋：英伟达之芯 ( (美) 斯蒂芬 · 威特 (StephenWitt) 著 周健工 译). 《黄仁勋：英伟达之芯》是关于黄仁勋及其领导的英伟达公司如何在人工智能和计算领域取得突破的传记。书中探讨了黄仁勋的创业历程、对技术的远见以及他在推动算力革命中的重要角色。该书不仅展示了黄仁勋的个人魅力和幽默感，也反映了他对未来科技发展的深刻思考。. ## Uploaded by. You are on page 1. ## Share this document. * Share on Facebook, opens a new window. * Share on LinkedIn, opens a new window. * Share with Email, opens mail client_著__周健工_译) on Scribd&body=I’m reading 黄仁勋：英伟达之芯([美]_斯蒂芬_·_威特_(StephenWitt)_著__周健工_译) on Scribd: https%3A%2F%2Fwww.scribd.com%2Fdocument%2F863575973%2F%25E9%25BB%2584%25E4%25BB%2581%25E5%258B%258B-%25E8%258B%25B1%25E4%25BC%259F%25E8%25BE%25BE%25E4%25B9%258B%25E8%258A%25AF-%25E7%25BE%258E-%25E6%2596%25AF%25E8%2592%2582%25E8%258A%25AC-%25E5%25A8%2581%25E7%2589%25B9-StephenWitt-%25E8%2591%2597-%25E5%2591%25A8%25E5%2581%25A5%25E5%25B7%25A5-%25E8%25AF%2591). Millions of documents at your fingertips, ad-free Subscribe with a free trial.",
+      "score": 0.98522,
+      "raw_content": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mozilla/common-voice/main/server/data/zh-CN/wiki.zh-cn.txt",
+      "title": "wiki.zh-cn.txt - GitHub",
+      "content": "后来信众捐资兴建宫庙落成。 本种之下又可分为三个亚种。 阿加托克利斯延续了叙拉古统治者与迦太基争夺西西里主导的政策。 博嘎里缅甸克伦邦帕安县的一个镇。 美国吉他学院提供从初级到高级程度的个人和团体课程。 第斯普尔也是出名的茶叶拍卖中心。 其在早期记载技术中为最为普遍的使用方式。 是琉球最后的王朝。 御嵩町为岐阜县可儿郡的町。 金川三角城遗址的历史年代为青铜时代。 后梁末帝朱友贞的妃子。 郑孝胥人。 由新恒基国际物业管理有限公司负责屋邨管理。 埃朗库尔是法国国家新城伊夫林地区圣康坦的一部分。 略称为新机场道。 但也有人指摘文明开化只是限于都市人及知识分子摄取西方文明。 斯凯鲍尔是一个位于美国阿拉巴马州布朗特县的非建制地区。 任中国社会科学院外国文学研究所助理研究员。 国际标准化组织。 属新州。 沙峡谷是位于美国加利福尼亚州洛杉矶县的一个非建制地区。 链肠锡叶吸虫为同盘科锡叶属的动物。 西汉末年右扶风平陵人。 他擅长蝶泳项目。 是中华人民共和国山东省省级文物保护单位之一。 光谱化学序列可以解释一些化合物的颜色差异。 梅斯佩尔布伦是德国巴伐利亚州的一个市镇。 这个信仰来自一个关于得墨忒耳的传说。 最高军衔为海军中将。 亚洲独一无二的翻译研究院旨在教育训练学生成为专业的翻译家。 上萨丁岛线是位于瓦维洛夫盆地西北方以断层为界的。 于南斯拉夫王国时期改用王国的国徽。 实验天体物理联合研究所是一个美国前沿物理学研究为方向的研究所。 稻叶在制作歌曲一开始的时候曾打算做一张专辑。 参见秦朝官制。 撤收时则按照相反的顺序操作即可。 钻光鱼科是辐鳍鱼纲巨口鱼目的其中一科。 这期间丘吉尔几乎每周都亲自到被炸现场视察。 丹增还举行了简短的佛教仪式。 垂果乌头为毛茛科乌头属下的一个种。 傅亮人。 他出生于英国牛津郡。 中国的激斗战车车队。 以清末为剧集背景。 享和元年之子。 一般讨论可见多重线性代数。 台湾松蚜为大蚜科松柏大蚜属下的一个种。 白石河可能指 明朝也在边疆和少数民族地区设立。 二战期间奇尼奇塔有所受损。 后入读纽约音乐学院戏剧艺术研究表演。 周达明貌似日本艺能界名人西城秀树。 宣和是宋徽宗的第六个年号和最后一个年号。 寿春公主和傅忠生有一个独生子傅彦。 盐釜口车站是位于爱知县名古屋市天白区盐釜口一丁目。 沈阳市长城列表旨在列出中国辽宁省沈阳市的长城墙体及附属设施。 鲁勒河畔维雷人口变化图示 非完整约束不是完整约束。 略阳人。 辐射泡双吸虫为囊双科泡双吸虫属的动物。 鲁珀特是一个位于美国爱达荷州米尼多卡县的城市。 但是艾力克斯随后用假手枪吓跑了伯普雷。 进士出身。 在户外的花朵或其遭淹没的地方均受严重损害。 中云街道是中国山东省青岛市胶州市下辖的一个街道。 它位于钱江一桥与钱江三桥之间。 殿上匾额都是乾隆帝御书。 南峰街道是中国浙江省仙居县所辖的一个街道。 太鲁阁晶英酒店前身为天祥招待所。 穗花刺头菊为菊科刺头菊属下的一个种。 该物种的模式产地在海南岛。 早春杜鹃为杜鹃花科杜鹃属下的一个种。 此现象一般在火警发生的后期出现。 毛唇美冠兰为兰科美冠兰属下的一个种。 细菌的形态是由细胞壁决定的。 面向甬江的一侧则利用两个扁平长方形相互叠加从而体现出船的形象。 曾任香港大学课程学系师范教育及生物教育学高级讲师。 年七十二岁。 该物种的模式产地在马达加斯加。 美女翠雀花是高翠雀花和翠雀的杂交栽培种。 阿拉苏阿伊是巴西米纳斯吉拉斯州的一个市镇。 当创意写作作为教育题材的时候一般都是在舞台上。 父亲陈黼。 详细入围名单将于颁奖典礼当天公布。 亦在此时顾福生鼓励三毛学习写作。 专门从事房地产法律。 这种抑郁症的主要特点就是总是在寒冷季节发病并在其他季节完全缓解。 能不能再见一面？ 密封的蜜罐也被用作图坦卡蒙等法老的陪葬品。 地点是哥伦比亚特区东北部托腾堡站和塔科马站间。 该市镇年时的人口为人。 刺柄观音座莲为观音座莲科观音座莲属下的一个种。 亦可支援使用的语音合成引擎。 覆瓦背叶虫为叶须虫科背叶虫属的动物。 她的妹妹凯蒂同样也是一名游泳选手。 位于济南市天桥区。 它使卫生专业人员能够通过一种通用语言来交换世界各地的卫生信息。 双眼加和是指大脑整合来自左右两眼的信息的过程。 电视原声带由风潮唱片发行。 而对于最新方法和技术的讨论会也是年会的重要组成部分之一。 因此可能产生错误的计算及动作。 该反应是通氢气于悬浮有催化剂的酰氯溶液中来进行。 大中十二年担任武宁节度使。 同进士出身。 欧米加镇区是位于美国阿肯色州卡罗尔县的一个行政镇区。 殿试登进士第三甲第三名。 常见的滑膜肉瘤均兼具目前这两种双相类型。 司职门将。 全姓在大陆和台湾都没有列入百家姓前一百位。 现时为中国女排总教练。 新翼的管理及营运是由万达镇有限公司负责。 父亲为澳门立法会建制派议员何润生。 它们可能是以其巨大体型及群体行动以吓阻掠食动物。 戈罗然卡农村居民点是俄罗斯联邦沃罗涅日州拉蒙区所属的一个农村居民点。 酵母聚糖可以从酵母细胞壁中制备得到。 梅尔赫特姆。 石点头是晚明短篇白话小说集。 母陈氏。 被控告纵火罪的左大臣源信家人们很是绝望哀叹。 各媒体对本次地震及所带来的灾害采用不同的名称。 出身于鸟取县。 有完整的前缘脉及明显的亚前缘脉。 治所在今安徽省凤阳县东北。 也可以指女性无法完整怀孕的问题。 通称京御前。 主要派系的领导者是当年的第二把手。 因华人血统而成为中华队一员。 昂格列人口变化图示 但如果生活方式改变没有起效或效用不佳则这些患者常需要使用药物治疗。 大颖草为禾本科鹅观草属下的一个种。 父亲勃艮地公爵是路易十四独子高大的王太子路易的长子。 县治林登。 清朝及中华民国军事将领。 孙敏汉是一名韩国男子棒球运动员。 贝鲁姆位于挪威首都奥斯陆市郊。 他也代表黑山国家足球队参赛。 沅江澧水 贝利斯普林斯是一个位于美国阿拉巴马州劳德代尔县的非建制地区。 毛叶蕨为膜蕨科毛叶蕨属下的一个种。 他为该博物馆收集了大量精美的矿物样本。 可是由于预算不足提案再度否决。 广泛存在于植物和动物组织中。 谢涅人口变化图示 绿岛天螺为天螺科天螺属下的一个种。 围城最终演变成激战。 秦岭耧斗菜为毛茛科耧斗菜属下的一个种。 骆驼街道得名于慈东后江上的骆驼桥。 最终建立了中国历史上第一个中央集权君主统治国家。 位操作是程序设计中对位模式或二进制数的一元和二元操作。 桑松寺是位于西藏自治区日喀则市定日县曲当乡卡布村的一座藏传佛教寺院。 黎维良是越南阮朝明命年间的一位民变首领。 斯特恩公司的店铺被列为历史古迹。 卡农城是一个位于美国科罗拉多州弗里蒙特县的城市。 埃夫雷西。 保利尼亚是巴西圣保罗州的一个市镇。 它在自然界中以稀有矿物羟铟石的形式存在。 参与这项概念的公司还包括铁路运营商威立雅运输和建筑企业斯堪斯卡。 浙江乡试中举。 基督教堂小修道院是英国多塞特郡克赖斯特彻奇的一座教堂。 白垩新伪蕈甲属为伪蕈甲科下一已灭绝的属级分类元。 他也代表挪威国家足球队参赛。 梅策齐乌斯的独子约翰此后依旧待在西西里。 蕨萁为阴地蕨科阴地蕨属下的一个种。 齐梅茨豪森是德国巴伐利亚州的一个市镇。 布吕莱迈。 三条袋鼠介为尾花介科袋鼠介属下的一个种。 主炮为两门。 瓜拉廷加是巴西巴伊亚州的一个市镇。 会同三年上奏东丹左次相渤海人大素贤贪墨行为不法。 乾隆十三年戊辰翻译科进士。 历任第八至十届全国政协委员。 杜布河畔蓬皮耶尔人口变化图示 胜原开通后新设车站。 他在好莱坞星光大道拥有一颗自己的星形徽章。 密支那往雷多路段则又复归与旧中印公路共线。 许多新的开发者在后来的数年内一直追随这家公司的领导。 最大特色为双萤幕尺寸加大。 康熙十年任大理寺卿。 韩绛的弟弟。 而杜塞尔多夫则是在最后一轮比赛之前便已铁定降级。 新卡纳昂保利斯塔是巴西圣保罗州的一个市镇。 西班牙共产主义工人党是西班牙的一个较小的共产主义政党。 然而爱德华三世亲政的第一个步骤便是将他处死。 拿督潘健成 是政府津贴的男女英文学校。 那些场用了很多不同的东西成为目标。 金唱片或金唱片奖项是根据一张唱片的销量而颁授的一个奖项。 潘善念是南定省义兴府务本县果灵社出生。 差点是用来量度高尔夫球手潜在能力的数值。 列兹金斯坦。 托弄蝶属是弄蝶科弄蝶亚科中的一个属。 快利佳组成。 他在之后承认这是个错误。 西圣塞巴斯蒂昂是巴西米纳斯吉拉斯州的一个市镇。 现效力于日职球队川崎前锋。 位于该镇西南半部的东部。 至年底前扩修工程结束。 允丹藏卜早逝无后。 王祺可以指 淳安小檗为小檗科小檗属下的一个种。 本鱼胸鳍发育完全。 描述不婚女性的故事。 这种结构出现在金星和天王星的卫星天卫五。 科林蒂安队获得冠军。 真冈郡是日本统治下桦太厅的一郡。 该岛人口也位居法罗群岛第二位。 马尔等人和卡林顿也报道了一些随意经历灵魂投射的技术。 这种时间表延续了足足两个月。 布利机场在布利湾以北。 不久西马仑以近颠峰强度登陆吕宋岛的伊莎贝拉省。 川滇鼠李为鼠李科鼠李属下的一个种。 此后他回到英国。 两院的民选议席由各自治区经全国分区按比例代表制方式产生。 满洲平腹蛛为平腹蛛科平腹蛛属的动物。 天辅六年生完颜亮。 三棱齿兽科的化石显示出它们与哺乳类有接近亲缘关系。 他很可能是俄罗斯最早的电影理论家。 劳埃瑙是德国下萨克森州的一个市镇。 它包含一个明亮的电离氢区发射。 美国唱片业协会将其认证为金唱片。 耶利扎罗夫站是圣彼得堡地铁的一个车站。 机场内还有一个仅接待外交人员的外交官接待室。 大红菇最早是由丹麦植物学家。 唯节目内的介面以至字幕全部均使用简体字。 其故居为广东省省级文物保护单位。 汪恩甲随后找到萧红。 英语盲文是记录英语的盲文。 过后班尼为此而被逮捕。 当前维也纳政府将建筑当作一个旅游景点。 生于美国纽约州洛克波特市。 独行侠。 烟是一种物理及化学的现象。 龙岩杜鹃为杜鹃花科杜鹃属下的一个种。 中间神经元连接神经元及中枢神经。 该市镇年时的人口为人。 建在都江堰渠首的二王庙是老百姓对李冰父子治水伟业的纪念。 当时何无忌亦推荐了刘穆之给刘裕作为主簿。 长期照护的提供服务形式可分为常规与非常规。 产前诊断包括筛查和诊断性检测。 进士出身。 热力学过程的定义是一个热力学系统由开始到完结的状态中所涉及的能量转变。 国除为淮南郡。 纺锤体一般产生于早前期消失。 特雷斯提克兰国家公园是位于瑞典的一个国家公园。 无线电数据广播是一种在传统的调频广播中嵌入少量的数字信息的通信协议标准。 线叶虎耳草为虎耳草科虎耳草属下的一个种。 这种化合物在较少的有机合成中作为氧化性试剂来使用。 大部份茶走仍有淡奶这种成份。 由北魏崔鸿撰写。 大宜昌鳞毛蕨为鳞毛蕨科鳞毛蕨属下的一个变种。 法院裁定上述交易令伟仕的股价上升。 戈雅克。 勒普雷舍。 市的中部及北部是米泽盆地。 马蒂厄。 毕业于西南财经大学经济管理专业。 内容描写两母子在面对儿子与未成年少女发生性行为被控强奸后的心理变化。 清朝宗室。 历朝水患尤以黄河为烈。 巴巴多斯岛主要由石灰石构成。 纪念碑是威尼斯雕塑家安东尼的作品。 这实际上标志着包氏家族逐渐开始淡出港龙航空董事局。 特别是魏特曼很可能单人在战斗的初始阶段阻止了英军行动这一点激发了想象。 同时也在英国专辑排行榜连续八次获得排名第一。 曾祖父吴荣祖。 据报当时的中共中央政法委书记罗干知道这个事件。 毕业于国立台北大学不动产与城乡环境学系。 久里滨线的铁路线。 拉布里格人口变化图示 史学家李铭汉次子。 进士出身。 锡永人口变化图示 是下辖的一个街道办事处。 该机型最为引人注意的就是旋转镜头和部件可分式的设计。 举人出身。 齐桓公葵丘会盟所在地。 为荷兰风格派运动中最有名的设计师之一。 壶菌是一类具有的真菌。 刚楚布寺位于日喀则地区吉隆县境内。 布卢里奇是一个位于美国乔治亚州范宁县的城市。 其中汉朝与唐朝之盛世又被合称为汉唐盛世。 马切拉塔是意大利马尔凯大区马切拉塔省的省会。 维吾尔语有多种书写系统。 次年分配到青岛任助理司铎。 普雅斯特吕克人口变化图示 季裂裂痕的特征是黄铜受氨影响的部件会出现较深的脆性裂痕。 文秀雅为人熟知。 用绝热蒸气吸收量热计可测得离子化合物的水合焓。 而当时很多人无法支付一片披萨的价格便提供他们可以提供的物品交换相应大小的披萨。 邹检验是一种统计和计量经济的检验。 他同时表明他认为美籍犹太人不太爱国。 而尼布尔海姆事件也收录在游戏中。 东岭镇是中国福建省泉州市惠安县下辖的一个镇。 这是两个空间站组件之间的首次连接。 周边是逗子市市区。 位于伦敦市以东。 近年在岭南大学文化研究系及香港中文大学宗教及文化研究系任兼职讲师。 中华桫椤为桫椤科桫椤属下的一个种。 朝鲜称这是朝鲜近代史的开端。 在电影中星座号航母扮演大黄蜂号航空母舰。 尔后提案的内容被纳入当时政府的西部地铁与中央商业区救灾专用线路之中。 拜仁慕尼黑为该赛季的卫冕冠军。 浙江平湖人。 美国维珍尼亚州马田斯维尔出生。 被视为蒙古争取独立的过程中最重要的人物之一。 日本沙漠实践协会会长。 斯莱德艺术学校在二战期间曾搬到牛津与拉斯金共同办学。 也有人认为人民联盟可与中间党合并。 红曲米可用来制作红曲酒和红糟。 母周氏。 盆地一般有一圈与周边地表上撞击时所抛出岩石相隔开的主环。 即对由卫星或飞机成像感测器获得的影像进行融合。 国家超级计算长沙中心位于湖南长沙湖南大学软件学院校区内。 其兄刘雨凯也是演员与模特儿。 她被允许重新定义她的法律性别从男性变为女性并改名。 设有自动售票机。 但这个物种可能不是属于小贵族龙。 高蒂一直被关押在伊利诺斯州斯普林菲尔德监狱。 故事以第一人称讲述。 捕房巡区为租界以西的越界筑路区。",
+      "score": 0.98354,
+      "raw_content": null
+    },
+    {
+      "url": "http://att.newsmth.net/nForum/att/Emacs/81563/431607",
+      "title": "http://att.newsmth.net/nForum/att/Emacs/81563/431607",
+      "content": "一万 一下 一下子 一不小心 一专多能 一世 一丘之貉 一丝一毫 一丝不挂 一丝不苟 一个 一个个 一个中心 一个劲儿 一个又一个 一个巴掌拍不响 一个样 一个萝卜一个坑 一个鼻孔出气 一举 一举一动 一举两得 一举成名 一举成名天下知 一了百了 一了百当 一事无成 一二 一五一十 一些 一亲芳泽 一介书生 一仍旧贯 一代 一代风流 一伙 一会儿 一传十 一体 一侧 一元复始 一共 一再 一决雌雄 一准 一刀两断 一刀切 一分为二 一切 一则 一刹那 一刻 一刻千金 一动不动 一动不如一静 一劳永逸 一半 一厢情愿 一去不复返 一反常态 一发千钧 一口咬定 一口气 一叶蔽目 一叶障目 一同 一名 一向 一味 一哄而上 一哄而散 一哄而起 一唱一和 一唱三叹 一团和气 一团漆黑 一团糟 一国三公 一国两制 一场春梦 一场空 一场虚惊 一块 一块儿 一块石头落地 一堂 一塌糊涂 一墙之隔 一声不吭 一声不响 一声令下 一夜 一夜之间 一夜情 一大半 一大早 一天到晚 一夫当关 一失足成千古恨 一头 一头雾水 一如 一如既往 一孔之见 一字一句 一字一板 一字不漏 一字不苟 一字千金 一字长蛇阵 一季度 一官半职 一定 一定之规 一定程度 一审 一客不烦二主 一家 一家之言 一家人 一家子 一寸光阴一寸金 一对 一对一 一小撮 一尘不染 一尺水十丈波 一岁 一己之私 一帆风顺 一带 一席之地 一席话 一席谈 一帮 一干二净 一年一度 一年之计在于春 一年到头 一年半载 一年四季 一并 一床锦被遮盖 一应俱全 一度 一式 一张 一往情深 一往无前 一律 一得之功 一得之愚 一得之见 一心 一心一德 一心一意 一心二用 一心只读圣贤书 一念之差 一怒之下 一息尚存 一想 一意孤行 一成不变 一手 一手包办 一手遮天 一扫而光 一扫而空 一技之长 一把 一把手 一把抓 一拍即合 一拖再拖 一拥而上 一挥而就 一掷千金 一掷百万 一揽子 一改故辙 一文 一文不名 一斑 一方面 一旁 一无 一无可取 一无所有 一无所知 一无所能 一无所获 一无是处 一日 一日万里 一日三省 一日三秋 一日三餐 一日不见 一日之计在于晨 一日千里 一日游 一旦 一早 一时 一时半会 一时半刻 一时间 一星半点 一晃 一晚 一月 一望无垠 一望无际 一望而知 一朝 一朝一夕 一木难支 一本万利 一本正经 一条 一条心 一条街 一条龙 一来 一来二去 一板一眼 一枕黄粱 一枝独秀 一柱擎天 一样 一棍子打死 一楼 一概 一概而论 一模一样 一次又一次 一次性 一步一个脚印 一步之遥 一步到位 一步登天 一气 一气之下 一气呵成 一氧化碳 一水之隔 一泓秋水 一波三折 一泻千里 一派 一流 一清二楚 一清二白 一溜烟 一炮打响 一炮而红 一点 一点一滴 一点也不 一点儿 一点点 一片冰心 一片汪洋 一物降一物 一生 一生一世 一番 一番话 一病不起 一瘸一拐 一百 一盘散沙 一盘棋 一目了然 一目十行 一直 一直以来 一眼 一睹 一瞑不视 一瞥 一瞬 一瞬间 一知半解 一石二鸟 一石激起千层浪 一碗水端平 一种 一秒 一穷二白 一窍不通 一窝蜂 一端 一笑了之 一笑千金 一笑置之 一笑而过 一笔勾销 一笔抹杀 一等 一等功 一等品 一等奖 一筹莫展 一箭双雕 一篇 一米 一类 一系列 一级 一纸空文 一线 一经 一统 一网打尽 一而再 一股脑儿 一脉相承 一腔",
+      "score": 0.9794,
+      "raw_content": null
+    },
+    {
+      "url": "https://huggingface.co/songzewu/jonatasgrosman-whisper-large-zh-cv11-ct2/commit/c11dac55a5e17eb6de74ccd1d5e459d54286f95d.diff?file=evaluation_cv11_test.json",
+      "title": "https://huggingface.co/songzewu/jonatasgrosman-whi...",
+      "content": "八年之后的一九七九年，中美建立了外交关系。\", + \"亚洲田径总会只接受运动员代表亚洲田总的会员国参加亚锦赛创造的纪录。\", + \"",
+      "score": 0.97507,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.plecoforums.com/download/dict_synonym-txt.4745/",
+      "title": "https://www.plecoforums.com/download/dict_synonym-...",
+      "content": "Aa01A01= 人 士 人物 人士 人氏 人选 Aa01A02= 人类 生人 全人类 Aa01A03= 人手 人员 人口 人丁 口 食指 Aa01A04= 劳力 劳动力 工作者 Aa01A05= 匹夫 个人 Aa01A06= 家伙 东西 货色 厮 崽子 兔崽子 狗崽子 小子 杂种 畜生 混蛋 王八蛋 竖子 鼠辈 小崽子 Aa01A07= 者 手 匠 客 主 子 家 夫 翁 汉 员 分子 鬼 货 棍 徒 Aa01A08= 每人 各人 每位 Aa01A09= 该人 此人 Aa01B01= 人民 民 国民 公民 平民 黎民 庶 庶民 老百姓 苍生 生灵 生人 布衣 白丁 赤子 氓 群氓 黔首 黎民百姓 庶人 百姓 全民 全员 萌 Aa01B02= 群众 大众 公众 民众 万众 众生 千夫 Aa01B03# 良民 顺民 Aa01B04# 遗民 贱民 流民 游民 顽民 刁民 愚民 不法分子 孑遗 Aa01C01= 众人 人人 人们 Aa01C02= 人丛 人群 人海 人流 人潮 Aa01C03= 大家 大伙儿 大家伙儿 大伙 一班人 众家 各户 Aa01C04= 们 辈 曹 等 Aa01C05@ 众学生 Aa01C06# 妇孺 父老兄弟 男女老少 男女老幼 Aa01C07# 党群 干群 军民 工农兵 劳资 主仆 宾主 僧俗 师徒 师生 师生员工 教职员工 群体 爱国志士 党外人士 民主人士 爱国人士 政群 党政群 非党人士 业内人士 工农分子 军警民 党政军民 Aa01D01@ 角色 Aa02A01= 我 咱 俺 余 吾 予 侬 咱家 本人 身 个人 人家 斯人 Aa02A02= 区区 仆 鄙 愚 鄙人 小人 小子 在下 不才 不肖 Aa02A03@ 老子 Aa02A04= 老朽 老汉 Aa02A05@ 老娘 Aa02A06@ 愚兄 Aa02A07= 小弟 兄弟 Aa02A08= 奴 妾 妾身 民女 Aa02A09= 朕 孤 寡人 Aa02A10= 职 卑职 下官 奴婢 奴才 Aa02A11= 贫道 小道 Aa02A12@ 贫僧 Aa02A13@ 下臣 Aa02B01= 我们 咱 咱们 吾侪 吾辈 俺们 我辈 咱俩 Aa03A01= 你 您 恁 而 尔 汝 若 乃 卿 君 公 Aa03A02= 老兄 仁兄 世兄 兄长 大哥 Aa03A03= 老弟 贤弟 仁弟 兄弟 Aa03A04= 大嫂 大姐 老大姐 Aa03A05= 阁下 足下 驾 同志 老同志 Aa03A06= 陛下 主公 大王 万岁 Aa03A07= 您老 你咯 Aa03B01= 你们 尔等 Aa03B02= 诸位 各位 诸君 Aa04A01= 他 她 彼 其 渠 伊 人家 Aa04B01= 他们 她们 他俩 她俩 Aa05A01= 自己 自家 自个儿 自各儿 自身 本身 自我 本人 小我 我 自 己 Aa05B01= 别人 旁人 他人 人家 Aa05B02= 谁 哪个 哪位 张三李四",
+      "score": 0.96914,
+      "raw_content": null
+    }
+  ],
+  "response_time": 4.34,
+  "request_id": "940d3426-31cf-4e38-8c42-f8dcad089311"
+}
+2026-03-12 22:53:19,654 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.facebook.com/TheCSRJournal/posts/the-east-india-company-has-ceased-its-operations-as-a-luxury-retailer-in-london-/1241133651441354/
+2026-03-12 22:53:19,942 - DeepResearch - WARNING - Jina Reader 读取失败 (https://www.facebook.com/TheCSRJournal/posts/the-east-india-company-has-ceased-its-operations-as-a-luxury-retailer-in-london-/1241133651441354/): 451 Client Error: Unavailable For Legal Reasons for url: https://r.jina.ai/https://www.facebook.com/TheCSRJournal/posts/the-east-india-company-has-ceased-its-operations-as-a-luxury-retailer-in-london-/1241133651441354/
+2026-03-12 22:53:19,943 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.businessinsider.com/41-asian-companies-that-may-be-dumped-as-europe-deleverages-2012-7
+2026-03-12 22:53:20,241 - DeepResearch - WARNING - Jina Reader 读取失败 (https://www.businessinsider.com/41-asian-companies-that-may-be-dumped-as-europe-deleverages-2012-7): 451 Client Error: Unavailable For Legal Reasons for url: https://r.jina.ai/https://www.businessinsider.com/41-asian-companies-that-may-be-dumped-as-europe-deleverages-2012-7
+2026-03-12 22:53:20,242 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://quartr.com/insights/edge/the-rise-and-fall-of-wirecard
+2026-03-12 22:53:31,784 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 64516
+2026-03-12 22:53:53,704 - DeepResearch - DEBUG - 提取的关键信息: 根据提供的网页内容，经过仔细分析，网页主题是Wirecard AG（一家德国支付服务公司）的兴衰史，涉及金融欺诈、公司历史和高管人物（如Markus Braun）。网页内容完全未提及任何与用户问题相关的信息，包括：
+- 未涉及开源硬件项目、元胞自动机灵感或物理设计演变。
+- 未提到机械工程学者、大学教职或相关商业实体。
+- 未描述任何实体在21世纪10年代中期停止欧洲业务但延续亚洲业务的情况。
+
+因此，该网页内容与用户问题无关，无法提取所请求的商业实体英文名称。
+
+**返回：无相关信息**
+2026-03-12 22:53:53,704 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.frequentbusinesstraveler.com/2024/02/26-airlines-that-went-out-of-business-in-the-first-two-decades-of-the-21st-century/
+2026-03-12 22:53:57,233 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 21325
+2026-03-12 22:54:20,401 - DeepResearch - DEBUG - 提取的关键信息: 根据提供的网页内容，内容主要涉及21世纪前20年倒闭的26家航空公司的历史、倒闭原因和时间，包括Trans World Airlines、Kingfisher Airlines、Transaero、Air Berlin等。内容焦点是航空业的商业失败案例，没有提及任何与用户问题相关的元素，如开源硬件项目、元胞自动机灵感、欧洲学者、机械工程领域、项目设计演变、商业实体名称或业务转移等。
+
+因此，网页内容与用户问题完全无关，无法提取任何相关信息。
+
+返回：**无相关信息**
+2026-03-12 22:54:20,401 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.alternativeairlines.com/ceased-airlines
+2026-03-12 22:54:26,047 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 22723
+2026-03-12 22:54:41,282 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息。
+2026-03-12 22:54:41,282 - DeepResearch - INFO - 开始生成总结，处理 5 个搜索结果集
+2026-03-12 22:54:41,326 - DeepResearch - DEBUG - 构建的上下文内容 (前500字符): 来源 1: The East India Company has ceased its operations as a luxury ...
+URL: https://www.facebook.com/TheCSRJournal/posts/the-east-india-company-has-ceased-its-operations-as-a-luxury-retailer-in-london-/1241133651441354/
+内容: The East India Company has ceased its operations as a luxury retailer in London and declared bankruptcy after a brief revival that began in 2010
+
+来源 2: 41 Asian Companies That May Be Dumped As Europe Deleverages
+URL: https://www.businessinsider.com/41-asian-companies-that-may...
+2026-03-12 22:55:05,875 - DeepResearch - INFO - 成功生成总结
+2026-03-12 22:55:05,876 - DeepResearch - DEBUG - 生成的总结内容:
+根据提供的多方搜索结果，**无法确定该商业实体的英文名称**。以下是综合分析：
+
+1. **关键信息缺失**：  
+   - 所有搜索结果均未提及符合描述的“欧洲学者”“开源硬件项目”或“从四边形演变为三角形结构的设计”。  
+   - 来源16-20聚焦于元胞自动机（Cellular Automata）的理论、硬件实现及计算应用，但未涉及具体学者或商业实体。  
+   - 来源21-25讨论四边形与三角形网格的转换技术（如网格生成算法），但同样未关联到特定学者或公司。
+
+2. **其他无关信息**：  
+   - 来源1-15涉及航空公司破产（如来源4-5的Air Berlin、Compass Airlines）、工程公司所有权变更（来源6）、校友名录（来源9）等，与问题中的“开源硬件项目”“机械工程学者”“亚洲业务延续”等核心要素无关。  
+   - 来源3（Wirecard）是金融科技公司，来源11（英伟达传记）描述黄仁勋的创业史，均不匹配。
+
+3. **结论**：  
+   **搜索结果中不存在与用户问题描述相符的商业实体名称**。可能原因包括：  
+   - 提供的资料未覆盖该特定项目或实体；  
+   - 问题中的细节（如“著名元胞自动机灵感”“欧洲本土停业但亚洲业务延续”）未在搜索结果中体现。  
+
+建议补充更具体的线索（如学者姓名、大学名称、项目关键词）以便进一步检索。
+2026-03-12 23:11:00,156 - DeepResearch - INFO - 收到用户新问题: 一位欧洲学者的某项开源硬件项目，其灵感源于一个著名的元胞自动机，该项目的一个早期物理设计从四边形框架演变为更稳固的三角形结构。这位在机械工程某一分支领域深耕的学者，从大学教职岗位上引退后，继续领导一个与该项目相关的商业实体。该实体在21世纪10年代中期停止了在其欧洲本土的主要交易，但其在一个亚洲国家的业务得以延续。这个商业实体的英文名称是什么？要求格式形如：Alibaba  Group Limited。
+2026-03-12 23:11:00,158 - DeepResearch - INFO - 开始拆解用户问题: 一位欧洲学者的某项开源硬件项目，其灵感源于一个著名的元胞自动机，该项目的一个早期物理设计从四边形框架演变为更稳固的三角形结构。这位在机械工程某一分支领域深耕的学者，从大学教职岗位上引退后，继续领导一个与该项目相关的商业实体。该实体在21世纪10年代中期停止了在其欧洲本土的主要交易，但其在一个亚洲国家的业务得以延续。这个商业实体的英文名称是什么？要求格式形如：Alibaba  Group Limited。
+2026-03-12 23:11:50,344 - DeepResearch - DEBUG - LLM 拆解问题原始响应: ["European open source hardware project cellular automaton quadrilateral to triangular design", "mechanical engineering scholar retired European university led commercial entity", "commercial entity ceased Europe operations mid-2010s continued Asia open hardware"]
+2026-03-12 23:11:50,344 - DeepResearch - INFO - 生成的子查询列表: ['European open source hardware project cellular automaton quadrilateral to triangular design', 'mechanical engineering scholar retired European university led commercial entity', 'commercial entity ceased Europe operations mid-2010s continued Asia open hardware']
+2026-03-12 23:11:50,345 - DeepResearch - INFO - 最终去重后的搜索查询列表: ['mechanical engineering scholar retired European university led commercial entity', '一位欧洲学者的某项开源硬件项目，其灵感源于一个著名的元胞自动机，该项目的一个早期物理设计从四边形框架演变为更稳固的三角形结构。这位在机械工程某一分支领域深耕的学者，从大学教职岗位上引退后，继续领导一个与该项目相关的商业实体。该实体在21世纪10年代中期停止了在其欧洲本土的主要交易，但其在一个亚洲国家的业务得以延续。这个商业实体的英文名称是什么？要求格式形如：Alibaba \xa0Group Limited。', 'European open source hardware project cellular automaton quadrilateral to triangular design', 'commercial entity ceased Europe operations mid-2010s continued Asia open hardware']
+2026-03-12 23:11:50,347 - DeepResearch - INFO - 正在执行搜索查询: mechanical engineering scholar retired European university led commercial entity
+2026-03-12 23:11:50,347 - DeepResearch - INFO - 正在执行搜索查询: 一位欧洲学者的某项开源硬件项目，其灵感源于一个著名的元胞自动机，该项目的一个早期物理设计从四边形框架演变为更稳固的三角形结构。这位在机械工程某一分支领域深耕的学者，从大学教职岗位上引退后，继续领导一个与该项目相关的商业实体。该实体在21世纪10年代中期停止了在其欧洲本土的主要交易，但其在一个亚洲国家的业务得以延续。这个商业实体的英文名称是什么？要求格式形如：Alibaba  Group Limited。
+2026-03-12 23:11:50,349 - DeepResearch - INFO - 正在执行搜索查询: European open source hardware project cellular automaton quadrilateral to triangular design
+2026-03-12 23:11:50,350 - DeepResearch - INFO - 正在执行搜索查询: commercial entity ceased Europe operations mid-2010s continued Asia open hardware
+2026-03-12 23:11:51,417 - DeepResearch - DEBUG - 搜索查询 '一位欧洲学者的某项开源硬件项目，其灵感源于一个著名的元胞自动机，该项目的一个早期物理设计从四边形框架演变为更稳固的三角形结构。这位在机械工程某一分支领域深耕的学者，从大学教职岗位上引退后，继续领导一个与该项目相关的商业实体。该实体在21世纪10年代中期停止了在其欧洲本土的主要交易，但其在一个亚洲国家的业务得以延续。这个商业实体的英文名称是什么？要求格式形如：Alibaba  Group Limited。' 的原始结果:
+{
+  "query": "一位欧洲学者的某项开源硬件项目，其灵感源于一个著名的元胞自动机，该项目的一个早期物理设计从四边形框架演变为更稳固的三角形结构。这位在机械工程某一分支领域深耕的学者，从大学教职岗位上引退后，继续领导一个与该项目相关的商业实体。该实体在21世纪10年代中期停止了在其欧洲本土的主要交易，但其在一个亚洲国家的业务得以延续。这个商业实体的英文名称是什么？要求格式形如：Alibaba  Group Limited。",
+  "response_time": 4.34,
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.scribd.com/document/863575973/%E9%BB%84%E4%BB%81%E5%8B%8B-%E8%8B%B1%E4%BC%9F%E8%BE%BE%E4%B9%8B%E8%8A%AF-%E7%BE%8E-%E6%96%AF%E8%92%82%E8%8A%AC-%E5%A8%81%E7%89%B9-StephenWitt-%E8%91%97-%E5%91%A8%E5%81%A5%E5%B7%A5-%E8%AF%91",
+      "title": "黄仁勋：英伟达之芯( (美) 斯蒂芬· 威特(StephenWitt) 著周健工译)",
+      "content": "0 ratings0% found this document useful (0 votes). 黄仁勋：英伟达之芯 ( (美) 斯蒂芬 · 威特 (StephenWitt) 著 周健工 译). 《黄仁勋：英伟达之芯》是关于黄仁勋及其领导的英伟达公司如何在人工智能和计算领域取得突破的传记。书中探讨了黄仁勋的创业历程、对技术的远见以及他在推动算力革命中的重要角色。该书不仅展示了黄仁勋的个人魅力和幽默感，也反映了他对未来科技发展的深刻思考。. ## Uploaded by. 0 ratings0% found this document useful (0 votes). # 黄仁勋：英伟达之芯 ( (美) 斯蒂芬 · 威特 (StephenWitt) 著 周健工 译). 《黄仁勋：英伟达之芯》是关于黄仁勋及其领导的英伟达公司如何在人工智能和计算领域取得突破的传记。书中探讨了黄仁勋的创业历程、对技术的远见以及他在推动算力革命中的重要角色。该书不仅展示了黄仁勋的个人魅力和幽默感，也反映了他对未来科技发展的深刻思考。. 0 ratings0% found this document useful (0 votes). 黄仁勋：英伟达之芯 ( (美) 斯蒂芬 · 威特 (StephenWitt) 著 周健工 译). 《黄仁勋：英伟达之芯》是关于黄仁勋及其领导的英伟达公司如何在人工智能和计算领域取得突破的传记。书中探讨了黄仁勋的创业历程、对技术的远见以及他在推动算力革命中的重要角色。该书不仅展示了黄仁勋的个人魅力和幽默感，也反映了他对未来科技发展的深刻思考。. ## Uploaded by. You are on page 1. ## Share this document. * Share on Facebook, opens a new window. * Share on LinkedIn, opens a new window. * Share with Email, opens mail client_著__周健工_译) on Scribd&body=I’m reading 黄仁勋：英伟达之芯([美]_斯蒂芬_·_威特_(StephenWitt)_著__周健工_译) on Scribd: https%3A%2F%2Fwww.scribd.com%2Fdocument%2F863575973%2F%25E9%25BB%2584%25E4%25BB%2581%25E5%258B%258B-%25E8%258B%25B1%25E4%25BC%259F%25E8%25BE%25BE%25E4%25B9%258B%25E8%258A%25AF-%25E7%25BE%258E-%25E6%2596%25AF%25E8%2592%2582%25E8%258A%25AC-%25E5%25A8%2581%25E7%2589%25B9-StephenWitt-%25E8%2591%2597-%25E5%2591%25A8%25E5%2581%25A5%25E5%25B7%25A5-%25E8%25AF%2591). Millions of documents at your fingertips, ad-free Subscribe with a free trial.",
+      "score": 0.98522,
+      "raw_content": null
+    },
+    {
+      "url": "https://raw.githubusercontent.com/mozilla/common-voice/main/server/data/zh-CN/wiki.zh-cn.txt",
+      "title": "wiki.zh-cn.txt - GitHub",
+      "content": "后来信众捐资兴建宫庙落成。 本种之下又可分为三个亚种。 阿加托克利斯延续了叙拉古统治者与迦太基争夺西西里主导的政策。 博嘎里缅甸克伦邦帕安县的一个镇。 美国吉他学院提供从初级到高级程度的个人和团体课程。 第斯普尔也是出名的茶叶拍卖中心。 其在早期记载技术中为最为普遍的使用方式。 是琉球最后的王朝。 御嵩町为岐阜县可儿郡的町。 金川三角城遗址的历史年代为青铜时代。 后梁末帝朱友贞的妃子。 郑孝胥人。 由新恒基国际物业管理有限公司负责屋邨管理。 埃朗库尔是法国国家新城伊夫林地区圣康坦的一部分。 略称为新机场道。 但也有人指摘文明开化只是限于都市人及知识分子摄取西方文明。 斯凯鲍尔是一个位于美国阿拉巴马州布朗特县的非建制地区。 任中国社会科学院外国文学研究所助理研究员。 国际标准化组织。 属新州。 沙峡谷是位于美国加利福尼亚州洛杉矶县的一个非建制地区。 链肠锡叶吸虫为同盘科锡叶属的动物。 西汉末年右扶风平陵人。 他擅长蝶泳项目。 是中华人民共和国山东省省级文物保护单位之一。 光谱化学序列可以解释一些化合物的颜色差异。 梅斯佩尔布伦是德国巴伐利亚州的一个市镇。 这个信仰来自一个关于得墨忒耳的传说。 最高军衔为海军中将。 亚洲独一无二的翻译研究院旨在教育训练学生成为专业的翻译家。 上萨丁岛线是位于瓦维洛夫盆地西北方以断层为界的。 于南斯拉夫王国时期改用王国的国徽。 实验天体物理联合研究所是一个美国前沿物理学研究为方向的研究所。 稻叶在制作歌曲一开始的时候曾打算做一张专辑。 参见秦朝官制。 撤收时则按照相反的顺序操作即可。 钻光鱼科是辐鳍鱼纲巨口鱼目的其中一科。 这期间丘吉尔几乎每周都亲自到被炸现场视察。 丹增还举行了简短的佛教仪式。 垂果乌头为毛茛科乌头属下的一个种。 傅亮人。 他出生于英国牛津郡。 中国的激斗战车车队。 以清末为剧集背景。 享和元年之子。 一般讨论可见多重线性代数。 台湾松蚜为大蚜科松柏大蚜属下的一个种。 白石河可能指 明朝也在边疆和少数民族地区设立。 二战期间奇尼奇塔有所受损。 后入读纽约音乐学院戏剧艺术研究表演。 周达明貌似日本艺能界名人西城秀树。 宣和是宋徽宗的第六个年号和最后一个年号。 寿春公主和傅忠生有一个独生子傅彦。 盐釜口车站是位于爱知县名古屋市天白区盐釜口一丁目。 沈阳市长城列表旨在列出中国辽宁省沈阳市的长城墙体及附属设施。 鲁勒河畔维雷人口变化图示 非完整约束不是完整约束。 略阳人。 辐射泡双吸虫为囊双科泡双吸虫属的动物。 鲁珀特是一个位于美国爱达荷州米尼多卡县的城市。 但是艾力克斯随后用假手枪吓跑了伯普雷。 进士出身。 在户外的花朵或其遭淹没的地方均受严重损害。 中云街道是中国山东省青岛市胶州市下辖的一个街道。 它位于钱江一桥与钱江三桥之间。 殿上匾额都是乾隆帝御书。 南峰街道是中国浙江省仙居县所辖的一个街道。 太鲁阁晶英酒店前身为天祥招待所。 穗花刺头菊为菊科刺头菊属下的一个种。 该物种的模式产地在海南岛。 早春杜鹃为杜鹃花科杜鹃属下的一个种。 此现象一般在火警发生的后期出现。 毛唇美冠兰为兰科美冠兰属下的一个种。 细菌的形态是由细胞壁决定的。 面向甬江的一侧则利用两个扁平长方形相互叠加从而体现出船的形象。 曾任香港大学课程学系师范教育及生物教育学高级讲师。 年七十二岁。 该物种的模式产地在马达加斯加。 美女翠雀花是高翠雀花和翠雀的杂交栽培种。 阿拉苏阿伊是巴西米纳斯吉拉斯州的一个市镇。 当创意写作作为教育题材的时候一般都是在舞台上。 父亲陈黼。 详细入围名单将于颁奖典礼当天公布。 亦在此时顾福生鼓励三毛学习写作。 专门从事房地产法律。 这种抑郁症的主要特点就是总是在寒冷季节发病并在其他季节完全缓解。 能不能再见一面？ 密封的蜜罐也被用作图坦卡蒙等法老的陪葬品。 地点是哥伦比亚特区东北部托腾堡站和塔科马站间。 该市镇年时的人口为人。 刺柄观音座莲为观音座莲科观音座莲属下的一个种。 亦可支援使用的语音合成引擎。 覆瓦背叶虫为叶须虫科背叶虫属的动物。 她的妹妹凯蒂同样也是一名游泳选手。 位于济南市天桥区。 它使卫生专业人员能够通过一种通用语言来交换世界各地的卫生信息。 双眼加和是指大脑整合来自左右两眼的信息的过程。 电视原声带由风潮唱片发行。 而对于最新方法和技术的讨论会也是年会的重要组成部分之一。 因此可能产生错误的计算及动作。 该反应是通氢气于悬浮有催化剂的酰氯溶液中来进行。 大中十二年担任武宁节度使。 同进士出身。 欧米加镇区是位于美国阿肯色州卡罗尔县的一个行政镇区。 殿试登进士第三甲第三名。 常见的滑膜肉瘤均兼具目前这两种双相类型。 司职门将。 全姓在大陆和台湾都没有列入百家姓前一百位。 现时为中国女排总教练。 新翼的管理及营运是由万达镇有限公司负责。 父亲为澳门立法会建制派议员何润生。 它们可能是以其巨大体型及群体行动以吓阻掠食动物。 戈罗然卡农村居民点是俄罗斯联邦沃罗涅日州拉蒙区所属的一个农村居民点。 酵母聚糖可以从酵母细胞壁中制备得到。 梅尔赫特姆。 石点头是晚明短篇白话小说集。 母陈氏。 被控告纵火罪的左大臣源信家人们很是绝望哀叹。 各媒体对本次地震及所带来的灾害采用不同的名称。 出身于鸟取县。 有完整的前缘脉及明显的亚前缘脉。 治所在今安徽省凤阳县东北。 也可以指女性无法完整怀孕的问题。 通称京御前。 主要派系的领导者是当年的第二把手。 因华人血统而成为中华队一员。 昂格列人口变化图示 但如果生活方式改变没有起效或效用不佳则这些患者常需要使用药物治疗。 大颖草为禾本科鹅观草属下的一个种。 父亲勃艮地公爵是路易十四独子高大的王太子路易的长子。 县治林登。 清朝及中华民国军事将领。 孙敏汉是一名韩国男子棒球运动员。 贝鲁姆位于挪威首都奥斯陆市郊。 他也代表黑山国家足球队参赛。 沅江澧水 贝利斯普林斯是一个位于美国阿拉巴马州劳德代尔县的非建制地区。 毛叶蕨为膜蕨科毛叶蕨属下的一个种。 他为该博物馆收集了大量精美的矿物样本。 可是由于预算不足提案再度否决。 广泛存在于植物和动物组织中。 谢涅人口变化图示 绿岛天螺为天螺科天螺属下的一个种。 围城最终演变成激战。 秦岭耧斗菜为毛茛科耧斗菜属下的一个种。 骆驼街道得名于慈东后江上的骆驼桥。 最终建立了中国历史上第一个中央集权君主统治国家。 位操作是程序设计中对位模式或二进制数的一元和二元操作。 桑松寺是位于西藏自治区日喀则市定日县曲当乡卡布村的一座藏传佛教寺院。 黎维良是越南阮朝明命年间的一位民变首领。 斯特恩公司的店铺被列为历史古迹。 卡农城是一个位于美国科罗拉多州弗里蒙特县的城市。 埃夫雷西。 保利尼亚是巴西圣保罗州的一个市镇。 它在自然界中以稀有矿物羟铟石的形式存在。 参与这项概念的公司还包括铁路运营商威立雅运输和建筑企业斯堪斯卡。 浙江乡试中举。 基督教堂小修道院是英国多塞特郡克赖斯特彻奇的一座教堂。 白垩新伪蕈甲属为伪蕈甲科下一已灭绝的属级分类元。 他也代表挪威国家足球队参赛。 梅策齐乌斯的独子约翰此后依旧待在西西里。 蕨萁为阴地蕨科阴地蕨属下的一个种。 齐梅茨豪森是德国巴伐利亚州的一个市镇。 布吕莱迈。 三条袋鼠介为尾花介科袋鼠介属下的一个种。 主炮为两门。 瓜拉廷加是巴西巴伊亚州的一个市镇。 会同三年上奏东丹左次相渤海人大素贤贪墨行为不法。 乾隆十三年戊辰翻译科进士。 历任第八至十届全国政协委员。 杜布河畔蓬皮耶尔人口变化图示 胜原开通后新设车站。 他在好莱坞星光大道拥有一颗自己的星形徽章。 密支那往雷多路段则又复归与旧中印公路共线。 许多新的开发者在后来的数年内一直追随这家公司的领导。 最大特色为双萤幕尺寸加大。 康熙十年任大理寺卿。 韩绛的弟弟。 而杜塞尔多夫则是在最后一轮比赛之前便已铁定降级。 新卡纳昂保利斯塔是巴西圣保罗州的一个市镇。 西班牙共产主义工人党是西班牙的一个较小的共产主义政党。 然而爱德华三世亲政的第一个步骤便是将他处死。 拿督潘健成 是政府津贴的男女英文学校。 那些场用了很多不同的东西成为目标。 金唱片或金唱片奖项是根据一张唱片的销量而颁授的一个奖项。 潘善念是南定省义兴府务本县果灵社出生。 差点是用来量度高尔夫球手潜在能力的数值。 列兹金斯坦。 托弄蝶属是弄蝶科弄蝶亚科中的一个属。 快利佳组成。 他在之后承认这是个错误。 西圣塞巴斯蒂昂是巴西米纳斯吉拉斯州的一个市镇。 现效力于日职球队川崎前锋。 位于该镇西南半部的东部。 至年底前扩修工程结束。 允丹藏卜早逝无后。 王祺可以指 淳安小檗为小檗科小檗属下的一个种。 本鱼胸鳍发育完全。 描述不婚女性的故事。 这种结构出现在金星和天王星的卫星天卫五。 科林蒂安队获得冠军。 真冈郡是日本统治下桦太厅的一郡。 该岛人口也位居法罗群岛第二位。 马尔等人和卡林顿也报道了一些随意经历灵魂投射的技术。 这种时间表延续了足足两个月。 布利机场在布利湾以北。 不久西马仑以近颠峰强度登陆吕宋岛的伊莎贝拉省。 川滇鼠李为鼠李科鼠李属下的一个种。 此后他回到英国。 两院的民选议席由各自治区经全国分区按比例代表制方式产生。 满洲平腹蛛为平腹蛛科平腹蛛属的动物。 天辅六年生完颜亮。 三棱齿兽科的化石显示出它们与哺乳类有接近亲缘关系。 他很可能是俄罗斯最早的电影理论家。 劳埃瑙是德国下萨克森州的一个市镇。 它包含一个明亮的电离氢区发射。 美国唱片业协会将其认证为金唱片。 耶利扎罗夫站是圣彼得堡地铁的一个车站。 机场内还有一个仅接待外交人员的外交官接待室。 大红菇最早是由丹麦植物学家。 唯节目内的介面以至字幕全部均使用简体字。 其故居为广东省省级文物保护单位。 汪恩甲随后找到萧红。 英语盲文是记录英语的盲文。 过后班尼为此而被逮捕。 当前维也纳政府将建筑当作一个旅游景点。 生于美国纽约州洛克波特市。 独行侠。 烟是一种物理及化学的现象。 龙岩杜鹃为杜鹃花科杜鹃属下的一个种。 中间神经元连接神经元及中枢神经。 该市镇年时的人口为人。 建在都江堰渠首的二王庙是老百姓对李冰父子治水伟业的纪念。 当时何无忌亦推荐了刘穆之给刘裕作为主簿。 长期照护的提供服务形式可分为常规与非常规。 产前诊断包括筛查和诊断性检测。 进士出身。 热力学过程的定义是一个热力学系统由开始到完结的状态中所涉及的能量转变。 国除为淮南郡。 纺锤体一般产生于早前期消失。 特雷斯提克兰国家公园是位于瑞典的一个国家公园。 无线电数据广播是一种在传统的调频广播中嵌入少量的数字信息的通信协议标准。 线叶虎耳草为虎耳草科虎耳草属下的一个种。 这种化合物在较少的有机合成中作为氧化性试剂来使用。 大部份茶走仍有淡奶这种成份。 由北魏崔鸿撰写。 大宜昌鳞毛蕨为鳞毛蕨科鳞毛蕨属下的一个变种。 法院裁定上述交易令伟仕的股价上升。 戈雅克。 勒普雷舍。 市的中部及北部是米泽盆地。 马蒂厄。 毕业于西南财经大学经济管理专业。 内容描写两母子在面对儿子与未成年少女发生性行为被控强奸后的心理变化。 清朝宗室。 历朝水患尤以黄河为烈。 巴巴多斯岛主要由石灰石构成。 纪念碑是威尼斯雕塑家安东尼的作品。 这实际上标志着包氏家族逐渐开始淡出港龙航空董事局。 特别是魏特曼很可能单人在战斗的初始阶段阻止了英军行动这一点激发了想象。 同时也在英国专辑排行榜连续八次获得排名第一。 曾祖父吴荣祖。 据报当时的中共中央政法委书记罗干知道这个事件。 毕业于国立台北大学不动产与城乡环境学系。 久里滨线的铁路线。 拉布里格人口变化图示 史学家李铭汉次子。 进士出身。 锡永人口变化图示 是下辖的一个街道办事处。 该机型最为引人注意的就是旋转镜头和部件可分式的设计。 举人出身。 齐桓公葵丘会盟所在地。 为荷兰风格派运动中最有名的设计师之一。 壶菌是一类具有的真菌。 刚楚布寺位于日喀则地区吉隆县境内。 布卢里奇是一个位于美国乔治亚州范宁县的城市。 其中汉朝与唐朝之盛世又被合称为汉唐盛世。 马切拉塔是意大利马尔凯大区马切拉塔省的省会。 维吾尔语有多种书写系统。 次年分配到青岛任助理司铎。 普雅斯特吕克人口变化图示 季裂裂痕的特征是黄铜受氨影响的部件会出现较深的脆性裂痕。 文秀雅为人熟知。 用绝热蒸气吸收量热计可测得离子化合物的水合焓。 而当时很多人无法支付一片披萨的价格便提供他们可以提供的物品交换相应大小的披萨。 邹检验是一种统计和计量经济的检验。 他同时表明他认为美籍犹太人不太爱国。 而尼布尔海姆事件也收录在游戏中。 东岭镇是中国福建省泉州市惠安县下辖的一个镇。 这是两个空间站组件之间的首次连接。 周边是逗子市市区。 位于伦敦市以东。 近年在岭南大学文化研究系及香港中文大学宗教及文化研究系任兼职讲师。 中华桫椤为桫椤科桫椤属下的一个种。 朝鲜称这是朝鲜近代史的开端。 在电影中星座号航母扮演大黄蜂号航空母舰。 尔后提案的内容被纳入当时政府的西部地铁与中央商业区救灾专用线路之中。 拜仁慕尼黑为该赛季的卫冕冠军。 浙江平湖人。 美国维珍尼亚州马田斯维尔出生。 被视为蒙古争取独立的过程中最重要的人物之一。 日本沙漠实践协会会长。 斯莱德艺术学校在二战期间曾搬到牛津与拉斯金共同办学。 也有人认为人民联盟可与中间党合并。 红曲米可用来制作红曲酒和红糟。 母周氏。 盆地一般有一圈与周边地表上撞击时所抛出岩石相隔开的主环。 即对由卫星或飞机成像感测器获得的影像进行融合。 国家超级计算长沙中心位于湖南长沙湖南大学软件学院校区内。 其兄刘雨凯也是演员与模特儿。 她被允许重新定义她的法律性别从男性变为女性并改名。 设有自动售票机。 但这个物种可能不是属于小贵族龙。 高蒂一直被关押在伊利诺斯州斯普林菲尔德监狱。 故事以第一人称讲述。 捕房巡区为租界以西的越界筑路区。",
+      "score": 0.98354,
+      "raw_content": null
+    },
+    {
+      "url": "http://att.newsmth.net/nForum/att/Emacs/81563/431607",
+      "title": "http://att.newsmth.net/nForum/att/Emacs/81563/431607",
+      "content": "一万 一下 一下子 一不小心 一专多能 一世 一丘之貉 一丝一毫 一丝不挂 一丝不苟 一个 一个个 一个中心 一个劲儿 一个又一个 一个巴掌拍不响 一个样 一个萝卜一个坑 一个鼻孔出气 一举 一举一动 一举两得 一举成名 一举成名天下知 一了百了 一了百当 一事无成 一二 一五一十 一些 一亲芳泽 一介书生 一仍旧贯 一代 一代风流 一伙 一会儿 一传十 一体 一侧 一元复始 一共 一再 一决雌雄 一准 一刀两断 一刀切 一分为二 一切 一则 一刹那 一刻 一刻千金 一动不动 一动不如一静 一劳永逸 一半 一厢情愿 一去不复返 一反常态 一发千钧 一口咬定 一口气 一叶蔽目 一叶障目 一同 一名 一向 一味 一哄而上 一哄而散 一哄而起 一唱一和 一唱三叹 一团和气 一团漆黑 一团糟 一国三公 一国两制 一场春梦 一场空 一场虚惊 一块 一块儿 一块石头落地 一堂 一塌糊涂 一墙之隔 一声不吭 一声不响 一声令下 一夜 一夜之间 一夜情 一大半 一大早 一天到晚 一夫当关 一失足成千古恨 一头 一头雾水 一如 一如既往 一孔之见 一字一句 一字一板 一字不漏 一字不苟 一字千金 一字长蛇阵 一季度 一官半职 一定 一定之规 一定程度 一审 一客不烦二主 一家 一家之言 一家人 一家子 一寸光阴一寸金 一对 一对一 一小撮 一尘不染 一尺水十丈波 一岁 一己之私 一帆风顺 一带 一席之地 一席话 一席谈 一帮 一干二净 一年一度 一年之计在于春 一年到头 一年半载 一年四季 一并 一床锦被遮盖 一应俱全 一度 一式 一张 一往情深 一往无前 一律 一得之功 一得之愚 一得之见 一心 一心一德 一心一意 一心二用 一心只读圣贤书 一念之差 一怒之下 一息尚存 一想 一意孤行 一成不变 一手 一手包办 一手遮天 一扫而光 一扫而空 一技之长 一把 一把手 一把抓 一拍即合 一拖再拖 一拥而上 一挥而就 一掷千金 一掷百万 一揽子 一改故辙 一文 一文不名 一斑 一方面 一旁 一无 一无可取 一无所有 一无所知 一无所能 一无所获 一无是处 一日 一日万里 一日三省 一日三秋 一日三餐 一日不见 一日之计在于晨 一日千里 一日游 一旦 一早 一时 一时半会 一时半刻 一时间 一星半点 一晃 一晚 一月 一望无垠 一望无际 一望而知 一朝 一朝一夕 一木难支 一本万利 一本正经 一条 一条心 一条街 一条龙 一来 一来二去 一板一眼 一枕黄粱 一枝独秀 一柱擎天 一样 一棍子打死 一楼 一概 一概而论 一模一样 一次又一次 一次性 一步一个脚印 一步之遥 一步到位 一步登天 一气 一气之下 一气呵成 一氧化碳 一水之隔 一泓秋水 一波三折 一泻千里 一派 一流 一清二楚 一清二白 一溜烟 一炮打响 一炮而红 一点 一点一滴 一点也不 一点儿 一点点 一片冰心 一片汪洋 一物降一物 一生 一生一世 一番 一番话 一病不起 一瘸一拐 一百 一盘散沙 一盘棋 一目了然 一目十行 一直 一直以来 一眼 一睹 一瞑不视 一瞥 一瞬 一瞬间 一知半解 一石二鸟 一石激起千层浪 一碗水端平 一种 一秒 一穷二白 一窍不通 一窝蜂 一端 一笑了之 一笑千金 一笑置之 一笑而过 一笔勾销 一笔抹杀 一等 一等功 一等品 一等奖 一筹莫展 一箭双雕 一篇 一米 一类 一系列 一级 一纸空文 一线 一经 一统 一网打尽 一而再 一股脑儿 一脉相承 一腔",
+      "score": 0.9794,
+      "raw_content": null
+    },
+    {
+      "url": "https://huggingface.co/songzewu/jonatasgrosman-whisper-large-zh-cv11-ct2/commit/c11dac55a5e17eb6de74ccd1d5e459d54286f95d.diff?file=evaluation_cv11_test.json",
+      "title": "https://huggingface.co/songzewu/jonatasgrosman-whi...",
+      "content": "八年之后的一九七九年，中美建立了外交关系。\", + \"亚洲田径总会只接受运动员代表亚洲田总的会员国参加亚锦赛创造的纪录。\", + \"",
+      "score": 0.97507,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.plecoforums.com/download/dict_synonym-txt.4745/",
+      "title": "https://www.plecoforums.com/download/dict_synonym-...",
+      "content": "Aa01A01= 人 士 人物 人士 人氏 人选 Aa01A02= 人类 生人 全人类 Aa01A03= 人手 人员 人口 人丁 口 食指 Aa01A04= 劳力 劳动力 工作者 Aa01A05= 匹夫 个人 Aa01A06= 家伙 东西 货色 厮 崽子 兔崽子 狗崽子 小子 杂种 畜生 混蛋 王八蛋 竖子 鼠辈 小崽子 Aa01A07= 者 手 匠 客 主 子 家 夫 翁 汉 员 分子 鬼 货 棍 徒 Aa01A08= 每人 各人 每位 Aa01A09= 该人 此人 Aa01B01= 人民 民 国民 公民 平民 黎民 庶 庶民 老百姓 苍生 生灵 生人 布衣 白丁 赤子 氓 群氓 黔首 黎民百姓 庶人 百姓 全民 全员 萌 Aa01B02= 群众 大众 公众 民众 万众 众生 千夫 Aa01B03# 良民 顺民 Aa01B04# 遗民 贱民 流民 游民 顽民 刁民 愚民 不法分子 孑遗 Aa01C01= 众人 人人 人们 Aa01C02= 人丛 人群 人海 人流 人潮 Aa01C03= 大家 大伙儿 大家伙儿 大伙 一班人 众家 各户 Aa01C04= 们 辈 曹 等 Aa01C05@ 众学生 Aa01C06# 妇孺 父老兄弟 男女老少 男女老幼 Aa01C07# 党群 干群 军民 工农兵 劳资 主仆 宾主 僧俗 师徒 师生 师生员工 教职员工 群体 爱国志士 党外人士 民主人士 爱国人士 政群 党政群 非党人士 业内人士 工农分子 军警民 党政军民 Aa01D01@ 角色 Aa02A01= 我 咱 俺 余 吾 予 侬 咱家 本人 身 个人 人家 斯人 Aa02A02= 区区 仆 鄙 愚 鄙人 小人 小子 在下 不才 不肖 Aa02A03@ 老子 Aa02A04= 老朽 老汉 Aa02A05@ 老娘 Aa02A06@ 愚兄 Aa02A07= 小弟 兄弟 Aa02A08= 奴 妾 妾身 民女 Aa02A09= 朕 孤 寡人 Aa02A10= 职 卑职 下官 奴婢 奴才 Aa02A11= 贫道 小道 Aa02A12@ 贫僧 Aa02A13@ 下臣 Aa02B01= 我们 咱 咱们 吾侪 吾辈 俺们 我辈 咱俩 Aa03A01= 你 您 恁 而 尔 汝 若 乃 卿 君 公 Aa03A02= 老兄 仁兄 世兄 兄长 大哥 Aa03A03= 老弟 贤弟 仁弟 兄弟 Aa03A04= 大嫂 大姐 老大姐 Aa03A05= 阁下 足下 驾 同志 老同志 Aa03A06= 陛下 主公 大王 万岁 Aa03A07= 您老 你咯 Aa03B01= 你们 尔等 Aa03B02= 诸位 各位 诸君 Aa04A01= 他 她 彼 其 渠 伊 人家 Aa04B01= 他们 她们 他俩 她俩 Aa05A01= 自己 自家 自个儿 自各儿 自身 本身 自我 本人 小我 我 自 己 Aa05B01= 别人 旁人 他人 人家 Aa05B02= 谁 哪个 哪位 张三李四",
+      "score": 0.96914,
+      "raw_content": null
+    }
+  ],
+  "request_id": "f4f94c10-f915-45ca-8bde-06a7345a44a8"
+}
+2026-03-12 23:11:52,006 - DeepResearch - DEBUG - 搜索查询 'mechanical engineering scholar retired European university led commercial entity' 的原始结果:
+{
+  "query": "mechanical engineering scholar retired European university led commercial entity",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.iese.edu/faculty-research/faculty/jan-oosterveld/",
+      "title": "Jan Oosterveld | IESE Business School",
+      "content": "# Jan Oosterveld. • Master in Business Administration, IESE Business School, University of Navarra. • Mechanical Engineer (factory automation), Eindhoven’s Technical University, The Netherlands. Jan Oosterveld is Former Collaborator in the Entrepreneurship Department. He obtained his Master’s degree in Business Administration at IESE Business School, University of Navarra in Barcelona in 1972. In 2002, he was appointed professor at IESE. He is a regular lecturer at various business schools around the world. He received an honorary Ph.D. from the State University of Management of Moscow. He led the IPO of LG.Philips in April 2004, the largest IPO in Asia that year. He joined Philips’ senior management team in 1997, where he reported directly to the CEO and was part of the very small team that lead the company’s transformation. He co-authored articles on strategic management in Sloan Management Review and Long Range Planning. #### Non-refereed articles. #### Non-refereed articles. IESE Business School | University of Navarra.",
+      "score": 0.44044575,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.me.gatech.edu/woodruff-graduates-honored-coe-alumni-awards",
+      "title": "Woodruff Graduates Honored at CoE Alumni Awards | George W ...",
+      "content": "Bill earned his bachelor of mechanical engineering in 1957 and an M.S. in management in 1963 from Georgia Tech. He is a retired CEO of Collins and Arnold",
+      "score": 0.22507618,
+      "raw_content": null
+    },
+    {
+      "url": "https://ecm.eng.auburn.edu/wp/emag/?p=9174",
+      "title": "The Award Goes To - Samuel Ginn College of Engineering",
+      "content": "John MacFarlane, '72 Mechanical Engineering. John MacFarlane earned his bachelor's degree in mechanical engineering in 1972, his master's",
+      "score": 0.07240695,
+      "raw_content": null
+    },
+    {
+      "url": "https://engineering.purdue.edu/ME/People/AdvisoryCouncil",
+      "title": "Mechanical Engineering Advisory Council",
+      "content": "In this role, Morris leads the global team of Executive Chief Engineers and Program Managers who oversee GM Autonomous and Electric Vehicle, Electric Drive, Battery, and Fuel Cell programs from inception to launch and beyond. Previously, Morris was Vice President of Global Product Programs, leading the global team of Executive Chief Engineers and Program Managers who oversee conventional GM Vehicle, Engine, and Transmission programs as well as Performance Accessories. Throughout his career, Brad has leveraged over 30 years of experience in industrial manufacturing, covering global operations, corporate strategy, business development, engineering, and program management. Brad holds an MBA from Oakland University and a Bachelor of Science in Mechanical Engineering from Purdue University, with advanced leadership development from prestigious business schools. Prior to her current role, she held positions of increasing responsibility in analysis, project engineering, systems engineering, and engineering management for new product development of aircraft mechanical systems.",
+      "score": 0.051543966,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.me.utexas.edu/connect/academy-of-distinguished-alumni/current-class/1531-glenn-gilkey",
+      "title": "Glenn Gilkey - Walker Department of Mechanical Engineering",
+      "content": "Glenn Gilkey was born in Indianapolis, Indiana and at the age of four moved to El Paso, Texas. His interest in construction probably began early.",
+      "score": 0.039405376,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.85,
+  "request_id": "e7773cea-2ceb-4e6e-be02-3e2d59c1d660"
+}
+2026-03-12 23:11:52,364 - DeepResearch - DEBUG - 搜索查询 'commercial entity ceased Europe operations mid-2010s continued Asia open hardware' 的原始结果:
+{
+  "query": "commercial entity ceased Europe operations mid-2010s continued Asia open hardware",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.facebook.com/61575028122331/posts/the-voc-was-not-merely-a-trading-organization-it-was-a-military-machine-operatin/122169361880834270/",
+      "title": "The VOC was not merely a trading organization — it was a military ...",
+      "content": "The VOC was not merely a trading organization — it was a military machine operating across Asia. Thousands of soldiers were stationed in",
+      "score": 0.0027149855,
+      "raw_content": null
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/SCO_Group",
+      "title": "SCO Group - Wikipedia",
+      "content": "The SCO Group was an American software company in existence from 2002 to 2012. It became known for owning Unix operating system assets that had belonged to",
+      "score": 0.0021322616,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.cambridge.org/core/books/cambridge-world-history/organization-of-trade-in-europe-and-asia-14001800/0364E922C54D8F5BD9D92777092ED96C",
+      "title": "The organization of trade in Europe and Asia, 1400–1800 (Chapter 7)",
+      "content": "## Book contents. from Part Two - Trade, Exchange, and Production. ## Information. ## Access options. ## Accessibility standard: Unknown. ### Why this information is here. ### Accessibility Information. # Save book to Kindle. To save this book to your Kindle, first ensure no-reply@cambridge.org. of your Kindle email address below. Find out more about saving to your Kindle. Note you can select to save to either the @free.kindle.com or @kindle.com variations. ‘@free.kindle.com’ emails are free but can only be saved to your device when it is connected to wi-fi. ‘@kindle.com’ emails can be delivered even when you are not connected to wi-fi, but note that service fees apply. Find out more about the Kindle Personal Document Service. # Save book to Dropbox. To save content items to your  account,. Find out more about saving content to Dropbox. # Save book to Google Drive. To save content items to your  account,. Find out more about saving content to Google Drive. ## Our Products.",
+      "score": 0.0017007225,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.cicor.com/en/",
+      "title": "cicor: Electronic solutions for a healthy, connected and safe world",
+      "content": "Annual Report 2025: Cicor achieves transformative growth in 2025. # Creating Together. We design and manufacture advanced electronic solutions that make the world a healthier, more connected and safer place. ## Solutions. ## About Cicor. With a global network of engineering and manufacturing sites, Cicor is always close to its customers. At Cicor, compliance and sustainability are integral to how we operate. We take responsibility for our actions, uphold high standards and contribute to long-term value for people, the planet and our business. Excellence in quality is at the core of everything we do. Cicor Technologies Ltd. is listed on the SIX Swiss Exchange (CICN). We are committed to transparent communication and sustainable, long-term value creation for our shareholders. ## Upcoming Events. Click here for more information about the event. Visit Cicor at booth J09. Click here for more information about the event. Click here for more information about the event. Click here for more information about Cicor's presence at the event.",
+      "score": 0.0005527786,
+      "raw_content": null
+    },
+    {
+      "url": "https://itif.org/publications/2025/10/27/backfire-export-controls-helped-huawei-and-hurt-us-firms/",
+      "title": "Backfire: Export Controls Helped Huawei and Hurt U.S. Firms | ITIF",
+      "content": "Huawei is the world’s largest telecom equipment manufacturer, and its global market share for telecom equipment increased from 29 percent in early 2018 to 31 percent by 2024.[[1]](https://itif.org/publications/2025/10/27/backfire-export-controls-helped-huawei-and-hurt-us-firms/#_edn1) At the same time, U.S. technology companies such as Intel, Qualcomm, Teradyne, and others lost more than $33 billion in sales to Huawei between 2021 and 2024—in a conservative estimate—weakening these American companies globally while strengthening Chinese or other nations’ tech companies, including Japan. ▪**Administrative actions.** The U.S. Department of Commerce’s BIS announced the inclusion of Huawei and its subsidiaries on the Entity List in May 2019, arguing that the company “has been involved in activities contrary to the national security or foreign policy interests of the United States.”[[18]](https://itif.org/publications/2025/10/27/backfire-export-controls-helped-huawei-and-hurt-us-firms/#_edn18) The specific accusation that led to its inclusion on the Entity List was evasion of sanctions by doing business with the Iranian government. **Figure****2****: U.S. and Japanese global semiconductor market share, by revenues, 1984–2019**[[40]](https://itif.org/publications/2025/10/27/backfire-export-controls-helped-huawei-and-hurt-us-firms/#_edn40).",
+      "score": 0.00045652693,
+      "raw_content": null
+    }
+  ],
+  "response_time": 1.24,
+  "request_id": "29d4dc05-c8ca-4966-a90a-199291dc0763"
+}
+2026-03-12 23:11:53,927 - DeepResearch - DEBUG - 搜索查询 'European open source hardware project cellular automaton quadrilateral to triangular design' 的原始结果:
+{
+  "query": "European open source hardware project cellular automaton quadrilateral to triangular design",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.researchgate.net/publication/368571884_Cellular_Automata_in_the_Triangular_Grid",
+      "title": "(PDF) Cellular Automata in the Triangular Grid - ResearchGate",
+      "content": "In the thesis, life like cellular automata are analyzed in the triangular gird based on 3-neighborhood relation that is the next state of a cell depends only on",
+      "score": 0.21403393,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SIvfGdi4e7Q",
+      "title": "Triangular Cellular Automata: The 256 Elementary CA's of the 2D ...",
+      "content": "Participants: Paul Cousin, Willem Nielsen, Brian Silverman, Brian Mboya, James Wiles, Dugan Hammock, Luke Wriglesworth, Max Boucher,",
+      "score": 0.18312602,
+      "raw_content": null
+    },
+    {
+      "url": "https://demonstrations.wolfram.com/2D2CR1CellularAutomatonOnATriangularGrid/",
+      "title": "2D 2C R1 Cellular Automaton on a Triangular Grid",
+      "content": "# 2D 2C R1 Cellular Automaton on a Triangular Grid. 2D Triangular Cellular Automata on a Distorted Grid with Holes. 2D Cellular Automaton on a Triangulated Surface. A Cellular Automaton Mapped on the Surface of a Cylinder. 3D Layers Evolution View of a 2D Totalistic Cellular Automaton. 2D Heat Diffusion Using a Search-Update-Feedback Cellular Automaton (SCA) Approach. A Cellular Automaton Mapped on the Surface of a Cuboid. Visualizing the Coarse Graining of a Cellular Automaton. Two-Dimensional Recursive Subdivision of the Evolution of a Cellular Automaton. Maze Solving with a 2D Cellular Automaton. Joule (Free) Expansion Based on a Block Cellular Automaton. Five-Neighbor Two-Color Outer Totalistic 2D Cellular Automaton. Emulation of Elementary Cellular Automata by a Universal Cellular Automaton. Cellular Automaton Rules on Dendrites. 3D Layers Evolution of Five-Neighbor Outer Totalistic 2D Cellular Automaton. Huffman Encoding of the Evolution of a Cellular Automaton. Four-Color Outer Median Cellular Automata on the Grid. 2D Cellular Automaton Growth Models. Gradual Transition of States in 2D Cellular Automata.",
+      "score": 0.17167166,
+      "raw_content": null
+    },
+    {
+      "url": "https://cordis.europa.eu/project/id/793800",
+      "title": "Re-meshing of a given triangle mesh surface to a quad ... - CORDIS",
+      "content": "Re-meshing of a given triangle mesh surface to a quad mesh using physically motivated methods based on the Ginzburg--Landau potential and solved",
+      "score": 0.17046688,
+      "raw_content": null
+    },
+    {
+      "url": "https://arxiv.org/html/2309.15795v5",
+      "title": "Triangular Automata The 256 Elementary Cellular Automata ... - arXiv",
+      "content": "The limit of this series of matrices 𝒜∞subscript𝒜\\mathcal{A}\\_{\\infty}caligraphic\\_A start\\_POSTSUBSCRIPT ∞ end\\_POSTSUBSCRIPT is the adjacency matrix of the graph corresponding to the infinite triangular grid. |  | 𝒞=(c⁢(v1)⋮c⁢(vo))=4×𝒮+𝒜⋅𝒮𝒞matrix𝑐subscript𝑣1⋮𝑐subscript𝑣𝑜4𝒮⋅𝒜𝒮\\mathcal{C}=\\begin{pmatrix}c(v\\_{1})\\\\ \\vdots\\\\ c(v\\_{o})\\end{pmatrix}=4\\times\\mathcal{S}+\\mathcal{A}\\cdot\\mathcal{S}caligraphic\\_C = ( start\\_ARG start\\_ROW start\\_CELL italic\\_c ( italic\\_v start\\_POSTSUBSCRIPT 1 end\\_POSTSUBSCRIPT ) end\\_CELL end\\_ROW start\\_ROW start\\_CELL ⋮ end\\_CELL end\\_ROW start\\_ROW start\\_CELL italic\\_c ( italic\\_v start\\_POSTSUBSCRIPT italic\\_o end\\_POSTSUBSCRIPT ) end\\_CELL end\\_ROW end\\_ARG ) = 4 × caligraphic\\_S + caligraphic\\_A ⋅ caligraphic\\_S |  | (13) |. Algorithm 1 can be used to expand 𝒦𝒦\\mathcal{K}caligraphic\\_K from the coordinates of the first vertex, placed at the origin (00)matrix00\\begin{pmatrix}0&0\\end{pmatrix}( start\\_ARG start\\_ROW start\\_CELL 0 end\\_CELL start\\_CELL 0 end\\_CELL end\\_ROW end\\_ARG ). (−130)matrix130\\begin{pmatrix}-\\frac{1}{\\sqrt{3}}&0\\end{pmatrix}( start\\_ARG start\\_ROW start\\_CELL - divide start\\_ARG 1 end\\_ARG start\\_ARG square-root start\\_ARG 3 end\\_ARG end\\_ARG end\\_CELL start\\_CELL 0 end\\_CELL end\\_ROW end\\_ARG ). (130)matrix130\\begin{pmatrix}\\frac{1}{\\sqrt{3}}&0\\end{pmatrix}( start\\_ARG start\\_ROW start\\_CELL divide start\\_ARG 1 end\\_ARG start\\_ARG square-root start\\_ARG 3 end\\_ARG end\\_ARG end\\_CELL start\\_CELL 0 end\\_CELL end\\_ROW end\\_ARG ).",
+      "score": 0.15949243,
+      "raw_content": null
+    }
+  ],
+  "response_time": 1.01,
+  "request_id": "7eac7635-f7f4-468a-87bb-bb9b76ff399f"
+}
+2026-03-12 23:11:53,929 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.iese.edu/faculty-research/faculty/jan-oosterveld/
+2026-03-12 23:12:00,553 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 78370
+2026-03-12 23:12:22,202 - DeepResearch - DEBUG - 提取的关键信息: 根据提供的网页内容，内容主要涉及 IESE Business School 的 Jan Oosterveld 个人页面，但实际展示的是关于 cookies 使用的详细技术说明（如 cookie 名称、提供者、目的和存储时长）。内容中未提及任何与用户问题相关的元素，例如：
+- 开源硬件项目、元胞自动机灵感或物理设计演变（如四边形到三角形结构）。
+- 欧洲学者的机械工程背景、大学教职引退或领导商业实体的信息。
+- 商业实体在 21 世纪 10 年代中期停止欧洲业务或延续亚洲业务的相关细节。
+- 任何商业实体的英文名称。
+
+因此，网页内容与用户问题完全无关。返回：**无相关信息**。
+2026-03-12 23:12:22,202 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.me.gatech.edu/woodruff-graduates-honored-coe-alumni-awards
+2026-03-12 23:12:24,126 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 6438
+2026-03-12 23:13:01,113 - DeepResearch - DEBUG - 提取的关键信息: 根据提供的网页内容，经过仔细分析，未发现与用户问题直接相关的信息。用户问题涉及一位欧洲学者的开源硬件项目（灵感源于元胞自动机，设计从四边形演变为三角形结构）、该学者从大学教职引退后领导的商业实体，以及该实体在2010年代中期停止欧洲业务但延续亚洲业务等细节。然而，网页内容主要描述Georgia Tech College of Engineering校友奖的颁奖事件和四位获奖校友（Óscar Gallego、Dennis W. Kelly、William R. Collins, Jr. 和 Raymond J. French）的个人背景和职业成就，未提及任何开源硬件项目、元胞自动机、设计演变、商业实体名称或业务停止/延续信息。
+
+因此，返回"无相关信息"。
+2026-03-12 23:13:01,113 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://ecm.eng.auburn.edu/wp/emag/?p=9174
+2026-03-12 23:13:03,201 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 13641
+2026-03-12 23:13:27,979 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息。
+2026-03-12 23:13:27,979 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://engineering.purdue.edu/ME/People/AdvisoryCouncil
+2026-03-12 23:13:28,919 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 58288
+2026-03-12 23:14:12,054 - DeepResearch - DEBUG - 提取的关键信息: 根据提供的网页内容，经过仔细分析，未发现与用户问题相关的信息。以下是关键原因：
+
+1. **网页内容主题不相关**：网页是关于普渡大学机械工程咨询委员会的成员列表和机构信息，主要介绍委员会成员及其所属公司（如福特、康明斯、卡特彼勒等），没有提及任何开源硬件项目、元胞自动机灵感或设计演变。
+   
+2. **无欧洲学者或项目细节**：成员中虽包括一些学者和行业专家（如Graham Rowlands来自Zaha Hadid Architects），但未涉及用户描述的欧洲学者背景、项目灵感（元胞自动机）、设计从四边形到三角形的演变，或从大学引退后领导商业实体的情节。
+
+3. **无商业实体信息**：网页未提到任何实体在21世纪10年代中期停止欧洲业务、亚洲业务延续的情况，也未提供符合用户描述的商业实体名称（如格式"Alibaba Group Limited"）。
+
+4. **内容范围局限**：网页焦点是普渡大学的咨询委员会结构和成员，内容局限于教育机构事务，与用户问题的开源硬件项目、商业实体运营历史无关。
+
+因此，基于网页内容，**无相关信息**。建议检查其他来源以获取所需信息。
+2026-03-12 23:14:12,054 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.me.utexas.edu/connect/academy-of-distinguished-alumni/current-class/1531-glenn-gilkey
+2026-03-12 23:14:15,115 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 3748
+2026-03-12 23:14:41,950 - DeepResearch - DEBUG - 提取的关键信息: 根据提供的网页内容，内容与用户问题描述的场景无关。以下是分析：
+
+1. **人物背景不匹配**：网页描述的是Glenn Gilkey，一位美国机械工程师（出生于印第安纳波利斯，在德克萨斯长大），职业生涯主要在Fluor Corporation（一家工程和建筑公司）担任工业界领导职位。用户问题指定的是“欧洲学者”，但Gilkey并非学者，也没有提到大学教职或从教职引退的经历。
+
+2. **项目内容缺失**：用户问题涉及开源硬件项目、灵感源于元胞自动机、设计从四边形演变为三角形结构等细节。网页内容完全没有提及任何开源项目、元胞自动机或相关技术设计演变。
+
+3. **商业实体信息不符**：用户问题要求提取商业实体的英文名称，并提到该实体在21世纪10年代中期停止欧洲交易但延续亚洲业务。网页只提到了Fluor Corporation（吉尔基的雇主），但Fluor是一个全球工程公司，与开源硬件无关，且网页未描述其业务在2010年代中期的变化或亚洲业务延续。
+
+因此，网页内容与用户问题无关联。返回：**无相关信息**。
+2026-03-12 23:14:41,951 - DeepResearch - INFO - 开始生成总结，处理 4 个搜索结果集
+2026-03-12 23:14:41,986 - DeepResearch - DEBUG - 构建的上下文内容 (前500字符): 来源 1: Jan Oosterveld | IESE Business School
+URL: https://www.iese.edu/faculty-research/faculty/jan-oosterveld/
+内容: # Jan Oosterveld. • Master in Business Administration, IESE Business School, University of Navarra. • Mechanical Engineer (factory automation), Eindhoven’s Technical University, The Netherlands. Jan Oosterveld is Former Collaborator in the Entrepreneurship Department. He obtained his Master’s degree in Business Administration at IESE Business School, University of Navarra in Barcelo...
+2026-03-12 23:15:44,445 - DeepResearch - INFO - 成功生成总结
+2026-03-12 23:15:44,445 - DeepResearch - DEBUG - 生成的总结内容:
+基于提供的多方搜索结果，我进行了全面分析和综合。以下是我的回答：
+
+### 回答：
+在给定的搜索结果中，**没有找到相关信息**来识别用户查询中描述的欧洲学者、开源硬件项目或相关商业实体。具体原因如下：
+
+1. **关键元素缺失**：
+   - 搜索结果中未提及任何欧洲学者的开源硬件项目，其灵感源于元胞自动机（如Conway's Game of Life等），也未涉及项目设计从四边形框架演变为三角形结构的细节。
+   - 虽然来源11（ResearchGate文章）、来源12（YouTube视频）、来源13（Wolfram演示）和来源15（arXiv文章）讨论了“三角网格上的元胞自动机”（Triangular Cellular Automata），但这些内容聚焦于理论、数学模型或软件模拟，并未涉及任何具体的开源硬件项目、物理设计演变或商业实体。
+   - 来源14（CORDIS项目）提到了三角网格的表面重网格化（Re-meshing），但这是纯学术研究项目，未与开源硬件、学者或商业实体相关联。
+
+2. **学者信息不匹配**：
+   - 搜索结果中出现了多位机械工程背景的学者（如来源1的Jan Oosterveld、来源3的John MacFarlane等），但他们的专业领域是商业管理、工厂自动化或汽车工程，未涉及元胞自动机或开源硬件项目。也没有提到他们从大学引退后领导商业实体。
+
+3. **商业实体无对应**：
+   - 搜索结果中提到的商业实体（如来源19的cicor、来源20的华为、来源17的SCO Group等）均与元胞自动机、开源硬件或用户描述的演变过程无关。例如：
+     - cicor（来源19）是一家瑞士电子解决方案公司，专注于健康和连接技术，未涉及元胞自动机。
+     - 华为（来源20）是亚洲电信设备制造商，与欧洲学者无关。
+     - 其他实体（如来源16的VOC）是历史贸易组织，不匹配查询。
+   - 没有信息表明任何实体在2010年代中期停止欧洲业务后延续亚洲业务，且名称格式如“Alibaba Group Limited”。
+
+4. **其他来源不相关**：
+   - 来源6、7、8、9、10等包含中文内容或通用文本，但未提供与查询相关的具体信息。
+   - 来源18和20讨论贸易和经济政策，与硬件项目无关。
+
+### 结论：
+由于搜索结果中缺乏支持用户查询的具体证据，我无法确定该商业实体的英文名称。建议提供更多线索（如学者姓名、项目名称或额外上下文）以便进一步搜索。
