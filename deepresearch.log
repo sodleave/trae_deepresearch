@@ -1,0 +1,271 @@
+2026-03-12 07:49:34,184 - DeepResearch - INFO - 程序启动
+2026-03-12 07:49:34,185 - DeepResearch - INFO - 收到用户新问题: Who is the CEO of OpenAI?
+2026-03-12 07:49:34,185 - DeepResearch - INFO - 开始拆解用户问题: Who is the CEO of OpenAI?
+2026-03-12 07:49:56,056 - DeepResearch - DEBUG - LLM 拆解问题原始响应: ["Current CEO of OpenAI", "OpenAI CEO biography", "OpenAI executive team", "Latest news on OpenAI CEO"]
+2026-03-12 07:49:56,057 - DeepResearch - INFO - 生成的子查询列表: ['Current CEO of OpenAI', 'OpenAI CEO biography', 'OpenAI executive team', 'Latest news on OpenAI CEO']
+2026-03-12 07:49:56,057 - DeepResearch - INFO - 最终去重后的搜索查询列表: ['Who is the CEO of OpenAI?', 'OpenAI CEO biography', 'OpenAI executive team', 'Latest news on OpenAI CEO', 'Current CEO of OpenAI']
+2026-03-12 07:49:56,058 - DeepResearch - INFO - 正在执行搜索查询: Who is the CEO of OpenAI?
+2026-03-12 07:49:56,058 - DeepResearch - INFO - 正在执行搜索查询: OpenAI CEO biography
+2026-03-12 07:49:56,059 - DeepResearch - INFO - 正在执行搜索查询: OpenAI executive team
+2026-03-12 07:49:56,059 - DeepResearch - INFO - 正在执行搜索查询: Latest news on OpenAI CEO
+2026-03-12 07:49:56,063 - DeepResearch - INFO - 正在执行搜索查询: Current CEO of OpenAI
+2026-03-12 07:49:57,480 - DeepResearch - DEBUG - 搜索查询 'Latest news on OpenAI CEO' 的原始结果:
+{
+  "query": "Latest news on OpenAI CEO",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.ctvnews.ca/video/2026/03/06/ctv-national-news-ceo-of-openai-to-apologize-to-tumbler-ridge-after-mass-shooting/",
+      "title": "CEO of OpenAI to apologize to Tumbler Ridge after mass shooting",
+      "content": "B.C. Premier David Eby says conditions must be met before the OpenAI CEO Sam Altman apologizes to Tumbler Ridge in the wake of last month's",
+      "score": 0.74229145,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=FS1fU5bwVt0",
+      "title": "“Flood The World With Intelligence” – Sam Altman On AI | DRM News",
+      "content": "Sam Altman, CEO of OpenAI, spoke at BlackRock's U.S. Infrastructure Summit in Washington, D.C., discussing the rapid adoption of AI in",
+      "score": 0.6208291,
+      "raw_content": null
+    },
+    {
+      "url": "https://finance.yahoo.com/video/anthropic-vs-pentagon-heres-openais-212153556.html",
+      "title": "Anthropic vs. Pentagon: Here's what OpenAI's Altman has to say",
+      "content": "OpenAI (OPAI.PVT) CEO Sam Altman weighed in on Anthropic's (ANTH.PVT) ... latest market action, check out more Market Domination.",
+      "score": 0.59880555,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8EdjHwEO8QA",
+      "title": "OpenAI CEO Sam Altman Speaks at BlackRock Infrastructure Summit",
+      "content": "Comments · FULL INTERVIEW: OpenAI CEO Sam Altman Speaks on AI Scaling and Infrastructure Need | DRM News | AI1F · Cathie Wood: We're Still in the",
+      "score": 0.5622973,
+      "raw_content": null
+    },
+    {
+      "url": "https://finance.yahoo.com/video/why-nvidia-ceo-jensen-huang-211526903.html",
+      "title": "Why Nvidia CEO Jensen Huang might be done with OpenAI ...",
+      "content": "Nvidia (NVDA) CEO Jensen Huang said he might not make any more OpenAI (OPAI.PVT) investments. Yahoo Finance Technology Editor Dan Howley",
+      "score": 0.5559422,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.75,
+  "request_id": "812a9b36-39a8-42fa-9022-4024a403ede6"
+}
+2026-03-12 07:49:57,506 - DeepResearch - DEBUG - 搜索查询 'Current CEO of OpenAI' 的原始结果:
+{
+  "query": "Current CEO of OpenAI",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://openai.com/index/openai-announces-leadership-transition/",
+      "title": "OpenAI announces leadership transition",
+      "content": "Chief technology officer Mira Murati appointed interim CEO to lead OpenAI; Sam Altman departs the company.",
+      "score": 0.875031,
+      "raw_content": null
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/OpenAI",
+      "title": "OpenAI - Wikipedia",
+      "content": "In February 2025, OpenAI CEO Sam Altman stated that the company is interested in collaborating with the People's Republic of China, despite regulatory",
+      "score": 0.8690161,
+      "raw_content": null
+    },
+    {
+      "url": "https://openai.com/index/sam-altman-returns-as-ceo-openai-has-a-new-initial-board/",
+      "title": "Sam Altman returns as CEO, OpenAI has a new initial board",
+      "content": "Sam Altman returns as CEO, OpenAI has a new initial board. Mira Murati as CTO, Greg Brockman returns as President. Read messages from CEO Sam",
+      "score": 0.86413884,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.wired.com/story/sam-altman-openai-back/",
+      "title": "Sam Altman to Return as CEO of OpenAI - WIRED",
+      "content": "After days of corporate chaos that has captivated the tech industry, OpenAI cofounder and recently fired CEO Sam Altman is set to return to his position.",
+      "score": 0.8235701,
+      "raw_content": null
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Sam_Altman",
+      "title": "Sam Altman - Wikipedia",
+      "content": "Sam Altman · CEO of OpenAI · Chairman of Helion Energy · Chairman of Oklo Inc. (until 2025) · President of Y Combinator (until 2019).",
+      "score": 0.82220376,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.76,
+  "request_id": "bc575371-5fae-401f-9fa5-a6e1ff5404f9"
+}
+2026-03-12 07:49:57,516 - DeepResearch - DEBUG - 搜索查询 'OpenAI executive team' 的原始结果:
+{
+  "query": "OpenAI executive team",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://exa.ai/websets/directory/openai-executives",
+      "title": "OpenAI, Inc. Key Executives & Leadership Team - Exa",
+      "content": "# openai Executives | Leadership Team & Company Leadership. OpenAI develops advanced AI technologies, including the GPT family of large language models and DALL-E, aiming to create safe and beneficial artificial general intelligence that outperforms humans in most economically valuable work. OpenAI, Inc. is a leading artificial intelligence company headquartered in San Francisco, California, focused on creating advanced AI technologies such as GPT models and DALL-E. Under the guidance of the OpenAI, Inc. executives, the company continues to advance AI research and product innovation, maintaining a steadfast commitment to safety and responsible development. Her prior roles include CEO of Nextdoor, CFO at Square (Block, Inc.), and board memberships at top companies such as Walmart, ConsenSys, Slack Technologies, and New Relic, bringing world-class financial and operational leadership to the OpenAI, Inc. management team. The OpenAI, Inc. leadership team is composed of both early founders and seasoned executives with a wide ranging skill set—from AI research and engineering to business strategy and finance.",
+      "score": 0.9999453,
+      "raw_content": null
+    },
+    {
+      "url": "https://observer.com/2024/09/openai-executives-resign/",
+      "title": "OpenAI's Leadership Exodus: 9 Execs Who Left the A.I. Giant This ...",
+      "content": "In August, he announced his time off and described it as the “first time to relax since co-founding OpenAI nine years ago.” Brockman started off as OpenAI’s chief technology officer before becoming the company’s president in 2022. Adding that she will “still be rooting” for OpenAI, Murati said her primary focus currently is “doing everything in my power to ensure a smooth transition, maintaining the momentum we’ve built.” Altman praised her leadership in a statement on X, describing Murati as instrumental to OpenAI’s “development from an unknown research lab to an important company.”. Shortly after Murati’s resignation, Bob McGrew, OpenAI’s chief research officer, also announced plans to leave the company. Filed Under: Business, Artificial Intelligence, Technology, Bob McGrew, Barret Zoph, Peter Deng, Kyle Kosic, John Schulman, Jan Leike, Greg Brockman, Mira Murati, Org Chart, Andrej Karpathy, Daniela Amodei, Ilya Sutskever, Dario Amodei, Sam Altman, ChatGPT, Elon Musk, Andreessen Horowitz, Anthropic, Apple, Google, Meta, Microsoft, Nvidia, OpenAI, Palantir, PayPal, Sequoia Capital, Uber, xAI.",
+      "score": 0.99942076,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.aol.com/articles/inside-openais-org-chart-executives-151941197.html",
+      "title": "Inside OpenAI's org chart: Here are the executives in charge at the ...",
+      "content": "CEO Sam Altman has 10 direct reports, while CEO of Applications Fidji Simo has 13. To map the power players shaping OpenAI's future, Business Insider looked at the upper ranks of the company's internal organizational chart. As of February, CEO Sam Altman had 10 direct reports, including Greg Brockman, president and cofounder; Chief Scientist Jakub Pachocki; and Chief Research Officer Mark Chen. In August, Fidji Simo officially joined as the CEO of applications and began reporting to Altman. Simo had 13 direct reports, according to the February org chart, including the head of ChatGPT, Nick Turley, and Chief Financial Officer, Sarah Friar. Barret Zoph, the general manager of B2B, rejoined the company in January and began reporting to Simo. Chief Technology Officer of Applications. Dane Stuckey, the chief information security officer, has more than 20 of his own direct reports, and Peter Welinder, who works on the company's hardware device, has more than 50.",
+      "score": 0.99929583,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.businessinsider.com/openai-org-chart-sam-altman-fidji-simo-ipo-2026-2",
+      "title": "Who's in Charge at OpenAI? See the Org Chart - Business Insider",
+      "content": "* Business Insider looked at the company's internal org chart to map the executives steering the ship. * CEO Sam Altman has 10 direct reports, while CEO of Applications Fidji Simo has 13. To map the power players shaping OpenAI's future, Business Insider looked at the upper ranks of the company's internal organizational chart. As of February, CEO Sam Altman had 10 direct reports, including Greg Brockman, president and cofounder; Chief Scientist Jakub Pachocki; and Chief Research Officer Mark Chen. In August, Fidji Simo officially joined as the CEO of applications and began reporting to Altman. Simo had 13 direct reports, according to the February org chart, including the head of ChatGPT, Nick Turley, and Chief Financial Officer, Sarah Friar. Barret Zoph, the general manager of B2B, rejoined the company in January and began reporting to Simo. Dane Stuckey, the chief information security officer, has more than 20 of his own direct reports, and Peter Welinder, who works on the company's hardware device, has more than 50.",
+      "score": 0.9987551,
+      "raw_content": null
+    },
+    {
+      "url": "https://digitaldefynd.com/IQ/meet-the-c-suite-executive-team-of-openai/",
+      "title": "OpenAI Executive Leadership Team [2026] - DigitalDefynd Education",
+      "content": "[Skip to content](https://digitaldefynd.com/IQ/meet-the-c-suite-executive-team-of-openai/#main). *   [All Courses](https://digitaldefynd.com/search/?iqmenu). *   [Business](https://digitaldefynd.com/business-courses/?iqmenu). *   [Leadership](https://digitaldefynd.com/best-leadership-courses/?iqmenu). *   [C Suite](https://digitaldefynd.com/best-c-suite-executive-program/?iqmenu). *   [Business Analytics](https://digitaldefynd.com/best-business-analytics-certification-course-training/?iqmenu). *   [Entrepreneurship](https://digitaldefynd.com/best-entrepreneurship-courses/?iqmenu). *   [Sales](https://digitaldefynd.com/best-sales-executive-programs/?iqmenu). *   [Fintech](https://digitaldefynd.com/best-fintech-courses/?iqmenu). *   [Financial Modeling](https://digitaldefynd.com/best-financial-modeling-course-certification/?iqmenu). *   [Corporate Finance](https://digitaldefynd.com/best-corporate-finance-courses-certification/?iqmenu). *   [Project Finance](https://digitaldefynd.com/best-project-finance-courses/?iqmenu). *   [Value Investing](https://digitaldefynd.com/best-value-investing-course/?iqmenu). *   [Healthcare](https://digitaldefynd.com/best-healthcare-courses/?iqmenu). *   [Epidemiology](https://digitaldefynd.com/best-public-health-courses/?iqmenu). *   [Healthcare Analytics](https://digitaldefynd.com/best-healthcare-analytics-courses/?iqmenu). *   [Technology](https://digitaldefynd.com/data-science-courses/?iqmenu). *   [Artificial Intelligence](https://digitaldefynd.com/best-artificial-intelligence-courses-training-certifications/?iqmenu). *   [UX UI Design](https://digitaldefynd.com/best-ui-ux-design-course-training-certification/?iqmenu). *   [Technology Leadership](https://digitaldefynd.com/best-technology-executive-education-programs/?iqmenu). *   [University Courses](https://digitaldefynd.com/university-courses/?iqmenu). *   [Harvard University](https://digitaldefynd.com/free-harvard-university-courses/?iqmenu). *   [Stanford University](https://digitaldefynd.com/best-stanford-courses/?iqmenu). *   [Columbia](https://digitaldefynd.com/free-columbia-university-courses/?iqmenu). *   [Princeton University](https://digitaldefynd.com/best-free-princeton-courses/?iqmenu). *   [Duke University](https://digitaldefynd.com/best-duke-university-courses/?iqmenu). *   [UC Berkeley](https://digitaldefynd.com/best-duke-university-courses/?iqmenu). *   [IIM](https://digitaldefynd.com/best-free-indian-institute-of-management-iim-courses/?iqmenu). *   [Executive Programs](https://digitaldefynd.com/executive-education-courses/?iqmenu). *   [Harvard University Executive Programs](https://digitaldefynd.com/best-harvard-university-executive-education-programs/?iqmenu). *   [MIT Executive Programs](https://digitaldefynd.com/best-mit-executive-education-programs/?iqmenu). *   [Stanford University Executive Programs](https://digitaldefynd.com/best-stanford-university-executive-education-programs/?iqmenu). *   [Oxford University Executive Programs](https://digitaldefynd.com/best-oxford-university-executive-education-programs/?iqmenu). *   [Cambridge University Executive Programs](https://digitaldefynd.com/best-cambridge-university-executive-education-programs/?iqmenu). *   [Yale University Executive Programs](https://digitaldefynd.com/best-yale-university-executive-education-programs/?iqmenu). *   [Kellog Executive Programs](https://digitaldefynd.com/best-kellogg-executive-education-programs/?iqmenu). *   [CMU Executive Programs](https://digitaldefynd.com/best-cmu-executive-education-courses/?iqmenu). *   [Free Courses](https://digitaldefynd.com/free-courses/?iqmenu). *   [Free Certification Courses](https://digitaldefynd.com/best-free-certification-course-training-online/?iqmenu). *   [Free MIT Courses](https://digitaldefynd.com/best-free-mit-courses/?iqmenu). *   [Free Excel Courses](https://digitaldefynd.com/best-excel-tutorial-training-course-classes/?iqmenu). *   [Free Google Courses](https://digitaldefynd.com/best-google-courses/?iqmenu). *   [Free Finance Courses](https://digitaldefynd.com/best-finance-courses/?iqmenu). *   [Free Digital Marketing Courses](https://digitaldefynd.com/best-free-digital-marketing-certifications/?iqmenu). Kevin Weil serves as OpenAI’s Chief Product Officer, leading product development across both consumer and enterprise offerings. **Related:[Role of Continuous Learning for COO](https://digitaldefynd.com/IQ/role-of-continuous-learning-for-coo-chief-operating-officer/?wsiqopenaiexecutives)**.",
+      "score": 0.9962346,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.77,
+  "request_id": "333b1e16-46c7-4e3d-96a0-ea54abdd6db4"
+}
+2026-03-12 07:49:57,633 - DeepResearch - DEBUG - 搜索查询 'Who is the CEO of OpenAI?' 的原始结果:
+{
+  "query": "Who is the CEO of OpenAI?",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.britannica.com/money/Sam-Altman",
+      "title": "Sam Altman | Biography, OpenAI, Microsoft, & Facts",
+      "content": "Sam Altman is CEO of OpenAI, the artificial intelligence company that developed ChatGPT. **Sam Altman** (born April 22, 1985, Chicago, Illinois, U.S.) is an American entrepreneur who was president of the start-up accelerator Y Combinator from 2014 to 2019 and chief executive officer (CEO) of the artificial intelligence (AI) company OpenAI beginning in 2019. OpenAI started with $1 billion in funding provided by Altman, Musk, American entrepreneur Peter Thiel, and the cloud computing company Amazon Web Services, among others. Because AI development requires a large amount of computer resources, in 2019 OpenAI created a for-profit company that would fund OpenAI’s work but would be controlled by the nonprofit board. On November 20 Microsoft CEO Satya Nadella announced that Altman and Brockman would lead an AI research team at that company; however, negotiations continued between Altman and OpenAI’s board.",
+      "score": 0.9998247,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=L_Guz73e6fw",
+      "title": "Sam Altman: OpenAI CEO on GPT-4, ChatGPT, and the Future of AI",
+      "content": "Sam Altman is the CEO of OpenAI, the company behind GPT-4, ChatGPT, DALL-E, Codex, and many other state-of-the-art AI technologies.",
+      "score": 0.9996923,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.wsj.com/tech/ai/openai-ceo-altman-defends-pentagon-work-to-staff-calls-backlash-really-painful-76d769ec?gaa_at=eafs&gaa_n=AWEtsqfV8mZCjdLW5sB1cY0riuRxA7w1qrn80nGwG14qgUdlPnWM7l4xAfJu&gaa_ts=69b2032a&gaa_sig=dahufycNZ1DxaoFJchsTvNkrkNJQO0Nby0dqZLeq7pU1s8ANIkaBO9HJH2kUpueCbgiWxtiZ91_7gMIMaZfEdg%3D%3D",
+      "title": "OpenAI CEO Sam Altman Defends Pentagon Work to Staff, Calls ...",
+      "content": "OpenAI CEO Sam Altman defended the company's decision to allow the Pentagon to use its tools for classified work. Altman said he wished the",
+      "score": 0.99832565,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=sTnl8O_BuuE",
+      "title": "OpenAI CEO Sam Altman Speaks on AI Scaling and Infrastructure Need",
+      "content": "OpenAI CEO Sam Altman spoke at BlackRock's U.S. Infrastructure Summit in Washington, D.C., highlighting the rapid adoption of AI in business",
+      "score": 0.998103,
+      "raw_content": null
+    },
+    {
+      "url": "https://openai.com/index/sam-altman-returns-as-ceo-openai-has-a-new-initial-board/",
+      "title": "Sam Altman returns as CEO, OpenAI has a new initial board",
+      "content": "*   [Research](https://openai.com/research/index/). *   [Business](https://openai.com/business/). *   [Developers](https://openai.com/api/). *   [Company](https://openai.com/about/). *   [Foundation](https://openai.com/foundation/). *   [Foundation](https://openai.com/foundation/). *   [Message from Sam to the company](https://openai.com/index/sam-altman-returns-as-ceo-openai-has-a-new-initial-board/#message-from-sam-to-the-company). *   [Message from Bret to the company](https://openai.com/index/sam-altman-returns-as-ceo-openai-has-a-new-initial-board/#message-from-bret-to-the-company). [Company](https://openai.com/news/company-announcements/). *   [2023](https://openai.com/news/?tags=2023). [OpenAI](https://openai.com/news/?author=openai#results). [View all company articles](https://openai.com/news/company/). [OpenAI announces new members to board of directors Company Mar 8, 2024](https://openai.com/index/openai-announces-new-members-to-board-of-directors/). [Review completed & Altman, Brockman to continue to lead OpenAI Company Mar 8, 2024](https://openai.com/index/review-completed-altman-brockman-to-continue-to-lead-openai/). *   [Research Index](https://openai.com/research/index/). *   [Research Overview](https://openai.com/research/). *   [Research Residency](https://openai.com/residency/). *   [OpenAI for Science](https://openai.com/science/). *   [Economic Research](https://openai.com/signals/). *   [GPT-5.3 Instant](https://openai.com/index/gpt-5-3-instant/). *   [GPT-5](https://openai.com/gpt-5/). *   [Codex](https://openai.com/index/introducing-gpt-5-3-codex/). *   [Safety Approach](https://openai.com/safety/). *   [Trust & Transparency](https://openai.com/trust-and-transparency/). *   [Sora Overview](https://openai.com/sora/). *   [Features](https://openai.com/sora/#features). *   [Pricing](https://openai.com/sora/#pricing). *   [Platform Overview](https://openai.com/api/). *   [Pricing](https://openai.com/api/pricing/). *   [API log in(opens in a new window)](https://platform.openai.com/login). *   [Documentation(opens in a new window)](https://developers.openai.com/api/docs). *   [Developer Forum(opens in a new window)](https://community.openai.com/). *   [Business Overview](https://openai.com/business/). *   [Solutions](https://openai.com/solutions/). *   [About Us](https://openai.com/about/). *   [Our Charter](https://openai.com/charter/). *   [Foundation](https://openai.com/foundation/). *   [Careers](https://openai.com/careers/). *   [Brand](https://openai.com/brand/). *   [Help Center(opens in a new window)](https://help.openai.com/). *   [News](https://openai.com/news/). *   [Stories](https://openai.com/stories/). *   [Livestreams](https://openai.com/live/). *   [Podcast](https://openai.com/podcast/). *   [RSS](https://openai.com/news/rss.xml). *   [Other Policies](https://openai.com/policies/).",
+      "score": 0.99629277,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.88,
+  "request_id": "50663284-2e4c-410e-9a9f-5a3555136a74"
+}
+2026-03-12 07:49:57,699 - DeepResearch - DEBUG - 搜索查询 'OpenAI CEO biography' 的原始结果:
+{
+  "query": "OpenAI CEO biography",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.britannica.com/money/Sam-Altman",
+      "title": "Sam Altman | Biography, OpenAI, Microsoft, & Facts",
+      "content": "Sam Altman is CEO of OpenAI, the artificial intelligence company that developed ChatGPT. **Sam Altman** (born April 22, 1985, Chicago, Illinois, U.S.) is an American entrepreneur who was president of the start-up accelerator Y Combinator from 2014 to 2019 and chief executive officer (CEO) of the artificial intelligence (AI) company OpenAI beginning in 2019. OpenAI started with $1 billion in funding provided by Altman, Musk, American entrepreneur Peter Thiel, and the cloud computing company Amazon Web Services, among others. Because AI development requires a large amount of computer resources, in 2019 OpenAI created a for-profit company that would fund OpenAI’s work but would be controlled by the nonprofit board. On November 20 Microsoft CEO Satya Nadella announced that Altman and Brockman would lead an AI research team at that company; however, negotiations continued between Altman and OpenAI’s board.",
+      "score": 0.99982053,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.yahoo.com/news/first-chinese-language-biography-openai-093000752.html",
+      "title": "First Chinese language biography of OpenAI CEO Sam ...",
+      "content": "# First Chinese language biography of OpenAI CEO Sam Altman depicts different personalities. There have been a dozen biographies of Sam Altman, the chief executive of artificial intelligence (AI) pioneer OpenAI, since the company ignited the worldwide AI frenzy with ChatGPT in November 2022. Zhou, founder of tech media Pandaily, personally knew Altman a decade ago at Stanford and interviewed him in November 2023, days before he was temporarily ousted as OpenAI's CEO. In 2023, Altman told Zhou that he expected China to play an important role in the exploration of AI, adding that he had not figured out how to collaborate with other countries, including China. Altman also asked Zhou to recommend some Chinese AI companies he could invite to OpenAI's developer event in 2023, but later told Zhou in an interview published by business media China Entrepreneur that preparations were rushed and there was no more space available, so no Chinese firms ended up taking part.",
+      "score": 0.9996567,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.biography.com/business-leaders/a65810455/sam-altman",
+      "title": "Sam Altman: Meet the Tech Innovator at the Heart of OpenAI",
+      "content": "Sam Altman is the co-founder and CEO of OpenAI and one of the world’s leading advocates for artificial intelligence. Sam Altman, the CEO of OpenAI, is one of the leading proponents of artificial intelligence in the world. In addition to his work in AI, Altman is a successful investor and one of the richest people in the world thanks to stakes in companies such as Reddit and Stripe. In December 2015, Altman became one of 11 co-founders of OpenAI, a nonprofit artificial intelligence research company whose goal is to “advance digital intelligence in the way that is most likely to benefit humanity as a whole, unconstrained by a need to generate financial return.” Altman took control as CEO in 2019 after leaving YC. Elon Musk and Sam Altman both cofounded OpenAI but, in recent years, have publicly feuded over their differing priorities for artificial intelligence. Tesla CEO Elon Musk initially served as an OpenAI co-chair with Altman, but the pair became mired in a public rift over the latter’s direction for the company.",
+      "score": 0.9996259,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.clay.com/dossier/openai-ceo",
+      "title": "Who is the CEO of OpenAI? Sam Altman's Bio",
+      "content": "Sam Altman is an influential entrepreneur and investor, currently serving as the CEO of OpenAI, a leading artificial intelligence research organization. With a background that includes founding Loopt and holding the position of president at Y Combinator, Altman has played a significant role in shaping the AI industry. Despite facing scrutiny and a brief firing, Altman continues to lead OpenAI as its CEO. Although he left the university just a few credits shy of completing his degree, Altman's time at Stanford and his early involvement with Y Combinator as a founder of Loopt, one of the first YC-funded startups, played a crucial role in shaping his entrepreneurial journey. ## When did Sam Altman join OpenAI? Sam Altman co-founded OpenAI in 2015, an organization dedicated to ensuring that artificial general intelligence benefits all of humanity. As of 2023, Altman has been involved with OpenAI for over eight years, playing a crucial role in advancing AI technology in a safe and beneficial direction.",
+      "score": 0.9995592,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.founderoo.co/playbooks/sam-altman",
+      "title": "Sam Altman · OpenAI",
+      "content": "![Image 5](https://cdn.prod.website-files.com/5fce0f6bc9af69423eefaa13/6431fe7be9cbf0d6f52ec861_sam%20header.png). Sam Altman, the co-founder and CEO of OpenAI, has emerged as one of the most influential figures in the world of artificial intelligence (AI). [Source -Sam Altman's High School - John Burroughs School](https://twitter.com/JBSchool). Altman's courageous actions were [transformative](https://www.britannica.com/biography/Sam-Altman) for the school environment, earning him admiration from his college counselor and shaping his reputation as a proactive advocate for LGBTQ+ rights. ![Image 11](https://cdn.prod.website-files.com/5fce0f6bc9af69423eefaa13/6431feb28e9cf521116262a9_loopt.webp). ![Image 12](https://cdn.prod.website-files.com/5fce0f6bc9af69423eefaa13/6431febfbbbc4218a6e4b094_y-combinator.webp). [The story of OpenAI's inception](https://www.founderoo.co/playbooks/the-open-ai-founding-story-sam-altmans-unconventional-path-to-ai-innovation-) is as captivating as it is inspiring. [Sam Altman’s Foundational Years & Schooling](https://www.founderoo.co/playbooks/sam-altman#sam-altmans-foundational-years-and-schooling). [Sam Altman’s College](https://www.founderoo.co/playbooks/sam-altman#sam-altmans-college). [Loopt: Altman's Entrepreneurial Start](https://www.founderoo.co/playbooks/sam-altman#loopt-altmans-entrepreneurial-start). [Y Combinator: Nurturing Startups](https://www.founderoo.co/playbooks/sam-altman#y-combinator-nurturing-startups). [OpenAI: A Visionary Response to the Dawn of Artificial General Intelligence](https://www.founderoo.co/playbooks/sam-altman#openai-a-visionary-response-to-the-dawn-of-artificial-general-intelligence). [![Image 23: Redbull, Chaleo Yoovidhya, Dietrich Mateschitz](https://cdn.prod.website-files.com/5fce0f6bc9af69423eefaa13/68680d5371bc4456478c5603_Chaleo%20Yoovidhya%2C%20Dietrich%20Mateschitz%2C%20Redbull.png) Redbull, Chaleo Yoovidhya, Dietrich Mateschitz ### How Two Unlikely Founders Turned a Rejected Syrup into $20B+ Brand: The Red Bull Story](https://www.founderoo.co/playbooks/redbull-chaleo-yoovidhya-dietrich-mateschitz). [![Image 24: BrüMate](https://cdn.prod.website-files.com/5fce0f6bc9af69423eefaa13/649fe4ae7f61c6fc91480000_Dylan4.png) BrüMate ### Brumate: From warm beer woes to $100M founder success story!](https://www.founderoo.co/playbooks/brumate). [Back to playbooks](https://www.founderoo.co/old-playbooks)[![Image 25: arrow icon](https://cdn.prod.website-files.com/5fce0f6bc9af693fc4efaa04/63b1878e85d8d88fe539235c_icons8-slide-up.svg)](https://www.founderoo.co/playbooks/sam-altman#).",
+      "score": 0.9982993,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.96,
+  "request_id": "629fb790-3d15-4c11-91b3-28bb05de5fac"
+}
+2026-03-12 07:49:57,700 - DeepResearch - INFO - 开始生成总结，处理 5 个搜索结果集
+2026-03-12 07:49:57,741 - DeepResearch - DEBUG - 构建的上下文内容 (前500字符): 来源 1: Sam Altman | Biography, OpenAI, Microsoft, & Facts
+URL: https://www.britannica.com/money/Sam-Altman
+内容: Sam Altman is CEO of OpenAI, the artificial intelligence company that developed ChatGPT. **Sam Altman** (born April 22, 1985, Chicago, Illinois, U.S.) is an American entrepreneur who was president of the start-up accelerator Y Combinator from 2014 to 2019 and chief executive officer (CEO) of the artificial intelligence (AI) company OpenAI beginning in 2019. OpenAI started with $1 billion...
+2026-03-12 07:50:25,565 - DeepResearch - INFO - 成功生成总结
+2026-03-12 07:50:25,565 - DeepResearch - DEBUG - 生成的总结内容:
+Based on the search results, the current CEO of OpenAI is **Sam Altman**. Here's a breakdown of the key information supporting this:
+
+1.  **Current Role**: Multiple sources explicitly state Sam Altman is the CEO:
+    *   Britannica (Sources 1 & 6): "Sam Altman is CEO of OpenAI..."
+    *   YouTube (Sources 2, 4, 17, 19): Titles and descriptions refer to "OpenAI CEO Sam Altman".
+    *   WSJ (Source 3): Headline states "OpenAI CEO Sam Altman..."
+    *   Biography.com (Source 8): "Sam Altman is the co-founder and CEO of OpenAI..."
+    *   Clay.com (Source 9): "Sam Altman is... currently serving as the CEO of OpenAI".
+    *   Founderoo.co (Source 10): "Sam Altman, the co-founder and CEO of OpenAI..."
+    *   OpenAI Official Announcement (Source 23): "Sam Altman returns as CEO... Greg Brockman returns as President." (This confirms his reinstatement).
+    *   WIRED (Source 24): "Sam Altman is set to return to his position [as CEO]".
+    *   Wikipedia (Source 25): Lists "CEO of OpenAI" as one of his current roles.
+    *   Various other sources mention him as the CEO in context (Sources 5, 7, 12, 13, 14, 16, 18, 22).
+
+2.  **Temporary Departure & Reinstatement**:
+    *   Source 21 (OpenAI Announcement) confirms that Sam Altman was removed as CEO in late 2023, with Mira Murati appointed interim CEO.
+    *   **Crucially, Source 23 (OpenAI Announcement) explicitly states:** "Sam Altman returns as CEO, OpenAI has a new initial board." This announcement marks his formal reinstatement.
+    *   Source 24 (WIRED) reports on his return: "recently fired CEO Sam Altman is set to return to his position."
+    *   Subsequent sources (including Britannica, YouTube interviews, organizational charts from 2024) consistently refer to him as the CEO after this event.
+
+**Conclusion:**
+
+The overwhelming consensus across multiple independent sources, including OpenAI's own official announcements, confirms that **Sam Altman** is the current Chief Executive Officer (CEO) of OpenAI. This follows his reinstatement to the position after a brief departure in late 2023.
+2026-03-12 07:50:25,566 - DeepResearch - INFO - 用户退出程序
