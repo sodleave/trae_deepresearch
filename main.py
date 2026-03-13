@@ -3,6 +3,7 @@ from config import TAVILY_API_KEY, LLM_API_KEY, logger
 from search_service import search_tavily
 from llm_service import decompose_question, summarize_with_llm, extract_key_info, select_relevant_urls
 from web_reader import read_url_with_jina
+from cache_manager import cache_manager
 
 def main():
     print("=== 深度版 DeepResearch (输入 'quit' 或 'exit' 退出) ===")
@@ -45,8 +46,9 @@ def main():
         if all_results:
             print("搜索完成，正在进行深度阅读和信息提取...")
             
-            # Intelligent URL selection using LLM
-            urls_to_read = select_relevant_urls(user_input, all_results, limit=5)
+            # Intelligent URL selection using LLM (Get more candidates for fallback)
+            target_limit = 5
+            urls_to_read = select_relevant_urls(user_input, all_results, limit=target_limit)
             
             if not urls_to_read:
                 print("未能筛选出有效的 URL，尝试使用默认前 5 个...")
@@ -58,18 +60,39 @@ def main():
                             url = result.get("url")
                             if url and url not in urls:
                                 urls.append(url)
-                urls_to_read = urls[:5]
+                urls_to_read = urls[:10] # Get more for retry
 
-            print(f"计划深入阅读 {len(urls_to_read)} 个精选网页...")
+            print(f"已筛选出 {len(urls_to_read)} 个候选网页，目标阅读 {target_limit} 个...")
             
             extracted_contents = []
             
-            # Read and extract
+            # Read and extract with retry mechanism and caching
             for url in urls_to_read:
-                print(f"正在阅读: {url}")
-                content = read_url_with_jina(url)
+                # Check if we have enough content
+                if len(extracted_contents) >= target_limit:
+                    break
+                    
+                print(f"正在处理: {url}")
+                
+                # Check cache first
+                content = cache_manager.get(url)
+                from_cache = False
+                
                 if content:
-                    print(f"正在提取关键信息 ({len(content)} 字符)...")
+                    print(f"  -> 命中本地缓存")
+                    from_cache = True
+                else:
+                    # Fetch from web
+                    content = read_url_with_jina(url)
+                    if content:
+                        # Cache the successful read
+                        cache_manager.set(url, content)
+                
+                if content:
+                    # Extract info (always re-extract based on current query, or maybe we should cache extraction too? 
+                    # User said "prevent reading repeated webpages", so caching content is correct. 
+                    # Extraction depends on the query, so we re-run extraction on cached content.)
+                    print(f"  -> 正在提取关键信息 ({len(content)} 字符)...")
                     info = extract_key_info(user_input, content)
                     if info and "无相关信息" not in info:
                         extracted_contents.append({
@@ -77,6 +100,11 @@ def main():
                             "url": url,
                             "content": info
                         })
+                        print(f"  -> 提取成功 (当前进度: {len(extracted_contents)}/{target_limit})")
+                    else:
+                        print("  -> 内容与问题相关度低，跳过")
+                else:
+                    print("  -> 读取失败，尝试下一个候选网页...")
             
             if extracted_contents:
                 print(f"成功从 {len(extracted_contents)} 个网页提取信息，正在生成最终回答...")

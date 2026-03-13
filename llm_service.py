@@ -74,6 +74,7 @@ def decompose_question(query):
 def select_relevant_urls(query, search_results, limit=5):
     """
     Use LLM to intelligently select the most relevant URLs for deep reading.
+    Returns a list of URLs ranked by relevance.
     """
     if not search_results or not LLM_API_KEY:
         return []
@@ -97,16 +98,21 @@ def select_relevant_urls(query, search_results, limit=5):
     
     if not candidates:
         return []
-        
+    
+    # If the number of candidates is less than or equal to the limit, return all candidates sorted by default
+    # But to support retry mechanism, we should return all candidates if possible or at least a large enough subset
+    target_count = max(limit * 2, 10) # Request more URLs to allow for failures
+    
     if len(candidates) <= limit:
+        # If very few results, just return them all
         return [c["url"] for c in candidates]
 
-    logger.info(f"开始从 {len(candidates)} 个搜索结果中筛选前 {limit} 个最佳 URL")
+    logger.info(f"开始从 {len(candidates)} 个搜索结果中筛选前 {target_count} 个最佳 URL (目标读取: {limit})")
     
     candidates_str = json.dumps(candidates, ensure_ascii=False, indent=2)
     
     prompt = f"""
-    请作为一名专业研究员，根据用户问题从以下搜索结果中筛选出最值得深入阅读的网页。
+    请作为一名专业研究员，根据用户问题从以下搜索结果中筛选出最值得深入阅读的网页，并按相关性排序。
     
     用户问题: {query}
     
@@ -123,7 +129,7 @@ def select_relevant_urls(query, search_results, limit=5):
     {{
         "selected_urls": ["url1", "url2", ...]
     }}
-    请只返回 {limit} 个最相关的 URL。
+    请返回最相关的 {target_count} 个 URL，按优先级排序。
     """
 
     client = OpenAI(
@@ -154,7 +160,7 @@ def select_relevant_urls(query, search_results, limit=5):
     except Exception as e:
         error_msg = f"LLM 筛选 URL 失败: {e}"
         logger.error(error_msg)
-        return [c["url"] for c in candidates[:limit]]
+        return [c["url"] for c in candidates[:target_count]]
 
 def extract_key_info(query, content):
     """
