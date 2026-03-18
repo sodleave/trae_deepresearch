@@ -1,3 +1,5 @@
 python-dotenv
 requests
 openai
+sentence-transformers
+numpy

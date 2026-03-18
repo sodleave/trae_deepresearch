@@ -1,6 +1,25 @@
 import json
+import numpy as np
 from openai import OpenAI
 from config import LLM_API_KEY, LLM_BASE_URL, LLM_MODEL, logger
+
+# 尝试导入 sentence_transformers，如果不存在则在运行时提示
+try:
+    from sentence_transformers import SentenceTransformer
+    # 延迟加载模型，避免在未调用时消耗内存
+    _embedding_model = None
+    
+    def get_embedding_model():
+        global _embedding_model
+        if _embedding_model is None:
+            logger.info("正在加载本地多语言 Embedding 模型 (paraphrase-multilingual-MiniLM-L12-v2)...")
+            # 使用支持 50+ 种语言的轻量级多语言模型，适配中英文混合场景
+            _embedding_model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+            logger.info("本地多语言 Embedding 模型加载完成。")
+        return _embedding_model
+except ImportError:
+    SentenceTransformer = None
+    logger.warning("未安装 sentence-transformers，如果需要使用本地过滤，请运行: pip install sentence-transformers")
 
 def decompose_question(query):
     """
@@ -73,10 +92,11 @@ def decompose_question(query):
 
 def select_relevant_urls(query, search_results, limit=5):
     """
-    Use LLM to intelligently select the most relevant URLs for deep reading.
+    Use local Embedding model (if available) to efficiently select the most relevant URLs for deep reading.
+    Falls back to simple truncation if SentenceTransformer is not installed.
     Returns a list of URLs ranked by relevance.
     """
-    if not search_results or not LLM_API_KEY:
+    if not search_results:
         return []
 
     # Preprocess results
@@ -99,67 +119,37 @@ def select_relevant_urls(query, search_results, limit=5):
     if not candidates:
         return []
     
-    # If the number of candidates is less than or equal to the limit, return all candidates sorted by default
-    # But to support retry mechanism, we should return all candidates if possible or at least a large enough subset
-    target_count = max(limit * 2, 10) # Request more URLs to allow for failures
+    target_count = max(limit * 2, 10)
     
     if len(candidates) <= limit:
-        # If very few results, just return them all
         return [c["url"] for c in candidates]
 
     logger.info(f"开始从 {len(candidates)} 个搜索结果中筛选前 {target_count} 个最佳 URL (目标读取: {limit})")
     
-    candidates_str = json.dumps(candidates, ensure_ascii=False, indent=2)
-    
-    prompt = f"""
-    请作为一名专业研究员，根据用户问题从以下搜索结果中筛选出最值得深入阅读的网页，并按相关性排序。
-    
-    用户问题: {query}
-    
-    搜索结果列表:
-    {candidates_str}
-    
-    筛选标准：
-    1. 相关性：内容必须直接通过事实回答用户问题。
-    2. 权威性：优先选择官方文档、知名媒体或技术博客。
-    3. 多样性：如果可能，选择不同来源以获得多角度信息。
-    4. 信息量：摘要中包含具体细节的优先。
-    
-    请返回一个 JSON 对象，格式如下：
-    {{
-        "selected_urls": ["url1", "url2", ...]
-    }}
-    请返回最相关的 {target_count} 个 URL，按优先级排序。
-    """
-
-    client = OpenAI(
-        api_key=LLM_API_KEY,
-        base_url=LLM_BASE_URL
-    )
-
-    try:
-        response = client.chat.completions.create(
-            model=LLM_MODEL,
-            messages=[
-                {"role": "system", "content": "你是一个擅长筛选高质量信息的研究助手。"},
-                {"role": "user", "content": prompt}
-            ],
-            response_format={"type": "json_object"}
-        )
-        content = response.choices[0].message.content
-        logger.debug(f"URL 筛选原始响应: {content}")
-        
-        data = json.loads(content)
-        selected_urls = data.get("selected_urls", [])
-        
-        valid_urls = [url for url in selected_urls if url in seen_urls]
-        
-        logger.info(f"LLM 筛选出的 URL ({len(valid_urls)}个): {valid_urls}")
-        return valid_urls
-        
-    except Exception as e:
-        error_msg = f"LLM 筛选 URL 失败: {e}"
-        logger.error(error_msg)
+    if SentenceTransformer is not None:
+        try:
+            model = get_embedding_model()
+            # 准备待编码文本
+            texts = [f"{c['title']} {c['snippet']}" for c in candidates]
+            
+            # 计算查询和候选文本的 Embedding
+            query_embedding = model.encode(query, normalize_embeddings=True)
+            doc_embeddings = model.encode(texts, normalize_embeddings=True)
+            
+            # 计算余弦相似度 (因为已经归一化，点积即为余弦相似度)
+            similarities = np.dot(doc_embeddings, query_embedding)
+            
+            # 排序
+            sorted_indices = np.argsort(similarities)[::-1]
+            selected_urls = [candidates[i]["url"] for i in sorted_indices[:target_count]]
+            
+            logger.info(f"本地 Embedding 模型筛选出的 URL ({len(selected_urls)}个): {selected_urls}")
+            return selected_urls
+        except Exception as e:
+            logger.error(f"本地 Embedding 模型筛选失败: {e}，回退到默认排序")
+            return [c["url"] for c in candidates[:target_count]]
+    else:
+        logger.warning("未安装 sentence-transformers，直接返回前N个结果")
         return [c["url"] for c in candidates[:target_count]]
 
 def extract_key_info(query, content):
