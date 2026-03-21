@@ -1,7 +1,34 @@
 import json
+import re
 import numpy as np
 from openai import OpenAI
 from config import LLM_API_KEY, LLM_BASE_URL, LLM_MODEL, logger
+
+def clean_json_string(json_str):
+    """
+    Clean JSON string by removing markdown code blocks and other common formatting issues.
+    """
+    if not isinstance(json_str, str):
+        return json_str
+        
+    # Remove markdown code block syntax
+    cleaned = re.sub(r'^```(?:json)?\s*', '', json_str.strip())
+    cleaned = re.sub(r'\s*```$', '', cleaned)
+    
+    # Sometimes LLM might add prefix like "Here is the JSON: "
+    # Try to find the first '{' or '[' and last '}' or ']'
+    start_idx_dict = cleaned.find('{')
+    start_idx_list = cleaned.find('[')
+    
+    end_idx_dict = cleaned.rfind('}')
+    end_idx_list = cleaned.rfind(']')
+    
+    if start_idx_dict != -1 and end_idx_dict != -1 and (start_idx_list == -1 or start_idx_dict < start_idx_list):
+        cleaned = cleaned[start_idx_dict:end_idx_dict + 1]
+    elif start_idx_list != -1 and end_idx_list != -1:
+        cleaned = cleaned[start_idx_list:end_idx_list + 1]
+        
+    return cleaned
 
 # 尝试导入 sentence_transformers，如果不存在则在运行时提示
 try:
@@ -60,7 +87,8 @@ def decompose_question(query):
         logger.debug(f"LLM 拆解问题原始响应: {content}")
         
         try:
-            data = json.loads(content)
+            cleaned_content = clean_json_string(content)
+            data = json.loads(cleaned_content)
             sub_queries = []
             
             if isinstance(data, list):
@@ -202,69 +230,9 @@ def extract_key_info(query, content):
         logger.error(error_msg)
         return None
 
-def summarize_with_llm(query, all_search_results):
+def plan_next_step(original_query, action_history=None):
     """
-    Summarize search results using LLM.
-    """
-    if not LLM_API_KEY:
-        error_msg = "错误: 未配置 LLM_API_KEY"
-        print(error_msg)
-        logger.error(error_msg)
-        return None
-
-    logger.info(f"开始生成总结，处理 {len(all_search_results)} 个搜索结果集")
-
-    client = OpenAI(
-        api_key=LLM_API_KEY,
-        base_url=LLM_BASE_URL
-    )
-
-    context = ""
-    source_count = 1
-    
-    for search_results in all_search_results:
-        if search_results and "results" in search_results:
-            for result in search_results["results"]:
-                source_entry = f"来源 {source_count}: {result.get('title', '未知标题')}\nURL: {result.get('url', '未知URL')}\n内容: {result.get('content', '')}\n\n"
-                context += source_entry
-                source_count += 1
-    
-    logger.debug(f"构建的上下文内容 (前500字符): {context[:500]}...")
-    
-    prompt = f"""
-    请根据以下多方搜索结果回答用户的问题。
-    
-    用户问题: {query}
-    
-    搜索结果:
-    {context}
-    
-    请综合上述信息，给出一个清晰、准确、全面的回答。如果搜索结果中没有相关信息，请直接说明。
-    """
-
-    try:
-        response = client.chat.completions.create(
-            model=LLM_MODEL,
-            messages=[
-                {"role": "system", "content": "你是一个乐于助人的研究助手。"},
-                {"role": "user", "content": prompt}
-            ]
-        )
-        summary = response.choices[0].message.content
-        logger.info("成功生成总结")
-        logger.debug(f"生成的总结内容:\n{summary}")
-        return summary
-    except Exception as e:
-        error_msg = f"LLM 调用失败: {e}"
-        print(error_msg)
-        logger.error(error_msg)
-        return None
-
-def plan_next_step(original_query, confirmed_info=None):
-    """
-    Plan the next step by analyzing the original query and confirmed information.
-    Determines if the original question is fully answered. If not, identifies the
-    most important missing piece of information and formulates a simple question for it.
+    Plan the next step by analyzing the original query and the history of think, act, and observe.
     """
     if not LLM_API_KEY:
         error_msg = "错误: 未配置 LLM_API_KEY"
@@ -279,34 +247,64 @@ def plan_next_step(original_query, confirmed_info=None):
         base_url=LLM_BASE_URL
     )
 
-    confirmed_text = ""
-    if confirmed_info:
-        confirmed_text = "目前已确认的信息:\n" + "\n".join([f"- {info}" for info in confirmed_info]) + "\n\n"
+    history_text = ""
+    if action_history and len(action_history) > 0:
+        history_text = "过往探索历史:\n"
+        for i, hist in enumerate(action_history):
+            history_text += f"第 {i+1} 轮:\n"
+            
+            think_items = hist.get("think", [])
+            if think_items:
+                history_text += "  Think (思考):\n"
+                for t in think_items:
+                    history_text += f"    - {t}\n"
+                    
+            history_text += f"  Act (动作): {hist.get('act', '未知')}\n"
+            
+            observe_items = hist.get("observe", [])
+            if observe_items:
+                history_text += "  Observe (观察结果):\n"
+                for o in observe_items:
+                    history_text += f"    - {o}\n"
+            history_text += "\n"
     else:
-        confirmed_text = "目前没有任何已确认的信息。\n\n"
+        history_text = "目前是第一轮，没有过往探索历史。\n\n"
 
     prompt = f"""
-    你是一个智能的研究规划助手。你的任务是分析用户的原始问题以及目前已经收集到的信息，规划下一步的搜索动作。
-    
+    你是一个“多跳事实求证”规划器。目标不是泛搜，而是用最少轮次锁定唯一答案。
+    你必须基于原始问题与历史观察，规划下一步最有信息增益的动作。
+
     用户原始问题: {original_query}
-    
-    {confirmed_text}
-    
-    请仔细分析，执行以下步骤：
-    1. 判断目前的“已确认的信息”是否已经足够完整地回答用户的“原始问题”。
-    2. 如果信息已经足够，请直接基于已确认的信息生成对原始问题的最终回答。
-       - 注意：最终回答必须**足够精简**，直接给出答案，不要包含任何解释、背景介绍或备注。
-       - 注意：请根据“用户原始问题”的语境，推测并使用最可能的语言（例如中文或英文）来生成回答。
-    3. 如果信息不足，请分析为了回答原始问题，还**缺失**哪些关键信息。
-    4. 从缺失的信息中，挑选出**最优先、最核心**需要确认的**一个**信息点。
-    5. 将这个最优先的信息点转化为一个**极其简洁、明确的搜索问题**（next_question）。这个新问题不应该像原始问题那样复杂，而应该聚焦于填补当前最大的知识空白。
-    
+
+    {history_text}
+
+    规划原则（必须遵守）：
+    1. 先抽取“硬约束”再搜索：时间范围、地点、身份/头衔、事件、机构、作品、数值区间、语言与输出格式要求。
+    2. 优先选择“区分度最高”的锚点作为下一跳，而不是宽泛主题词。
+       - 高区分度锚点示例：罕见事件组合、精确年份+机构、独特关系链、限定区间+身份组合。
+       - 低区分度锚点示例：泛领域词（如“历史背景”“公司介绍”）。
+    3. 每一轮只解决一个关键不确定点，但该点必须是当前瓶颈。
+    4. 禁止重复历史上已验证无效或同义的搜索方向；若出现冲突信息，优先规划“判别真伪”的查询。
+    5. 当且仅当证据链闭合时才给最终答案：核心实体已唯一、关键约束不冲突、答案格式可直接输出。
+
+    先进行 Think（3-6 条，精炼）：
+    - 归纳当前已确认事实（只写关键事实）。
+    - 点出尚未闭合的关键缺口。
+    - 明确“下一跳为什么是最高优先级”（用区分度/信息增益解释）。
+    - 若接近可回答，说明还差的最后一个核验点。
+
+    再进行 Act：
+    - 若证据链已闭合：is_fully_answered=true，并输出 final_answer。
+      final_answer 必须严格按题目要求格式，极简，不加解释。
+    - 若未闭合：is_fully_answered=false，并输出 next_question。
+      next_question 必须是“单一、可检索、强约束”的问题句，优先包含可唯一定位的限定词（人名/机构名/年份/地点/作品名/事件名中的至少两个）。
+
     请返回一个 JSON 对象，格式如下：
     {{
-        "is_fully_answered": boolean, // true 表示已收集足够信息可以回答原始问题，false 表示还需要继续搜索
-        "final_answer": string, // 如果 is_fully_answered 为 true，基于已确认信息写出最终回答；否则留空
-        "missing_info_analysis": string, // 如果 is_fully_answered 为 false，简要分析还缺失什么信息
-        "next_question": string // 如果 is_fully_answered 为 false，生成一个简洁明确的下一步搜索问题
+        "think": [string],
+        "is_fully_answered": boolean,
+        "final_answer": string,
+        "next_question": string
     }}
     """
 
@@ -314,7 +312,7 @@ def plan_next_step(original_query, confirmed_info=None):
         response = client.chat.completions.create(
             model=LLM_MODEL,
             messages=[
-                {"role": "system", "content": "你是一个逻辑严密的搜索规划助手，擅长将复杂问题拆解为逐步求证的简单问题。"},
+                {"role": "system", "content": "你是一个严谨的多跳检索规划助手，擅长用高区分度锚点快速缩小搜索空间并完成证据闭环。"},
                 {"role": "user", "content": prompt}
             ],
             response_format={"type": "json_object"}
@@ -323,7 +321,8 @@ def plan_next_step(original_query, confirmed_info=None):
         logger.debug(f"规划下一步原始响应: {content}")
         
         try:
-            result = json.loads(content)
+            cleaned_content = clean_json_string(content)
+            result = json.loads(cleaned_content)
             return result
         except json.JSONDecodeError:
             logger.error(f"解析规划结果 JSON 失败: {content}")
@@ -368,22 +367,21 @@ def analyze_search_results(current_search_query, all_search_results):
                 source_count += 1
     
     prompt = f"""
-    你是一个严谨的信息验证助手。你的任务是根据提供的搜索结果，判断是否能够回答**当前的具体搜索查询**，并提取确认的信息。
+    你是一个专业的信息提取助手。你的唯一任务是根据提供的搜索结果，尽可能详尽地提取出与**当前的搜索查询**相关的关键事实和信息。
     
     当前搜索查询: {current_search_query}
     
     本次搜索结果:
     {context}
     
-    请仔细分析上述信息，执行以下步骤：
-    1. 判断搜索结果中是否包含了能够直接回答“当前搜索查询”的明确信息。
-    2. 如果可以回答，请将得到的明确信息提取出来，作为“新确认的信息”。信息应该具体、客观，可以直接作为后续分析的上下文。
-    3. 如果不能回答，说明本次搜索没有找到相关答案。
+    任务要求：
+    1. 仔细阅读所有搜索结果，提取出所有与“当前搜索查询”相关的具体、客观的明确事实信息。
+    2. 你不需要判断信息是否完整或是否解答了问题，只要信息有价值且与查询相关，就应该被提取。
+    3. 提取的信息应该是独立的、可理解的事实陈述。
     
     请返回一个 JSON 对象，格式如下：
     {{
-        "is_answered": boolean, // true 表示当前查询被解答，false 表示未找到答案
-        "new_confirmed_info": [string] // 如果 is_answered 为 true，列出提取出的新确认信息点；否则为空列表
+        "extracted_info": [string] // 列出提取出的所有相关关键信息点；如果没有提取到任何相关信息，则为空列表
     }}
     """
 
@@ -391,7 +389,7 @@ def analyze_search_results(current_search_query, all_search_results):
         response = client.chat.completions.create(
             model=LLM_MODEL,
             messages=[
-                {"role": "system", "content": "你是一个严谨的研究助手，擅长分析信息完整性。"},
+                {"role": "system", "content": "你是一个专业的研究助手，擅长从长文中提取纯粹的客观事实。"},
                 {"role": "user", "content": prompt}
             ],
             response_format={"type": "json_object"}
@@ -400,7 +398,8 @@ def analyze_search_results(current_search_query, all_search_results):
         logger.debug(f"分析结果原始响应: {content}")
         
         try:
-            result = json.loads(content)
+            cleaned_content = clean_json_string(content)
+            result = json.loads(cleaned_content)
             return result
         except json.JSONDecodeError:
             logger.error(f"解析分析结果 JSON 失败: {content}")
@@ -468,3 +467,76 @@ def generate_final_answer(original_query, confirmed_info):
         print(error_msg)
         logger.error(error_msg)
         return "生成回答失败，请检查日志。"
+
+def validate_answer(original_query, confirmed_info, candidate_answer):
+    """
+    Validate if the candidate answer fully resolves the original query based on confirmed info.
+    If not, provide the next question to search for.
+    """
+    if not LLM_API_KEY:
+        error_msg = "错误: 未配置 LLM_API_KEY"
+        print(error_msg)
+        logger.error(error_msg)
+        return None
+
+    logger.info(f"开始验证答案: {candidate_answer}")
+    
+    client = OpenAI(
+        api_key=LLM_API_KEY,
+        base_url=LLM_BASE_URL
+    )
+
+    confirmed_text = ""
+    if confirmed_info:
+        confirmed_text = "已确认的信息:\n" + "\n".join([f"- {info}" for info in confirmed_info]) + "\n\n"
+    else:
+        confirmed_text = "目前没有任何已确认的信息。\n\n"
+
+    prompt = f"""
+    你是一个严格的答案验证专家。你的任务是判断给定的“候选答案”是否能够基于“已确认的信息”，完全、准确地回答“原始问题”。
+    
+    原始问题: {original_query}
+    
+    {confirmed_text}
+    
+    候选答案: {candidate_answer}
+    
+    请仔细分析，执行以下步骤：
+    1. 判断候选答案是否直接且完整地回答了原始问题。
+    2. 判断候选答案中的事实是否都能在“已确认的信息”中找到依据，不能有捏造。
+    3. 如果认为答案合格，"is_correct" 设为 true。
+    4. 如果认为答案不合格（如信息不足、未回答核心问题、有事实错误等），"is_correct" 设为 false，并在 "reason" 中说明原因，同时在 "next_question" 中提出下一步需要搜索确认的核心问题。
+    
+    请返回一个 JSON 对象，格式如下：
+    {{
+        "is_correct": boolean, // true 表示答案合格，false 表示不合格
+        "reason": string, // 如果不合格，简要说明原因；合格则留空
+        "next_question": string // 如果不合格，生成一个简洁明确的下一步搜索问题；合格则留空
+    }}
+    """
+
+    try:
+        response = client.chat.completions.create(
+            model=LLM_MODEL,
+            messages=[
+                {"role": "system", "content": "你是一个严谨的验证助手，擅长找出现有答案和信息中的漏洞。"},
+                {"role": "user", "content": prompt}
+            ],
+            response_format={"type": "json_object"}
+        )
+        content = response.choices[0].message.content
+        logger.debug(f"验证答案原始响应: {content}")
+        
+        try:
+            cleaned_content = clean_json_string(content)
+            result = json.loads(cleaned_content)
+            return result
+        except json.JSONDecodeError:
+            logger.error(f"解析验证结果 JSON 失败: {content}")
+            return None
+            
+    except Exception as e:
+        error_msg = f"LLM 验证失败: {e}"
+        print(error_msg)
+        logger.error(error_msg)
+        return None
