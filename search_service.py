@@ -21,7 +21,32 @@ _TAVILY_SESSION.mount(
     )
 )
 
-def search_tavily(query):
+def _run_tavily_search(payload):
+    response = _TAVILY_SESSION.post("https://api.tavily.com/search", json=payload, timeout=_TAVILY_TIMEOUT)
+    response.raise_for_status()
+    return response.json()
+
+def _merge_results(primary, secondary, max_keep):
+    merged = []
+    seen = set()
+    for block in [primary, secondary]:
+        if not block or "results" not in block:
+            continue
+        for item in block["results"]:
+            url = item.get("url")
+            if not url or url in seen:
+                continue
+            seen.add(url)
+            merged.append(item)
+            if len(merged) >= max_keep:
+                break
+        if len(merged) >= max_keep:
+            break
+    base = primary if primary else {"query": "", "results": []}
+    base["results"] = merged
+    return base
+
+def search_tavily(query, search_depth="basic", max_results=8, allow_fallback=True):
     """
     Search using Tavily API.
     """
@@ -31,22 +56,37 @@ def search_tavily(query):
         logger.error(error_msg)
         return None
         
-    url = "https://api.tavily.com/search"
     payload = {
         "api_key": TAVILY_API_KEY,
         "query": query,
-        "search_depth": "basic",
+        "search_depth": search_depth,
         "include_answer": False,
         "include_images": False,
         "include_raw_content": False,
-        "max_results": 5,
+        "max_results": max_results,
     }
     
     try:
         logger.info(f"正在执行搜索查询: {query}")
-        response = _TAVILY_SESSION.post(url, json=payload, timeout=_TAVILY_TIMEOUT)
-        response.raise_for_status()
-        result = response.json()
+        result = _run_tavily_search(payload)
+        primary_count = len(result.get("results", []))
+
+        if allow_fallback and primary_count < max(3, max_results // 2):
+            logger.info(f"搜索召回偏低({primary_count})，触发补偿检索: {query}")
+            fallback_payload = {
+                "api_key": TAVILY_API_KEY,
+                "query": query,
+                "search_depth": "advanced",
+                "include_answer": False,
+                "include_images": False,
+                "include_raw_content": False,
+                "max_results": min(max_results + 4, 12),
+            }
+            try:
+                fallback_result = _run_tavily_search(fallback_payload)
+                result = _merge_results(result, fallback_result, min(max_results + 4, 12))
+            except requests.exceptions.RequestException as e:
+                logger.warning(f"补偿检索失败 ({query}): {e}")
         
         # Log search results
         logger.debug(f"搜索查询 '{query}' 的原始结果:\n{json.dumps(result, ensure_ascii=False, indent=2)}")

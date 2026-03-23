@@ -1,9 +1,12 @@
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from time import perf_counter
 from config import TAVILY_API_KEY, LLM_API_KEY, logger
 from search_service import search_tavily
 from llm_service import decompose_question, extract_key_info, select_relevant_urls, analyze_search_results, plan_next_step, generate_final_answer, validate_answer
 from web_reader import read_url_with_jina
 from cache_manager import cache_manager
+
+QUESTION_TIME_BUDGET_SECONDS = 9 * 60
 
 def process_url(url, current_question):
     """
@@ -65,8 +68,21 @@ def main():
         iteration = 0
         max_iterations = 3
         final_answer = None
+        question_started_at = perf_counter()
+        logger.info(f"问题处理开始，预算 {QUESTION_TIME_BUDGET_SECONDS}s")
 
         while iteration < max_iterations:
+            elapsed_before_iteration = perf_counter() - question_started_at
+            remaining_before_iteration = QUESTION_TIME_BUDGET_SECONDS - elapsed_before_iteration
+            logger.info(f"第 {iteration + 1} 轮开始前耗时 {elapsed_before_iteration:.2f}s，剩余预算 {remaining_before_iteration:.2f}s")
+            if remaining_before_iteration <= 0:
+                print("\n>>> 已接近时间上限，基于当前已收集信息强制生成答案... <<<")
+                all_observed = []
+                for hist in action_history:
+                    all_observed.extend(hist.get("observe", []))
+                final_answer = generate_final_answer(original_question, all_observed)
+                break
+
             iteration += 1
             print(f"\n>>> 第 {iteration} 轮探索 <<<")
             
@@ -127,13 +143,20 @@ def main():
             print(f"正在并发搜索 {len(search_queries)} 个查询 ...")
             
             all_results = []
+            search_depth = "basic" if iteration == 1 else "advanced"
+            max_results = 8 if iteration == 1 else 10
             with ThreadPoolExecutor(max_workers=5) as executor:
                 # Concurrent search
-                futures = [executor.submit(search_tavily, q) for q in search_queries]
+                futures = [executor.submit(search_tavily, q, search_depth=search_depth, max_results=max_results) for q in search_queries]
                 for future in futures:
                     result = future.result()
                     if result:
                         all_results.append(result)
+            if not all_results:
+                print("首轮检索为空，触发一次兜底检索...")
+                fallback_result = search_tavily(current_question, search_depth="advanced", max_results=12, allow_fallback=False)
+                if fallback_result:
+                    all_results.append(fallback_result)
             
             extracted_contents = []
             
@@ -237,6 +260,17 @@ def main():
                 "act": f"搜索确认: {current_question}",
                 "observe": new_confirmed if new_confirmed else ["未提取到相关信息"]
             })
+
+            elapsed_after_iteration = perf_counter() - question_started_at
+            remaining_after_iteration = QUESTION_TIME_BUDGET_SECONDS - elapsed_after_iteration
+            logger.info(f"第 {iteration} 轮结束耗时 {elapsed_after_iteration:.2f}s，剩余预算 {remaining_after_iteration:.2f}s")
+            if remaining_after_iteration <= 0 and not final_answer:
+                print("\n>>> 已接近时间上限，基于当前已收集信息强制生成答案... <<<")
+                all_observed = []
+                for hist in action_history:
+                    all_observed.extend(hist.get("observe", []))
+                final_answer = generate_final_answer(original_question, all_observed)
+                break
         
         # After max iterations, check one last time if we can answer
         if not final_answer:
@@ -259,6 +293,9 @@ def main():
             else:
                 print("未能收集到有效信息。")
             print("================")
+
+        total_elapsed = perf_counter() - question_started_at
+        logger.info(f"问题处理完成，总耗时 {total_elapsed:.2f}s")
 
 if __name__ == "__main__":
     main()

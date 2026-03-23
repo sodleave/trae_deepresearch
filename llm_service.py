@@ -42,64 +42,6 @@ def clean_json_string(json_str):
         
     return cleaned
 
-def _plan_anchor_score(question):
-    if not isinstance(question, str):
-        return 0
-    score = 0
-    score += len(re.findall(r'《[^》]{1,40}》', question))
-    score += len(re.findall(r'\b[A-Z][A-Za-z0-9_-]{2,}\b', question))
-    if re.search(r'\b(19|20)\d{2}\b|20\d0年代|19\d0年代', question):
-        score += 1
-    keyword_hits = set(re.findall(r'腾讯|阿里|字节|微软|谷歌|OpenAI|Riot|Valve|索尼|任天堂|公司|集团|大学|游戏|角色|武器|收购|年份|地点|机构', question))
-    score += min(len(keyword_hits), 3)
-    return score
-
-def _is_repeated_direction(question, action_history):
-    if not isinstance(question, str) or not action_history:
-        return False
-    normalized_q = re.sub(r'\s+', '', question).lower()
-    for hist in action_history:
-        act = hist.get("act", "")
-        if not isinstance(act, str):
-            continue
-        normalized_act = re.sub(r'\s+', '', act).lower()
-        if normalized_q and (normalized_q in normalized_act or normalized_act in normalized_q):
-            return True
-    return False
-
-def _self_check_plan_result(result, original_query, action_history):
-    if not isinstance(result, dict):
-        return None
-
-    think = result.get("think", [])
-    if isinstance(think, str):
-        think = [think]
-    if not isinstance(think, list):
-        think = []
-    think = [str(x).strip() for x in think if str(x).strip()][:6]
-
-    is_fully_answered = bool(result.get("is_fully_answered", False))
-    final_answer = str(result.get("final_answer", "") or "").strip()
-    next_question = str(result.get("next_question", "") or "").strip()
-
-    if is_fully_answered:
-        next_question = ""
-    else:
-        final_answer = ""
-        if not next_question:
-            next_question = f"围绕该原始问题，当前最关键且可唯一定位的瓶颈实体是什么？请给出该实体名称，并同时给出机构名与时间锚点进行核验：{original_query}"
-        if _plan_anchor_score(next_question) < 2:
-            next_question = f"{next_question} 请在问题中包含至少两个锚点（如机构名+作品名，或年份+角色名）。"
-        if _is_repeated_direction(next_question, action_history):
-            next_question = f"不要重复已验证方向。请仅针对当前瓶颈，提出一个包含机构名与作品名的单一核验问题：{original_query}"
-
-    return {
-        "think": think,
-        "is_fully_answered": is_fully_answered,
-        "final_answer": final_answer,
-        "next_question": next_question
-    }
-
 # 尝试导入 sentence_transformers，如果不存在则在运行时提示
 try:
     from sentence_transformers import SentenceTransformer
@@ -254,41 +196,64 @@ def extract_key_info(query, content):
     if not content or not LLM_API_KEY:
         return None
         
-    max_len = 10000
-    truncated_content = content[:max_len]
-    if len(content) > max_len:
-        truncated_content += "\n...(内容已截断)..."
+    def build_chunks(text):
+        max_len = 8000
+        if len(text) <= max_len:
+            return [text]
+        head = text[:max_len]
+        tail = text[-max_len:]
+        mid_start = max((len(text) // 2) - (max_len // 2), 0)
+        middle = text[mid_start:mid_start + max_len]
+        chunks = [head, middle, tail]
+        unique_chunks = []
+        seen = set()
+        for chunk in chunks:
+            key = hash(chunk)
+            if key in seen:
+                continue
+            seen.add(key)
+            unique_chunks.append(chunk)
+        return unique_chunks
+
+    content_chunks = build_chunks(content)
 
     client = get_llm_client()
 
-    prompt = f"""
-    请仔细阅读以下网页内容，并提取所有与搜索查询相关的有用信息。
+    def build_prompt(chunk, chunk_index, total_chunks):
+        return f"""
+    请仔细阅读以下网页内容分段，并提取所有与搜索查询相关的有用信息。
     
     搜索查询: {query}
+    当前分段: {chunk_index}/{total_chunks}
     
     网页内容:
-    {truncated_content}
+    {chunk}
     
     任务要求：
-    1. 提取目标：提取任何能部分回答查询、提供背景知识、数据支持或相关细节的信息。
-    2. 即使网页内容不能完整回答查询，只要包含与查询相关的有价值信息，都应提取。
-    3. 保持信息的原始准确性，不要过度概括。
-    4. 如果网页内容完全不包含与搜索查询相关的任何有价值信息，请仅返回"无相关信息"。
-    
-    请直接返回提取的关键信息点，以列表形式呈现。
+    1. 提取任何能部分回答查询、提供背景知识、数据支持或相关细节的信息。
+    2. 保持信息原始准确性，不要过度概括。
+    3. 若本分段无价值信息，请仅返回"无相关信息"。
     """
 
     try:
-        response = client.chat.completions.create(
-            model=LLM_MODEL,
-            messages=[
-                {"role": "system", "content": "你是一个高效的信息提取助手，擅长从长文中捕捉相关细节。"},
-                {"role": "user", "content": prompt}
-            ]
-        )
-        extracted_info = response.choices[0].message.content
-        logger.debug(f"提取的关键信息: {extracted_info}")
-        return extracted_info
+        best_result = None
+        for idx, chunk in enumerate(content_chunks, start=1):
+            response = client.chat.completions.create(
+                model=LLM_MODEL,
+                messages=[
+                    {"role": "system", "content": "你是一个高效的信息提取助手，擅长从长文中捕捉相关细节。"},
+                    {"role": "user", "content": build_prompt(chunk, idx, len(content_chunks))}
+                ]
+            )
+            extracted_info = (response.choices[0].message.content or "").strip()
+            logger.debug(f"提取分段 {idx}/{len(content_chunks)} 结果: {extracted_info[:500]}")
+            if extracted_info and "无相关信息" not in extracted_info:
+                return extracted_info
+            if best_result is None:
+                best_result = extracted_info
+            if idx >= 2:
+                break
+        return best_result
     except Exception as e:
         error_msg = f"LLM 提取信息失败: {e}"
         logger.error(error_msg)
@@ -352,6 +317,8 @@ def plan_next_step(original_query, action_history=None):
        - 可直接检索
        - 强约束，至少包含 2 个高区分度锚点（人名/机构名/年份/作品名/角色属性/事件中的至少两个）
        - 能直接验证当前瓶颈，而不是重查上游常识
+       - 必须“可脱离上下文独立检索”，禁止使用未指代清楚的代词（如“这家/该/其/上述/前者/后者”）
+       - 必须显式写出关键实体名称；若尚未完全确认，可写“候选实体+限定条件”
     6. 优先级选择规则：
        - 优先“信息增益最高 + 区分度最高 + 可一次验证”
        - 若有冲突信息，优先设计“判别真伪”查询
@@ -401,11 +368,7 @@ def plan_next_step(original_query, action_history=None):
         try:
             cleaned_content = clean_json_string(content)
             result = json.loads(cleaned_content)
-            checked_result = _self_check_plan_result(result, original_query, action_history)
-            if checked_result is None:
-                logger.warning("规划结果自检失败，使用原始结果")
-                return result
-            return checked_result
+            return result
         except json.JSONDecodeError:
             logger.error(f"解析规划结果 JSON 失败: {content}")
             return None
@@ -523,8 +486,11 @@ def generate_final_answer(original_query, confirmed_info):
     3. **严禁**包含任何解释、背景介绍、"根据搜索结果"、"可能"、"建议"等废话。
     4. **严禁**添加备注或免责声明。
     5. 请分析“用户原始问题”的语境，推测并使用最可能的语言（例如中文或英文）来生成回答。
+    6. 输出必须是“纯答案文本”，不得包含任何包裹符号或装饰符号（例如《》、""、''、【】、（））。
+    7. 不得输出任何前缀或后缀（如“答案是”“最终答案”“Result:”）。
+    8. 只允许单行输出，不要换行，不要项目符号。
     
-    请直接返回最终答案字符串。
+    请直接返回最终答案字符串（仅答案本体）。
     """
 
     try:
@@ -536,6 +502,11 @@ def generate_final_answer(original_query, confirmed_info):
             ]
         )
         answer = response.choices[0].message.content.strip()
+        answer = re.sub(r'^[\s"\']+|[\s"\']+$', '', answer)
+        answer = re.sub(r'^[《【（(]+', '', answer)
+        answer = re.sub(r'[》】）)]+$', '', answer)
+        answer = re.sub(r'^(答案是|最终答案|结论是|Result:|Answer:)\s*', '', answer, flags=re.IGNORECASE)
+        answer = answer.replace('\n', ' ').strip()
         logger.debug(f"强制生成回答: {answer}")
         return answer
     except Exception as e:
