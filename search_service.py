@@ -1,6 +1,25 @@
 import requests
 import json
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 from config import TAVILY_API_KEY, logger
+
+_TAVILY_TIMEOUT = (5, 20)
+_TAVILY_SESSION = requests.Session()
+_TAVILY_SESSION.mount(
+    "https://",
+    HTTPAdapter(
+        pool_connections=20,
+        pool_maxsize=20,
+        max_retries=Retry(
+            total=2,
+            backoff_factor=0.3,
+            status_forcelist=[429, 500, 502, 503, 504],
+            allowed_methods={"POST"},
+            raise_on_status=False
+        )
+    )
+)
 
 def search_tavily(query):
     """
@@ -25,7 +44,7 @@ def search_tavily(query):
     
     try:
         logger.info(f"正在执行搜索查询: {query}")
-        response = requests.post(url, json=payload)
+        response = _TAVILY_SESSION.post(url, json=payload, timeout=_TAVILY_TIMEOUT)
         response.raise_for_status()
         result = response.json()
         

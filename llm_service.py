@@ -1,8 +1,20 @@
 import json
 import re
 import numpy as np
+from time import perf_counter
 from openai import OpenAI
 from config import LLM_API_KEY, LLM_BASE_URL, LLM_MODEL, logger
+
+_llm_client = None
+
+def get_llm_client():
+    global _llm_client
+    if _llm_client is None:
+        _llm_client = OpenAI(
+            api_key=LLM_API_KEY,
+            base_url=LLM_BASE_URL
+        )
+    return _llm_client
 
 def clean_json_string(json_str):
     """
@@ -29,6 +41,64 @@ def clean_json_string(json_str):
         cleaned = cleaned[start_idx_list:end_idx_list + 1]
         
     return cleaned
+
+def _plan_anchor_score(question):
+    if not isinstance(question, str):
+        return 0
+    score = 0
+    score += len(re.findall(r'《[^》]{1,40}》', question))
+    score += len(re.findall(r'\b[A-Z][A-Za-z0-9_-]{2,}\b', question))
+    if re.search(r'\b(19|20)\d{2}\b|20\d0年代|19\d0年代', question):
+        score += 1
+    keyword_hits = set(re.findall(r'腾讯|阿里|字节|微软|谷歌|OpenAI|Riot|Valve|索尼|任天堂|公司|集团|大学|游戏|角色|武器|收购|年份|地点|机构', question))
+    score += min(len(keyword_hits), 3)
+    return score
+
+def _is_repeated_direction(question, action_history):
+    if not isinstance(question, str) or not action_history:
+        return False
+    normalized_q = re.sub(r'\s+', '', question).lower()
+    for hist in action_history:
+        act = hist.get("act", "")
+        if not isinstance(act, str):
+            continue
+        normalized_act = re.sub(r'\s+', '', act).lower()
+        if normalized_q and (normalized_q in normalized_act or normalized_act in normalized_q):
+            return True
+    return False
+
+def _self_check_plan_result(result, original_query, action_history):
+    if not isinstance(result, dict):
+        return None
+
+    think = result.get("think", [])
+    if isinstance(think, str):
+        think = [think]
+    if not isinstance(think, list):
+        think = []
+    think = [str(x).strip() for x in think if str(x).strip()][:6]
+
+    is_fully_answered = bool(result.get("is_fully_answered", False))
+    final_answer = str(result.get("final_answer", "") or "").strip()
+    next_question = str(result.get("next_question", "") or "").strip()
+
+    if is_fully_answered:
+        next_question = ""
+    else:
+        final_answer = ""
+        if not next_question:
+            next_question = f"围绕该原始问题，当前最关键且可唯一定位的瓶颈实体是什么？请给出该实体名称，并同时给出机构名与时间锚点进行核验：{original_query}"
+        if _plan_anchor_score(next_question) < 2:
+            next_question = f"{next_question} 请在问题中包含至少两个锚点（如机构名+作品名，或年份+角色名）。"
+        if _is_repeated_direction(next_question, action_history):
+            next_question = f"不要重复已验证方向。请仅针对当前瓶颈，提出一个包含机构名与作品名的单一核验问题：{original_query}"
+
+    return {
+        "think": think,
+        "is_fully_answered": is_fully_answered,
+        "final_answer": final_answer,
+        "next_question": next_question
+    }
 
 # 尝试导入 sentence_transformers，如果不存在则在运行时提示
 try:
@@ -60,10 +130,7 @@ def decompose_question(query):
 
     logger.info(f"开始拆解用户问题: {query}")
 
-    client = OpenAI(
-        api_key=LLM_API_KEY,
-        base_url=LLM_BASE_URL
-    )
+    client = get_llm_client()
 
     prompt = f"""
     请将以下用户问题拆解为 3-4 个具体的搜索引擎查询词，以便从不同角度获取更全面的信息。
@@ -192,10 +259,7 @@ def extract_key_info(query, content):
     if len(content) > max_len:
         truncated_content += "\n...(内容已截断)..."
 
-    client = OpenAI(
-        api_key=LLM_API_KEY,
-        base_url=LLM_BASE_URL
-    )
+    client = get_llm_client()
 
     prompt = f"""
     请仔细阅读以下网页内容，并提取所有与搜索查询相关的有用信息。
@@ -242,10 +306,7 @@ def plan_next_step(original_query, action_history=None):
 
     logger.info(f"开始规划下一步，原始问题: {original_query}")
     
-    client = OpenAI(
-        api_key=LLM_API_KEY,
-        base_url=LLM_BASE_URL
-    )
+    client = get_llm_client()
 
     history_text = ""
     if action_history and len(action_history) > 0:
@@ -271,59 +332,80 @@ def plan_next_step(original_query, action_history=None):
         history_text = "目前是第一轮，没有过往探索历史。\n\n"
 
     prompt = f"""
-    你是一个“多跳事实求证”规划器。目标不是泛搜，而是用最少轮次锁定唯一答案。
-    你必须基于原始问题与历史观察，规划下一步最有信息增益的动作。
+    你是“多跳事实求证规划器（高约束版）”。目标是在最少轮次内闭合证据链，并输出下一步高信息增益问题。
 
     用户原始问题: {original_query}
 
     {history_text}
 
-    规划原则（必须遵守）：
-    1. 先抽取“硬约束”再搜索：时间范围、地点、身份/头衔、事件、机构、作品、数值区间、语言与输出格式要求。
-    2. 优先选择“区分度最高”的锚点作为下一跳，而不是宽泛主题词。
-       - 高区分度锚点示例：罕见事件组合、精确年份+机构、独特关系链、限定区间+身份组合。
-       - 低区分度锚点示例：泛领域词（如“历史背景”“公司介绍”）。
-    3. 每一轮只解决一个关键不确定点，但该点必须是当前瓶颈。
-    4. 禁止重复历史上已验证无效或同义的搜索方向；若出现冲突信息，优先规划“判别真伪”的查询。
-    5. 当且仅当证据链闭合时才给最终答案：核心实体已唯一、关键约束不冲突、答案格式可直接输出。
+    执行协议（必须严格遵守）：
+    1. 先做结构化判断：
+       - confirmed_facts：历史观察中可直接支持的事实
+       - inferred_hypotheses：可由常识做出的高置信推断（仅在 think 中表达，不可当作已证实）
+    2. 允许高置信推断推动规划，但必须保守表述为“推断/待核验”，禁止把推断写成既成事实。
+    3. 每轮只解决一个“当前瓶颈缺口”，该缺口必须是阻塞证据链闭环的关键点。
+    4. 禁止低信息增益问题：
+       - 禁止宽泛问题（如仅问“某公司是谁”）
+       - 禁止重复历史已覆盖方向或同义查询
+    5. next_question 必须满足：
+       - 单一问题句
+       - 可直接检索
+       - 强约束，至少包含 2 个高区分度锚点（人名/机构名/年份/作品名/角色属性/事件中的至少两个）
+       - 能直接验证当前瓶颈，而不是重查上游常识
+    6. 优先级选择规则：
+       - 优先“信息增益最高 + 区分度最高 + 可一次验证”
+       - 若有冲突信息，优先设计“判别真伪”查询
+    7. 只有在证据链闭合时才允许 is_fully_answered=true：
+       - 核心实体唯一
+       - 关键约束不冲突
+       - 答案格式可直接输出
 
-    先进行 Think（3-6 条，精炼）：
-    - 归纳当前已确认事实（只写关键事实）。
-    - 点出尚未闭合的关键缺口。
-    - 明确“下一跳为什么是最高优先级”（用区分度/信息增益解释）。
-    - 若接近可回答，说明还差的最后一个核验点。
+    think 输出要求（3-6 条，精炼）：
+    - 条目1：当前已确认事实（仅 confirmed_facts）
+    - 条目2：高置信推断与其待核验点（inferred_hypotheses）
+    - 条目3：当前唯一瓶颈缺口
+    - 条目4：为何该下一跳信息增益最高（并说明不选其他方向）
+    - 若接近可答：补充“最后一个核验点”
 
-    再进行 Act：
-    - 若证据链已闭合：is_fully_answered=true，并输出 final_answer。
-      final_answer 必须严格按题目要求格式，极简，不加解释。
-    - 若未闭合：is_fully_answered=false，并输出 next_question。
-      next_question 必须是“单一、可检索、强约束”的问题句，优先包含可唯一定位的限定词（人名/机构名/年份/地点/作品名/事件名中的至少两个）。
-
-    请返回一个 JSON 对象，格式如下：
+    输出必须是 JSON 对象，且仅包含以下字段：
     {{
         "think": [string],
         "is_fully_answered": boolean,
         "final_answer": string,
         "next_question": string
     }}
+
+    额外硬约束：
+    - 不要输出 markdown
+    - 不要输出字段解释
+    - 若 is_fully_answered=false，final_answer 必须为空字符串
+    - 若 is_fully_answered=true，next_question 必须为空字符串
     """
 
+    started_at = perf_counter()
+    history_chars = len(history_text)
     try:
         response = client.chat.completions.create(
             model=LLM_MODEL,
             messages=[
-                {"role": "system", "content": "你是一个严谨的多跳检索规划助手，擅长用高区分度锚点快速缩小搜索空间并完成证据闭环。"},
+                {"role": "system", "content": "你是高约束多跳检索规划助手。你必须稳定、聚焦、去泛化，优先输出高信息增益且可验证的下一跳查询。"},
                 {"role": "user", "content": prompt}
             ],
             response_format={"type": "json_object"}
         )
         content = response.choices[0].message.content
         logger.debug(f"规划下一步原始响应: {content}")
+        elapsed = perf_counter() - started_at
+        logger.info(f"规划下一步完成，耗时 {elapsed:.2f}s，history_text 长度 {history_chars}")
         
         try:
             cleaned_content = clean_json_string(content)
             result = json.loads(cleaned_content)
-            return result
+            checked_result = _self_check_plan_result(result, original_query, action_history)
+            if checked_result is None:
+                logger.warning("规划结果自检失败，使用原始结果")
+                return result
+            return checked_result
         except json.JSONDecodeError:
             logger.error(f"解析规划结果 JSON 失败: {content}")
             return None
@@ -347,10 +429,7 @@ def analyze_search_results(current_search_query, all_search_results):
 
     logger.info(f"开始分析搜索结果，当前查询: {current_search_query}")
     
-    client = OpenAI(
-        api_key=LLM_API_KEY,
-        base_url=LLM_BASE_URL
-    )
+    client = get_llm_client()
 
     context = ""
     source_count = 1
@@ -423,10 +502,7 @@ def generate_final_answer(original_query, confirmed_info):
 
     logger.info(f"开始强制生成最终回答，原始问题: {original_query}")
     
-    client = OpenAI(
-        api_key=LLM_API_KEY,
-        base_url=LLM_BASE_URL
-    )
+    client = get_llm_client()
 
     confirmed_text = ""
     if confirmed_info:
@@ -481,10 +557,7 @@ def validate_answer(original_query, confirmed_info, candidate_answer):
 
     logger.info(f"开始验证答案: {candidate_answer}")
     
-    client = OpenAI(
-        api_key=LLM_API_KEY,
-        base_url=LLM_BASE_URL
-    )
+    client = get_llm_client()
 
     confirmed_text = ""
     if confirmed_info:

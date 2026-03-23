@@ -1,7 +1,8 @@
 import os
 import json
 import logging
-import hashlib
+import threading
+import atexit
 from datetime import datetime
 
 logger = logging.getLogger('DeepResearch')
@@ -12,7 +13,11 @@ class CacheManager:
     """
     def __init__(self, cache_file="web_cache.json"):
         self.cache_file = cache_file
+        self._lock = threading.RLock()
+        self._dirty_count = 0
+        self._flush_every = 5
         self.cache = self._load_cache()
+        atexit.register(self.flush)
 
     def _load_cache(self):
         """Load cache from file."""
@@ -31,15 +36,18 @@ class CacheManager:
     def _save_cache(self):
         """Save cache to file."""
         try:
-            with open(self.cache_file, 'w', encoding='utf-8') as f:
+            tmp_path = f"{self.cache_file}.tmp"
+            with open(tmp_path, 'w', encoding='utf-8') as f:
                 json.dump(self.cache, f, ensure_ascii=False, indent=2)
+            os.replace(tmp_path, self.cache_file)
         except Exception as e:
             logger.error(f"Failed to save cache: {e}")
 
     def get(self, url):
         """Get content for a URL if cached."""
-        if url in self.cache:
-            entry = self.cache[url]
+        with self._lock:
+            entry = self.cache.get(url)
+        if entry:
             logger.debug(f"Cache hit for URL: {url}")
             return entry.get("content")
         return None
@@ -48,13 +56,25 @@ class CacheManager:
         """Cache content for a URL."""
         if not url or not content:
             return
-            
-        self.cache[url] = {
-            "content": content,
-            "timestamp": datetime.now().isoformat()
-        }
-        self._save_cache()
+
+        with self._lock:
+            self.cache[url] = {
+                "content": content,
+                "timestamp": datetime.now().isoformat()
+            }
+            self._dirty_count += 1
+            should_flush = self._dirty_count >= self._flush_every
+
+        if should_flush:
+            self.flush()
         logger.debug(f"Cached content for URL: {url}")
+
+    def flush(self):
+        with self._lock:
+            if self._dirty_count == 0:
+                return
+            self._save_cache()
+            self._dirty_count = 0
 
 # Singleton instance
 cache_manager = CacheManager()

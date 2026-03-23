@@ -158,18 +158,22 @@ def main():
 
                 print(f"已筛选出 {len(urls_to_read)} 个候选网页，目标阅读 {target_limit} 个...")
                 
-                # Concurrent read and extract
                 print("正在并发执行深度阅读与信息提取...")
-                with ThreadPoolExecutor(max_workers=target_limit) as executor:
-                    # 提交所有 URL 任务
-                    future_to_url = {executor.submit(process_url, url, current_question): url for url in urls_to_read}
-                    
-                    for future in as_completed(future_to_url):
-                        # 如果已经收集到足够的目标数量，可以选择取消剩余任务或忽略结果
-                        if len(extracted_contents) >= target_limit:
+                max_workers = min(target_limit, len(urls_to_read))
+                pending_urls = iter(urls_to_read)
+                with ThreadPoolExecutor(max_workers=max_workers) as executor:
+                    future_to_url = {}
+
+                    for _ in range(max_workers):
+                        try:
+                            url = next(pending_urls)
+                        except StopIteration:
                             break
-                            
-                        url = future_to_url[future]
+                        future_to_url[executor.submit(process_url, url, current_question)] = url
+
+                    while future_to_url and len(extracted_contents) < target_limit:
+                        future = next(as_completed(future_to_url))
+                        url = future_to_url.pop(future)
                         try:
                             result = future.result()
                             if result:
@@ -177,6 +181,19 @@ def main():
                                 print(f"  -> 提取成功 (当前进度: {len(extracted_contents)}/{target_limit})")
                         except Exception as exc:
                             print(f"  -> 处理 {url} 时发生异常: {exc}")
+
+                        if len(extracted_contents) >= target_limit:
+                            break
+
+                        try:
+                            next_url = next(pending_urls)
+                            future_to_url[executor.submit(process_url, next_url, current_question)] = next_url
+                        except StopIteration:
+                            continue
+
+                    if len(extracted_contents) >= target_limit:
+                        for pending_future in future_to_url:
+                            pending_future.cancel()
             else:
                 print("本轮搜索未返回结果。")
 

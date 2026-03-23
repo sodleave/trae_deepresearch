@@ -7293,3 +7293,1875 @@ URL: https://steamcommunity.com/sharedfiles/filedetails/?l=tchinese&id=296478350
 }
 2026-03-21 16:50:12,580 - DeepResearch - INFO - 开始强制生成最终回答，原始问题: 一位物理学领域的学者为一种经典棋盘游戏设计的评分系统，后来被一家北美游戏公司广泛应用于其一款多人在线战术竞技游戏中。这家公司的母公司是一家亚洲科技巨头，该巨头在21世纪10年代完成了对前者的全资收购，并涉足量子计算等前沿科技领域。在这家北美公司开发的另一款第一人称射击游戏中，有一件适合近距离作战的武器，其名称与上述亚洲巨头代理发行的一款格斗手游中的一名在登场角色中年龄偏大的武术教官角色相同。这款格斗手游的名字是什么？
 2026-03-21 16:51:55,351 - DeepResearch - DEBUG - 强制生成回答: 魂武者
+2026-03-21 23:45:38,529 - DeepResearch - INFO - 程序启动
+2026-03-21 23:45:57,751 - DeepResearch - INFO - 收到用户新问题: 一位物理学领域的学者为一种经典棋盘游戏设计的评分系统，后来被一家北美游戏公司广泛应用于其一款多人在线战术竞技游戏中。这家公司的母公司是一家亚洲科技巨头，该巨头在21世纪10年代完成了对前者的全资收购，并涉足量子计算等前沿科技领域。在这家北美公司开发的另一款第一人称射击游戏中，有一件适合近距离作战的武器，其名称与上述亚洲巨头代理发行的一款格斗手游中的一名在登场角色中年龄偏大的武术教官角色相同。这款格斗手游的名字是什么？
+2026-03-21 23:45:57,752 - DeepResearch - INFO - 开始规划下一步，原始问题: 一位物理学领域的学者为一种经典棋盘游戏设计的评分系统，后来被一家北美游戏公司广泛应用于其一款多人在线战术竞技游戏中。这家公司的母公司是一家亚洲科技巨头，该巨头在21世纪10年代完成了对前者的全资收购，并涉足量子计算等前沿科技领域。在这家北美公司开发的另一款第一人称射击游戏中，有一件适合近距离作战的武器，其名称与上述亚洲巨头代理发行的一款格斗手游中的一名在登场角色中年龄偏大的武术教官角色相同。这款格斗手游的名字是什么？
+2026-03-21 23:46:37,812 - DeepResearch - DEBUG - 规划下一步原始响应: {
+    "think": [
+        "归纳事实: 1) 一位物理学学者为经典棋盘游戏设计评分系统，被北美游戏公司用于其MOBA游戏；2) 北美公司被亚洲科技巨头在21世纪10年代全资收购；3) 亚洲巨头涉足量子计算；4) 在北美公司的FPS游戏中，有近战武器名称匹配巨头代理格斗手游中'年龄偏大的武术教官'角色",
+        "关键缺口: 亚洲科技巨头名称、北美公司名称、FPS游戏及武器名称、格斗手游名称均未确认；证据链断裂于起始点",
+        "优先级: 亚洲巨头因'2010s收购游戏公司+量子计算涉足'组合区分度最高——罕见时间+事件+领域交集，能唯一锁定（如腾讯、阿里巴巴候选），识别后可解锁后续实体",
+        "接近答案? 否，亚洲巨头是瓶颈，须优先核验；FPS武器和角色关联需后续查询"
+    ],
+    "is_fully_answered": false,
+    "final_answer": "",
+    "next_question": "在2010年代（2010s），哪家亚洲科技巨头全资收购了一家北美游戏公司，同时涉足量子计算领域？"
+}
+2026-03-21 23:46:37,812 - DeepResearch - INFO - 规划下一步完成，耗时 39.35s，history_text 长度 18
+2026-03-21 23:46:37,813 - DeepResearch - INFO - 开始拆解用户问题: 在2010年代（2010s），哪家亚洲科技巨头全资收购了一家北美游戏公司，同时涉足量子计算领域？
+2026-03-21 23:47:04,180 - DeepResearch - DEBUG - LLM 拆解问题原始响应: ["Asian tech giant acquisitions of North American game companies 2010s", "Quantum computing ventures by Asian companies in 2010s", "Full acquisition of game studio by Asia firm 2010-2019 quantum computing"]
+2026-03-21 23:47:04,180 - DeepResearch - INFO - 生成的子查询列表: ['Asian tech giant acquisitions of North American game companies 2010s', 'Quantum computing ventures by Asian companies in 2010s', 'Full acquisition of game studio by Asia firm 2010-2019 quantum computing']
+2026-03-21 23:47:04,181 - DeepResearch - INFO - 第 1 轮搜索查询: ['在2010年代（2010s），哪家亚洲科技巨头全资收购了一家北美游戏公司，同时涉足量子计算领域？', 'Full acquisition of game studio by Asia firm 2010-2019 quantum computing', 'Asian tech giant acquisitions of North American game companies 2010s', 'Quantum computing ventures by Asian companies in 2010s']
+2026-03-21 23:47:04,182 - DeepResearch - INFO - 正在执行搜索查询: 在2010年代（2010s），哪家亚洲科技巨头全资收购了一家北美游戏公司，同时涉足量子计算领域？
+2026-03-21 23:47:04,182 - DeepResearch - INFO - 正在执行搜索查询: Full acquisition of game studio by Asia firm 2010-2019 quantum computing
+2026-03-21 23:47:04,183 - DeepResearch - INFO - 正在执行搜索查询: Asian tech giant acquisitions of North American game companies 2010s
+2026-03-21 23:47:04,184 - DeepResearch - INFO - 正在执行搜索查询: Quantum computing ventures by Asian companies in 2010s
+2026-03-21 23:47:05,690 - DeepResearch - DEBUG - 搜索查询 'Full acquisition of game studio by Asia firm 2010-2019 quantum computing' 的原始结果:
+{
+  "query": "Full acquisition of game studio by Asia firm 2010-2019 quantum computing",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://finance.yahoo.com/news/game-hq-quantum-computing-powerhouse-160648021.html",
+      "title": "Game on for HQ: Quantum Computing Powerhouse Set to Go Public",
+      "content": "- Best gifts for sister-in-law. - Best birthday gifts for her. - Best get well soon gifts. - Best gifts for mother-in-law. - Best anniversary gifts for wife. # Game on for HQ: Quantum Computing Powerhouse Set to Go Public – Initiation Report. Horizon Quantum Computing plans to go public through a merger with special purpose acquisition company dMY Squared Technology Group (OTCQB: DMYY) in a deal valuing the Singapore-based firm at about $541 million. Founded in 2018, Horizon Quantum develops software designed to simplify quantum computing development. The company is betting that demand for hardware-agnostic software tools will grow as the quantum industry matures. Horizon Quantum also operates a quantum computing testbed in Singapore that integrates hardware from vendors including Rigetti and Quantum Machines, allowing it to test its software stack on real quantum processors. The deal would position Horizon Quantum among the few publicly traded companies focused primarily on quantum computing software infrastructure. **Read Exec Edge’s Coverage on Horizon Quantum Here**.",
+      "score": 0.9881309,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.mobileworldlive.com/asia-pacific/tencent-expands-global-gaming-push/",
+      "title": "Tencent expands global gaming push - Mobile World Live",
+      "content": "# Tencent expands global gaming push. Tencent this week stepped up its overseas push with the acquisition of two European gaming companies and the opening of a studio in Canada by its TiMi Studio Group. Michelle Liu, CEO of Tencent Games Global, explained in a statement it was impressed by Stunlock Studio’s performance and would “continue to look to partner with the most-talented development teams in the world to bring the best-quality games to the industry”. Get breaking news, exclusive insight, and expert analysis - before anyone else. Also on 19 July, TiMi Studio Group detailed plans to open a facility in Montreal to create and develop original IP. ### UK government sets out lofty AI, quantum ambitions. ### AT&T CEO details AI operational gains. ### SKT ups spam, phishing protections with AI. ### SKT partners AWS on AI cloud services. You'll gain exclusive access to breaking news, expert analysis,. access to breaking news, expert analysis, and in-depth. ### Topics. #### AI & Cloud.",
+      "score": 0.98201376,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.gamedeveloper.com/business/report-tencent-acquires-japanese-studio-wake-up-for-44-million",
+      "title": "Report: Tencent acquires Japanese studio Wake Up for $44 million",
+      "content": "Tencent has acquired Japanese game company Wake Up Interactive for $44 million, according to a report from Bloomberg. Wake Up is the parent company of",
+      "score": 0.9273633,
+      "raw_content": null
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Acquire_(company)",
+      "title": "Acquire (company) - Wikipedia",
+      "content": "Acquire Corp is a Japanese video game developer and publisher, mainly known for the Mario & Luigi series game, Mario & Luigi: Brothership, and their Tenchu",
+      "score": 0.92523,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.rand.org/content/dam/rand/pubs/research_reports/RRA800/RRA869-1/RAND_RRA869-1.pdf",
+      "title": "[PDF] An Assessment of the U.S. and Chinese Industrial Bases in ... - RAND",
+      "content": "HAROLD An Assessment of the U.S. and Chinese Industrial Bases in Quantum Technology C O R P O R A T I O N Research Report For more information on this publication, visit www.rand.org/t/RRA869-1. As of August 5, 2021: https://baijiahao.baidu.com/s?id=1694392230221672874&wfr=spider&for=pc An Assessment of the U.S. and Chinese Industrial Bases in Quantum Technology 124 Zhong, Han-Sen, Yu-Hao Deng, Jian Qin, Hui Wang, Ming-Cheng Chen, Li-Chao Peng, Yi-Han Luo, Dian Wu, Si-Qiu Gong, Hao Su, Yi Hu, Peng Hu, Xiao-Yan Yang, Wei-Jun Zhang, Hao Li, Yuxuan Li, Xiao Jiang, Lin Gan, Guangwen Yang, Lixing You, Zhen Wang, Li Li, Nai-Le Liu, Jelmer Renema, Chao-Yang Lu, and Jian-Wei Pan, “Phase-Programmable Gaussian Boson Sampling Using Stimulated Squeezed Light,” ArXiv.org, Quantum Physics, July 5, 2021.",
+      "score": 0.005040703,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.68,
+  "request_id": "a58f1187-8eb4-46cb-be89-7ff0c17abeb7"
+}
+2026-03-21 23:47:05,954 - DeepResearch - DEBUG - 搜索查询 'Asian tech giant acquisitions of North American game companies 2010s' 的原始结果:
+{
+  "query": "Asian tech giant acquisitions of North American game companies 2010s",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://retrostylegames.com/news/tencent-a-company-that-secretly-owns-the-gaming-industry/",
+      "title": "Tencent - a Company That Secretly Owns the Gaming Industry",
+      "content": "Beyond its game division subsidiaries, Tencent has invested in domestic and international game companies since the 2010s. Tencent has had former stakes in companies like Glu Mobile, Playdots, Activision Blizzard and Tesla indicating its active engagement and realignment in the gaming investment landscape over the years. **In 2012**, Tencent's $330 million investment for a 40% stake in Epic Games marked a pivotal shift in the gaming industry towards the games-as-a-service model. Tencent's acquisition of a 5% stake helped Activision Blizzard regain independence from Vivendi, illustrating Tencent's strategic investments in major gaming companies. The U.S. Committee on Foreign Investments has been particularly vigilant, sending inquiries to companies like Riot Games and Epic Games, in which Tencent holds significant stakes, to examine the security measures in place for protecting customer data. Through strategic investments in global gaming leaders like Epic Games and Riot Games, Tencent has cemented its international presence.",
+      "score": 0.5524679,
+      "raw_content": null
+    },
+    {
+      "url": "https://ca.finance.yahoo.com/news/japanese-online-gaming-firm-nexons-194651463.html",
+      "title": "Japanese online gaming firm Nexon's incoming CEO eyes U.S. ...",
+      "content": "# Japanese online gaming firm Nexon's incoming CEO eyes U.S. acquisitions. SAN FRANCISCO (Reuters) - Japanese online gaming firm Nexon Co Ltd will begin to aggressively explore U.S. acquisitions to further a long-standing plan to expand in Western markets, its CEO-elect Owen Mahoney said. Mahoney, currently Nexon's chief financial officer, led mergers and acquisitions and business development at Electronic Arts Inc for about a decade before joining Nexon, which is known for free-to-play PC games like combat title \"Dungeon&Fighter\" and \"MapleStory.\". The company, which said it generated $1.5 billion in revenue in 2013, has taken minority stakes in North American game studios in North America like San Mateo, California-based Rumble Entertainment and Miami-based Shiver Entertainment, to develop content for the West. Nexon also has been importing Western content to Asia through partnerships with developers like Electronic Arts to publish its \"FIFA Online 3\" game in Korea. On Wednesday, Nexon reported higher fourth-quarter revenue of 34.5 billion yen ($336.47 million), up 12 percent from a year ago.",
+      "score": 0.49685127,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.donga.com/en/article/all/20160311/527432/1",
+      "title": "Nexon acquires U.S. game developer Big Huge Game",
+      "content": "Korea's largest game company Nexon has acquired Big Huge Games, which developed many hit games such as DomiNations, on March 10.",
+      "score": 0.45391592,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.quora.com/What-is-the-end-goal-of-the-Chinese-company-Tencent-Why-is-it-aggressively-acquiring-Western-video-game-companies",
+      "title": "What is the end goal of the Chinese company Tencent? Why ... - Quora",
+      "content": "Tencent launches Montreal gaming studio, acquires two new firms, in bid to take on Microsoft and Sony. Tencent also took a majority stake in",
+      "score": 0.3139669,
+      "raw_content": null
+    },
+    {
+      "url": "https://telecom.economictimes.indiatimes.com/news/chinese-gaming-giants-tencent-netease-snap-up-more-foreign-studios/93906114",
+      "title": "Chinese gaming giants Tencent, NetEase snap up more foreign ...",
+      "content": "Last month U.S. gaming company Unity spun off its China unit, which will have Alibaba Group and ByteDance as shareholders. Tencent also plans to",
+      "score": 0.3070987,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.92,
+  "request_id": "881e7935-4154-4243-8782-8544d075a2a7"
+}
+2026-03-21 23:47:06,190 - DeepResearch - DEBUG - 搜索查询 '在2010年代（2010s），哪家亚洲科技巨头全资收购了一家北美游戏公司，同时涉足量子计算领域？' 的原始结果:
+{
+  "query": "在2010年代（2010s），哪家亚洲科技巨头全资收购了一家北美游戏公司，同时涉足量子计算领域？",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.scribd.com/document/874255971/%E5%90%89%E6%9E%97%E7%A7%91%E6%8A%80%E6%8A%95%E8%B5%84",
+      "title": "吉林科技投资 - Scribd",
+      "content": "“ 我们一直在贸易和很多其他问题为了在量子计算领域赶上其他国家的步伐，印度需要投资正确的项目。或上帮助苹果，但他们却拒绝解锁杀手、毒贩和许，印度也可以与IBM 和谷歌等",
+      "score": 0.3549477,
+      "raw_content": null
+    },
+    {
+      "url": "https://overseaschinese.org/",
+      "title": "海外华人网- 海外华人的精神家园",
+      "content": "我就不多说客套话了，直接进入主题。在2015年的第一次课上，我谈的是“价值投资在中国的展望”，五年以后的2019年，我谈的是“价值投资在实践中的知行合一”。今年早些时候，姜老师特意来西雅图与我讨论纪念价值投资课程十周年的想法，邀请我再讲一次课。我今天想谈的话题是**“全球价值投资与时代”**。. 总结来说，无论国内还是国际上，过去几年都出现了一系列问题，可以称之为“时代的困惑”。这种困惑不仅是一时一地的，也不仅是短期现象，而是**引发了****人们对于未来前景不确定性的很多担心**。. **李录：**这个问题非常有意思。30年来我认识很多成功的企业家。你只要经历得够多，就会发现这些成功人士，其实和你一样，早期也都从一文不名开始。我认识杰夫·贝索斯的时候，他跟我一样，也是初创公司的创始人，我们一见如故。他邀请我去亚马逊演讲，当时公司就一百多人，而他刚租下第一个仓库。其实每一代人都有自己成功的故事，江山代有才人出。. 2022年四季度，中央放弃疫情封控政策、放松房企融资政策。所有人都以为，会出现“报复性消费”，经济很快就会修复。但事与愿违。2023年初至今（2024年7月），消费增速一直很弱，企业投资意愿持续低迷；PPI持续大幅负增长，CPI在0附近徘徊，处于通货紧缩状态（点击）；M1、M2、社会融资规模、信贷余额同比增速等指标迭创新低；人民币(专题)汇率贬值压力巨大；货币政策效果日益下降，财政政策动作缓慢；目前中央、地方财政收入同比都是负增长，国税部门为了增收，倒查税收；地方政府债务压力巨大，无力进行民生投资，纷纷预征过头税，或者增加行政罚没款；房地产调控政策已经彻底放开，并且2024年5月17日开始试图通过降低首付比例和按揭利率来刺激居民购房，但效果堪忧（点击）；全社会弥漫着悲观的气氛，自杀、恶性案件增多。. 在2020年之前，中国自然产出（潜在GDP）增速大约是6%。按照孙国峰和Rees（2021）的估算，2000s初中国自然利率约为4%，2019年底降到约2%。. 日本在1960s中期至1990s中期处于“黄金时代”，持续了30年。1990s中期之后处于第三阶段，被韩国、台湾(专题)省和中国大陆追赶。. 从2022年开始，企业家普遍意识到：【1】东西方走向对抗的背景下，逆全球化加剧，美欧在东南亚、拉美加快培育供应链，来替代中国企业；【2】国内投资回报率下降严重。出海俨然成为很多企业为了自救、生存的必然选择。中国企业出海，在东南亚、拉美甚至非洲建厂，意味着这些地方的经济将起飞，实际上，东南亚、印度(专题)、非洲很多国家的GDP增速已经远远超过中国。只要有需求，它们的供应链将逐渐完善起来，逐渐替代中国。越南、泰国、老挝、缅甸、印尼、印度等国将成为中国的主要追赶者。. 目前中国潜在GDP增速大约是5%。未来在自然利率下降的同时，潜在GDP增速也将逐年下降。现实中的GDP同比将随之下降（点击），20年后可能下降到1-2%。. 长期看，如果不能通过体制改革释放制度红利，如果不能抓住新一轮科技革命提升各行业投资回报率，那么随着人口老龄化的加重，自然利率将持续下降。最终将像美国和日本一样，自然利率下降到0附近甚至负值，自然产出（潜在GDP）增速也下降到很低的水平。现实中的GDP增速将逐年下降，十几年后下降到1-2%。. 具体来说，在中国经济起飞阶段，1983-1987、1991-1997、2001-2007年，TFP增速远低于加拿大、法国、德国、西班牙、意大利、台湾省、日本、以色列(专题)、马来西亚等经济体1955-1980年的水平。原因是：. 黄仁勋：是 Chris 和 Curtis（两位英伟达联合创始人、黄仁勋的好友）。当时我在 LSI 做工程师，他们在 Sun 工作。我当时跟 CS 领域最聪明的人共事，制造各种工作站包括图形工作站。有一天 Chris 和 Curtis 说，他们想离开 Sun 。他们想让我帮忙想想做什么好。我的工作很棒，但他们坚持要我加入他们一起思考如何创立一家公司。他们过来时，我们就在 Denny’s 聚会，那几乎算是我最初效力的公司。我成为 CEO 之前的第一份工作是洗碗工，那份工作我做得很出色。总之，我们经常聚会，而那段时期正值微处理器革命。. 那是在 1992 到 1993 年期间，PC 革命才刚开始。革命性的 Windows 95 还没上市，奔腾处理器甚至还没发布。这一切都发生在 PC 革命爆发之前，显而易见，微处理器会非常重要。于是我们想，为什么不创立一家公司解决通用计算机无法解决的问题呢？这便成了公司使命：制造特殊的计算机解决普通计算机无法解决的问题。直到今天，我们还一直专注于此。. Laurie和我当时银行里只有六个月左右的生活费，我们已经有了 Spencer 和 Madison，还有一条狗，所以我们一家五口只能靠手头这点存款生活。因此我时间不多，我没有写商业计划书，而是直接去找了 Wilf Corrigan 。. 我从不空手离开工作区，也不空手回来，我效率很高。总之，我最终成为了 CEO，但我仍在努力成为一名优秀的 CEO 。. 当时，廉价的 3D 图形技术是不可能做到的。硅谷图形芯片产品要上百万美元，做廉价版本很难。而电子游戏市场当时的价值是零美元、不存在。你有一项难以商品化的技术，瞄准了一个尚未存在的市场。这个交集就是我们公司的创立点。. CG 非常酷，我们还出了教科书。我们开始教人们如何使用它，也开发了一些相应的工具。后来有好几位研究人员发现了 CG，斯坦福大学的很多研究人员和学生都有在用它。很多后来成为 NVIDIA 工程师的人当时也在捣鼓这个。. 主持人：每次听到新的应用方式时，您都觉得很惊喜。这似乎贯穿了您在 NVIDIA 领导生涯中的一个主题，就像您在技术拐点出现之前就做出了赌注。当苹果终于从树上掉下时，您正穿黑色皮夹克在等着接住它。您是如何做到如此确信的？. NVIDIA 有十年的时间在投资未来，但市场并不存在。当时只存在一个市场：计算机图形。十几年的时间，推动我们今天发展壮大的市场根本不存在。那么，你该如何继续带领身边的所有人：公司、管理团队、优秀的工程师、股东、董事会、合作伙伴？你带着所有人上路，但根本没有市场存在的证据。这是真的非常非常的具有挑战性。. NVIDIA 有 3 万人。我们是世界上最小的超级公司。但每位员工都有很大自主权，每天帮我做明智决定。原因是他们理解我的状态。他们理解我的状态。我对人很透明，我相信我可以把信息托付给你。信息可能难理解、情况很复杂但我相信你可以应付。我对很多人说过「你们是成年人、可以应付这个的。」但有些人不是真正的成年人，只是刚毕业（开玩笑的）。我刚毕业时不能算成年人，但我幸运地被信任和托付。我想这样做。我想为人们创造能够做到这一点的条件。. 因为我们处于计算的世界。未来我们处理信息的方式将从根本上改变。这就是 NVIDIA 制造芯片和系统的原因。我们编写软件的方式也会从根本上改变。我们未来的软件类型会改变会催生新的应用程序。还有，这些应用程序的处理方式也会发生改变。. 这有点像你们解决问题的方式。你搞清楚最终想要的结果，然后反推实现它的方法。所以我设想 NVIDIA 为推动计算领域发展做出独特贡献，因为计算是推动整个人类进步的最大动力。这不是自我吹捧，而是因为这是我们擅长的领域，且难度极高。我们坚信自己能做出绝对独特的贡献。到今天，公司已经走过了 31 年，但我们的征途才刚开始。这是极难的目标。当我回首往事时我相信我们会被铭记，成为一家改变了世界的公司，不是因为我们到处宣讲通过言行改变世界，而是因为我们坚持做一件难度极高的事，这件事是我们擅长、热爱而且做了很久。. 黄仁勋：拥有一个核心信念。每天都发自内心地检视目标竭尽全力追求、持之以恒地追求。和您爱的人一起，携手踏上正途。这就是 NVIDIA 的故事。. 托克维尔的回答是：民主只是手段，自由才是目的；权力无论如何产生，归多少人掌控，都是危险的，都应该竭力限制**。****越是在民主神话的时代、极&权谎言盛行的国家，就越绕不开“托克维尔问题”。**. 1. 种姓打一开始就是雅利安人为了对被征服的印度土著进行精神控制而设计出来的——基于吠陀宗教的轮回世界观，根据神制定的秩序，**我们是高等的，你们是低等的，我们永世为主，你们永世为奴**。. 话说《摩诃摩罗多》里头有个绝世高手叫阿周那（Arjuna），历来被印度人视为战神，印度自己研发的那个阿琼坦克，就是用了他的名字。阿周那是般度族的五个王子之一，被称为般度五子，般度五子为了争夺王位爆发了“俱卢之战”。不料阿周那在临阵之际陷入了道德危机——**身为武士阶级的刹帝利，在战场上杀敌是他的种姓职责；可这次在战场上面对的却都是他的兄弟、族人、老师，他感觉下不去这手，决定要退出战斗**。. 就我的体会而言，别说是从前那个土邦林立的英属印度了，哪怕是现在这个联邦制的印度共和国，管理起来都是一个噩梦——**这个世界上恐怕只有印度人才知道怎么管理印度人，这是经由几千年的种姓制度培养出来的默契，只有印度人自己最熟悉印度社会的运作方式**。. 须知，印**度人在管理的过程中并不会用权力来压制你，不会要求你绝对服从，更不会不许你发表观点；无论是管理者还是被管理者，都依然能保持思想活力和自由**。. 再怎么不喜欢印度的人，都无法否认印度社会文化的多元和思想的丰富；我们中国无疑在很多方面都比印度强，但宝莱坞电影绝对可以甩我们中国电影几十条马路，这就是思想开放所带来的文化繁荣。之所以印度的思想可以这么丰富，首先是因为印度教本身上是一种“哲学思想、生活方式、世界观的综合体”，**不需要通过严密的组织或者对政治的参与就能够通过社会运作自发地维持，对于思想抱有开放的态度与宗教本身的存续并不冲突**。. **说白了，基督教和伊斯兰教进行“思想管理”的宗教迫害，其实技术含量很低**，靠的是暴力机器维系自己的绝对权威，把“异端”都送上火刑架就完事儿了，十分简单低级粗暴；**跟印度教那种高技术含量的PUA精神控制大师完全没得比**。. 文革期间被正式关进监狱的科学家也很多。我们仅以清华大学为例来清理被关押科学家的情况。清华大学的谢毓章、高联佩夫妇、王明贞夫妇、王振通夫妇都被正式关进监狱了。1968年谢毓章被抓进监狱，蹲了四年，1972年获释 [王德禄等 2012，王德禄、杜开昔采访谢毓章]。1968年1月，高联佩和许健生被抓进牛棚，后转入北京半步桥监狱，四年零四个月后才获释 [史际平、杨嘉实、陶中源等编著 2008，327-330页]。1968年3月，王明贞和俞启忠被拘捕。王明贞被关了五年，1973年11月获释。俞启忠被关押了7年，1975年4月才被释放 [史际平、杨嘉实、陶中源等编著 2008，89-94页]。清华大学的王振通也进监狱了，被关了三年多 [王德禄等 2012，王德禄、杜开昔采访王明贞]。. 改革开放后，留美归国的科学家除了作为一般知识分子经历了面上的落实政策外，还另有一个小小的历史插曲值得一提。1979年3月，来自清华大学、北京大学、中国科学院的大约28位1954-1955年回国的科学家联合专门给中央起草了一份报告，要求为他们平反。1979年9月8日上午，中科院院长方毅召集这批科学家，在人民大会堂召开座谈会。方毅在会上讲话，说他是受邓小平的委托来开这个座谈会的，对这批科学家给予了充分的肯定。方毅说，不仅要为他们平反，还要把他们的事迹载入史册 [全国政协文史资料委员会编 1999，87-88页]。. 此外，中国留美学生曾向印度驻联合国大使梅农寻求帮助，也向美国朋友寻求帮助。虞俊给爱因斯坦写了一封信，希望得到他的帮助，但是爱因斯坦在回信中说，他自己已经被怀疑是共产党了，不方便替中国留美学生讲话 [全国政协文史资料委员会编 1999，48-63页]。. 1954年8月，致美国总统公开信发表以后，引起了美国媒体的注意，其中《波士顿环球报》、《基督教科学箴言报》等有影响力的媒体对在公开信上签名的中国留学生进行采访，并在醒目位置刊登了留学生因美国政府禁令不能回国的报道，张兴钤与师昌绪、林正仙的合影也出现在报纸的醒目位置上，美国政府扣留中国留学生的消息传遍全世界 [全国政协文史资料委员会编 1999，257-258页]。. 后来，美国移民局通过调查得知，120位被扣中国留学生中有57人希望回到中国。美国政府决定给他们发放离境许可证，分批批准，每批10-15人。美国政府表示，会将被批准人员的名单提供给中国政府 [全国政协文史资料委员会编 1999，64-83页]。. 梁晓天说：“……美国报纸宣布放了十几个中国留学生，从我收到的一封信中得知我是其中之一。”[全国政协文史资料委员会编 1999，202页] 梁晓天实际上是第一批被批准的10人之一。在这10人中，参加留美科协并积极要求回国的除了梁晓天之外，还有宋振玉、范新弼。这10人中除了他们三人，其他的人没有被提起 [全国政协文史资料委员会编 1999，206页]。. 1955年4月4日，美国政府正式宣布撤销禁止中国留学生回国的命令。陈荣耀回忆说，他是1955年4月禁令解除后，第一批回国的 [全国政协文史资料委员会编 1999，250页]。但是，钱学森仍然处于被软禁状态。他专门给全国人大常委会副委员长陈叔通写了求救信，通过蒋英在比利时的妹妹寄给陈叔通。他在信中写道：“……阻碍归国的禁令已于4日被取消，然我仍深陷囹圄，还乡报国之梦难圆，省亲探友之愿难偿，凄凄然久之……恳请祖国助我……。” 钱学森的信很快转到周恩来的手中。在日内瓦谈判中，王炳南出示了钱学森的信。1955年9月10日，中国方面宣布释放美国12名飞行员。同年8月4日，钱学森接到美国允许回国的通知，9月17日，他偕妻子和儿女踏上了回国的旅程 [张纯如著 1996，315页]。. 1955年4月初，黄葆同（冯之榴）夫妇、王仁、张家桦、吕家鸿、谢心正、沈心立、骆振黄、郭明达、蔡君陆一起乘船回国。据王仁回忆，他们回国途中听说美国对中国留学生的禁令彻底解除了 [全国政协文史资料委员会编 1999，245页]。. 1955年5月初，陈荣耀（沙逸仙）夫妇、王明贞（俞启忠）夫妇、徐璋本、陆裕朴等一批中国留学生乘船回国 [全国政协文史资料委员会编 1999，250页]。. 1955年6月从旧金山起锚的 “克利夫兰总统号” 上有20多位中国留学生，比如童诗白（郑敏）夫妇、钱宁、焦瑞身、张兴钤、师昌绪、林正仙、杜连耀、周同慧、刘铸晋。他们从旧金山上船，7月抵达香港 [全国政协文史资料委员会编 1999，263页]。. 1950年8月31日的 “威尔逊总统号” 是1950年代初留学生回国途中发生故事比较多的一条船。这条船上，留学生人数最多，共有128位。采访余国琮时，他说：“当时乘坐我们这条船回来的中国留学生人数是最多的，有三个方面的原因。一是，朝鲜战争已经爆发了，我们预感到美国要限制中国留学生回国，大家纷纷动身回国；二是，留美科协做了大量的宣传工作，一些人已经有了回国的打算；三是，那时候学校都放了暑假，我们回国比较方便。” [王德禄等 2012，王德禄、杜开昔采访余国琮] 在美国洛杉矶发生了几乎全部扣留赵忠尧携带的书籍、笔记本事件，在日本横滨发生了拘留赵忠尧、罗时钧、沈善炯3位中国留学生事件，在菲律宾发生了鲍文奎被拘留未遂事件。这在中国留学生中产生了很大的影响，也预示着中国留学生回国之路将不再平坦。乘坐这条船回国的中国留学生还有邓稼先、涂光炽、叶笃正、余国琮、傅鹰、庄逢甘等人 [沈善炯述、熊卫民整理 2009，58-78页]。. 1951年9月20日启程的 “克利夫兰总统号” 上的谢家麟、董彦曾（宋娟娟）夫妇、孙以实、方琳、张权等8位中国留学生正沉浸在回家的喜悦中，然而10月9日发布的禁令波及到了他们。当他们乘坐的轮船抵达夏威夷时，美国移民局官员和联邦调查局特工登船，专门与这8个人谈话，出示了正式的司法文件，将他们押下轮船，不久送回旧金山 [谢家麟 2008，43-46页]。. 1951年10月，当李恒德买好了船票准备回国的时候，宾夕法尼亚移民局把他找去，进行审问。移民局没有抓住把柄，后来将李恒德释放出来，并没收了他的护照，禁止他离开美国。移民局还让他每个月给移民局报到一次 [王德禄等 2012，王德禄、杜开昔采访李恒德]。. 1950年10月颜鸣皋在耶鲁大学已经买好了回国的船票，开船两周前突然被捕，被关在纽约的埃利斯岛，4天后，交了2000美元保释金才被释放。之后美国将其遣送回国 [王德禄等 2012，王德禄采访颜鸣皋]。. 1951年5月25日，黄葆同办理回国手续时，美国当局以 “居留证过期” 为借口，将其逮捕，关押在埃利斯岛。1951年9月17日，黄葆同被关押114天后，交了2000美元保释金获释。移民局要求他每周一到移民局报到一次 [全国政协文史资料委员会编 1999，230-235页]。. 1952年1月中旬，美国宾州传来杜连耀被逮捕的消息。杜连耀在实验室赶做博士论文时，美国移民局以 “非法留居” 为罪名将其从实验室抓走，把他关在宾州移民局所在地匹兹堡。三天后，宾夕法尼亚大学的同学帮他交了2000美元保释金。被释放出来后，杜连耀把宾州移民局上告到美国移民总局。官司打了将近半年。后来移民总局说杜连耀的情况特殊，可以回国，但必须在两个月内离开美国，否则要驱逐出境。当他去办手续时，美国政府说中美现在处于敌对状态，所有的中国人都不允许离开美国，也不许去美国以外的任何地方。如果去了或者企图去了，就会收到巨额罚款单。杜连耀1955年6月才得以回国 [王德禄等 2012，王德禄、杜开昔采访杜连耀]。.",
+      "score": 0.2699478,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.scribd.com/document/959900685/The-Economist-News-Zhou-Si-251120-Calibre",
+      "title": "The Economist News (Zhou Si, 251120 - Calibre | PDF - Scribd",
+      "content": "受到威胁。这一点在11 月18 日得到了强调，当时OpenAI 的两大大力支持者Microsoft 和Nvidia 支持了Anthropic，后者是ChatGPT 制造商的强劲竞争对手，此前由亚马逊和谷歌资助。",
+      "score": 0.0872602,
+      "raw_content": null
+    },
+    {
+      "url": "http://www.jlkjtz.com/uploads/20221109/238fc29f119a43f967ca512b666f976c.pdf",
+      "title": "[PDF] 谋大事者首重格局 - 吉林省科技投资基金有限公司",
+      "content": "美国对我国引进技术进行封锁， 警惕中国对外投资，这将给我国利用国 外技术、 品牌等造成更多障碍， 科技创新 成为当务之急。 3.在与美国的 “一对一” 谈判中， 我 国在降低关税、开放市场、保护知识产 权、 削减国有企业补贴等诸多方面， 面临 美国的高标准压力，倒逼中国从红利经 济阶段进入规则经济阶段。 2、 产业进入大洗牌 国际上， 美国实施 “再工业化” 战略， 推动制造业回流；低收入国家凭借成本 优势， 加速吸引劳动密集型产业转移； 中 国原来依靠的廉价劳动力模式，也要改 变。 中国进入工业化后期，进入以5G 为标志的新一轮技术突破期， 信息产业、 智能产业、 生物生命产业、 绿色产业等新 经济产业全面登堂入室。 现在一些传统的行业正在洗牌， 比 如汽车行业。 由此看， 实现新旧动能转换 将导致一些产业洗牌。 3、 区域发展大联动 过去40 年，各地方在吸引资本、 技 术和人才等领域竞争，中国经济快速发 展， 但也出现一些小问题， 比如千城一面 等现象， 或者区域发展不平衡等。 现在， 中国城市化进入城市群、 都市 圈演进阶段， 目前规划发展 “19+2” 个城 市群， 以及提出34 个都市圈建设， 导致 地区小圈子被打破，最终将趋向区域协 调联动式发展。 鉴于此， 各地方在 “十四五” 期间与 其坚守 “竞争” 思路， 不如调整为寻找新 地缘。 4、 商业模式大变革 一边是 “红利时代” 消解， 另一边是 “科技时代” 开启。 工业文明已经到头， 以人工智能、 物 联网、 生物生命等为代表的新技术， 正在 给世界带来全新变化，商业模式也从白 桦林时代演进到一个热带雨林的时代。 所谓白桦林，是指原来的商业模式 大多是高度同质化， 一眼望去， 大家都是 2020 年中国经济的4 大拐点和8 个赚钱行业 文/ 王德培 2020 年， 无论是国际背景还是产业发展， 或是区域经济及商业模式， 都面临着大拐点、 大切换。 48 同样的物种， 高高低低一起奋力生长。 而 热带雨林是一个生态圈的概念，这个生 态圈里， 各物种是共生共存的， 即便是一 片苔藓， 也是不可或缺的。 可将商业模式概括为5 个层次， 依 次为： 抢风口、 抓红利、 贸工技、 技工贸、 事业情怀。 没有任何一种模式永远成功，能否 槃 迭代进化，决定着其是否能延续和涅 重生。 莎士比亚在戏剧 《暴风雨》 中写道： “凡是过去，皆为序章” 。无论是闪耀辉 煌， 还是惨淡经营， 中国经济面临的4 大 拐点将至， 地方与企业还需不畏将来， 不 念过往， 顺应时势， 把握趋势。 最新的8 个赚钱行业 随着消费升级， 人们在提升效率、 满 足体验、 引领文化等诉求下， 催生了许多 新经济产业崛起， 至少有8 个新产业， 成 为未来新趋势。 1、 夜间经济崛起 据商务部统计，上海夜间销售额占 白天的50%，重庆餐饮2/3 营业额是在 夜间实现的，广州服务业产值有55%来 源于夜间经济。 大多数人传统认为， 夜间经济 “藏污 纳垢” ： 大排档里流着地沟油， 噪音扰民， 满大街飘荡着油污和垃圾； 酒吧、 街边随 时可能上演酗酒暴力、 打架斗殴。 长期以来，人们过度放大了夜生活 的 “黑” ， 却忽略了它所承载的社会功能。 “夜间经济” 是由市场主导的自发行 为， 劳累了一天的人们， 可以在夜市里进 行各种休闲、 娱乐、 消费等， 舒缓自己疲 惫的身心， 释放生活压力。 这种消费符合 马斯洛的需求层次理论，更是城市消费 经济强有力的延伸和补充。 现在，各大城市进入到了竞争的新 阶段， “夜间经济”天生自带的第三产业 服务业属性， 是城市竞争的新维度！ 只不过， 自由市场野蛮生长， 不可避 免地会带来经济发展、市场经营的鱼龙 混杂， 加强管制势在必行。 这方面， 各地政府需要平衡。 一个城 市既需要时尚、 潮流的现代商圈， 又需要 市井化、 草根化的特色夜市经济。 2、 会展成为时尚产业 当人类由物质生产拐入创意营销阶 段， 稀缺的从来不是产品， 反而是众多的 展销平台。 这个时代很疯狂， 机器换人、 无人驾 驶等新技术叠加，迫使人们必须反复交 流： 找感觉、 找方向、 找方案。 “圈内的” 需要找到一个平台去展示 自己的创新， “圈外的”又迫切需要借助 一个平台去预见行业前沿性动向，会展 业可谓与之完美接榫！ 会展经济不仅会带来经济产值， 甚 至还能改写城市命运。重庆市商务委统 计， 2018 年重庆各类展会活动直接收入 176 亿元， 拉动消费1498 亿元。乌镇凭 借世界互联网大会走红，有了“乌镇很 忙”的调侃； G20 峰会让杭州掀起一波 “杭州与上海： 谁是谁的后花园？” 的讨 论。 一场盛会能给一座城带来什么？看 看美国的拉斯维加斯就知道了！建立之 初被称为世界最大的 “赌城” 。 后来， 又以 “世界会议之都” 闻名， 一年接待约4300 万游客， 其中有14%是因为商展会议。 拉斯维加斯会议场地面积只排在全 美第三位， 但经济效益却排第一， 会展业 每年为拉斯维加斯带来的经济收入超过 80 亿美元。 3、 “阴谋论” 难阻生物文明 这几年，基因测序和基因编辑等行 业迅速崛起。 早在2015 年， 中山大学的黄军就教 授，对不能正常发育的人类胚胎，做过 48 小时基因编辑试验。但却遭到了包括 基因编辑技术发明人詹妮弗在内的集体 反对， 一时间道德论与阴谋论齐飞。 造成这种恐慌的逻辑有两个： 一方面， 基因编辑打破自然规律， 在 通过基因精修实现 “逆天改命” 、 逃出自 然规律成为 “超人” 的同时， 也存在难以 预计的危险潜伏。而且基因编辑一旦被 人为利用，生成强针对性的“生物原子 弹” ， 可不动一兵一卒达成人种绝杀。 另一方面， 在道德伦理框架下， 这一 技术与 “众生平等” 背道而驰， 未来是不 是只能 “富人靠科技、 穷人靠变异” ， 基因 编辑技术的应用，会不会加剧各阶层间 的不平等？ 但实际上， 恐惧来源于未知。 大自然",
+      "score": 0.07828243,
+      "raw_content": null
+    },
+    {
+      "url": "https://pdf.dfcfw.com/pdf/H3_AP202305041586265553_1.pdf",
+      "title": "[PDF] 微软产业链深度:科技平权时代",
+      "content": "2015年12月 微软亚洲研究院视觉计算组孙剑团队，在2015 ImageNet计算机识别挑战赛得图像 分类、图像定位以及图像检测全部三个主要项目的冠军。 2015年12月 微软小娜登陆iOS和Android平台，美国和中国成为首批支持的两个国家。 2015年12月 微软亚太研发集团推出人工智能美颜软件Selfie，基于人脸技术及计算摄影学技 术合力打造而成。 2016年3月 invigr悦型与微软小冰合作，推出人类历史第一个情感型人工智能营养师 2016年3月 微软在Build开发者大会上发布了关于Windows 10、HoloLens增强现实、Cortana 等十余项工作进展 2016年4月 微软与丰田深化合作进一步拓展互联汽车解决方案，在智慧停车等多方面更加智 能化，帮助丰田汽车布局车联网方向。 2016年9月 由微软全球执行副总裁沈向洋领导的微软人工智能及微软研究事业部正式成立 2016年10月 微软人工智能与研究部门团队的语音识别系统实现了和专业速录员相当甚至更低 的词错率（WER），已经达到了5.9%。 2017年7月 微软筹建Microsoft Research AI研究院，未来将专注人工智能领域，创建开发 更多的通用学习系统。 2019年5月 微软（中国）有限公司携手张江集团共同打造的微软人工智能和物联网实验室正 式启用投入运营 2019年7月 微软向OpenAI投资十亿美元 2021年 微软再次投资OpenAI（金额未知） 2022年1月 微软以197亿美元现金收购全球最大语音技术公司Nuance 2022年5月 微软扩大与Meta的AI合作，Meta选择Azure作为“战略云提供商”，以加速自己的 AI研究和开发，双方将合作在Azure上扩展PyTorch的采用。 2023年1月 微软追加投资OpenAI数十亿美元 微软AI“大事件” 2.2 微软的底层动力源泉: AI超级计算机与AI芯片  AI算力模型(大模型)需要极强的算力储备: 对于云厂商来说，AI算力和大模型需要面临高昂的硬件采购成本、模型训练成本以及日常运营成 本。1、硬件采购成本和智算集群建设成本，根据搜狐的数据，一台GPU服务器的成本是普通服务器的成本10倍以上，服务器采购成本通常 是数据中心建设成本的30% ，一个智算集群的建设成本超过30亿元。2、模型训练成本，根据《财经十一人》数据，ChatGPT 一次完整的模 型训练成本超过1200万美元；3、日常运营成本，例如网络宽带建设成本、模型调试成本、电力资源成本。  服务器+芯片直接起到大模型决定性作用: 决定AI大模型的关键因素在于算力规模、算法模型的精巧度、数据的质量和数量。AI大模型的推 理、训练高度依赖AI芯片，缺少相关芯片和服务器就意味着缺少动力源泉，直接导致算力不足，算力不足意味着无法支撑庞大的模型和数据 量，从而造成模型“智商”差异。 20 资料来源：搜狐，量子位，CSDN，华西证券研究所 超级计算机架构示意图 微软超级计算机示意图 2.2 微软的底层动力源泉: AI超级计算机与AI芯片  微软公有云Azure本身具备需求，形成正向循环: 根据搜狐消息，2022年微软在云计算基础设施的支超过250亿美元，而当年微软云营业利 润就超过400亿美元，而相关AI计算成为云业务的新增长点与驱动力，微软客户通常会在云上租赁进行相关AI模型训练，从而形成生成式AI， 微软旗下Azure ML已经形成了“云+企业软件+AI计算”三条成长曲线，其中AI算力营收增速已超过100%。  ChatGPT成功的背后离不开微软的算力投入: 根据36氪和新浪的消息，早在2019年，微软斥资几亿美元为Open AI的训练打造一台超级服 务器，其中包括上万张英伟达A100，旨意为ChatGPT和New Bing提供算力基础，同时，微软还在Azure的60多个数据中心部署了几十万张 GPU，用于ChatGPT的推理。价格上，英伟达A100价格约为15000美元/张，以一万张为例，AI芯片造价已经近1.5亿美元。此外，根据36 氪的消息，微软正在打造下一代超级计算机来为生成式AI进步奠定基础。我们认为微软此举的意义为有望吸引更多企业来使用Azure训练AI 服务，从而以AI为新驱动力，进而形成正向循环。 21 资料来源：美国企业硬件设备销售商Thinkmate，搜狐，36氪，新浪，英伟达官网，华西证券研究所 英伟达AI芯片H100 微软数据中心示意图 2.3 以云平台为抓手，AI赋能软硬件开启护城河  微作作为PC时代“霸主”，以操作系统为核心，构建生态: 公司1985年 正式推出Windows操作系统，为其产品与服务创新提供底层支撑；逐步 建立以Office办公软件为核心软件产品矩阵，包括Exchange(电子邮箱)、 Outlook(电子邮箱)、Skype(即时通信)、OneDrive（云存储）等，同时 积极拓展硬件产品布局，包括Surface笔记本、Xbox游戏机、HoloLens MR(混合现实)头显等。  公司大力发展云计算业务，全面进军云计算市场: 公司以Azure云计算平 台为核心，大力投入IDC建设，同时将Office等软件向SaaS产品转型， 力推Office 365、Dynamics 365、领英LinkedIn等产品，形成IaaS+P， 全面布局云计算市场。  公司以云为抓手，AI赋能软硬件开启护城河: 2014年萨提亚·纳德拉担任 公司CEO后，打破公司过去封闭式思维，在业务、技术、企业文化等各 方面走向开放。公司于2014年提出“移动优先、云优先”战略，不断调 整业务方向，大力发展Azure云计算平台、Office订阅服务等业务，建立 以Azure为中心的生态体系，在云与AI浪潮中，实现快速发展。目前，我 们认为在AI赋能软硬件中，微软具备领先优势，开启科技护城河。  目前公司业务分为个人计算、生产力与商业流程、智能云三大板块。 22 资料来源：微软官网，华西证券研究所 微软生态示意图 2.3.1 微软的个人计算全球领先，软硬件搭配使用具备粘性  微软的个人计算全球领先，且种类繁多: 主要产品可分为Windows(操作系统)、Bing(搜索引擎)、Xbox(电子游戏品牌)、Microsoft Surface(个人电脑系列)。我们认为软硬件之间具备粘性，且相互持续赋能。  Windows操作系统依旧处于全球“霸主”地位: 微软Windows 1.0操作系统于1985年问世，此后市占率居高不下，截至2023年2月底， Windows市占率依旧为第一(71.78%)，目前Windows版本已经迭代至11版本，且持续赋能微软个人电脑和Xbox等平台。  Bing为新兴搜索引擎: Bing搜索引擎起源于MSN Search，根据ARS数据，微软Bing在AI的赋能下活跃用户达到1亿。  XBOX为微软创立德电子游戏品牌: 其中包括电子游戏机、应用(游戏)、和在线服务，2020年，新版XbosX series X/S问世。  Microsoft Surface微软个人电脑设备系列: 其中包括二合一笔记本、平板电脑、一体机、手机和耳机等。 23 资料来源：statcounter，百度百科，IT之家，华西证券研究所 全球桌面操作系统市场份额 Xbox SeriesX 示意图 微软Surface Pro 9 2.3.2 微软以云平台为抓手，大力开展自主生态建设  公司以云为抓手，大力开展自主生态建设:公司于2014年提出“移动优先、云优先”的战略思想，并大力发展微软自主创建、测试、部署、 和管理应用程序和服务的云计算服务，并提供IaaS+PaaS+SaaS服务，支持不同编程语言、工具和框架，包括微软专用和第三方软件系统。  Microsoft Azure是支持本地、混合、多元、边缘的云解决方案: 服务种类繁多，可以提供计算、AI+ML、存储、数据管理、虚拟桌面、虚 拟机、数据库、认知服务、应用服务在内的多种产品，我们认为云计算作为公司生态抓手，为公司的内生成长增添强大动力，此外我们认为 该平台实为模型和算力之间的“桥梁”，是AIGC或大模型生成的必备要素，因为此平台可以实现资源的合理分配以达到软硬件的最优组合， 从而大幅提升模型效率。  此外，例如SQL server(关系型数据库)，Windows Server(视窗伺服器)，Visual Studio(集成开发环境)也在云平台或是大模型的生成部署 中扮演着举足轻重的作用，我们认为该基础软件作为平台基础在代码调用和模型适配方面具有重要作用。 24 资料来源：statcounter，微软官网，华西证券研究所 微软云架构 SQL server(关系型数据库) Visual Studio 2022编码器 2.3.3 应用软件持续加深微软护城河，形成全栈商业产业链  微软持续构建应用软件，以此加深公司护城河: 自1988年起，微软持续构建应用软件的生态，形成个人计算、生产力与商业流程、智能云全 栈产业链，目前微软相关产品包括Office 365、Dynamics365、领英等产品。  Office365是办公软件的绝对龙头: Microsoft 365是微软的生产力软件、协作和基于云服务产品系列。它包括在线服务，该软件产品种类繁 多，应用较为广阔，其中包括Word(办公文档)、Excel(电子表格)、PPT(幻灯片)、OneNote(笔记本)、Access(数据库)、Outlook(个人信息 管理器)、Onedrive(云存储)、PowerBI(可视化数据分析)等产品。  Dynamics365是面向企业的商业软件: 产品设计目的为帮助企业提高效率，降低成本，旗下产品种类包括CRM(客户关系管理)、Field Service(现场资源分配)、Human Resources(人力资源)、Finance(财务管理)、Supply Chain Management(供应链管理)等相关产品。  领英是一款社交网络服务网站: 专为商业人士设立，被称为社群功能在线履历始祖，可自动生成或带入电子名片。 25 资料来源：微软官网，华西证券研究所 Office365套件 Dynamics365 领英动态示意图 业务名称 图示 具体介绍 ChatGPT 对话模式的AI交互模型，具备回答一系列问题、承认 错误、质疑不正确的前提和拒绝不适当的请求等功能。 DALL·E2 是一个新的人工智能系统，可以根据自然语言的描述 创建逼真的图像和艺术。例如左图通过宇航员、骑马 和写实风格生成的图片 Whisper 是一种自然语言处理的神经网络模型，是一种自动语 音识别系统。并且支持多种语言的转录及翻译成为英 语。 Alignment 该项研究专注于训练AI系统，不断提升实用性、仿真 性和安全性，进一步探索和开发AI系统在人类反馈中 学习的方法。 Turing-NLG 图灵自然语言生成(T-NLG) 是Microsoft 的一个 170 亿参数语言模型，在许多下游NLP 任务上的表 现优于现有技术；该模型包括自由形式生成、问题回 答和摘要功能，以供反馈和研究之用。 Florence 多模态视觉基础模型Florence（佛罗伦萨），横扫超 过40个基准任务，轻松适用于如分类、目标检测、 VQA、看图说话、视频检索和动作识别等多个任务。 VALL-E 语音模型VALL-E，该模型通过三秒钟音频样本就可模 拟一个人的声音，同时可以保持说话人的情感语气。 VALL-E除了可进行语音生成和编辑，还能够模仿语音 环境，目标是尽量学会一个人的声音特征。 2.4",
+      "score": 0.07335715,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.92,
+  "request_id": "092bb959-7955-40e9-a5f4-4dddcb65f8f6"
+}
+2026-03-21 23:47:06,303 - DeepResearch - DEBUG - 搜索查询 'Quantum computing ventures by Asian companies in 2010s' 的原始结果:
+{
+  "query": "Quantum computing ventures by Asian companies in 2010s",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing",
+      "title": "List of companies involved in quantum computing, communication or ...",
+      "content": "2.   **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-2)**Swayne, Matt (2020-09-09). 6.   **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-6)**Heles, Thierry (2018-02-09). 8.   **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-8)**Whalen, Jeanne (2021-10-26). 9.   **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-9)**Calcul Québec (June 9, 2022). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-10)**Tovey, Alan (2015-12-26). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-:2_16-0)**Horwitz, Josh. **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-:0_17-0)**[\"(Press Release) Alibaba Group\"](http://www.alibabagroup.com/en/news/article?news=p150730). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-24)**Lardinois, Frederic (2018-09-25). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-:9_27-0)**Alves, Ystallonne (November 2019). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-30)**[\"Classiq Technologies Homepage\"](https://www.classiq.io/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-31)**[\"What's in a Name? **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-32)**[\"Quantum Algorithms\"](http://www.cogniframe.com/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-38)**[\"Product\"](https://www.elyah.io/product). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-39)**Punay, Nathanielle (2020-07-01). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-42)**[\"Equal1\"](https://www.equal1.com/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-59)**Hernandez, Daniela (2016-08-03). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-60)**Gregg, Aaron (2017-01-01). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-62)**[\"Kvantify\"](https://www.kvantify.com/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-63)**Marzo, Stefano De (2024-07-03). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-64)**[\"Press Release\"](https://docs.nanoacademic.com/qtcad/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-67)**[\"Next Generation Quantum, Corp\"](http://www.ngq.io/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-74)**Leprince-Ringuet, Daphne. **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-75)**[\"Oxford Ionics\"](https://www.oxionics.com/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-76)**[\"OxfordQuantumCircuits\"](https://oxfordquantumcircuits.com/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-77)**[\"Phasecraft: the quantum algorithms company\"](https://www.phasecraft.io/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-78)**Laws, Lauren (November 6, 2024). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-79)**Vance, Ashley (2020-04-06). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-80)**[\"Qblox Control and Readout Solutions\"](https://www.qblox.com/cluster). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-81)**[\"About Qblox\"](https://www.qblox.com/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-82)**[\"qBraid Main Page\"](https://www.qbraid.com/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-83)**[\"Qclairvoyance Main Page\"](https://qclairvoyance.com/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-87)**[\"About QuamCore\"](https://www.quamcore.com/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-88)**[\"About Quantagonia\"](https://www.quantagonia.com/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-89)**[\"Hybrid Quantum Platform\"](https://www.quantagonia.com/hybrid-quantum-platform). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-:4_90-0)**Giles, Martin. **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-91)**Lee, Jane Lanhee (2021-06-08). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-93)**[\"Quantum Solutions | Honeywell\"](https://www.honeywell.com/quantumsolutions). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-95)**Metz, Cade (2017-11-13). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-96)**[\"Quantum Computing Inc About Us\"](https://quantumcomputinginc.com/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-101)**K. **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-102)**[\"Qudoer technologies\"](https://qudora.com/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-104)**[\"QuiX Quantum | Photonic Quantum Computing\"](https://www.quixquantum.com/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-105)**[\"Qunnect, Inc\"](http://www.qunnect.inc/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-106)**Communications, QuSecure Inc. **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-108)**Communications, Raytheon Corporate. **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-109)**[\"SaxonQ GmbH\"](http://www.saxonq.com/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-110)**[\"Silicofeller: Quantum Tech\"](http://www.silicofeller.com/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-111)**[\"Think Quantum – | Quantum Technologies for Cyber Security\"](https://www.thinkquantum.com/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-113)**Karamehmet, Mehmet (1994). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-114)**[\"Taqbit Labs\"](http://taqbit.com/index.html). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-118)**[\"Product\"](https://www.zapatacomputing.com/orquestra/). **[^](https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing#cite_ref-119)**[\"About Us\"](https://www.zapatacomputing.com/about-us/).",
+      "score": 0.7923522,
+      "raw_content": null
+    },
+    {
+      "url": "https://thequantuminsider.com/2020/04/29/how-10-asian-companies-are-forging-the-the-quantum-computing-industry/",
+      "title": "9 Asian Companies in The Quantum Computing Market",
+      "content": "# How 9 Asian Companies are Forging The Quantum Computing Industry. As far as the QC activity goes, a partnership between the Chinese Academy of Sciences and the Alibaba Group’s cloud computing subsidiary created the Alibaba Quantum Computing Laboratory. Currently, Alibaba Quantum Computing Laboratory is researching quantum theory, with the idea of creating innovative security solutions within multiple industries like data collection and e-commerce. *[…]be a world-class Quantum Artificial Intelligence (AI) research strength, and to continuously integrate relevant quantum technologies into Baidu*. QuantumCTek is a Chinese initiative out of Heifei City, and is a spin-out from a quantum physics research group at the Hefei National Laboratory for Physical Science (HFNL) and University of Science and Technology of China (USTC). The company has a few research groups focussed exclusively on QC and the wider sphere of quantum information science technology. Others, both public and private, are dedicating their time, financial resources and reputations on creating a better world for us with the magic of quantum information science. **Quantum Computing & AI Research (QCAR) (private)**.",
+      "score": 0.57437146,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.researchgate.net/publication/400946168_Quantum_Computing_in_Asian_Countries_Financial_Development_Investment_Strategies_and_Economic_Implications",
+      "title": "Quantum Computing in Asian Countries: Financial Development ...",
+      "content": "This paper comparesfinancial development and policy approaches to quantum computing in key Asian economies(China, India, Japan, South Korea,",
+      "score": 0.5674818,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.uscc.gov/research/vying-quantum-supremacy-us-china-competition-quantum-technologies",
+      "title": "Vying for Quantum Supremacy",
+      "content": "[[66]](https://www.uscc.gov/research/vying-quantum-supremacy-us-china-competition-quantum-technologies#_ednref66) Blake Harris, “China Researchers Develop a Quantum Cryptography Network for Secure Local Government Communications,” _Government Technology_, August 2, 2010; “Major Achievement and Hallmark Advances during the Period of the 12th National Five-Year Plan: Quantum Communications,” _Bulletin of the Chinese Academy of Sciences_ 30, No. 2 (2016): 87–90. [[89]](https://www.uscc.gov/research/vying-quantum-supremacy-us-china-competition-quantum-technologies#_ednref89) “China’s 176-Qubit Quantum Computing Platform Goes Online,” _Chinese Academy of Sciences_, June 1, 2023. [[116]](https://www.uscc.gov/research/vying-quantum-supremacy-us-china-competition-quantum-technologies#_ednref116) “CSIS Commission on U.S. Quantum Leadership,” _Center for Strategic and International Studies_, January 2025, 14, 16. [[129]](https://www.uscc.gov/research/vying-quantum-supremacy-us-china-competition-quantum-technologies#_ednref129) Sam Howell, “The Quest for Qubits: Assessing U.S.-China Competition in Quantum Computing,” _CNAS_, May 2024, 12. [[132]](https://www.uscc.gov/research/vying-quantum-supremacy-us-china-competition-quantum-technologies#_ednref132) U.S. National Science Foundation, _Quantum Leap Challenge Institutes (QLCI)_, August 26, 2024. [[143]](https://www.uscc.gov/research/vying-quantum-supremacy-us-china-competition-quantum-technologies#_ednref143) Michael S. [[144]](https://www.uscc.gov/research/vying-quantum-supremacy-us-china-competition-quantum-technologies#_ednref144) Michael S. [[145]](https://www.uscc.gov/research/vying-quantum-supremacy-us-china-competition-quantum-technologies#_ednref145) Michael S. [[146]](https://www.uscc.gov/research/vying-quantum-supremacy-us-china-competition-quantum-technologies#_ednref146) Michael S. [[147]](https://www.uscc.gov/research/vying-quantum-supremacy-us-china-competition-quantum-technologies#_ednref147) “CSIS Commission on U.S. Quantum Leadership,” _Center for Strategic and International Studies_, January 2025, 20. [[159]](https://www.uscc.gov/research/vying-quantum-supremacy-us-china-competition-quantum-technologies#_ednref159) Matt Swayne, “Quantum Startup Atom Computing First to Exceed 1,000 Qubits,” _Quantum Insider_, June 17, 2024. [[162]](https://www.uscc.gov/research/vying-quantum-supremacy-us-china-competition-quantum-technologies#_ednref162) “About,” _PsiQuantum_.",
+      "score": 0.51413256,
+      "raw_content": null
+    },
+    {
+      "url": "https://arxiv.org/pdf/2202.12733",
+      "title": "[PDF] The emerging commercial landscape of quantum computing - arXiv",
+      "content": "Despite technological advances and a wave of investment, the emerging quantum computing (QC) commercial market still faces a high level of both technological and market uncertainty. Following the search methodology detailed in Box 1, we plotted the number of patent applications by incumbent firms in the North American (Fig. 1c) and Asian (Fig. 1d) markets and those of several start-up firms (Fig. 1e). https://www.bcg.com/en-ca/publications/2019/quantum-computers-create-value-when.aspx Enabling Quantum Computing Platform Access for National Science Foundation Researchers with Amazon Web Services, IBM, and Microsoft Quantum https://www.nsf.gov/pubs/2020/nsf20073/nsf20073.jsp US investment in future technologies https://www.whitehouse.gov/articles/trump-administration-investing-1-billion-research-institutes-advance-industries-future/ Archer signs agreement with IBM https://archerx.com.au//src/uploads/2020/05/20200505_Quantum-computing-agreement-with-IBM-ASX-Release.pdf PsiQuantum joins Microsoft’s M12 https://medium.com/m12vc/welcoming-psiquantum-to-the-m12-portfolio-56926b455a8f Amazon announces partnership with Caltech https://eas.caltech.edu/engenious/16/chair_message Becoming a quantum developer with Microsoft Quantum https://cloudblogs.microsoft.com/quantum/2020/05/19/azure-quantum-preview-new-developer-training-learning-tools/ Competing interests S.S. and E.R.M. are employees of the quantum computing start-up company Photonic Inc. FIG. Number of incumbent and start-up companies developing quantum computing (a) hardware and (b) software over the past 30 years. We define a start-up company as a venture that has been established to develop quantum computing (QC) technology.",
+      "score": 0.49231076,
+      "raw_content": null
+    }
+  ],
+  "response_time": 1.03,
+  "request_id": "117fc605-82c0-493d-b7ab-89cbc7782669"
+}
+2026-03-21 23:47:06,304 - DeepResearch - INFO - 开始从 20 个搜索结果中筛选前 10 个最佳 URL (目标读取: 5)
+2026-03-21 23:47:06,304 - DeepResearch - INFO - 正在加载本地多语言 Embedding 模型 (paraphrase-multilingual-MiniLM-L12-v2)...
+2026-03-21 23:47:13,491 - DeepResearch - INFO - 本地多语言 Embedding 模型加载完成。
+2026-03-21 23:47:13,899 - DeepResearch - INFO - 本地 Embedding 模型筛选出的 URL (10个): ['https://thequantuminsider.com/2020/04/29/how-10-asian-companies-are-forging-the-the-quantum-computing-industry/', 'https://www.researchgate.net/publication/400946168_Quantum_Computing_in_Asian_Countries_Financial_Development_Investment_Strategies_and_Economic_Implications', 'https://telecom.economictimes.indiatimes.com/news/chinese-gaming-giants-tencent-netease-snap-up-more-foreign-studios/93906114', 'https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing', 'https://retrostylegames.com/news/tencent-a-company-that-secretly-owns-the-gaming-industry/', 'https://arxiv.org/pdf/2202.12733', 'http://www.jlkjtz.com/uploads/20221109/238fc29f119a43f967ca512b666f976c.pdf', 'https://www.uscc.gov/research/vying-quantum-supremacy-us-china-competition-quantum-technologies', 'https://ca.finance.yahoo.com/news/japanese-online-gaming-firm-nexons-194651463.html', 'https://www.scribd.com/document/874255971/%E5%90%89%E6%9E%97%E7%A7%91%E6%8A%80%E6%8A%95%E8%B5%84']
+2026-03-21 23:47:13,900 - DeepResearch - DEBUG - Cache hit for URL: https://thequantuminsider.com/2020/04/29/how-10-asian-companies-are-forging-the-the-quantum-computing-industry/
+2026-03-21 23:47:13,900 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.researchgate.net/publication/400946168_Quantum_Computing_in_Asian_Countries_Financial_Development_Investment_Strategies_and_Economic_Implications
+2026-03-21 23:47:13,902 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://telecom.economictimes.indiatimes.com/news/chinese-gaming-giants-tencent-netease-snap-up-more-foreign-studios/93906114
+2026-03-21 23:47:13,902 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing
+2026-03-21 23:47:13,904 - DeepResearch - DEBUG - Cache hit for URL: https://retrostylegames.com/news/tencent-a-company-that-secretly-owns-the-gaming-industry/
+2026-03-21 23:47:15,448 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 114920
+2026-03-21 23:47:15,448 - DeepResearch - DEBUG - Cached content for URL: https://en.wikipedia.org/wiki/List_of_companies_involved_in_quantum_computing,_communication_or_sensing
+2026-03-21 23:47:16,847 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 606
+2026-03-21 23:47:16,847 - DeepResearch - DEBUG - Cached content for URL: https://www.researchgate.net/publication/400946168_Quantum_Computing_in_Asian_Countries_Financial_Development_Investment_Strategies_and_Economic_Implications
+2026-03-21 23:47:19,670 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 31937
+2026-03-21 23:47:19,670 - DeepResearch - DEBUG - Cached content for URL: https://telecom.economictimes.indiatimes.com/news/chinese-gaming-giants-tencent-netease-snap-up-more-foreign-studios/93906114
+2026-03-21 23:47:38,356 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-21 23:47:38,356 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://arxiv.org/pdf/2202.12733
+2026-03-21 23:47:39,191 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 16282
+2026-03-21 23:47:39,191 - DeepResearch - DEBUG - Cached content for URL: https://arxiv.org/pdf/2202.12733
+2026-03-21 23:48:02,077 - DeepResearch - DEBUG - 提取的关键信息: 根据提供的网页内容，我仔细提取了与搜索查询相关的信息点。查询的关键元素是：亚洲科技巨头、在2010年代全资收购北美游戏公司、同时涉足量子计算领域。网页内容专注于亚洲公司在量子计算领域的活动，但未提及任何公司收购北美游戏公司的事件。不过，网页提供了部分相关细节，特别是关于亚洲科技巨头涉足量子计算领域的信息，这些信息能部分回答查询的“涉足量子计算领域”部分，并提供背景支持。
+
+以下是提取的关键信息点，以列表形式呈现，确保基于网页内容的原始准确性：
+
+1. **Alibaba Group（阿里巴巴集团）涉足量子计算领域**：  
+   - Alibaba Group 是一家亚洲科技巨头，总部在中国，成立于1999年，是全球最大的上市公司之一。  
+   - 该公司通过其云计算子公司与中国科学院合作，创建了“Alibaba Quantum Computing Laboratory”，专注于量子理论研究和量子人工智能（AI）应用，目标是为数据收集和电子商务等行业开发创新安全解决方案。  
+   - 相关信息来源：网页中“1) Alibaba Group: Public”部分，发布于2020年，但活动始于2010年代。
+
+2. **Baidu Research（百度研究院）涉足量子计算领域**：  
+   - Baidu Research 是百度（亚洲科技巨头，总部在中国）的量子计算研究部门，成立于2018年，在硅谷、西雅图和北京设有办公室。  
+   - 该部门名为“Institute of Quantum Computing”，专注于量子AI、量子架构和量子算法，旨在整合量子技术到百度的业务中。  
+   - 相关信息来源：网页中“4) Baidu Research: Public”部分，发布于2020年，但活动始于2010年代末期。
+
+**注意**：  
+- 网页内容未提及任何公司“在2010年代全资收购北美游戏公司”的信息。查询的这一部分无法从当前内容中获取支持。  
+- 提取的信息仅基于网页提供的细节，未添加任何外部知识或概括。网页发布于2020年，讨论的是2010年代及之前的量子计算活动，因此时间范围部分相关。  
+- 其他公司（如JSR Corporation或Entropica Labs）虽涉足量子计算，但未被描述为“科技巨头”或未提供足够细节，因此未列入。
+2026-03-21 23:48:02,077 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: http://www.jlkjtz.com/uploads/20221109/238fc29f119a43f967ca512b666f976c.pdf
+2026-03-21 23:48:12,770 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 170308
+2026-03-21 23:48:12,896 - DeepResearch - DEBUG - Cached content for URL: http://www.jlkjtz.com/uploads/20221109/238fc29f119a43f967ca512b666f976c.pdf
+2026-03-21 23:48:16,854 - DeepResearch - DEBUG - 提取的关键信息: 根据网页内容，提取与搜索查询“在2010年代（2010s），哪家亚洲科技巨头全资收购了一家北美游戏公司，同时涉足量子计算领域？”相关的信息点。网页内容主要讨论腾讯和网易两家中国科技巨头收购外国游戏工作室的情况，但没有提及量子计算领域的信息。
+
+以下是提取的关键相关点，以列表形式呈现：
+- **亚洲科技巨头**：腾讯控股（Tencent Holdings）和网易（NetEase Inc）是中国科技巨头，被视为亚洲科技公司。
+- **全资收购北美游戏公司**：腾讯在2011年（2010年代期间）全资收购了Riot Games，一家北美游戏公司（总部位于美国），Riot Games是《英雄联盟》（League of Legends）的开发者。
+- **收购背景**：腾讯和网易正在加速收购外国游戏工作室（包括北美和欧洲），以应对国内监管压力并扩张全球市场，但文章强调的收购案例（如腾讯收购英国的Sumo Group、网易收购法国的Quantic Dream SA）大部分发生在2020年代早期，而非2010年代，除Riot Games收购。
+- **网易的收购**：网易被提及收购了外国工作室（如Quantic Dream SA），但具体公司位于法国（欧洲），不属于北美，且未提供2010年代的类似收购细节。
+- **量子计算领域**：网页内容未涉及腾讯或网易在量子计算领域的任何信息或活动。
+
+网页未完整回答查询，因为它仅部分覆盖了2010年代收购北美游戏公司的信息（腾讯对Riot Games的收购），但未提及量子计算，且网易的收购主要针对欧洲公司。
+2026-03-21 23:48:16,855 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.uscc.gov/research/vying-quantum-supremacy-us-china-competition-quantum-technologies
+2026-03-21 23:48:18,427 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 208690
+2026-03-21 23:48:18,427 - DeepResearch - DEBUG - Cached content for URL: https://www.uscc.gov/research/vying-quantum-supremacy-us-china-competition-quantum-technologies
+2026-03-21 23:48:33,646 - DeepResearch - DEBUG - 提取的关键信息: 根据任务要求，我仔细分析了提供的网页内容。网页标题为“List of companies involved in quantum computing, communication or sensing”，来源为Wikipedia，发布于2016年9月18日。但提供的网页内容仅包含页面元数据（如导航栏、警告信息和占位符内容），并没有列出任何具体的公司名称、收购事件或其他实质性细节。主要内容集中在页面结构、编辑需求和列表标准不足的警告上，没有任何与搜索查询相关的具体信息。
+
+搜索查询的关键点包括：
+- 时间范围：2010年代（2010s）
+- 公司类型：亚洲科技巨头
+- 事件：全资收购一家北美游戏公司
+- 附加条件：涉足量子计算领域
+
+在提供的网页内容中：
+- 没有提及任何公司名称，无论是亚洲公司还是北美公司。
+- 没有提到任何收购事件，尤其是与北美游戏公司相关的。
+- 没有涉及量子计算领域的公司具体活动或背景。
+- 内容主要围绕页面的维护和引用需求，缺乏任何数据支持或相关细节。
+
+因此，基于提供的内容，无法提取任何部分回答查询、提供背景知识或相关细节的信息点。
+
+**提取结果：**
+无相关信息
+2026-03-21 23:48:33,647 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://ca.finance.yahoo.com/news/japanese-online-gaming-firm-nexons-194651463.html
+2026-03-21 23:48:33,953 - DeepResearch - WARNING - Jina Reader 返回非 200 状态码: 451, URL: https://ca.finance.yahoo.com/news/japanese-online-gaming-firm-nexons-194651463.html
+2026-03-21 23:48:33,954 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.scribd.com/document/874255971/%E5%90%89%E6%9E%97%E7%A7%91%E6%8A%80%E6%8A%95%E8%B5%84
+2026-03-21 23:48:34,227 - DeepResearch - WARNING - Jina Reader 返回非 200 状态码: 451, URL: https://www.scribd.com/document/874255971/%E5%90%89%E6%9E%97%E7%A7%91%E6%8A%80%E6%8A%95%E8%B5%84
+2026-03-21 23:48:36,281 - DeepResearch - DEBUG - 提取的关键信息: 根据用户查询和提供的网页内容，我提取了所有与查询相关的关键信息点。查询的目标是识别在2010年代（2010-2019年）期间，哪家亚洲科技巨头全资收购了一家北美游戏公司，同时涉足量子计算领域。网页内容主要聚焦于腾讯（Tencent），一家中国科技公司，涉及其在游戏行业的收购活动和多元化业务。尽管网页内容未明确量子计算在2010年代的具体活动（网页提到2023年的进展），但提供了部分相关背景和数据支持。
+
+以下是根据任务要求提取的关键信息点，以列表形式呈现。每个点都基于网页原始内容，保持准确性，避免过度概括：
+
+1. **腾讯作为亚洲科技巨头**：  
+   - 腾讯是一家亚洲（中国）科技巨头，总部位于深圳（Shenzhen, China）。网页明确提到公司起源于1998年，并在2010年代成长为全球游戏行业的领导者。
+
+2. **2010年代全资收购北美游戏公司**：  
+   - 腾讯在2011年全资收购了Riot Games，一家北美游戏公司（总部位于洛杉矶）。网页明确指出："In a significant move, Tencent acquired Riot Games in 2011" 和 "Through this acquisition, Tencent gained full control over Riot Games and its flagship game, League of Legends"。这发生在2010年代内，Riot Games是知名的北美游戏开发商（代表作包括《英雄联盟》）。
+
+3. **涉足量子计算领域**：  
+   - 腾讯涉足了量子计算领域，具体体现在2023年设立了量子研究实验室。网页提到："Another branch we’ll mention is **quantum computing**. In 2023, Tencent unveiled its quantum research laboratory in Shenzhen. The establishment of Tencent Quantum Lab has pioneered advancements such as the development of a quantum chip。" 这表明腾讯在量子计算领域有实质性投入，尽管实验室设立时间（2023年）超出了2010年代范围，但提供了公司在该领域的背景信息。
+
+4. **其他相关背景（支持收购部分）**：  
+   - 腾讯在2010年代进行了大量游戏公司投资：网页提到"Tencent has invested in domestic and international game companies since the 2010s"，包括收购Supercell（2016年），但Supercell是一家芬兰公司（非北美），且腾讯仅获得"majority stake"（多数股权），未达到全资收购标准。因此，Riot Games是唯一符合"全资收购北美游戏公司"条件的案例。
+   - 腾讯在2010年代的整体扩张：网页数据支持腾讯在2010年代的快速成长，例如"the number of employees has reached 108k with quarterly revenue of fintech and business services of 52bn CNY"，这突显了公司作为科技巨头的规模。
+
+**注意**：网页内容未提供腾讯在2010年代具体涉足量子计算的证据（量子计算活动主要在2023年提及），因此查询的"同时涉足量子计算领域"部分只有部分匹配（公司整体涉足，但时间不完全重合）。然而，以上信息点部分回答了查询，提供了背景和数据支持。
+2026-03-21 23:48:46,119 - DeepResearch - DEBUG - 提取的关键信息: 基于用户查询“在2010年代（2010s），哪家亚洲科技巨头全资收购了一家北美游戏公司，同时涉足量子计算领域？”我仔细分析了提供的网页内容。网页标题为“The emerging commercial landscape of quantum computing”，主要关注量子计算（QC）市场的发展趋势、公司策略和专利活动，但未涉及任何游戏公司收购事件。网页内容中没有提到任何具体的亚洲科技巨头名称（如Samsung、Huawei等），也未提及北美游戏公司或相关收购。然而，网页提供了与查询中“涉足量子计算领域”部分相关的背景信息，特别是亚洲公司在量子计算领域的整体活动。这些信息不能完整回答查询，但具有背景价值。
+
+以下是提取的关键信息点，基于网页内容的相关部分（保持原始准确性）：
+
+1. **亚洲公司在量子计算领域的参与**：网页提到亚洲现有公司（incumbents）在量子计算领域稳步增长其专利组合，尤其是在过去二十年中。例如，在Fig. 1d中显示，亚洲公司从早期就持续积累量子计算专利，与其他区域相比表现出不同的发展模式（原文："the majority of Asian incumbents have steadily grown their patent portfolios over two decades of developmental research"）。
+   
+2. **2010年代量子计算市场发展**：量子计算技术在2010年代开始商业化。关键事件包括：
+   - 2011年：D-Wave Systems卖出第一个量子退火系统，标志着商业化的起点（原文："the number of start-up companies began increasing in 2011 when D-Wave Systems sold its first quantum annealing system"）。
+   - 2015年：初创公司数量超过现有公司（原文："by 2015 — one year before IBM's release of the first commercial cloud quantum computer — the number of start-ups surpassed the number of incumbents active in the field"）。
+   - 2016年：IBM发布首个商业云量子计算机，推动了北美市场的快速增长（原文："IBM's 2016 commercial release" 和 "American incumbents emerged much later but developed faster after IBM's 2016 commercial release"）。
+
+3. **量子计算公司策略**：网页讨论了不同公司的量子计算策略，包括IBM的“full-stack approach”（控制整个价值链）和Microsoft及Amazon的“structural open innovation”（整合硬件和软件初创公司）。这些公司是北美企业，但策略示例展示了量子计算领域的整体动态（原文："IBM has been a dominant presence... pursuing a 'full-stack' business strategy" 和 "Microsoft and Amazon have opted to pursue structural open innovation... partnering with hardware start-ups"）。
+
+**注意**：以上信息仅涉及量子计算领域的背景和趋势，与查询中的“收购北美游戏公司”部分完全无关。网页未提供任何关于游戏公司或特定收购事件的信息，也未指名任何亚洲科技巨头。如果用户需要更具体的收购信息，建议查询其他来源。
+2026-03-21 23:49:02,088 - DeepResearch - DEBUG - 提取的关键信息: 根据提供的网页内容，我提取了与搜索查询相关的信息点。查询的关键部分是“亚洲科技巨头”和“涉足量子计算领域”。网页内容主要讨论了中美在量子技术领域的竞争，并提到了几家中国科技公司在量子计算方面的投资。然而，网页内容**没有提及任何与收购北美游戏公司相关的信息**，也没有具体时间（如2010年代）的细节。因此，我只能提取部分相关且有价值的信息点，即亚洲科技巨头涉足量子计算领域的细节。
+
+提取的信息点基于网页内容的原始描述，保持准确性，不添加额外信息。以下是相关关键信息点的列表：
+
+1. **阿里巴巴 (Alibaba)**：作为中国主要的国内科技公司之一，阿里巴巴在量子计算领域进行了重大投资。网页内容指出：“major domestic technology companies such as Alibaba, Tencent, Baidu, and Huawei have made significant investments in quantum computing.”（来源：网页正文的“State Coordination Drives Rapid but Uneven Quantum Computing Progress”部分）
+
+2. **腾讯 (Tencent)**：腾讯同样被列为涉足量子计算领域的中国科技巨头，进行了重大投资。网页内容同上句。
+
+3. **百度 (Baidu)**：百度是另一家被提及的中国公司，在量子计算领域有显著投入。网页内容同上句。
+
+4. **华为 (Huawei)**：华为也被确认为在量子计算领域进行投资的科技巨头。网页内容同上句。
+
+这些信息点部分回答了查询的“涉足量子计算领域”部分，但网页内容**未提供任何关于这些公司在2010年代全资收购北美游戏公司的信息**。因此，查询的完整答案无法从该网页中获取。
+2026-03-21 23:49:22,580 - DeepResearch - DEBUG - 提取的关键信息: - 富士康创投被描述为隐形的CVC巨头，富士康是亚洲科技公司（总部在台湾），在资本投资领域活跃（页面36）。
+- 中国宣布计划在未来数年投资20亿美元于量子计算研究，显示亚洲国家在量子计算领域的参与（页面5）。
+- 印度政府计划投资11.2亿美元用于量子计算研究，提及可能与IBM和谷歌等公司合作，体现亚洲在量子计算领域的战略布局（页面5）。
+2026-03-21 23:49:22,581 - DeepResearch - INFO - 开始分析搜索结果，当前查询: 在2010年代（2010s），哪家亚洲科技巨头全资收购了一家北美游戏公司，同时涉足量子计算领域？
+2026-03-21 23:49:58,448 - DeepResearch - DEBUG - 分析结果原始响应: {
+    "extracted_info": [
+        "腾讯在2011年全资收购了Riot Games，一家北美游戏公司（基于来源2和3）。",
+        "腾讯涉足量子计算领域，包括在2023年设立量子研究实验室（基于来源3）。",
+        "阿里巴巴在2010年代涉足量子计算领域，与中国科学院合作创建量子计算实验室（基于来源1）。",
+        "百度在2018年涉足量子计算领域，设立了量子计算研究所（基于来源1）。",
+        "腾讯、阿里巴巴、百度等亚洲科技巨头投资量子计算领域（基于来源5）。"
+    ]
+}
+2026-03-21 23:49:58,449 - DeepResearch - INFO - 开始规划下一步，原始问题: 一位物理学领域的学者为一种经典棋盘游戏设计的评分系统，后来被一家北美游戏公司广泛应用于其一款多人在线战术竞技游戏中。这家公司的母公司是一家亚洲科技巨头，该巨头在21世纪10年代完成了对前者的全资收购，并涉足量子计算等前沿科技领域。在这家北美公司开发的另一款第一人称射击游戏中，有一件适合近距离作战的武器，其名称与上述亚洲巨头代理发行的一款格斗手游中的一名在登场角色中年龄偏大的武术教官角色相同。这款格斗手游的名字是什么？
+2026-03-21 23:50:55,105 - DeepResearch - DEBUG - 规划下一步原始响应: {
+    "think": [
+        "当前已确认事实：腾讯为亚洲科技巨头，在2011年全资收购了北美游戏公司Riot Games；腾讯涉足量子计算；Riot Games的MOBA游戏可能为《英雄联盟》，但未确认物理学学者设计的评分系统部分。",
+        "尚未闭合的关键缺口：需确认Riot Games开发的另一款FPS游戏名称；该游戏中用于近距离作战的武器具体名称；腾讯代理发行的格斗手游名称；并验证武器名称是否与格斗手游中年龄偏大的武术教官角色名称匹配。",
+        "下一跳优先级：Riot Games的FPS游戏信息（区分度最高）——因其为独家产品（目前仅确认《Valorant》）且涉及'公司+游戏类型'精确组合，一旦锁定游戏即可唯一追溯武器名称，该名称将直接关联角色名称形成闭环。",
+        "若武器名称验证成功，下一步将聚焦'武器名匹配的格斗手游角色'查询，以获取手游名称；当前证据链不完整，亚洲巨头虽确认但下游实体缺失。"
+    ],
+    "is_fully_answered": false,
+    "final_answer": "",
+    "next_question": "在腾讯旗下Riot Games开发的另一款第一人称射击游戏中，具体游戏名称是什么？特别是游戏中用于近距离作战的标准武器官方名称是什么？"
+}
+2026-03-21 23:50:55,106 - DeepResearch - INFO - 规划下一步完成，耗时 55.32s，history_text 长度 675
+2026-03-21 23:50:55,106 - DeepResearch - INFO - 开始拆解用户问题: 在腾讯旗下Riot Games开发的另一款第一人称射击游戏中，具体游戏名称是什么？特别是游戏中用于近距离作战的标准武器官方名称是什么？
+2026-03-21 23:51:15,737 - DeepResearch - DEBUG - LLM 拆解问题原始响应: ["腾讯旗下Riot Games第一人称射击游戏名称", "Riot Games FPS游戏武器列表", "Valorant游戏中标准近距离武器官方名称"]
+2026-03-21 23:51:15,737 - DeepResearch - INFO - 生成的子查询列表: ['腾讯旗下Riot Games第一人称射击游戏名称', 'Riot Games FPS游戏武器列表', 'Valorant游戏中标准近距离武器官方名称']
+2026-03-21 23:51:15,738 - DeepResearch - INFO - 第 2 轮搜索查询: ['Valorant游戏中标准近距离武器官方名称', '在腾讯旗下Riot Games开发的另一款第一人称射击游戏中，具体游戏名称是什么？特别是游戏中用于近距离作战的标准武器官方名称是什么？', 'Riot Games FPS游戏武器列表', '腾讯旗下Riot Games第一人称射击游戏名称']
+2026-03-21 23:51:15,738 - DeepResearch - INFO - 正在执行搜索查询: Valorant游戏中标准近距离武器官方名称
+2026-03-21 23:51:15,739 - DeepResearch - INFO - 正在执行搜索查询: 在腾讯旗下Riot Games开发的另一款第一人称射击游戏中，具体游戏名称是什么？特别是游戏中用于近距离作战的标准武器官方名称是什么？
+2026-03-21 23:51:15,740 - DeepResearch - INFO - 正在执行搜索查询: Riot Games FPS游戏武器列表
+2026-03-21 23:51:15,740 - DeepResearch - INFO - 正在执行搜索查询: 腾讯旗下Riot Games第一人称射击游戏名称
+2026-03-21 23:51:17,170 - DeepResearch - DEBUG - 搜索查询 'Valorant游戏中标准近距离武器官方名称' 的原始结果:
+{
+  "query": "Valorant游戏中标准近距离武器官方名称",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://playvalorant.com/zh-tw/arsenal/",
+      "title": "選擇你的武器 - VALORANT",
+      "content": "輕巧且多用途的制式手槍是所有玩家的預設武器。 短管。 類型// 隨身武器. 能有效給予近距離的敵人驚喜。 狂弒. 類型// 隨身武器. 近距離時扣板機就對了。距離太遠的話……",
+      "score": 0.99837697,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.reddit.com/r/VALORANT/comments/qzfuvs/weapons_name_reference/?tl=zh-hans",
+      "title": "武器名称参考: r/VALORANT - Reddit",
+      "content": "我突然想到。我玩过的其他第一人称射击游戏通常使用武器的真实名称，但在Valorant 里不是。所以我编了这些参考：. Classic - 经典款，或者默认款.",
+      "score": 0.9947391,
+      "raw_content": null
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/713446620",
+      "title": "《VALORANT》瓦洛兰特全武器介绍新手指南上篇 - 知乎专栏",
+      "content": "类型：随身武器轻巧且多用途的制式手枪是所有玩家的预设武器。 SHORTY短管类型：随身武器能有效给予近距离的敌人惊喜。 FRENZY狂弑 类型：随身武器近距离时扣板机就对了。距离",
+      "score": 0.99394965,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.9game.cn/news/4444033.html",
+      "title": "无畏契约Valorant武器皮肤套装一览无畏契约Valorant武器皮肤好看吗",
+      "content": "... 中近距离战斗。-Ghost：幽灵手枪的特点是低调且精准，适合在近距离遭遇战中快速部署。 全武器枪械属性汇总手枪Classic短枪Shorty手枪Frenzy冲锋枪",
+      "score": 0.99187535,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.9game.cn/news/4444712.html",
+      "title": "《Valorant》枪械大全瓦罗兰特全武器性能强度评估 - 九游",
+      "content": "中距离不要想着和步枪对枪，基本就是死. 霰弹枪：. Bucky 单喷. 左键扩散较为严重，距离较近. 右键扩散更小，射程更远. 中近距离右键有奇效，有一发致死的能力.",
+      "score": 0.98469365,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.63,
+  "request_id": "7a2e13ed-76c7-44bd-85fc-22456f55c835"
+}
+2026-03-21 23:51:17,187 - DeepResearch - DEBUG - 搜索查询 '腾讯旗下Riot Games第一人称射击游戏名称' 的原始结果:
+{
+  "query": "腾讯旗下Riot Games第一人称射击游戏名称",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.zhihu.com/question/376176175",
+      "title": "如何评价Riot Games 公布旗下全新战术射击游戏正式命名 ...",
+      "content": "10周年庆典上，我们曾向大家透露一款开发中的第一人称射击游戏“Project A”，今天我们正式为你揭晓它的名字：VALORANT！ VALORANT是拳头游戏为全球玩家打造的",
+      "score": 0.9998945,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.zhihu.com/question/376176175/answer/3515170685",
+      "title": "如何评价Riot Games 公布旗下全新战术射击游戏正式命名 ...",
+      "content": "10周年庆典上，我们曾向大家透露一款开发中的第一人称射击游戏“Project A”，今天我们正式为你揭晓它的名字：VALORANT！ VALORANT是拳头游戏为全球玩家打造",
+      "score": 0.99981624,
+      "raw_content": null
+    },
+    {
+      "url": "https://cloud.tencent.com/developer/news/977098",
+      "title": "腾讯官宣：VALORANT国服过审，拿到版号，全新中文名为无畏契约",
+      "content": "Valorant是拳头游戏（Riot Games），开发的第一人称FPS射击手游，也宣布了拳头将进FPS领域。Valorant在项目建立之初，不叫这个名字，当时候叫“Project A”。",
+      "score": 0.9996724,
+      "raw_content": null
+    },
+    {
+      "url": "https://m.cyzone.cn/article/793107",
+      "title": "丁磊射向腾讯的最后一颗子弹 - 创业邦",
+      "content": "这期间，元气有所耗损的腾讯放缓了攻势，但依旧凭借旗下长线运营的“长青游戏”稳固阵脚，并祭出如《三角洲行动》等新作，进一步巩固自身在FPS（第一人称射击）领域的霸主地位。",
+      "score": 0.997917,
+      "raw_content": null
+    },
+    {
+      "url": "https://baike.baidu.com/item/%E6%97%A0%E7%95%8F%E5%A5%91%E7%BA%A6/50370598",
+      "title": "无畏契约_百度百科",
+      "content": "《无畏契约（VALORANT）》是一款由拳头游戏（Riot Games）开发并且免费的多人第一人称射击游戏。该游戏是一款以英雄角色为核心的5V5的战术射击网游，采用FPS经典“爆破模式”",
+      "score": 0.9879462,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.6,
+  "request_id": "b6c37ccb-3258-4bb9-90c0-a0e33f0313d2"
+}
+2026-03-21 23:51:17,275 - DeepResearch - DEBUG - 搜索查询 'Riot Games FPS游戏武器列表' 的原始结果:
+{
+  "query": "Riot Games FPS游戏武器列表",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://playvalorant.com/zh-tw/arsenal/",
+      "title": "選擇你的武器 - VALORANT",
+      "content": "Riot Games為您呈獻《特戰英豪》：一款以角色為核心的5對5第一人稱戰略射擊遊戲， ... 一把相當平衡的武器，為了穩定及延展射擊距離而打造。",
+      "score": 0.99877447,
+      "raw_content": null
+    },
+    {
+      "url": "https://playvalorant.com/zh-tw/news/tags/arsenal/",
+      "title": "武器",
+      "content": "Riot Games為您呈獻《特戰英豪》：一款以角色為核心的5對5第一人稱戰略射擊遊戲，展現精準射擊與特務獨門技能的完美結合。探索更多《特戰英豪》和其中有型有款的角色",
+      "score": 0.9978173,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.bilibili.com/read/cv5724949/",
+      "title": "拳头FPS新游《瓦罗兰特Valorant》玩法、经济、枪械、地图 - Bilibili",
+      "content": "Valorant是一款全新的的由Riot Games打造的战术第一人称射击游戏，在游戏中，玩家们要使用不同的特工、丰富的技能搭配与枪法战胜对手。 很多玩家并不看好这款游戏，因为每",
+      "score": 0.93674946,
+      "raw_content": null
+    },
+    {
+      "url": "https://games.gg/zh-Hant/valorant/",
+      "title": "Valorant：5v5 戰術射擊，精準槍法與技能決勝負！ | GAMES.GG",
+      "content": "渴望一款結合精準射擊與戰略技能的戰術射擊遊戲嗎？《Valorant》將經典戰術FPS 的精準槍法與多元特務的獨特能力融為一體。這款Riot Games 推出的免費競技射擊遊戲",
+      "score": 0.51952136,
+      "raw_content": null
+    },
+    {
+      "url": "https://playvalorant.com/zh-tw/",
+      "title": "《特戰英豪》——5對5競技戰略射擊遊戲，操控身懷獨特技能的特務",
+      "content": "Riot Games為您呈獻《特戰英豪》：一款以角色為核心的5對5第一人稱戰略射擊遊戲，展現精準射擊與特務獨門技能的完美結合。探索更多《特戰英豪》和其中有型有款的角色",
+      "score": 0.36296922,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.69,
+  "request_id": "2e43609f-dc92-4564-a98a-0c72623af42a"
+}
+2026-03-21 23:51:17,342 - DeepResearch - DEBUG - 搜索查询 '在腾讯旗下Riot Games开发的另一款第一人称射击游戏中，具体游戏名称是什么？特别是游戏中用于近距离作战的标准武器官方名称是什么？' 的原始结果:
+{
+  "query": "在腾讯旗下Riot Games开发的另一款第一人称射击游戏中，具体游戏名称是什么？特别是游戏中用于近距离作战的标准武器官方名称是什么？",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://zh.wikipedia.org/zh-cn/%E8%BF%91%E8%B7%9D%E7%A6%BB%E4%BD%9C%E6%88%98%E7%B3%BB%E5%88%97",
+      "title": "近距离作战系列- 维基百科，自由的百科全书",
+      "content": "近距离作战（英语：Close Combat）是由原子游戏（英语：Atomic Games）开发的一系列即时战术(RTT) 电脑游戏。在近距离作战中，玩家以二维俯视视角控制一小支部队（排或者连级）",
+      "score": 0.64957863,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.sohu.com/a/380348623_120099888",
+      "title": "Riot第一人称射击游戏登场，看起就像守望先锋加上CS：GO - 搜狐",
+      "content": "几天前国外游戏媒体爆料，Rito申请了「Valorant」这个非常像游戏名称的使用商标，接着推特账号「@PlayValorant」随即开设，并吸引了许多职业FPS游戏电竞玩家",
+      "score": 0.44552955,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.sohu.com/a/404204316_602994",
+      "title": "《英雄联盟》开发商再出新作！战术射击游戏《Valorant》玩起来怎么 ...",
+      "content": "没错，这就是一款5VS5 战术型第一人称射击游戏。流畅的战斗体验与全新的武器系统配合特工技能，让它独树一帜。 《Valorant》 的游戏开发商正是大名鼎鼎",
+      "score": 0.24944724,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.reddit.com/r/truegaming/comments/s33uq/lets_discuss_the_state_of_weapons_in_modern_first/?tl=zh-hans",
+      "title": "咱们来聊聊现代第一人称射击游戏里的武器。 : r/truegaming - Reddit",
+      "content": "《半条命：对抗力量》里的位移枪，它可以把敌人传送出关卡，如果打得近，还能把他们炸成碎片，甚至还能把你传送到异世界，只要你有弹药。",
+      "score": 0.19314738,
+      "raw_content": null
+    },
+    {
+      "url": "https://zh.wikipedia.org/wiki/%E6%8B%B3%E5%A4%B4%E6%B8%B8%E6%88%8F",
+      "title": "拳頭遊戲- 維基百科，自由的百科全書",
+      "content": "| 2009 | 英雄联盟 | *League of Legends* | MOBA | macOS、Windows | Riot Games |  |. | 聯盟外傳：殞落王者 | *Ruined King: a League of Legends Story（英语：Ruined King）* | 電子角色扮演遊戲 | Nintendo Switch, PlayStation 4、Windows、Xbox One | Airship Syndicate | Riot Forge（英语：Riot Forge） |. | 2023 | 聯盟外傳：聚合之力 | *Convergence: A League of Legends Story（英语：Convergence: A League of Legends Story）* | 橫向捲軸遊戲 | Playstation 4/5、Xbox One、Xbox Series X/S、Nintendo Switch、Windows | Double Stallion | Riot Forge（英语：Riot Forge） |. | 2025 | 符文战场 | *Riftbound: League of Legends Trading Card Game* | 桌上遊戲、 集換式卡牌遊戲 | 不適用 | Riot Games | 開發計畫為Project K。 |. The past, present and future of League of Legends studio Riot Games. Riot Games' League of Legends Announced. **^** League of Legends Developers Are Working on a New Game. **^** Riot Games acquires hypixel Studios. The next League of Legends spinoff is an ancient board game. **^** Riot Games is making a League of Legends MMO - Polygon.",
+      "score": 0.18359362,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.85,
+  "request_id": "edcc01cd-dfe8-4db4-b89b-b610fa1fed1a"
+}
+2026-03-21 23:51:17,343 - DeepResearch - INFO - 开始从 19 个搜索结果中筛选前 10 个最佳 URL (目标读取: 5)
+2026-03-21 23:51:17,483 - DeepResearch - INFO - 本地 Embedding 模型筛选出的 URL (10个): ['https://www.zhihu.com/question/376176175', 'https://www.zhihu.com/question/376176175/answer/3515170685', 'https://www.reddit.com/r/VALORANT/comments/qzfuvs/weapons_name_reference/?tl=zh-hans', 'https://baike.baidu.com/item/%E6%97%A0%E7%95%8F%E5%A5%91%E7%BA%A6/50370598', 'https://www.reddit.com/r/truegaming/comments/s33uq/lets_discuss_the_state_of_weapons_in_modern_first/?tl=zh-hans', 'https://playvalorant.com/zh-tw/news/tags/arsenal/', 'https://www.sohu.com/a/380348623_120099888', 'https://www.bilibili.com/read/cv5724949/', 'https://cloud.tencent.com/developer/news/977098', 'https://playvalorant.com/zh-tw/']
+2026-03-21 23:51:17,484 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.zhihu.com/question/376176175
+2026-03-21 23:51:17,484 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.zhihu.com/question/376176175/answer/3515170685
+2026-03-21 23:51:17,484 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.reddit.com/r/VALORANT/comments/qzfuvs/weapons_name_reference/?tl=zh-hans
+2026-03-21 23:51:17,486 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://baike.baidu.com/item/%E6%97%A0%E7%95%8F%E5%A5%91%E7%BA%A6/50370598
+2026-03-21 23:51:17,486 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.reddit.com/r/truegaming/comments/s33uq/lets_discuss_the_state_of_weapons_in_modern_first/?tl=zh-hans
+2026-03-21 23:51:17,839 - DeepResearch - WARNING - Jina Reader 返回非 200 状态码: 451, URL: https://www.zhihu.com/question/376176175/answer/3515170685
+2026-03-21 23:51:17,840 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://playvalorant.com/zh-tw/news/tags/arsenal/
+2026-03-21 23:51:18,202 - DeepResearch - WARNING - Jina Reader 返回非 200 状态码: 451, URL: https://www.zhihu.com/question/376176175
+2026-03-21 23:51:18,202 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.sohu.com/a/380348623_120099888
+2026-03-21 23:51:18,449 - DeepResearch - WARNING - Jina Reader 返回非 200 状态码: 451, URL: https://www.sohu.com/a/380348623_120099888
+2026-03-21 23:51:18,449 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.bilibili.com/read/cv5724949/
+2026-03-21 23:51:20,049 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 547
+2026-03-21 23:51:20,049 - DeepResearch - DEBUG - Cached content for URL: https://www.reddit.com/r/truegaming/comments/s33uq/lets_discuss_the_state_of_weapons_in_modern_first/?tl=zh-hans
+2026-03-21 23:51:20,951 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 519
+2026-03-21 23:51:20,952 - DeepResearch - DEBUG - Cached content for URL: https://www.reddit.com/r/VALORANT/comments/qzfuvs/weapons_name_reference/?tl=zh-hans
+2026-03-21 23:51:22,145 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 5010
+2026-03-21 23:51:22,146 - DeepResearch - DEBUG - Cached content for URL: https://playvalorant.com/zh-tw/news/tags/arsenal/
+2026-03-21 23:51:23,514 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 810
+2026-03-21 23:51:23,659 - DeepResearch - DEBUG - Cached content for URL: https://www.bilibili.com/read/cv5724949/
+2026-03-21 23:51:34,988 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 106961
+2026-03-21 23:51:34,989 - DeepResearch - DEBUG - Cached content for URL: https://baike.baidu.com/item/%E6%97%A0%E7%95%8F%E5%A5%91%E7%BA%A6/50370598
+2026-03-21 23:51:36,385 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-21 23:51:36,386 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://cloud.tencent.com/developer/news/977098
+2026-03-21 23:51:37,952 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-21 23:51:37,953 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://playvalorant.com/zh-tw/
+2026-03-21 23:51:41,211 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-21 23:51:41,889 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 4375
+2026-03-21 23:51:41,890 - DeepResearch - DEBUG - Cached content for URL: https://playvalorant.com/zh-tw/
+2026-03-21 23:51:51,878 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 10923
+2026-03-21 23:51:51,879 - DeepResearch - DEBUG - Cached content for URL: https://cloud.tencent.com/developer/news/977098
+2026-03-21 23:52:12,199 - DeepResearch - DEBUG - 提取的关键信息: 基于提供的网页内容，我提取了与搜索查询相关的所有有用信息点。搜索查询关注的是腾讯旗下Riot Games开发的第一人称射击游戏的具体名称，以及游戏中用于近距离作战的标准武器的官方名称。网页内容主要来自Valorant（特战英豪）的官方网站，涉及武器相关主题，但没有直接完整回答查询。以下是提取的关键信息点，以列表形式呈现，保持原始准确性：
+
+1. **游戏名称确认**：网页内容明确提到游戏名称是“特战英豪”（Valorant），例如在版权声明中："RIOT GAMES、《特戰英豪》及其相關標誌皆為 Riot Games, Inc.專屬之商標、服務商標及註冊商標。" 这确认了该游戏是Riot Games开发的第一人称射击游戏。
+   
+2. **武器相关背景**：网页标题为“武器”，并包含多个武器相关的文章链接，如“全新槍枝：「逃犯」設計理念”和“《特戰英豪》武器造型的工藝與幻想”，表明游戏中有武器系统，但未具体描述任何标准武器的官方名称。
+
+3. **近距离作战武器缺失**：网页内容未提及任何用于近距离作战的标准武器的官方名称（如霰弹枪或手枪）。文章如“新手指南”仅涉及游戏技巧，未列出武器细节；提到的“逃犯”是一个新武器，但未说明它是标准或近距离类型。
+
+4. **游戏背景信息**：网页URL（playvalorant.com）和内容多次引用“特戰英豪”，强化了游戏的身份，但未提供武器具体数据。
+
+**总结**：网页内容部分回答了游戏名称（Valorant/特战英豪），但未包含与查询中“近距离作战的标准武器官方名称”相关的任何信息。所有提取点均基于网页原始内容。
+2026-03-21 23:52:19,563 - DeepResearch - DEBUG - 提取的关键信息: 根据提供的网页内容，提取与搜索查询相关的信息点如下。搜索查询关注腾讯旗下Riot Games开发的第一人称射击游戏的具体名称，以及游戏中用于近距离作战的标准武器的官方名称。网页内容主要介绍《无畏契约》（VALORANT），这是由Riot Games开发的一款第一人称射击游戏。以下信息基于网页内容提取，保持原始准确性：
+
+- **游戏名称**：《无畏契约》（VALORANT），由拳头游戏（Riot Games）开发，腾讯于2021年9月宣布引进该游戏。
+- **游戏类型**：这是一款免费的多人第一人称射击游戏，采用5V5战术射击玩法，核心模式为“爆破模式”，玩家使用不同类型的武器枪械参与战斗。
+- **近距离作战武器的相关信息**：网页内容提到游戏中武器分为多个类别，包括手枪、冲锋枪、霰弹枪、步枪和机枪。其中，霰弹枪被描述为适合近距离作战的标准武器类型，具体官方名称包括：
+  - **獠犬（Bucky）**：一种霰弹枪，专为近距离战斗设计。
+  - **判官（Judge）**：另一种霰弹枪，同样适用于近距离作战。
+  - 网页未指定一个单一的“标准武器”名称，但霰弹枪类别被明确关联到近距离作战场景，玩家在游戏中可根据回合购买这些武器。
+
+网页内容未提供更多关于“标准武器”的细节（如是否有一个默认或通用名称），但以上武器名称和类别直接与查询相关，提供部分答案和背景知识。
+2026-03-21 23:52:27,914 - DeepResearch - DEBUG - 提取的关键信息: 根据网页内容，提取与搜索查询相关的有用信息如下：
+
+1. **游戏名称**：VALORANT（中文名称：特戰英豪）。  
+   - 依据：网页标题为 "VALORANT"，内容中明确提到 "《特戰英豪》——5對5競技戰略射擊遊戲"，且URL源为游戏官网。
+
+2. **游戏类型**：第一人称射击游戏（FPS）。  
+   - 依据：内容描述为 "5對5競技戰略射擊遊戲"，这与查询中 "第一人称射击游戏" 一致。
+
+3. **武器相关信息**：  
+   - 网页提及游戏包含武器系统，如 "在攻防輪替中善用頂尖槍法與戰略技能" 和 "除了槍枝彈藥"，但未提供任何具体武器的官方名称，包括用于近距离作战的标准武器。  
+   - 网页有 "武器" 链接（https://playvalorant.com/zh-tw/arsenal/），暗示可能有更多武器细节，但当前内容本身未列出武器名称。
+
+提取的信息基于网页原始内容，未添加推断。网页未完整回答查询的第二部分（具体武器官方名称），但提供了游戏名称和武器存在的背景信息。
+2026-03-21 23:52:38,344 - DeepResearch - DEBUG - 提取的关键信息: 根据提供的网页内容，提取与搜索查询相关的信息。查询关注腾讯旗下Riot Games开发的第一人称射击游戏的具体名称，以及游戏中用于近距离作战的标准武器官方名称。
+
+网页内容中明确提到了游戏名称和相关背景，但没有涉及任何武器细节。以下是提取的关键信息点，以列表形式呈现，保持原始准确性：
+
+- **游戏具体名称**：VALORANT（英文名），中文官方名称为“无畏契约”，由Riot Games开发，腾讯旗下。内容提到：“Valorant是拳头游戏（Riot Games），开发的第一人称FPS射击手游”和“全新中文名为无畏契约”。
+- **游戏中用于近距离作战的标准武器官方名称**：网页内容未提及任何武器细节，包括近距离作战武器的名称。因此，无相关信息。
+2026-03-21 23:52:38,345 - DeepResearch - INFO - 开始分析搜索结果，当前查询: 在腾讯旗下Riot Games开发的另一款第一人称射击游戏中，具体游戏名称是什么？特别是游戏中用于近距离作战的标准武器官方名称是什么？
+2026-03-21 23:53:09,988 - DeepResearch - DEBUG - 分析结果原始响应: {
+    "extracted_info": [
+        "腾讯旗下Riot Games开发的另一款第一人称射击游戏的具体名称为VALORANT（也称为《特戰英豪》或《无畏契约》）。",
+        "游戏中用于近距离作战的标准武器的官方名称包括獠犬（Bucky）和判官（Judge）。"
+    ]
+}
+2026-03-21 23:53:09,988 - DeepResearch - INFO - 开始规划下一步，原始问题: 一位物理学领域的学者为一种经典棋盘游戏设计的评分系统，后来被一家北美游戏公司广泛应用于其一款多人在线战术竞技游戏中。这家公司的母公司是一家亚洲科技巨头，该巨头在21世纪10年代完成了对前者的全资收购，并涉足量子计算等前沿科技领域。在这家北美公司开发的另一款第一人称射击游戏中，有一件适合近距离作战的武器，其名称与上述亚洲巨头代理发行的一款格斗手游中的一名在登场角色中年龄偏大的武术教官角色相同。这款格斗手游的名字是什么？
+2026-03-21 23:53:46,379 - DeepResearch - DEBUG - 规划下一步原始响应: {
+    "think": [
+        "当前已确认关键事实：亚洲科技巨头为腾讯；腾讯在2011年全资收购北美游戏公司Riot Games；Riot Games开发的FPS游戏为VALORANT；其中用于近距离作战的标准武器官方名称为'獠犬（Bucky）'和'判官（Judge）'",
+        "尚未闭合的关键缺口：需验证腾讯代理的格斗手游中'年龄偏大的武术教官角色'的官方名称，并与VALORANT武器名称（Bucky/Judge）比对是否匹配；最终需确认格斗手游的具体名称",
+        "下一跳优先级最高：'腾讯代理发行 + 格斗手游类型 + 年龄偏大武术教官角色'组合区分度极高——机构名(腾讯)、游戏类型(格斗)、角色属性(年龄、职业)三者叠加，可避免泛搜并直接锁定唯一角色与手游名称，形成武器-角色-手游证据闭环",
+        "信息增益最大：角色名称一旦确认，即可与已知武器名称(Bucky或Judge)快速核验匹配，解锁格斗手游名称；该查询可一次性解决当前证据链瓶颈",
+        "接近可回答状态：若角色名称与武器名称匹配，则格斗手游名称可直接输出；但差最后一核验点：角色名验证及其与武器的对齐"
+    ],
+    "is_fully_answered": false,
+    "final_answer": "",
+    "next_question": "在腾讯代理发行的格斗手游中，年龄偏大的武术教官角色的官方名称是什么？"
+}
+2026-03-21 23:53:46,380 - DeepResearch - INFO - 规划下一步完成，耗时 35.52s，history_text 长度 1322
+2026-03-21 23:53:46,380 - DeepResearch - INFO - 开始拆解用户问题: 在腾讯代理发行的格斗手游中，年龄偏大的武术教官角色的官方名称是什么？
+2026-03-21 23:54:08,454 - DeepResearch - DEBUG - LLM 拆解问题原始响应: ["腾讯代理格斗手游列表", "腾讯格斗手游武术教官角色", "年龄偏大武术教官官方名称", "腾讯手游角色图鉴"]
+2026-03-21 23:54:08,455 - DeepResearch - INFO - 生成的子查询列表: ['腾讯代理格斗手游列表', '腾讯格斗手游武术教官角色', '年龄偏大武术教官官方名称', '腾讯手游角色图鉴']
+2026-03-21 23:54:08,455 - DeepResearch - INFO - 第 3 轮搜索查询: ['年龄偏大武术教官官方名称', '在腾讯代理发行的格斗手游中，年龄偏大的武术教官角色的官方名称是什么？', '腾讯格斗手游武术教官角色', '腾讯手游角色图鉴', '腾讯代理格斗手游列表']
+2026-03-21 23:54:08,456 - DeepResearch - INFO - 正在执行搜索查询: 年龄偏大武术教官官方名称
+2026-03-21 23:54:08,457 - DeepResearch - INFO - 正在执行搜索查询: 在腾讯代理发行的格斗手游中，年龄偏大的武术教官角色的官方名称是什么？
+2026-03-21 23:54:08,458 - DeepResearch - INFO - 正在执行搜索查询: 腾讯格斗手游武术教官角色
+2026-03-21 23:54:08,459 - DeepResearch - INFO - 正在执行搜索查询: 腾讯手游角色图鉴
+2026-03-21 23:54:08,461 - DeepResearch - INFO - 正在执行搜索查询: 腾讯代理格斗手游列表
+2026-03-21 23:54:09,830 - DeepResearch - DEBUG - 搜索查询 '腾讯手游角色图鉴' 的原始结果:
+{
+  "query": "腾讯手游角色图鉴",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://pvp.qq.com/ip/m/skin.html",
+      "title": "皮肤鉴赏-世界观体验站 - 王者荣耀",
+      "content": "罗刹妄海阿轲 皮肤封面 星君·亢金达摩 皮肤封面 踏浪归韩信 皮肤封面 春霖将至上官婉儿 皮肤封面 星君·娄金李元芳 皮肤封面 颠倒童话.魔镜安琪拉 皮肤封面",
+      "score": 0.4562407,
+      "raw_content": null
+    },
+    {
+      "url": "https://slg.qq.com/wjlist.html",
+      "title": "游戏图鉴 - 乱世王者",
+      "content": "是腾讯天美工作室研发的全自由即时策略手游。你将置身于瞬息万变的活战场，从零兴建城邦，统率世界英雄，不断扩张领土。在极致写实的大世界战场中自由行军与战斗，",
+      "score": 0.4513029,
+      "raw_content": null
+    },
+    {
+      "url": "https://pvp.qq.com/web201605/herolist.shtml",
+      "title": "英雄介绍-王者荣耀官方网站",
+      "content": "# Ӣ۽.",
+      "score": 0.39501804,
+      "raw_content": null
+    },
+    {
+      "url": "https://speedm.qq.com/m/m201712/car_list.shtml",
+      "title": "载具图鉴-QQ飞车手游官方网站-腾讯游戏",
+      "content": "游戏资料 · 魅娅天禄昭祥 特洛伊工业 T · 荣耀天启 雷诺重工 T · 酌菁花影 极星动力 B · 时序使者春序 阿尔法科技 A · 森屿花眠岚樱 阿尔法科技 A · 森屿花眠 阿尔法科技 A · 神威",
+      "score": 0.3934788,
+      "raw_content": null
+    },
+    {
+      "url": "https://speedm.qq.com/web201712/car_list.shtml",
+      "title": "载具图鉴-QQ飞车手游官方网站-腾讯游戏",
+      "content": "游戏资料 · 魅娅天禄昭祥 特洛伊工业. T · 荣耀天启 雷诺重工. T · 酌菁花影 极星动力. B · 时序使者春序 阿尔法科技. A · 森屿花眠岚樱 阿尔法科技. A · 森屿花",
+      "score": 0.3775871,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.59,
+  "request_id": "4da8d978-935d-4ea6-9ebe-cfd1e64749bc"
+}
+2026-03-21 23:54:09,998 - DeepResearch - DEBUG - 搜索查询 '腾讯格斗手游武术教官角色' 的原始结果:
+{
+  "query": "腾讯格斗手游武术教官角色",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://gp.qq.com/story/lite.html",
+      "title": "和平精英官方网站-腾讯游戏",
+      "content": "角色信息. 武道昌盛的龙脊关，让霍驰风磨练出强健的筋骨，而身上流淌的将门血脉，让他更添几分不服输的韧劲。年少成名的他，凭借骑射绝技横扫龙脊关，唯雷枪少年行云，能与之",
+      "score": 0.8984106,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.3dmgame.com/oxja/169lB7D",
+      "title": "mg摆脱电子游戏试玩「📜史诗吟唱版」",
+      "content": "... 武术，那ITAY GIL 则是现代以色列格斗术的灵魂人物。 以色列格斗术又称为马伽术。是来自上个世纪60年代在以色列发展创立出的军用徒手格斗体系～Krav Maga。",
+      "score": 0.03904829,
+      "raw_content": null
+    },
+    {
+      "url": "https://baike.baidu.com/item/%E6%8B%B3%E7%9A%87%E5%91%BD%E8%BF%90/20496625",
+      "title": "拳皇命运",
+      "content": "简介：能够自由操纵雷电的天才格斗家。 能力：雷电攻击 。 2张. 二阶堂红丸. 大门五郎（Goro Daimon）. 性格：寡言沉稳。 能力：柔道武术、我流格斗武术 。",
+      "score": 0.009485713,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.uzzf.com/ydapp/621218.html",
+      "title": "格斗大师手游1.7.2 安卓中文版",
+      "content": "格斗大师手游,在残酷的战斗中成为胜利者并不容易。面对不同的敌人击败他们并击倒他们。使用快速反应和特殊动作，释放硬拳，击中完美的技能组合，",
+      "score": 0.008610767,
+      "raw_content": null
+    },
+    {
+      "url": "https://newgame.17173.com/content/09132020/211224847.shtml",
+      "title": "拳皇世界菲斯布朗（Faith Brown）图鉴",
+      "content": "拳皇世界菲斯布朗（Faith Brown）图鉴 ; 个人信息 ; 年龄, 国籍, 星座 ; 25, 美国, 处女座 ; 兴趣 ; 格斗术、古武术、古典音乐、pink颜色和哈雷摩托.",
+      "score": 0.0017477858,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.74,
+  "request_id": "777258a6-3377-4c5e-8e72-d2c677e95d99"
+}
+2026-03-21 23:54:10,097 - DeepResearch - DEBUG - 搜索查询 '腾讯代理格斗手游列表' 的原始结果:
+{
+  "query": "腾讯代理格斗手游列表",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://top.17173.com/list-1-72-4-0-0-0-0-0-0-0.html?__stay_on_pc=",
+      "title": "格斗手游期待榜 - 网游排行榜- 17173",
+      "content": "【三国之刃】是腾讯独家代理、飞鱼科技旗下的翼逗网络研发的三国题材的动作格斗手游。独创的自由组合战技系统，配合特色的兵器和灵兽技能，可搭配出上万种格斗套路，让",
+      "score": 0.767429,
+      "raw_content": null
+    },
+    {
+      "url": "https://sj.qq.com/topic/200414603",
+      "title": "打击感强的动作手游：超燃格斗盛宴来袭 - 应用宝- 腾讯",
+      "content": "这里有一大波超爽动作手游｡在热血世界里尽情战斗,释放压力,感受指尖上的格斗狂欢,每个游戏都独具魅力,快来开启你的动作之旅吧｡ 《航海王：壮志雄心》：腾讯与万代南梦宫联手",
+      "score": 0.7371019,
+      "raw_content": null
+    },
+    {
+      "url": "https://m.wandoujia.com/bangdan/1345242/",
+      "title": "腾讯的格斗游戏有哪些",
+      "content": "腾讯的格斗游戏有哪些 · 一拳超人正义执行手游版01 · 拳皇命运 · 航海王：燃烧意志 · 王者荣耀星之破晓 · 一人之下 · 相关专题推荐 · 最新专题推荐 · 相关游戏推荐",
+      "score": 0.65597594,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.87g.com/zhuanji/593.html",
+      "title": "腾讯代理游戏大全",
+      "content": "小编推荐 ; 堡垒之夜手游. 飞行射击333MB ; 奇迹MU：觉醒. 角色扮演1.66GB ; 猎鱼达人官方正版手游. 休闲益智1.2GB ; 绝地求生全军出击. 飞行射击5.36MB ; 怪物弹珠. 角色扮演",
+      "score": 0.61251885,
+      "raw_content": null
+    },
+    {
+      "url": "https://game.qq.com/m/m201910/introduce.html",
+      "title": "游戏介绍",
+      "content": "《火影忍者》是由万代南梦宫正版授权、腾讯游戏研发的唯一正版火影格斗手游。 ... 《完美世界》手游是由腾讯游戏代理，完美世界研发的自由飞行战斗RPG手游，产品于",
+      "score": 0.5996498,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.85,
+  "request_id": "cf010082-4436-4788-8881-5170e85f9664"
+}
+2026-03-21 23:54:10,625 - DeepResearch - DEBUG - 搜索查询 '年龄偏大武术教官官方名称' 的原始结果:
+{
+  "query": "年龄偏大武术教官官方名称",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.mjac.moj.gov.tw/media/28222/8712143765.pdf?mediaDL=true",
+      "title": "[PDF] 矯正戰技與警技摔角銜接訓練之思考",
+      "content": "（二）受訓年齡：警大學生均為高中畢業生，年齡多集中在19 至23 歲；矯正戰技班. 年齡落差大，約於20 幾歲至50 幾歲。 ... 法務部矯正署組訓「矯正戰技教官班」，接受各項實用武術",
+      "score": 0.9511422,
+      "raw_content": null
+    },
+    {
+      "url": "http://baike.baidu.com/item/%E5%85%AB%E6%9E%81%E6%8B%B3/667120?noadapt=1",
+      "title": "八极拳（中国传统武术拳种之一） - 百度百科",
+      "content": "八极拳（Bajiquan），全称开门八极拳，古称“巴子拳”或“钯子拳”，又称岳山八极拳，中国传统武术重要拳种之一，属内家拳，以六大开、八大招为技术核心，套路多变。",
+      "score": 0.117572136,
+      "raw_content": null
+    },
+    {
+      "url": "https://news.sina.cn/2015-11-08/detail-ifxknivr4305131.d.html?vt=4",
+      "title": "巫跛仙:一代宗师在异乡湖南的传奇 - 新浪新闻",
+      "content": "原标题：巫跛仙:一代宗师在异乡湖南的传奇彭建家巫家拳传人。上过班、辞过职、做过生意，唯武术和拳艺，在他一个甲子的人生旅途中有着沉甸甸的重量。",
+      "score": 0.00462753,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.reddit.com/r/WarCollege/comments/1daijh1/what_is_the_importance_of_physical_fitness_in/?tl=zh-hans",
+      "title": "现代军队中，体能的重要性是什么？ : r/WarCollege - Reddit",
+      "content": "最后，我想到了乌克兰和俄罗斯士兵的平均年龄偏大；年纪大的人可能不如年轻人那么健康。 体能对军队有多重要？它如何影响士兵完成工作的能力？显然",
+      "score": 0.0033634927,
+      "raw_content": null
+    },
+    {
+      "url": "https://irlib.pccu.edu.tw/bitstream/987654321/20448/2/168gsweb.pdf",
+      "title": "[PDF] 華語文化課程教學設計之研究-以詠春拳為例",
+      "content": "詠春拳華語教學 生詞 (1)詠春拳 wing3 chun1 kuen2 (2)小念頭 xiao3 nian4 tou2 (3)中線 zhong1 xian4：a midline; a centerline 20 分鐘 72 圖4-4 人體中線圖 (4)內八 nei4 ba1 ： to stand with a shape like Chinese character \"eight\" 圖4-5「內八」示意圖 (5)放鬆 fang4 song1：to relax; to loosen 華語教師於第一堂課程進行教學的同時 ， 須注意加強學習者對生字的印 象，使學習者能夠聽懂、說出、並且辨認出已教過之生詞，但不要求學習者 進行生詞書寫。 第二部分之「詠春拳實務操作課程」教案如下所示： 節次 詠春拳華語：第二節（共兩節） 教學者 詠春拳專業教師 節次 教學流程 時間 課前 說明 詠春拳實務操作課程： 由詠春拳專業教師示範教學，華語教師引導課程進行並 輔助之 第 一 堂 教 學 活 動 1. 小念頭套路教學：套路教學 (1)左耕手 (2)左攤手 (3)左圈打 (4)左標指、左圈手、左收拳 70 分鐘 節次 詠春拳華語：第二節 教學者 華語教師 節次 教學流程 時間 教 學 活 動 問題討論/指定作業 (1)確認學習者是否對當日課程仍存有疑惑 、 或進行學習 狀況之討論 (2)指定練習作業：小念頭招式練習 5 分鐘 122 課程名稱 詠春拳華語教學課程-小念頭 教學節次 第十二堂/共二十 堂 節次 詠春拳華語：第一節（共兩節） 教學者 華語教師 節次 教學流程 時間 引起 動機 播放詠春拳相關之影片引起學習動機 10 分鐘 第 十 二 堂 教 學 活 動 1. 小念頭套路教學：套路教學 (1)小念頭套路總複習 70 分鐘 節次 詠春拳華語：第二節 教學者 華語教師 節次 教學流程 時間 教 學 活 動 問題討論/指定作業 (1)確認學習者是否對當日課程仍存有疑惑 、 或進行學習 狀況之討論 (2)指定練習作業：小念頭招式練習 5 分鐘 130 課程名稱 詠春拳華語教學課程-小念頭 教學節次 第二十堂/共二十 堂 節次 詠春拳華語：第一節（共兩節） 教學者 華語教師 節次 教學流程 時間 引起 動機 播放詠春拳相關之影片引起學習動機 5 分鐘 第 二 十 堂 教 學 活 動 1.",
+      "score": 0.0010775027,
+      "raw_content": null
+    }
+  ],
+  "response_time": 1.17,
+  "request_id": "76367473-b1dd-40b6-97c4-3d92c9559a41"
+}
+2026-03-21 23:54:15,399 - DeepResearch - DEBUG - 搜索查询 '在腾讯代理发行的格斗手游中，年龄偏大的武术教官角色的官方名称是什么？' 的原始结果:
+{
+  "query": "在腾讯代理发行的格斗手游中，年龄偏大的武术教官角色的官方名称是什么？",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://xinyue.qq.com/act/a20220701graderules/list.html",
+      "title": "腾讯游戏产品授权列表 - 心悦俱乐部",
+      "content": "格斗大冒险; 全民闯天下; 艾兰岛; 全民泡泡大战; 刀锋美人; 宫爆老奶奶2; 潮爆三国; 悟空降魔; 魔龙勇士; 姜饼人酷跑; 全民偶像; 复仇者联盟; 天天宝石大战; 勇者大冒险手",
+      "score": 0.07602966,
+      "raw_content": null
+    },
+    {
+      "url": "https://zh.wikipedia.org/wiki/%E6%9B%BE%E5%8D%93%E5%90%9B",
+      "title": "曾卓君- 維基百科，自由的百科全書",
+      "content": "# 曾卓君. **曾卓君**（1989年4月26日—），绰号和游戏IDXiaohai（小孩），广东省广州市人，中国大陆格斗游戏职业玩家。他曾获得多项世界级格斗游戏比赛的冠军，因为在2007年日本斗剧《拳皇'98》项目夺冠而一战成名。在2017年SNK官方授予“小孩”曾卓君“中国区-拳皇玩家导师 ”称号。曾卓君被认为是中国大陆格斗电竞第一人，及历史上最成功的拳皇玩家。. | 2012 | EVO 2012 | 街霸4 | 第四名 |. | 2013 | Canada Cup 2013 | 街霸4 | 冠军 |. | 2014 | Topanga World League | 街霸4 | 亚军 |. | ESL One 2016 / The Brooklyn Beatdown | 街霸5 | 冠军 |. | SoCal Regionals 2016 | 拳皇14 | 冠军 |. | Canada Cup 2016 | 街霸5 | 亚军 |. | 2017 | EVO 2017 | 拳皇14 | 亚军 |. | 2018 | Community Effort Orlando 2018 | 街霸5 | 亚军 |. | SoCal Regionals 2018 | 街霸5 | 亚军 |. | NeoGeo World Tour | 拳皇98 | 冠军 |. | 2019 | NeoGeo World Tour 2 | 拳皇98 | 冠军 |. | 2023 | EVO 2023 | 拳皇15 | 冠軍 |. 1. **^** SNK授“小孩”曾卓君“中国区-拳皇玩家导师 ”称号. 5. **^** 横扫日本选手，小孩曾卓君电竞世界杯夺冠！网友：堪比第41枚金牌\\_街霸\\_拳皇\\_中国. 7. **^** Why King of Fighters 13 isn’t coming back to Evo （页面存档备份，存于互联网档案馆）.VG247.2015-O1-28.[2015-08-01]. 8. **^** Evo 16 Side Events. 9. **^** Evo 18 Side Events.",
+      "score": 0.072328284,
+      "raw_content": null
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/20067276",
+      "title": "三十七格斗天王小孩曾卓君 - 知乎专栏",
+      "content": "中国电子竞技幕后史三十七格斗天王小孩曾卓君文/BBKinG 三十多个耳光！ 这是7岁的曾卓君第二次去街机房玩格斗游戏时，他父亲给他留下的记忆。 但并不是因为他去打游戏，",
+      "score": 0.070540525,
+      "raw_content": null
+    },
+    {
+      "url": "http://news.17173.com/content/01052026/101034811_1.shtml",
+      "title": "热游情报：又爆一款！腾讯代理搜打撤2个月留存超90% - 新闻- 17173",
+      "content": "说《ARC Raiders》是腾讯的游戏，其实是混淆了代理运营权与开发/ 所有权，核心原因如下： 国服代理与本地化开发：腾讯拿下该作中国大陆地区的独家代理权，还获",
+      "score": 0.06909459,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.bilibili.com/read/cv3564811/",
+      "title": "真人快打系列所有角色的官方译名与简单介绍和吐槽（上） - Bilibili",
+      "content": "本系列灵魂人物之一，游戏制作人Ed Boon最喜欢的角色，不是在复仇就是在复仇的路上，被初代绝对零度所杀，系列重启后第一次以人类形象出场。在1,2,3,4,5,6,7,8,9,10,11中出场。",
+      "score": 0.06708697,
+      "raw_content": null
+    }
+  ],
+  "response_time": 1.05,
+  "request_id": "083603d6-e2b7-4e54-9a55-90ef3cbd9faf"
+}
+2026-03-21 23:54:15,400 - DeepResearch - INFO - 开始从 25 个搜索结果中筛选前 10 个最佳 URL (目标读取: 5)
+2026-03-21 23:54:15,571 - DeepResearch - INFO - 本地 Embedding 模型筛选出的 URL (10个): ['https://zh.wikipedia.org/wiki/%E6%9B%BE%E5%8D%93%E5%90%9B', 'https://www.mjac.moj.gov.tw/media/28222/8712143765.pdf?mediaDL=true', 'https://zhuanlan.zhihu.com/p/20067276', 'http://baike.baidu.com/item/%E5%85%AB%E6%9E%81%E6%8B%B3/667120?noadapt=1', 'https://baike.baidu.com/item/%E6%8B%B3%E7%9A%87%E5%91%BD%E8%BF%90/20496625', 'https://www.3dmgame.com/oxja/169lB7D', 'https://gp.qq.com/story/lite.html', 'https://news.sina.cn/2015-11-08/detail-ifxknivr4305131.d.html?vt=4', 'https://top.17173.com/list-1-72-4-0-0-0-0-0-0-0.html?__stay_on_pc=', 'https://www.uzzf.com/ydapp/621218.html']
+2026-03-21 23:54:15,572 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://zh.wikipedia.org/wiki/%E6%9B%BE%E5%8D%93%E5%90%9B
+2026-03-21 23:54:15,572 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.mjac.moj.gov.tw/media/28222/8712143765.pdf?mediaDL=true
+2026-03-21 23:54:15,572 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://zhuanlan.zhihu.com/p/20067276
+2026-03-21 23:54:15,573 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: http://baike.baidu.com/item/%E5%85%AB%E6%9E%81%E6%8B%B3/667120?noadapt=1
+2026-03-21 23:54:15,575 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://baike.baidu.com/item/%E6%8B%B3%E7%9A%87%E5%91%BD%E8%BF%90/20496625
+2026-03-21 23:54:19,577 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 7177
+2026-03-21 23:54:19,578 - DeepResearch - DEBUG - Cached content for URL: https://zh.wikipedia.org/wiki/%E6%9B%BE%E5%8D%93%E5%90%9B
+2026-03-21 23:54:21,521 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 28992
+2026-03-21 23:54:21,657 - DeepResearch - DEBUG - Cached content for URL: https://www.mjac.moj.gov.tw/media/28222/8712143765.pdf?mediaDL=true
+2026-03-21 23:54:31,593 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 165
+2026-03-21 23:54:31,594 - DeepResearch - DEBUG - Cached content for URL: https://zhuanlan.zhihu.com/p/20067276
+2026-03-21 23:54:32,728 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-21 23:54:32,729 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.3dmgame.com/oxja/169lB7D
+2026-03-21 23:54:32,988 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 63600
+2026-03-21 23:54:32,988 - DeepResearch - DEBUG - Cached content for URL: https://baike.baidu.com/item/%E6%8B%B3%E7%9A%87%E5%91%BD%E8%BF%90/20496625
+2026-03-21 23:54:33,048 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 45426
+2026-03-21 23:54:33,048 - DeepResearch - DEBUG - Cached content for URL: http://baike.baidu.com/item/%E5%85%AB%E6%9E%81%E6%8B%B3/667120?noadapt=1
+2026-03-21 23:54:42,141 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-21 23:54:42,141 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://gp.qq.com/story/lite.html
+2026-03-21 23:54:46,871 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-21 23:54:46,872 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://news.sina.cn/2015-11-08/detail-ifxknivr4305131.d.html?vt=4
+2026-03-21 23:54:51,596 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 3581
+2026-03-21 23:54:51,596 - DeepResearch - DEBUG - Cached content for URL: https://www.3dmgame.com/oxja/169lB7D
+2026-03-21 23:54:53,324 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 6572
+2026-03-21 23:54:53,445 - DeepResearch - DEBUG - Cached content for URL: https://news.sina.cn/2015-11-08/detail-ifxknivr4305131.d.html?vt=4
+2026-03-21 23:54:53,587 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-21 23:54:53,588 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://top.17173.com/list-1-72-4-0-0-0-0-0-0-0.html?__stay_on_pc=
+2026-03-21 23:54:54,940 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 187167
+2026-03-21 23:54:54,940 - DeepResearch - DEBUG - Cached content for URL: https://gp.qq.com/story/lite.html
+2026-03-21 23:55:02,125 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-21 23:55:02,126 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.uzzf.com/ydapp/621218.html
+2026-03-21 23:55:05,783 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-21 23:55:06,723 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 8399
+2026-03-21 23:55:06,723 - DeepResearch - DEBUG - Cached content for URL: https://top.17173.com/list-1-72-4-0-0-0-0-0-0-0.html?__stay_on_pc=
+2026-03-21 23:55:07,891 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-21 23:55:21,090 - DeepResearch - WARNING - Jina Reader 返回非 200 状态码: 422, URL: https://www.uzzf.com/ydapp/621218.html
+2026-03-21 23:55:50,635 - DeepResearch - DEBUG - 提取的关键信息: 根据提供的网页内容，搜索查询是“在腾讯代理发行的格斗手游中，年龄偏大的武术教官角色的官方名称是什么？”。网页内容来自腾讯游戏代理发行的“和平精英”手游（一款包含格斗元素的射击游戏），描述了多个角色。虽然网页内容中没有明确提到一个完全符合“年龄偏大”（通常指40岁以上）的武术教官角色，但角色“驰风飞将”的部分信息与查询相关，提供了背景知识和部分细节（例如，身份是职业导师，涉及武道元素）。以下是从网页内容中提取的所有相关有用信息点，以列表形式呈现，保持原始准确性：
+
+- **角色名称**: 驰风飞将（官方中文名）  
+- **英文名**: Gale General  
+- **年龄**: 28岁（相对其他角色如20岁的云舟或27岁的十杀，年龄稍大，但可能不满足“偏大”的严格定义）  
+- **身份**: 超体对抗职业导师（类似于教官或教练角色）  
+- **职业**: 武道修行者（涉及武术元素）  
+- **擅长武器**: 弓箭  
+- **个人能力**: 骑马、射箭、骑射（体现武术技能）  
+- **信条**: 强者恒强（反映教官式的心态）  
+- **阵营**: 和平国联  
+- **技能描述**: 承袭龙脊关的武道底蕴，身怀精湛的骑射绝技。可策马穿梭于乱军之中，利用箭矢快速位移，并凭借密集的破击箭雨横扫战场（强调战斗和指导性技能）  
+- **相关人物关系**: 指挥官――严格的领导（间接涉及教官式角色）  
+
+这些信息点部分回答查询，提供了角色背景，但年龄28岁可能不被视为“偏大”。其他角色如卡德尔少将（32岁）或简清禾（年龄未明确）没有与武术教官相关的描述。如果查询需要更精确的匹配，建议补充更多游戏细节或上下文。
+2026-03-21 23:55:54,121 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-21 23:55:54,122 - DeepResearch - INFO - 开始分析搜索结果，当前查询: 在腾讯代理发行的格斗手游中，年龄偏大的武术教官角色的官方名称是什么？
+2026-03-21 23:56:21,689 - DeepResearch - DEBUG - 分析结果原始响应: {
+    "extracted_info": [
+        "角色官方名称: 驰风飞将",
+        "英文名称: Gale General",
+        "角色年龄: 28岁",
+        "角色身份: 超体对抗职业导师（类似于教官或教练角色）",
+        "角色职业: 武道修行者（涉及武术元素）",
+        "擅长武器: 弓箭",
+        "个人能力: 骑马、射箭、骑射（体现武术技能）",
+        "信条: 强者恒强（反映教官式的心态）",
+        "所属阵营: 和平国联",
+        "技能描述: 承袭龙脊关的武道底蕴，身怀精湛的骑射绝技。可策马穿梭于乱军之中，利用箭矢快速位移，并凭借密集的破击箭雨横扫战场",
+        "相关人物关系: 指挥官――严格的领导"
+    ]
+}
+2026-03-21 23:56:21,689 - DeepResearch - INFO - 开始强制生成最终回答，原始问题: 一位物理学领域的学者为一种经典棋盘游戏设计的评分系统，后来被一家北美游戏公司广泛应用于其一款多人在线战术竞技游戏中。这家公司的母公司是一家亚洲科技巨头，该巨头在21世纪10年代完成了对前者的全资收购，并涉足量子计算等前沿科技领域。在这家北美公司开发的另一款第一人称射击游戏中，有一件适合近距离作战的武器，其名称与上述亚洲巨头代理发行的一款格斗手游中的一名在登场角色中年龄偏大的武术教官角色相同。这款格斗手游的名字是什么？
+2026-03-21 23:58:05,586 - DeepResearch - DEBUG - 强制生成回答: 超体对抗
+2026-03-22 08:46:41,496 - DeepResearch - INFO - 程序启动
+2026-03-22 08:47:17,723 - DeepResearch - INFO - 收到用户新问题: 一位物理学领域的学者为一种经典棋盘游戏设计的评分系统，后来被一
+2026-03-22 08:47:17,724 - DeepResearch - INFO - 开始规划下一步，原始问题: 一位物理学领域的学者为一种经典棋盘游戏设计的评分系统，后来被一
+2026-03-22 08:47:34,299 - DeepResearch - INFO - 程序启动
+2026-03-22 08:47:37,737 - DeepResearch - INFO - 收到用户新问题: 一位物理学领域的学者为一种经典棋盘游戏设计的评分系统，后来被一
+2026-03-22 08:47:37,737 - DeepResearch - INFO - 开始规划下一步，原始问题: 一位物理学领域的学者为一种经典棋盘游戏设计的评分系统，后来被一
+2026-03-22 08:47:53,180 - DeepResearch - INFO - 程序启动
+2026-03-22 08:47:58,513 - DeepResearch - INFO - 收到用户新问题: 一位物理学领域的学者为一种经典棋盘游戏设计的评分系统，后来被一家北美游戏公司广泛应用于其一款多人在线战术竞技游戏中。这家公司的母公司是一家亚洲科技巨头，该巨头在21世纪10年代完成了对前者的全资收购，并涉足量子计算等前沿科技领域。在这家北美公司开发的另一款第一人称射击游戏中，有一件适合近距离作战的武器，其名称与上述亚洲巨头代理发行的一款格斗手游中的一名在登场角色中年龄偏大的武术教官角色相同。这款格斗手游的名字是什么？
+2026-03-22 08:47:58,513 - DeepResearch - INFO - 开始规划下一步，原始问题: 一位物理学领域的学者为一种经典棋盘游戏设计的评分系统，后来被一家北美游戏公司广泛应用于其一款多人在线战术竞技游戏中。这家公司的母公司是一家亚洲科技巨头，该巨头在21世纪10年代完成了对前者的全资收购，并涉足量子计算等前沿科技领域。在这家北美公司开发的另一款第一人称射击游戏中，有一件适合近距离作战的武器，其名称与上述亚洲巨头代理发行的一款格斗手游中的一名在登场角色中年龄偏大的武术教官角色相同。这款格斗手游的名字是什么？
+2026-03-22 08:48:57,737 - DeepResearch - DEBUG - 规划下一步原始响应: {
+    "think": [
+        "当前已确认事实：物理学者为经典棋盘游戏设计评分系统并应用于北美公司的多人在线战术竞技游戏；北美公司被亚洲科技巨头在21世纪10年代全资收购；亚洲科技巨头涉足量子计算；北美公司开发了一款第一人称射击游戏，其中包含一件近距离武器；该武器名称与亚洲科技巨头代理发行的一款格斗手游中的角色相同；该角色为年龄偏大的武术教官。",
+        "高置信推断与待核验点：推断亚洲科技巨头可能指腾讯（基于2011年收购Riot Games的常识），北美公司可能为Riot Games；推断MOBA游戏可能为英雄联盟，FPS游戏可能为Valorant；待核验点包括公司及游戏具体名称的证实，特别是武器名称细节。",
+        "当前唯一瓶颈缺口：格斗手游的具体名称未确认，该缺口阻塞证据链闭合。",
+        "下一跳信息增益最高原因：直接针对手游身份设计查询，使用亚洲巨头属性（收购事件与量子计算）和角色属性（年龄偏大武术教官）为锚点，区分度高且可一次验证；跳过查询FPS游戏或武器名称等其他方向，因前者会引入冗余且关键点在手游，武器名称作为间接线索增益较低。"
+    ],
+    "is_fully_answered": false,
+    "final_answer": "",
+    "next_question": "由亚洲科技巨头（涉足量子计算，并在21世纪10年代全资收购北美游戏公司）代理发行的移动格斗游戏中，哪一款包含一名年龄偏大的武术教官角色？"
+}
+2026-03-22 08:48:57,737 - DeepResearch - INFO - 规划下一步完成，耗时 53.34s，history_text 长度 18
+2026-03-22 08:48:57,738 - DeepResearch - INFO - 开始拆解用户问题: 由亚洲科技巨头（涉足量子计算，并在21世纪10年代全资收购北美游戏公司）代理发行的移动格斗游戏中，哪一款包含一名年龄偏大的武术教官角色？
+2026-03-22 08:49:23,272 - DeepResearch - DEBUG - LLM 拆解问题原始响应: ["亚洲科技巨头 量子计算 全资收购北美游戏公司 2010年代", "亚洲科技巨头代理发行移动格斗游戏", "移动格斗游戏武术教官角色", "格斗游戏年龄偏大角色武术教官"]
+2026-03-22 08:49:23,272 - DeepResearch - INFO - 生成的子查询列表: ['亚洲科技巨头 量子计算 全资收购北美游戏公司 2010年代', '亚洲科技巨头代理发行移动格斗游戏', '移动格斗游戏武术教官角色', '格斗游戏年龄偏大角色武术教官']
+2026-03-22 08:49:23,272 - DeepResearch - INFO - 第 1 轮搜索查询: ['移动格斗游戏武术教官角色', '由亚洲科技巨头（涉足量子计算，并在21世纪10年代全资收购北美游戏公司）代理发行的移动格斗游戏中，哪一款包含一名年龄偏大的武术教官角色？', '亚洲科技巨头代理发行移动格斗游戏', '亚洲科技巨头 量子计算 全资收购北美游戏公司 2010年代', '格斗游戏年龄偏大角色武术教官']
+2026-03-22 08:49:23,273 - DeepResearch - INFO - 正在执行搜索查询: 移动格斗游戏武术教官角色
+2026-03-22 08:49:23,273 - DeepResearch - INFO - 正在执行搜索查询: 由亚洲科技巨头（涉足量子计算，并在21世纪10年代全资收购北美游戏公司）代理发行的移动格斗游戏中，哪一款包含一名年龄偏大的武术教官角色？
+2026-03-22 08:49:23,274 - DeepResearch - INFO - 正在执行搜索查询: 亚洲科技巨头代理发行移动格斗游戏
+2026-03-22 08:49:23,274 - DeepResearch - INFO - 正在执行搜索查询: 亚洲科技巨头 量子计算 全资收购北美游戏公司 2010年代
+2026-03-22 08:49:23,274 - DeepResearch - INFO - 正在执行搜索查询: 格斗游戏年龄偏大角色武术教官
+2026-03-22 08:49:24,832 - DeepResearch - DEBUG - 搜索查询 '格斗游戏年龄偏大角色武术教官' 的原始结果:
+{
+  "query": "格斗游戏年龄偏大角色武术教官",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.reddit.com/r/StreetFighter/comments/1bvsmol/do_fighting_games_in_general_become_harder_to/?tl=zh-hans",
+      "title": "格斗游戏普遍来说是不是年纪越大就越难玩？ : r/StreetFighter - Reddit",
+      "content": "我认为，如果说格斗游戏变得更难，那也是更难“入门”。包括梅原大吾和ときど在内的许多人都证明了，即使到了40 多岁，你也能达到顶级水平……但当然，他们至少从20",
+      "score": 0.9952448,
+      "raw_content": null
+    },
+    {
+      "url": "https://gp.qq.com/story/lite.html",
+      "title": "和平精英官方网站-腾讯游戏",
+      "content": "角色信息. 武道昌盛的龙脊关，让霍驰风磨练出强健的筋骨，而身上流淌的将门血脉，让他更添几分不服输的韧劲。年少成名的他，凭借骑射绝技横扫龙脊关，唯雷枪少年行云，能与之",
+      "score": 0.040845715,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.reddit.com/r/thepunisher/comments/1c341jz/where_does_punisher_rank_in_marvels_best_martial/?tl=zh-hans",
+      "title": "惩罚者在漫威最佳武术家中的排名如何？ : r/thepunisher - Reddit",
+      "content": "他可能是最强的非超能力格斗家之一。 他能打架，而且能和夜魔侠一较高下，就证明了他的实力。 在早期的漫画中，他列出了许多形式的武术训练，并附有例子。",
+      "score": 0.018978037,
+      "raw_content": null
+    },
+    {
+      "url": "https://wiki.biligame.com/kedrgame/%E6%88%98%E6%96%97%E5%91%98%E6%96%87%E5%AD%97%E8%B5%84%E6%96%99",
+      "title": "战斗员文字资料- 雪松WIKI_BWIKI - bilibili游戏中心- WIKI",
+      "content": "如无特殊说明，本Wiki所使用的游戏《雪松》中的角色/剧情/画面/音乐/视频等元素均由享有著作权的霍尔果斯纳罗达网络科技有限公司以CC BY-NC-SA 4.0著作权协议提供。. 点击查看CC BY-NC-SA 4.0著作权协议. 本Wiki所使用的游戏《雪松》中的角色/剧情/画面/音乐/视频等元素均由享有著作权的霍尔果斯纳罗达网络科技有限公司以CC BY-NC-SA 4.0著作权协议提供。. 点击查看CC BY-NC-SA 4.0著作权协议. ## 战斗员 伊丽莎白. ## 战斗员 伊尔米拉. ## 战斗员 克劳迪娅. 详细描述：对目标敌方单位造成342+80%克劳迪娅单发伤害的总伤害，若目标为人形单位，此次伤害额外增加25%。. 不过，联盟内战的爆发打断了这一切。教官们告诉学员，他们可以选择回家或者\"为祖国而战\"。大部分人怀着一腔热血决定参战，可是这些青年男女很快必须面临一个难以回答的问题: 忠诚的热血应该为哪一 方流淌？究竟谁才是联盟的合法继承者，或者究竟谁才有资格推翻联盟的暴政？. ## 战斗员 克默. ## 战斗员 内莉. 详细描述：对目标造成248+785%内莉单发伤害的总伤害，内莉周围每有一个我方单位该伤害提高5%，最多20%。. ## 战斗员 卡露拉. 卡露拉是一位前往诺克斯度假的\"度假游客\"—一因此她也显得整天散漫而无所用心。身为先锋小队的雇主，但是每天都忙着和自己手下的小雇佣兵们贴贴，想着给她们换上各种各样的角色扮演服饰。. 卡露拉是先锋服务集团的雇主，一位从地球来的\"度假游客\"。平日的她散漫而无所用心，可是一旦\"认真起来\"，她也如小强一般屡仆屡起，顽强战斗——为了保护爱，和平，二次元，以及可爱的兽耳萝莉们。. 卡露拉曾经是一位精明强干，收入不菲的高级白领。她三十岁之前的人生兼具成功与失败——闪亮的文凭，体面的收入，有口皆碑的信誉。但她的心灵也被学业和工作榨得精光，既没有爱人，也没有交心的朋友。无论瑜伽，灵修，素食和红茶菌都没法治愈她的疲惫的灵魂。一位\"宗师\"告诉她，这是因为她\"不能诚实地面对自己内心的渴望\"。. ## 战斗员 史黛拉. \"销售的秘诀呀，就是找准了那些话语权最大，耳根子最软的人，针对他们的胃口来上菜。\"报告立绘. ## 战斗员 嘉比莉露. \"先生，对……对于狙击手来说，要想处于时刻都可以进入战场的状态，准备工作是坚决不能马虎的。\"报告立绘. 嘉比莉露出身于有 6 个兄弟姐妹的南部棉农家庭。在她的记忆中，父辈口中的光景总是越来越糟：供水短缺，石油危机，棉价下跌，黑鬼闹事……那些在外面炒的热火朝天的新东西，诺克斯开发呀，计算机技术呀，互联网呀，金融创新呀……全都跟他们一点关系没有。. 尽管不符合传统，嘉比莉露还是走上了当兵吃粮的道路。贫寒的成长环境导致嘉比莉露患上了严重的仓鼠症：看到什么东西都想带着，总觉得还能派上用场，她的大背包里面堆满了各种各样的破烂，有些还是特派团的其他成员丢掉的。杰奎琳当然不希望手下的士兵携带太多额外负重，但嘉比莉露的节俭似乎已经上升为某种教条，因为她的口头禅就是\"会被上帝惩罚的……\" 一想到可能要丢掉什么东西就感觉是罪过。. 贫寒的成长环境导致嘉比莉露患上了严重的仓鼠症: 看到什么东西都想带着，总觉得还能派上用场，她的大背包里面堆满了各种各样的破烂，有些还是特派团的其他成员丢掉的。杰奎琳当然不希望手下的士兵携带太多额外负重，但嘉比莉露的节俭似乎已经上升为某种教条，因为她的口头禅就是\"会被上帝惩罚的……\" 想到可能要丢掉什么东西就感觉是罪过。. ## 战斗员 埃琳娜. \"呼叫局长，这里是旗手。现场情况有变，正加强观察，完毕。\"报告立绘. ## 战斗员 夏希. ## 战斗员 娜塔莎. ## 战斗员 安吉拉. ## 战斗员 尤利娅. ## 战斗员 巴琳. ## 战斗员 巴里. ## 战斗员 希尔芙. ## 战斗员 弦乐. ## 战斗员 战斗员文章预设. ## 战斗员 提可. ## 战斗员 朱利亚斯. ## 战斗员 杰奎琳. ## 战斗员 柯贝尔. ## 战斗员 桃瑞斯. ## 战斗员 梅梅. ## 战斗员 汉娜. ## 战斗员 波拉. ## 战斗员 海伦. ## 战斗员 玛尔塔. ## 战斗员 璐比. ## 战斗员 瓦娜莱特. ## 战斗员 瓦莲娜. ## 战斗员 盖尔菲斯特. ## 战斗员 米娅. 详细描述：对单个敌方单位造成385+820%艾丽卡单发伤害的总伤害，如果击杀敌人，则自身侦查强度提升20%，持续8秒。. ## 战斗员 芙利丝. ## 战斗员 苏扎娜. ## 战斗员 莉莎. ## 战斗员 莫菲. ## 战斗员 菲丽芭. ## 战斗员 蕾贝卡. ## 战斗员 西尔维娅. ## 战斗员 贝拉. ## 战斗员 达佳娜. ## 战斗员 阿巴比尔.",
+      "score": 0.010570488,
+      "raw_content": null
+    },
+    {
+      "url": "https://newkomica-kari.fandom.com/zh-tw/wiki/%E6%8B%B3%E7%9A%87%E7%B3%BB%E5%88%97%E5%8E%9F%E5%89%B5%E4%BA%BA%E7%89%A9%E5%88%97%E8%A1%A8-part_1",
+      "title": "拳皇系列原創人物列表-part 1 - Fandom",
+      "content": "草薙京為日本古代（約1800年前）把八歧大蛇封印的三大家族之一：\"草薙\"家族的後裔。三神器之一\"草薙之劍\"的持有者。 格鬥武藝天賦異稟，於某年日本舉行的異種格鬥大會",
+      "score": 0.0069576087,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.83,
+  "request_id": "f96825cc-76cb-4068-950c-ab0206634b30"
+}
+2026-03-22 08:49:24,850 - DeepResearch - DEBUG - 搜索查询 '移动格斗游戏武术教官角色' 的原始结果:
+{
+  "query": "移动格斗游戏武术教官角色",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.reddit.com/r/kungfu/comments/11ddgxa/fighting_games_characters_and_chinese_martial_arts/?tl=zh-hans",
+      "title": "格斗游戏（角色）和中国武术: r/kungfu",
+      "content": "## Thanks for the feedback! Tell us more about why this content is not helpful. # 格斗游戏（角色）和中国武术. 我喜欢3D格斗游戏（这个类型由铃木裕的《VR战士》开创，由原田的《铁拳》发扬光大，还有《死或生》和《饿狼：破灭之拳》等游戏）聘请真正的特技协调员和武术团体来为他们的角色进行动作捕捉。不幸的是，这些游戏中很多使用中国武术的格斗家都是基于现代武术练习者的动作。. 话虽如此，我想把这个（希望是超长）帖子献给讨论我最喜欢的中国拳法角色，我喜欢他们的招式和设计，以及我为什么选择他们而不是其他类似的角色。注意：我没有玩过《真人快打》系列游戏，比如《欺骗》，当这个系列开始让角色使用现实世界的格斗风格时，所以我无法发表评论。. 形意拳：Gen Fu（来自《死或生》系列）胜过王椋雷（《铁拳》系列）、Eliot（《死或生》系列）、Michelle Chang（《铁拳》系列）和Julia Chang（《铁拳》系列）。我知道Gen和王是形意六合八法，Eliot是形意拳，但我无法分辨出这些风格之间的明显区别（也许有人可以解释）。此外，张家人的风格是八极拳、形意六合八法和职业摔跤（日本风格的职业摔跤）投掷的混合体。对我来说，Gen是最好的风格师，因为他的技术散发出力量，并且在招式方面比排名第二的王更充实。我一直觉得王只是张家人的一个分支。而且，我喜欢Gen Fu的老年莫霍克发型和《死或生2》中的备用服装。. 八极拳：结城晶（来自《VR战士》系列）胜过Leo Kliesen（《铁拳》系列）、心（《死或生》系列）、Michelle Chang（《铁拳》系列）和Julia Chang（《铁拳》系列）。这次我将倒序排列，从我重申拥有混杂招式的两个张氏开始。心在没有前两名那种气势的情况下使出招式，而且作为一个穿着和服的年轻日本女孩使用与她不符的中国武术，看起来也很不自然。我喜欢Leonora的雌雄同体性别酷儿美学，以及她在主要服装中没有过度性化，但结城晶赢了这一局，他不仅是原创，而且看起来很老派的坏蛋，用这种风格表演技术。. 截拳道：严·李（《死或生》系列）胜过李超狼、马歇尔·劳（《铁拳》系列）、福瑞斯特·劳（《铁拳》）、莎拉·布莱恩特（《VR战士》系列）和杰基·布莱恩特（《VR战士》）。对于所有上述未提及严的人来说，截拳道真的强调飞踢（就像《街头霸王》的古烈所做的那样）吗？我认为李小龙只在一部电影中做过。超狼排名第二，因为他的招式对我来说比劳的招式更有效，自从《铁拳2》以来。现在严·李是个野兽，他的表现展现了力量和速度，就像我期望截拳道的那样。. 最后一个比较：凌晓雨（八卦掌），《铁拳》系列 vs 海莲娜·道格拉斯（劈挂拳），《死或生》系列。这两个来自不同游戏系列的角色，据说是不同的风格。然而，海莲娜在她的《死或生2》首秀中使用了与凌的凤凰之舞非常相似的姿势，并且拥有一套类似的技术，至少对普通观察者来说是这样。是《死或生》的制作人犯了一个错误，让一个使用八卦的人来为劈挂风格师进行动作捕捉吗？或者这两种风格之间有更多相似之处，而作为一个外行人，我并不知道？. Reddit Rules    Privacy Policy    User Agreement    Accessibility   Reddit, Inc.",
+      "score": 0.45217365,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.reddit.com/r/kungfu/comments/11ddgxa/fighting_games_characters_and_chinese_martial_arts/?tl=zh-hant",
+      "title": "格鬥遊戲（角色）與中國武術: r/kungfu",
+      "content": "截拳道：Jann Lee（《生死格鬥》系列）勝過李超狼、馬歇爾·勞（《鐵拳》系列）、福瑞斯特·勞（《鐵拳》）、莎拉·布萊恩特（《VR戰士》系列）和傑基·布萊恩特（《VR",
+      "score": 0.39943734,
+      "raw_content": null
+    },
+    {
+      "url": "https://wiki.biligame.com/kedrgame/%E6%88%98%E6%96%97%E5%91%98%E6%96%87%E5%AD%97%E8%B5%84%E6%96%99",
+      "title": "战斗员文字资料- 雪松WIKI_BWIKI",
+      "content": "如无特殊说明，本Wiki所使用的游戏《雪松》中的角色/剧情/画面/音乐/视频等元素均由享有著作权的霍尔果斯纳罗达网络科技有限公司以CC BY-NC-SA 4.0著作权协议提供。. 点击查看CC BY-NC-SA 4.0著作权协议. 本Wiki所使用的游戏《雪松》中的角色/剧情/画面/音乐/视频等元素均由享有著作权的霍尔果斯纳罗达网络科技有限公司以CC BY-NC-SA 4.0著作权协议提供。. 点击查看CC BY-NC-SA 4.0著作权协议. ## 战斗员 伊丽莎白. ## 战斗员 伊尔米拉. ## 战斗员 克劳迪娅. 详细描述：对目标敌方单位造成342+80%克劳迪娅单发伤害的总伤害，若目标为人形单位，此次伤害额外增加25%。. 不过，联盟内战的爆发打断了这一切。教官们告诉学员，他们可以选择回家或者\"为祖国而战\"。大部分人怀着一腔热血决定参战，可是这些青年男女很快必须面临一个难以回答的问题: 忠诚的热血应该为哪一 方流淌？究竟谁才是联盟的合法继承者，或者究竟谁才有资格推翻联盟的暴政？. ## 战斗员 克默. ## 战斗员 内莉. 详细描述：对目标造成248+785%内莉单发伤害的总伤害，内莉周围每有一个我方单位该伤害提高5%，最多20%。. ## 战斗员 卡露拉. 卡露拉是一位前往诺克斯度假的\"度假游客\"—一因此她也显得整天散漫而无所用心。身为先锋小队的雇主，但是每天都忙着和自己手下的小雇佣兵们贴贴，想着给她们换上各种各样的角色扮演服饰。. 卡露拉是先锋服务集团的雇主，一位从地球来的\"度假游客\"。平日的她散漫而无所用心，可是一旦\"认真起来\"，她也如小强一般屡仆屡起，顽强战斗——为了保护爱，和平，二次元，以及可爱的兽耳萝莉们。. 卡露拉曾经是一位精明强干，收入不菲的高级白领。她三十岁之前的人生兼具成功与失败——闪亮的文凭，体面的收入，有口皆碑的信誉。但她的心灵也被学业和工作榨得精光，既没有爱人，也没有交心的朋友。无论瑜伽，灵修，素食和红茶菌都没法治愈她的疲惫的灵魂。一位\"宗师\"告诉她，这是因为她\"不能诚实地面对自己内心的渴望\"。. ## 战斗员 史黛拉. \"销售的秘诀呀，就是找准了那些话语权最大，耳根子最软的人，针对他们的胃口来上菜。\"报告立绘. ## 战斗员 嘉比莉露. \"先生，对……对于狙击手来说，要想处于时刻都可以进入战场的状态，准备工作是坚决不能马虎的。\"报告立绘. 嘉比莉露出身于有 6 个兄弟姐妹的南部棉农家庭。在她的记忆中，父辈口中的光景总是越来越糟：供水短缺，石油危机，棉价下跌，黑鬼闹事……那些在外面炒的热火朝天的新东西，诺克斯开发呀，计算机技术呀，互联网呀，金融创新呀……全都跟他们一点关系没有。. 尽管不符合传统，嘉比莉露还是走上了当兵吃粮的道路。贫寒的成长环境导致嘉比莉露患上了严重的仓鼠症：看到什么东西都想带着，总觉得还能派上用场，她的大背包里面堆满了各种各样的破烂，有些还是特派团的其他成员丢掉的。杰奎琳当然不希望手下的士兵携带太多额外负重，但嘉比莉露的节俭似乎已经上升为某种教条，因为她的口头禅就是\"会被上帝惩罚的……\" 一想到可能要丢掉什么东西就感觉是罪过。. 贫寒的成长环境导致嘉比莉露患上了严重的仓鼠症: 看到什么东西都想带着，总觉得还能派上用场，她的大背包里面堆满了各种各样的破烂，有些还是特派团的其他成员丢掉的。杰奎琳当然不希望手下的士兵携带太多额外负重，但嘉比莉露的节俭似乎已经上升为某种教条，因为她的口头禅就是\"会被上帝惩罚的……\" 想到可能要丢掉什么东西就感觉是罪过。. ## 战斗员 埃琳娜. \"呼叫局长，这里是旗手。现场情况有变，正加强观察，完毕。\"报告立绘. ## 战斗员 夏希. ## 战斗员 娜塔莎. ## 战斗员 安吉拉. ## 战斗员 尤利娅. ## 战斗员 巴琳. ## 战斗员 巴里. ## 战斗员 希尔芙. ## 战斗员 弦乐. ## 战斗员 战斗员文章预设. ## 战斗员 提可. ## 战斗员 朱利亚斯. ## 战斗员 杰奎琳. ## 战斗员 柯贝尔. ## 战斗员 桃瑞斯. ## 战斗员 梅梅. ## 战斗员 汉娜. ## 战斗员 波拉. ## 战斗员 海伦. ## 战斗员 玛尔塔. ## 战斗员 璐比. ## 战斗员 瓦娜莱特. ## 战斗员 瓦莲娜. ## 战斗员 盖尔菲斯特. ## 战斗员 米娅. 详细描述：对单个敌方单位造成385+820%艾丽卡单发伤害的总伤害，如果击杀敌人，则自身侦查强度提升20%，持续8秒。. ## 战斗员 芙利丝. ## 战斗员 苏扎娜. ## 战斗员 莉莎. ## 战斗员 莫菲. ## 战斗员 菲丽芭. ## 战斗员 蕾贝卡. ## 战斗员 西尔维娅. ## 战斗员 贝拉. ## 战斗员 达佳娜. ## 战斗员 阿巴比尔.",
+      "score": 0.11699609,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.zhihu.com/question/30863438/answer/93745256?utm_campaign=rss&utm_medium=rss&utm_source=rss&utm_content=title",
+      "title": "KOF里的里角色都是有出处的吗？ - 地煞魁首罗三炮的回答",
+      "content": "同时King也是SNK里第一个女性格斗游戏人物。 有个身患重病的弟弟，为了给弟弟治病，曾经参加过泰拳比赛，参加泰拳比赛无果，才来参见拳皇大会。 曾经",
+      "score": 0.09674864,
+      "raw_content": null
+    },
+    {
+      "url": "https://zh.wikipedia.org/zh-hans/%E8%A1%97%E9%A0%AD%E9%9C%B8%E7%8E%8B%E7%B3%BB%E5%88%97",
+      "title": "街头霸王系列- 维基百科，自由的百科全书",
+      "content": "角色名字, 中文译名, 格斗流派 ; Gouken, 刚拳, 无之拳 ; Gouki Akuma（欧美版）, 豪鬼恶魔（欧美版）, 杀意波动 ; Ryu, 隆, 暗杀拳 ; Ken Masters, 肯·马斯达斯肯·麦司特, 暗杀拳",
+      "score": 0.07431881,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.81,
+  "request_id": "0d7e6546-126d-44e2-a2b4-62c92d8e7599"
+}
+2026-03-22 08:49:24,916 - DeepResearch - DEBUG - 搜索查询 '亚洲科技巨头代理发行移动格斗游戏' 的原始结果:
+{
+  "query": "亚洲科技巨头代理发行移动格斗游戏",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://zh.moegirl.org.cn/%E6%8B%B3%E5%A4%B4%E6%B8%B8%E6%88%8F",
+      "title": "拳头游戏 - 萌娘百科",
+      "content": "| | 查 · 论 · 编 游戏制作公司、工作室 | | --- | | 亚洲 | | | | | | | | | | | --- | --- | --- | --- | --- | --- | --- | --- | | 中国 | | | | | --- | --- | | 内地 | bilibili游戏 • EasyTech • Gamera Game • TipsWorks • YAMAYURI GAMES • 奥嘉无限 • 奥维软件 • 宝德网络 • 比目鱼游戏 • 朝夕光年 • 大宇软星 • 叠纸游戏/十七折工作室 • 第九城市 • 第七大道 • 丁果科技 • 动力时空 • 二进制数码 • 广州百田/广州天梯 • 巨人网络 • 玖艺工作室 • 库洛游戏 • 汉家松鼠 • 海孚互联网 • 海虹网络 • 欢乐亿派/完美世界 \"完美世界(公司)\") • 幻萌网络 • 积创网络 • 金山游戏/猎豹移动/西山居 • 九尾狐科技 • 可以游戏 • 乐逗游戏 • 乐狗科技 • 蓝港在线 • 乐元素 • 雷霆游戏 • 莉莉丝游戏 • 灵游坊 • 灵泽科技 • 铃空游戏 • 凉屋游戏 • 龙渊网络 • 蛮啾网络 • 米哈游 • 目标软件 • 木子岚工作室 • 麻辣马工作室 • 迷你创想 • 帕斯亚科技 • 胖布丁游戏 • 趣加 • 散爆网络/云母组 • 上海淘米 • 上海悠星/StudioGM • 神游科技 • 深蓝互动 • 深圳八班网络 • 盛趣游戏 • 华立科技 • 世宇科技 • 数位红科技 • 腾讯游戏/NExT Studios/天美工作室群/光子工作室群/魔方工作室群/北极光工作室群 • 外星科技 • 网易游戏/桃源工作室 • 网元圣唐/上海烛龙/北京九凤 • 微笑科技 • 先锋卡通/前导软件/尚洋电子 • 心动网络 • 星漫科技(重庆) • 烟山软件 • 椰岛游戏 • 鹰角网络 • 勇仕网络 • 永航科技 • 游卡网络 • 游戏公国 • 游戏科学 • 游族网络 • 佑盛游戏 • 云步互娱 • 掌派科技 • 臻龙游戏 • 智冠电子 • 智梦星游戏 • 织梦者 • 紫龙游戏 • 中青宝 • 自意网络 | | 台湾 | LabORat Studio • SIGONO • 奥尔资讯 • 宝石星球 • 赤烛游戏 • 大宇资讯 • 第三波 • 河洛工作室 • 弘煜科技 • 精讯 • 雷亚游戏 • 侍达游戏艺术 • 希萌创意 • 未来数位 • 鈊象电子 • 永恒艾莉丝工坊 • 游戏橘子/东游玩子 • 智凡迪 • 智冠科技/汉堂 | | 香港 | C4Cat • Mad Head | | | 日本 | Akatsuki • Broccoli • Bushiroad • Capcom/四叶草工作室 • COLOPL/MAGES./Eighting • Coly • Creatures • CyberAgent/applibot/Colorful Palette/Craft Egg/Cygames/GOODROID/NITRO PLUS/QualiArts/Sumzap • CyberConnect2 • DeNA • DMM GAMES • DONUTS GAMES • Falcom • FRENCH-BREAD •",
+      "score": 0.60666215,
+      "raw_content": null
+    },
+    {
+      "url": "https://zh.wikipedia.org/wiki/Garena",
+      "title": "Garena - 維基百科，自由的百科全書",
+      "content": "| Garena Free Fire | 手機 | 大逃殺遊戲 | 111dots Studio、 Garena | 2017年12月4日 | 正式公測 | 全球 | 早期為越南111dots Studio所開發 |. | 天涯明月刀M | 手機 | MMORPG遊戲 | 騰訊北極光工作室 | 2021年5月12日 | 正式公測 | 台灣、香港、澳門 | 中國版譯為《天涯明月刀手游》，由中國騰訊遊戲營運 |. | 極速快感：集結 | 手機 | 競速遊戲 | 騰訊天美工作室群 | 2024年10月31日 | 正式公測 | 台灣、香港、澳門 | 中國版譯為《極品飛車：集結》，由中國騰訊遊戲營運 |. | 鹿鼎記&action=edit&redlink=1 \"鹿鼎記 (電腦遊戲)（页面不存在）\") | 電腦 | ChangYou | 2012年6月14日 | 2014年3月24日 | 台灣、香港、澳門 |  |. | 美少女夢工廠 | 手機 | Mgame | 2014年11月14日 | 2016年1月13日 | 台灣、香港、澳門 |  |. | 戰國炎舞 | 手機 | Sumzap, Inc | 2015年3月17日 | 2016年2月4日 | 台灣、香港、澳門 |  |. | 夢幻西遊 | 手機 | 网易 | 2015年9月14日 | 2017年6月6日 | 台灣、香港、澳門 |  |. | 雷霆戰機 | 手機 | sunmosh | 2014年11月17日 | 2017年10月6日 | 台灣、香港、澳門 |  |. | Garena 武裝菁英 | 手機 | Garena | 2017年4月19日 | 2018年5月31日 | 台灣、香港、澳門 |  |. | 2012年 | 英雄聯盟(人氣金賞)、AVA戰地之王(人氣銀賞) | 巴哈姆特2012遊戲大賞 （页面存档备份，存于互联网档案馆） |. | 2014年 | 英雄聯盟(人氣金賞)、AVA戰地之王(人氣銀賞)、DNF(人氣第七名) | 巴哈姆特2014遊戲大賞 （页面存档备份，存于互联网档案馆） |.",
+      "score": 0.26434577,
+      "raw_content": null
+    },
+    {
+      "url": "https://hafat.github.io/cn_game_company.html",
+      "title": "中資公司列表",
+      "content": "| MoreFun Game limited / Morefun Technology Limited / YEJing | 蘇州 https://www.gamemorefun.com/footerDetail/17 |簡體， https://play.google.com/store/apps/details? | okgame / SD Games / Luogame / OK GAME /VstarGame / OK Game行動遊戲平台 / Guangzhou Dingding Network Technology Company Limited | ekiplay https://www.okgame.com/#/About/ https://play.google.com/store/apps/details? | Eyougame 新加坡商易遊科技 / EYOUGAME(HK) LIMITED / 點盛信息科技有限公司 / EYOU TECHNOLOGY | 廣州點盛信息科技有限公司 ｜ 自2014年頭Eyougame成立，到2014年4月發行第一款遊戲至今才2年多一點時間。那時候，Eyougame在廣州只有4個技術人員 https://kknews.cc/zh-hk/game/mglx9rg.html ｜ https://play.google.com/store/apps/details? | YuanFun Games / YUANLONG NETWORK LIMITED / Apollo Technology Co.,Ltd / 阿波羅テクノロジー株式会社 | 廣州市天河區棠東橫嶺四路9號301房-192 eskyfun https://play.google.com/store/apps/details? | 幻想娛樂科技 Fantasy Plus Entertainment Technology | igg http://www.fantasyplus.game.tw/ |4月4 https://medium.com/@cy4v\\_tw/acg-%E8%A8%80%E8%AB%96%E7%AE%9D%E5%88%B6%E8%88%87%E8%A1%A8%E7%8F%BE%E8%87%AA%E7%94%B1-e8dccf4bbf80, igg https://play.google.com/store/apps/details? | OneGame Holding Limited | http://www.onegame.top/ 全簡體 & contact +86 (China) | old: http://one.game/ | https://play.google.com/store/apps/details? | Goodfun Games / JOYFUN GAMES ENTERTAINMENT NETWORK LIMITED || joyplay | 玩動遊戲 / 廣州玩動網絡 https://www.goodfun365.com/ |. | MOBA Games Private Limited | https://play.google.com/store/apps/details? | KYoo Games / 香港快遊資訊技術有限公司 / Hong Kong Kuaiyou Information Technology Limited / 武漢快遊互動信息技術有限公司 /新快遊戲 /xinkuai | https://www.7105.com/Privacy/pri\\_tw.html https://www.7105.com/ |. | CLOVER GAMES TECHNOLOGY CO., LIMITED / https://play.google.com/store/apps/details? | Hermes Game Co.,LTD, 荷米斯遊戲有限公司, https://www.hermesgames.com.tw/ | Morefun Technology Limited, IClockwork |.",
+      "score": 0.26016194,
+      "raw_content": null
+    },
+    {
+      "url": "https://zhuanlan.zhihu.com/p/29293153726",
+      "title": "亚洲第二冲刺A股：2200名员工，年入5亿，却被吐槽血汗工厂？ - 知乎",
+      "content": "该团队在2011年自研了一款剪纸题材塔防手游《神的指意》，该游戏由触控科技在2012年发行，上线时曾冲上iOS免费榜第一，畅销榜第三，并获得了当年CGDC移动游戏",
+      "score": 0.21363993,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.yfchuhai.com/ranks/100.html",
+      "title": "2025年4月游戏发行商排行TOP30 - 扬帆出海",
+      "content": "上海叠纸科技有限公司（叠纸游戏） 叠纸游戏成立于2013年8月，是一家专注于互动娱乐领域的新型互联网文化公司。公司以移动 ... 游戏发行公司，主做东南亚、港澳台和欧美地区。",
+      "score": 0.20253818,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.92,
+  "request_id": "628cebe9-3953-46b3-87a7-0651cc3185b0"
+}
+2026-03-22 08:49:25,191 - DeepResearch - DEBUG - 搜索查询 '由亚洲科技巨头（涉足量子计算，并在21世纪10年代全资收购北美游戏公司）代理发行的移动格斗游戏中，哪一款包含一名年龄偏大的武术教官角色？' 的原始结果:
+{
+  "query": "由亚洲科技巨头（涉足量子计算，并在21世纪10年代全资收购北美游戏公司）代理发行的移动格斗游戏中，哪一款包含一名年龄偏大的武术教官角色？",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://huggingface.co/datasets/BAAI/IndustryCorpus2_game/viewer",
+      "title": "BAAI/IndustryCorpus2_game · Datasets at Hugging Face",
+      "content": "电子游戏与 AI 的缘分由来已久,最早有人工智能参与的作品名为 Nimatron,这是第一款专门用于游戏的机电机器.这台机器可以玩的游戏只有一款名为\"Nim\",尽管非常想给大家介绍一下这款上古作品,但我的数学已经全还给老师了,查阅资料时真是直接看晕.总的来说这是就一种数学策略游戏,两位玩家轮流从一组物品中删除至少一个,目标是成为删除最后一个物品的玩家.据说该玩法起源于中国的\"捡石头\"游戏,有了解的朋友可以在评论区科普一下,\"Nim\"究竟是怎么个玩法. 后来的故事,大家就渐渐开始熟悉了.\"太空侵略者\"把 AI 设计引入了射击游戏领域,后世的\"光环\"也好\"使命召唤\"也罢,都要尊称其一声\"祖师爷\".1980 年\"吃豆人\"诞生,它将 AI 模式引入了迷宫游戏,并为每个敌人增加了不同的移动方式,区别化了敌人类型.1980年\"Rogue\"出世,AI 系统保证了每一局的地图和内容物都是随机生成,让玩家多次游戏也不会有重复的体验.1980 年\"空手道冠军\"(Karate Champ)将 AI 系统引入格斗游戏领域,今天的\"街头霸王\"\"拳皇\"等作品能有电脑\"陪练\"都得谢谢它.1990 年发售的\"勇者斗恶龙IV\"则引入了\"战术\"系统,玩家可以在战斗中调整 NPC 角色的出招套路,从而实现了 AI 控制同伴参与战斗时的差异性. | 为\"方便交流\",法国禁止电子游戏中使用英语术语 当地时间5月30日,法国政府对电子竞技术语使用做出重大改革,规定禁止英语游戏术语的使用.据法新社5月30日报道,法国文化部指出,电子竞技领域充斥着英语,构成了非游戏玩家\"理解的一大障碍\",禁用英语游戏术语的总体思路是方便民众交流.和以往不同的是,当日的最新规定在官方公报上发布,对政府工作人员具有约束力.文化部还称,一批专家已对视频游戏网站和杂志进行了详尽的搜索,试图找出既有的法语表达方式.根据法国政府的最新规定,\"职业电竞人\"(pro-gamer)的法语规范表达形式为\"joueur professionnel\",\"游戏直播播主\"(streamer)是\"joueur-animateur en direct\",\"云游戏\"(cloud gaming)是\"jeu video en nuage\",而\"电子竞技\"(eSports)则是\"jeu video de competition\".法国通过国家干预规范语言使用已有数百年历史.1635年,路易十三下令建立法兰西学术院(Académie Française),其使命之一便是规范和维护法语的使用.近年来,法国经常就法语遭受英语侵袭一事发出警告.据法新社报道,今年2月,法兰西学术院警告称,法语正在经历\"并非不可避免的退化\".法兰西学术院特别提到了法国国家铁路公司(SNCF)下属的廉价高速列车\"Ouigo\"(发音为英语的\"we go\"),以及\"大数据\"(big data)和\"免下车餐馆,免下车电影院\"(drive-in)等英语词汇在法语中的直接使用.随着全球化进程加快,本国语言遭受英语侵袭的状况也在全球各地出现.据\"德国之声\"2021年10月报道,当今韩语中引入英语表达已成为司空见惯的现象,年轻人为了使自己显得更具\"国际范\",也乐于接受这些英语表达.在去年10月9日\"韩文节\"前夕,\"韩国时报\"撰文批评了这种\"韩式英语\"现象,认为如果继续这样,不仅是对韩国语言文字的\"降格\",也将对韩国的文化认同构成严重威胁.另据英国\"卫报\"报道,2014年6月,俄罗斯国家杜马语言文化委员会也提交了一份对不合理使用外来语行为进行处罚的法律草案,在公共场合不合理使用英语等外来语言将被处以2万至5万卢布(当时约合人民币3220元至8052元)的处罚.不过也有语言学家指出,语言不应该由法律进行干预,即使进行罚款,也改变不了语言变化的趋势.俄总统办公厅下属的法律部负责人也认为,俄语目前不需要在立法层面进行额外规范. 现代游戏时代始于2005年和2006年,当时微软(microsoft)的xbox 360,索尼(sony)的playstation 3和任天堂(nintendo)的wii都推出了高清游戏,而xbox 360在最大限度地提高全球线上影片游戏的普及率方面发挥了关键作用.2007年之后,电子游戏开始向facebook等社交媒体平台和iphone,诺基亚等移动装置扩散.此外,在2015年左右,高质量的智能手机开始以最便宜的价格出售,基于智能手机的游戏热潮开始爆发.2016年,索尼释出了功能强大的playstation 4 pro游戏机,能够处理4k影片输出&这是游戏行业的另一个里程碑.目前,许多公司都对基于虚拟现实的网络游戏感兴趣,以便给玩家提供最好的游戏体验.这些都是集中游戏.随着现代先进技术的发展,游戏领域出现了许多进步,但集中式游戏平台仍有以下明显的缺点: 玩家的所有游戏活动都受到游戏平台运营商的监控. 据\"2019年1-6月中国游戏产业报告\"显示,作为中国游戏企业重要收入来源之一,今年上半年中国自主研发游戏海外市场实际销售收入达55.7亿美元,同比增长20.2%,高于自主研发游戏国内市场收入增速. 关于在游戏中渲染水,以前做了很多的工作.目前,渲染海洋已经很常见,也有很多游戏使用了很好的技术去实现它(比如实时FFT,Wave particles ),这一块非常成熟了.然而,渲染河流却没有那么先进,我们已知的大多数技术,都是依赖复杂的Shader和顶点动画,有一些位移,但是大多数都是平坦的,我们今天主要讲河流.当然,也有很多的模拟解决方案可以创建出来很好的海洋和河流/急流,特别是由Macklin在2013年Siggraph提出的Positional Based Fluids,这个方案很好,且可以实时实现复杂惊艳的流体运动.但是由于运算量过大,还不太适合游戏.因为在游戏中设备以及FPS的原因,每帧的运算能力有限,且用于模拟计算的运算能力更少. | \"要塞英雄 (Fortnite) \"是全球最热门的游戏之一,有了创新的 NVIDIA 技术加持,以 PC 游玩时的速度将会更快,画面更精美,反应更加灵敏.由于 Epic Games 与 NVIDIA 展开新的合作伙伴关系,光线追踪视觉效果,NVIDIA DLSS,NVIDIA Reflex 以及自订 RTX 版地图都将会新增至\"要塞英雄\"第 4 季第 2 章中. 身历其境的光线追踪效果采用 GeForce RTX 的 RT 核心,大幅提升了\"要塞英雄\"风格世界的拟真度和细节.搭载 NVIDIA DLSS,Tensor 核心可大幅加速效能,是 GeForce RTX 20 与 30 系列 GPU 上独有的技术.NVIDIA Reflex 有效减少行动所需时间,例如角色动作显示在显示器上的时间,进而提升了灵敏度. 在 2018 年,我们推出全球首部光线追踪展示影片\"Reflections\",能以惊人的高分辨率即时执行,并采用世界级噪声消除技术,达到极致顺畅的画面播放速率,因此在开发人员社群引起轰动.而现在,我们要将光线追踪技术应用在\"要塞英雄\"的所有模式,并且会在 Epic Games 精彩的\"要塞英雄\"预告片中率先公开成果. 在\"要塞英雄\"中,NVIDIA DLSS 将会加速效能,让玩家能够在 GeForce RTX GPU 上以更高的分辨率和画面播放速率体验光线追踪技术. 在\"要塞英雄\"中,我们与 Epic Games 合作整合了 NVIDIA Reflex 低延迟 SDK,有助于游戏引擎将渲染工作有效率地提交至 GPU,进而降低延迟时间并提升游戏灵敏度. NVIDIA 是即时电玩游戏光线追踪技术的先驱,于 2018 年就与 Epic Games 合作首次推出这项技术,应用于突破性的展示影片\"Reflections\"中.现在我们更再度合作,将光线追踪与 DLSS 应用于吸引了 3 亿 5 千万名玩家,掀起文化风潮的\"要塞英雄\". 若要充分享受和体验\"要塞英雄\"的光线追踪技术,请务必使用 GeForce RTX GPU 游玩,让我们的光线追踪核心,Tensor 核心,Game Ready 驱动程式,DLSS 和 Reflex 技术能够提供终极的\"要塞英雄\"体验,呈现最丰富的细节,最高的分辨率和最快的画面播放速率. 2022年1~6月,中国电子竞技产业收入为764.97亿元,同比下降10.12%.从收入构成的角度来看,电子竞技游戏带来的收入占比是最高的,约为83.29%;直播收入占比约为13.96%;赛事收入,俱乐部收入和其他收入占比分别约为1.24%,1.1%和0.52%. 3月9日(周四)下午14点,氪星直播间邀请到了阿里巴巴云游戏事业部(元境)总经理 王矛 ,Unity中国总裁兼首席执行官 张俊波 和哈尔滨工业大学计算机学院教授,长江学者 范晓鹏 ,共同聊聊:\"云游戏技术与元宇宙的融合共生之路\",共同畅想元宇宙的未来之路.直播供图以下为现场讨论内容精选:嘉宾自我介绍:阿里巴巴云游戏事业部(元境)总经理王矛:阿里元境是领先的面向云游戏和元宇宙时代的基础设施,我们的服务拥有工业级的运行品质,支持全终端全操作系统的运行,在全国有广泛的边缘节点覆盖.目前已经为国内百余家中大型游戏厂商提供了云游戏技术服务,在元境平台上的云游戏运行时长已超2.5亿小时,是已被市场验证和被广大玩家体验过的成熟服务.同时,元境已将多个云游戏核心技术沉淀为元宇宙的基础设施,目前有很多元宇宙的创新项目在使用元境的服务,比如西安博物院,宝马汽车,手机天猫的3D体验空间等等.哈尔滨工业大学计算机学院教授,长江学者范晓鹏:我所负责的智能接口与人机交互研究中心目前在元宇宙相关领域的研究内容主要包括虚拟原生,数字人,虚实结合和 VR 直播.同时我也是计算机产业协会元宇宙专委会副会长,我们研究中心自九几年成立以来,承担了多项国家级的各种科研项目.我也已经参与了大概 10 余项的国家级项目,其中很多都涉及元宇宙的部分.Unity中国总裁兼首席执行官张俊波:Unity 是全球领先的实时 3D 内容创作及运营平台,被广泛应用在游戏开发中,全球排名前1000的移动游戏中,70%以上基于Unity 开发.Unity 在全世界拥有非常广泛的用户基础,仅中国就有超270万开发者.同时,全球平均每天有超过1万个基于 Unity 开发的新增应用,现在越来越多的元宇宙产品也基于Unity 开发.我们认为未来元宇宙需要大量算力,需要表达非常复杂的场景,如万人同屏,只能通过云来解决.Unity 作为应用非常广泛的工具,我们在积极地与元境等云游戏平台对接适配,从而让开发者能专注于体验本身的创新.问题1:云游戏技术包含哪些重要部分;在落地应用的过程中,这些技术(或解决方案)解决了哪些问题? 王矛:谈到高品质元宇宙,首先要谈用户体验.用户体验非常重要,因为它能让用户切身感受到,高品质元宇宙必然能给用户带来良好的观感和体验,比如更清晰的画面,更低的延迟等等.第二,是普及的,普惠的,普遍的计算能力,要达到弱终端依赖,甚至是去终端依赖.第三,是能给用户带来的新价值,比如说我可以打破\"盒子\",给用户越级的体验,提供一些原来在手机上无法享受到的服务.此外还有客户价值,行业价值,我们是否能解决实际的工业,教育,文旅,营销等行业的问题,切实为客户带来商业价值.范晓鹏:首先第一层,我很认同王总讲的用户体验,要给用户呈现良好的视觉效果,除此之外,例如VR场景,戴上头盔之后不会引起人的生理不适,我觉得是高品质元宇宙最基本的要求.在此基础上,元宇宙应该对我们的真实世界有更高层次的仿真,更接近于真实的世界.比如物理仿真和化学仿真,目前计算化学技术的发展和云平台的强大算力都有助于我们实现这一理想目标.张俊波:范老师对于高层次仿真技术的见解令我深受启发,我认为这也将是必然的发展趋势之一.除了两位老师说的这些,我觉得还有两件比较重要的事情是:第一,元宇宙应该有足够多足够好的内容生态吸引大家进入,可以满足每个人的不同口味.第二,就是在元宇宙中需要一个规范的市场体系,人们进入元宇宙都是抱有一定的目的,目的会创造需求,之后才会有市场.在这个市场模式中,商家可以通过广告来营销,消费者也将获得更好的消费体验.问题3:请各位嘉宾举例聊聊身边的高品质元宇宙产品,以及实时云渲染在其中的技术应用.王矛:我们推出了一个高品质的文旅元宇宙产品\"元境博域\",不需要下载,大家在浏览器里就可以访问这个3D空间.元境博域拥有较好的用户体验,能够做到在各个端上提供稳定的,一致的性能体验, 里面展出的文旅产品,数字文物等也能够与用户实时互动,给大家提供了一个交流的空间.范晓鹏:我现在接触的比较多的高品质的元宇宙产品有两个,一个是数字虚拟人,另一个是虚拟博物馆.就数字虚拟人来说,我们和合作伙伴合作,推出了数字的虚拟人.我们解决的主要问题是如何让虚拟人更加真实,并在此基础上提高精度,让虚拟人的表情变得更加自然.目前我们正在研究如何提升虚拟人的美观度,这需要通过程序算法来实现.另外一个产品是虚拟博物馆,虚拟博物馆让我们坐在家里就可以实现云参观.我们也和数字博物馆开展了合作,云渲染可以解决数字博物馆中数字藏品的版权问题.如果我们把藏品数据都发送给用户,用户在本地渲染就可能把数据给截留,但是如果在云上实现渲染,就可以把渲染之后的画面传送给用户,从而避免这样的问题.如果我们的用户有不同的级别,那我们也可以渲染出不同精度的数字藏品的图像进行传送,这样方便实现版权控制,此外,可以在传送给用户的画面里嵌入水印,如果有流出也比较容易溯源.张俊波:我们公司有一个类元宇宙的Demo\"Enemies\",未来,我们希望把它做成可交互的虚拟空间,或将其中的内容放在不同的开放场景中让大家体验.在内容上,云渲染技术可以让内容生成更高效,使画面更清晰,通过扫描和建模技术快速生产素材,降低使用门槛.在技术上,云渲染技术可以极大降低渲染成本和内容生产成本.未来,我们希望打造一个数字资产平台,使素材标准化,并实现内容的共通共享,让更多的创作者能够以合规的方式进行二次开发,避免重复造轮子.问题4:在这些技术落地到元宇宙空间时,能够为虚拟世界带来怎样的新价值? 王矛:在用户体验方面,这些技术能够让用户在比较低端的设备上体验到高品质的数字内容,把特效拉满,实现跨级体验.同时,续航能力显著提高.用户过去在端上计算的时候可能可以玩1小时,用云游戏就可以玩几个小时.此外,对游戏的制作方或者游戏的发行方来说,降低了用户试玩的成本,提高了下载转化效率.范晓鹏:对于用户来说,多人的互动是一个比较有吸引力的点.多人互动不仅是在游戏内部本身,还可以在设计好的固定情节当中,实现用户之间的碰撞.然后,元宇宙也能够为用户提供长期的体验.在元宇宙中,用户可以形成一些固定角色,相当于有一个社会属性.张俊波:最近,我们和一些合作伙伴做的渲染方案,不论是何种应用,都首先考虑用云渲染.此外,我们还需要考虑如何提供质量更好的服务,比如,当一个场景需要几亿个面时,我们该如何解决? 王矛:概括下来有两个趋势,一个是数字经济和实体经济的融合趋势,也就是\"数实融合\";另一个是在产品体验或者在技术上的\"虚实互促成长\",或者说\"虚实相生\".实际上元宇宙现在已经成为下一波数字经济的主要发展路径,我们会更重视元宇宙与实体经济的融合,对其他各行各业的赋能和效率的提升.关于落地场景,我认为国内云游戏和元宇宙的落地场景非常广泛,这一点和海外不太一样.过去几年国内在数字化促进产业经济发展方面做得很好,大家都认可这个价值,所以我们在本就成熟的电商领域,以及范老师提到的文旅领域,都有落地元宇宙项目.教育科普,分子计算,化学计算的线上化,也是科研元宇宙落地的重要方向.此外,元宇宙在商业营销领域也有非常多的落地场景,元境有幸加入到了商务广告协会牵头成立的元宇宙营销应用研究院,成为了主要发起单位.范晓鹏:场景方面刚才我也介绍过了,一个是数字虚拟人,另一个就是线上虚拟博物馆,除了这两个之外,我们实际上还落地了河南电视台的虚拟现实直播活动.从趋势来看,元宇宙以及它能够给大家提供的体验功能,可能只是开始,它未来可能会有更广阔的空间.另外,每个人在思考问题时,都是在脑海中进行仿真,并且元宇宙可能在发展到一定阶段后,能够促进人工智能的进步.也就是说,在解决人工智能问题时,可以在机器人中搭建一个小的元宇宙进行仿真,这也是我们实验室目前正在做的事情.张俊波:今年大家对于元宇宙更加理性了,而且随着AIGC的崛起,市场会通过多元因素对元宇宙的落地做出更符合实际的判断.我认为,电商,文旅,汽车这些行业,都将从元宇宙中受益,在电商方面,虽然人们习惯于在淘宝,京东等店铺上购物,但元宇宙数字营销有可能创造出一些新奇的营销方式,能够做到交互体验,沉浸式体验的零售商户将会有更高的获客能力;文旅元宇宙则可以让人们可以在家里就可以获得沉浸式的逛展体验;汽车智能座舱的发展也可以为汽车行业带来革新性的变化,让汽车真正成为用户日常生活中的第三空间,也有望成为最佳的元宇宙入口.当然,这需要大家齐头并进,携手共创,才能促进各行各业走向数字化,智能化.问题7:在各位嘉宾心中,未来的元宇宙应该长什么样子的?",
+      "score": 0.07359648,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.kaggle.com/datasets/cliheng/wmt-translation-chinese-english",
+      "title": "wmt_translation_chinese-english - Kaggle",
+      "content": "Create a Notebook or download this file to see the full content. Well-documented 0 Well-maintained 0 Clean data 0 Original 0 High-quality notebooks 0 Other. Image 4 translation_zh2en more_vert Updated 3 years ago wmt_translation_chinese-english. Image 5 translation_build_vocabulary more_vert Updated 3 years ago wmt_translation_chinese-english.",
+      "score": 0.007007052,
+      "raw_content": null
+    }
+  ],
+  "response_time": 1.0,
+  "request_id": "e8e50e91-fb3d-4479-bf11-7bd3f78f322c"
+}
+2026-03-22 08:49:25,225 - DeepResearch - DEBUG - 搜索查询 '亚洲科技巨头 量子计算 全资收购北美游戏公司 2010年代' 的原始结果:
+{
+  "query": "亚洲科技巨头 量子计算 全资收购北美游戏公司 2010年代",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://warwick.ac.uk/fac/soc/pais/people/petry/00078.pdf",
+      "title": "[PDF] 2018 年第3 期总第78 期",
+      "content": "此外，北京已经签署了一项计划，明确允许中国国有企业和私. 营企业收购美国科技公司 ... 量子计算（这可能会提供破解目. 前的安全加密功能的优势）、量子",
+      "score": 0.2870083,
+      "raw_content": null
+    },
+    {
+      "url": "https://law.asia/zh-hans/china/china-deals-of-the-year-2024/",
+      "title": "年度杰出交易2024 - Law.asia",
+      "content": "**要点回顾：** 武汉达梦数据在上交所科创板挂牌，募集资金约人民币17亿元。上市后，达梦数据成为国内数据库领域第一股，在2024年A股IPO融资量中排名第四。. **要点回顾：** 艾罗能源在上交所科创板挂牌上市，募资总额22亿元，敲响2024年科创板第一钟，也是年度A股IPO融资量第三名。. **要点回顾：** 阿里巴巴完成本金总额50亿美元、2031年到期的可转换优先票据的发行。其中包括初始购买者充分行使额外购买权，增购本金总额五亿美元的票据。募集资金用于ADS回购、未来回购计划及限价看涨交易成本支付。. **要点回顾：** 2024年9月，银华绍兴原水水利REIT获得中国证监会准予注册的批复，并于11月在深交所正式上市。该项目是全国首单水利基础设施REITs，募集资金近17亿元。底层资产是绍兴市汤浦水库。. **要点回顾：** 丹麦生物技术公司健玛保以18亿美元现金收购中国抗体偶联药物（ADC）公司普方生物，以获得普方生物管线内三款在研ADC药物及多个临床前项目的全球开发权益，以及相关的新一代ADC药物开发技术平台。. **要点回顾：** 菜鸟网络联合人保资本和太平资本设立仓储物流股权投资基金，总资产规模达30亿元，聚焦投资高标准仓储物流基础设施。人保资本和太平资本通过设立股权计划已完成基金投资。. **要点回顾：** 上海人工智能生态基金完成设立，其总规模100亿元，首期30亿元，并已完成五亿元首关。. **要点回顾：** 信宸资本完成第五期美元基金首关募资九亿美元，目标规模32至38亿美元。信宸专注于中国并购市场，目前已主导完成对桂龙药业的收购。本次募资体现了公司一直以来以控股型并购为核心的投资策略。. **要点回顾：** 兖矿资产完成100亿元绿色新能源产业股权基金备案。该基金由山东能源集团联合国贸控股集团及山东省新动能引导基金发起，由兖矿资产担任基金管理人，其资产管理规模高达200亿元。. **要点回顾：** 广东省粤科母基金获批广州南沙新区合格境外有限合伙人（QFLP）境内投资试点资格和73亿元的QFLP额度，成为该试点开展以来获批额度规模最大的QFLP基金。. **要点回顾：** 艾威资本与晶科科技达成268MW户用光伏资产包交易合作，覆盖河南、江西及江苏三地，为国内光伏企业首次引入国际基金投资户用光伏领域。. **要点回顾：** 宁德时代和福特通过签署服务协议，为美国密歇根州电池工厂项目扫清障碍。该协议在满足双方核心诉求与政策合规的前提下，既符合美国《通胀削减法案》中“美国控制”的条款要求，又规避了因宁德时代中国背景可能引发的CFIUS审查风险，同时确保宁德时代无需转让核心电池技术，重要知识产权得以保留。. **要点回顾：** 长电国际子公司通过收购南美配电资产进入秘鲁大型公用事业领域，面临秘鲁和中国双重合规监管。本项目通过搭建跨境合规体系，协调解决中国内地、中国香港、秘鲁等司法管辖区不同法律要求带来的法律冲突，以应对中秘两国的文化差异以及美国西方“长臂管辖”等挑战。. **要点回顾：** 比亚迪旗下弗迪电池与全球领先汽车供应商博格华纳签署为期八年的战略合作协议。根据协议，弗迪电池将成为博格华纳的独家磷酸铁锂刀片电芯供应商，其电芯将应用于博格华纳欧洲、美洲（特定情形下）及部分亚太地区的商用车磷酸铁锂电池包。博格华纳还将获授权使用弗迪电池的电池包设计和制造工艺相关知识产权。. **要点回顾：** 美国半导体上市公司博通公司（Broadcom）以610亿美元收购美国虚拟化软件上市公司威睿公司（VMware）的全部股权，创下全球科技行业最大规模并购交易记录。在近年来半导体行业并购案频频遭遇反垄断审查而受阻的情况下，这笔交易的成功获批为行业提供了重要参考。. **要点回顾：** 神州数码完成金服云数据产品的数据知识产权登记和数据资产入表，并在深圳数据交易所挂牌交易。金服云数据产品作为数据资产被纳入企业财务报表并获得授信融资，成为深圳首例数据资产质押融资个案。. **要点回顾：** 日本全家与顶新集团围绕中国全家便利店的合资企业在许可费、关联交易等方面产生争议，历经多起诉讼与仲裁。本次交易对全家业务进行重组，调整股权结构、重新协商许可协议，解决长达五年半的争议，解决了中国最大便利店连锁之一的运营商背后长期存在的争议。. **要点回顾：** 恒大集团在2021年因无法偿还约3000亿美元债务陷入危机，其中境外债务约200亿美元。2024年1月，香港法院裁定清算恒大香港子公司资产。这一裁定标志着恒大境外债务处理进入清算程序，但未覆盖恒大在内地的核心业务。. **要点回顾：** 碧桂园超320亿美元的美元债及港元可转换债券重组。碧桂园债务总额超2000亿美元，是全球负债最高的房地产开发商之一，债务涵盖受纽约法管辖的高收益债、马来西亚法管辖的伊斯兰债、香港法银团贷款及内地在岸债务等，开发项目总计约3134个，遍及八个国家。本案是目前亚洲最受瞩目的债务重组案件之一。. **要点回顾：** 上海全筑控股集团因受中国恒大集团债务问题以及疫情影响，面临严重流动性危机，遂向上海三中院申请预重整并获得受理，后续重整计划亦获法院批准。. **要点回顾：** 广汽三菱完成逾80亿元债务重组，避免了破产清算。重组后，广汽三菱成为广汽集团全资子公司，其工厂将由广汽埃安接收，解决广汽埃安的产能瓶颈。. **要点回顾：** 负债高达260亿元的华盛江泉集团，此前被法院裁定与47家关联企业实质合并重整。随后，其在破产程序中推动重整转为和解，并通过和解协议草案，实现了多方利益诉求的平衡。这是国内首例大型钢铁企业重整转和解案件。. | **桔电出行破产清算案：管理人如何平衡多方利益？**作者： 刘培峰，**中伦文德律师事务所** |  |. #### 作者： 刘培峰，**中伦文德律师事务所**. **要点回顾：** 2023年9月19日，阳谷祥光铜业及其关联的18家公司实质合并重整计划获山东省阳谷县人民法院裁定批准，并于2024年6月19日顺利执行完毕，终结重整程序。该案涉及资产超200亿元、负债超600亿元，债务类型复杂，债权人分布广泛。重整引入托管经营保障不停业，分拆处置港股上市公司资产实现价值最大化，设计多种偿债方案提升清偿率，并通过府院联动机制形成合力。. **要点回顾：** 上市房企禹州集团推进逾58亿美元离岸债务重组。由于公司注册地为开曼群岛而上市地为香港，禹州集团启动了两地的并行债务重组计划，并在纽约申请破产保护，寻求美国法院对并行计划的承认。. **要点回顾：** 总部位于上海的舶望制药与瑞士跨国医药巨头诺华签订两份独家许可与合作协议。根据协议安排，诺华取得两个早期RNA干扰（RNAi）候选药物的独家许可，该等药物用于治疗心血管疾病。两公司将在心血管疾病研究领域开展合作。. **要点回顾：** 全球生物科技公司百济神州和昂胜医药订立授权合作协议，据此百济神州取得一款在研、即将提交新药临床试验（IND）申请的口服CDK2抑制剂的独家全球许可权利。. **要点回顾：** 宁德时代与中创新航之间掀起专利诉讼大战。自2021年7月起，宁德时代先后对中创新航提起六项专利侵权诉讼，涉及防爆装置、动力电池封装组件等技术，更直指中创新航核心车企客户订单的合法性，累计索赔金额达八亿元。. **要点回顾：** 在盲盒消费热潮席卷全球的背景下，中国出现了首例涉及在线盲盒预售商业模式的不正当竞争纠纷。原告寻麟文化娱乐公司是盲盒品牌“寻找独角兽”的母公司，而被告则经营“盲盒线上抽盒机”业务。. **要点回顾：** 德力西集团成立于1991年，是中国电气行业龙头，而德力西开关成立于1994年，长期在其产品及宣传中突出使用“德力西”字样，涉嫌“傍名牌”。德力西集团自1999年起多次维权，最终上海知识产权法院判决德力西开关立即停止使用含“德力西”字样的企业名称，并赔偿500万元。. **要点回顾：** 大型多人线上角色扮演游戏《龙之谷》的版权方盛趣游戏及子公司数龙科技以侵害注册商标专有权为由，将华昌企业（集团）和南京金沙旅游发展公司诉至上海市浦东新区人民法院。. **要点回顾：** 领先智能家电制造商追觅科技认为竞争对手石头世纪的扫拖机器人产品侵犯了其“清洁装置及清洁设备”发明专利，遂向泉州市中级人民法院申请诉前行为保全，要求对方停止制造和销售侵犯涉案专利的产品。这一请求得到法院的支持。. **要点回顾：** 总部位于上海的诚益生物与阿斯利康订立独家许可协议，据此阿斯利康获得ECC5004的独家全球授权，可在中国以外地区开发和商业化该药物。在中国境内，两公司将共同开发和商业化ECC5004。. **要点回顾：** FMC农业新加坡公司发现多家企业及个人未经授权制造、销售专利化合物“K酸”，遂于2022年向新乡市知识产权局提起行政裁决请求，后因侵权人提起的专利无效程序而中止处理。随后，FMC向郑州中院提起民事诉讼，一审判决侵权人赔偿200余万元。FMC不服上诉，最高院于2023年终审改判，将判赔金额提高至一审的三倍，判令侵权人共计赔偿约673万元，是近年来农药领域罕见的高判赔案件。. **要点回顾：** 格力电器与奥克斯之间长达六年的专利侵权案于2023年末尘埃落定。最高人民法院在二审程序中作出终审判决，裁定奥克斯主张权利的压缩机专利因缺乏创造性且说明书公开不充分而宣告其无效，据此驳回了其对格力电器的侵权索赔。. **要点回顾：** 2022年11月，上海友慧投资咨询公司以“用于重新定位牙齿的系统及其制作方法”为依据，向北京市知识产权局提起行政裁决请求，指控隐适美所属爱齐公司及相关医院涉嫌侵犯其专利权。北京市知识产权局受理后，爱齐公司向国家知识产权局提出涉案专利无效宣告请求。. **要点回顾：** 在与久吾高科技公司的专利侵权案中，环保能源新材料公司启迪控股旗下的子公司启迪清源（上海）取得胜诉，青海省西宁市中级人民法院驳回了久吾公司的全部诉讼请求。. | **MICHAEL KORS知产案中的品牌维权策略**作者： 付同杰，**铸成律师事务所** |  |. #### 作者： 付同杰，**铸成律师事务所**. **要点回顾：** NBA在2022至2023赛季季前赛初期提起著作权侵权诉讼，指控抓饭直播及其股东与主播构成分工合作的直接侵权行为，突破了传统“避风港原则”下平台仅承担帮助侵权责任的限制。NBA还提供多项证据，证明平台主动推荐盗播NBA的直播间、宣传赛事、与主播分成收益等行为，从而构成直接侵权。. **要点回顾：** 四川故宫酒业因康熙年间曾为朝廷提供贡酒的历史渊源，于1980年代将“故宫”注册为第33类“酒”商品商标，并与故宫博物院达成合作。后因保护“故宫”品牌的文化价值，故宫博物院终止合作，但四川故宫酒业仍在经营中使用“故宫”字样及“故宫博物院监制”等内容进行宣传，误导公众，构成搭便车行为。故宫博物院遂提起不正当竞争诉讼，但因被告拥有“故宫”注册商标，其行为是否受商标专用权保护成为案件的主要争议。. **要点回顾：** 中国平安人寿保险开启开源软件合规项目。据卓建所介绍，开源软件合规不仅涉及法律问题，还高度依赖于技术细节。. **要点回顾：** 上药控股与赛诺菲中国签署战略合作协议，据此上药有权进口、分销并推广赛诺菲研发的21款药物，包括国产药物和进口药物。. **要点回顾：** 广东省高级人民法院对国内首例非法调用服务器API接口获取数据并转卖的案件作出终审判决。微梦创科网络技术（新浪微博平台的合法运营主体）起诉简亦迅公司及其深圳分公司，指控后者通过技术手段规避反抓取措施，非法调用微博服务器数据接口抓取后台数据，并通过iDataAPI网站进行售卖。. **要点回顾：** 雀巢以对方商品侵犯旗下调味品品牌“太太乐”商标为由，将绍兴太太乐食品、金华市婺城区八咏楼便利店、绍兴市酒乡红酒业等公司及相关自然人诉至宁波市中级人民法院。. **要点回顾：** 中国科技巨头小米在一起商标抢注的一审中胜诉，成功维护其语音助手“小爱同学”的商标权益。温州市中级人民法院判商标抢注者陈某赔偿小米120万元人民币。. | **“伊丽”商标无效宣告行政纠纷再审案**作者： 屈小春和庞雪，**铸成律师事务所** |  |. #### 作者： 屈小春和庞雪，**铸成律师事务所**. **要点回顾：** 本案是全国首例证券数据权益不正当竞争纠纷案，围绕港股孖展数据的经营权争夺展开。原告融易科技主张，其通过与券商合作获取并整理港股孖展数据，而智通财经未经授权通过技术手段爬取其平台数据，并在对外提供时未注明来源，违反商业道德，构成不正当竞争。一审法院支持原告主张，认定智通财经擅自使用其处理后的数据构成侵权。. **要点回顾：** 欧盟委员会对中国三聚氰胺新出口商复审作出终裁，新疆心连心能源化工公司获得新出口商资格，并适用最低限价。与原审合作企业相比，公司取得了更低的倾销幅度，为其未来在欧盟市场的出口提供了明确且有利的贸易条件。由于原审未使用抽样程序，公司在复审中需接受与原审类似的全面调查，包括提交详尽的问卷答复、应对为期一周的实地核查及多轮意见反馈。此外，本案为欧盟新规后的首批全面复审案例之一，同时也是新冠疫情后首批接受实地核查的案件，程序复杂性和时间要求增加了应对难度。. **要点回顾：** 石榴集团位列中国地产品牌价值40强。该集团的大股东与小股东围绕公司控制权展开争夺，涉及多项法律问题，包括董监高更替的公司治理合规、核心资产所有权争夺、股东与公司的借款纠纷、职务侵占、劳动纠纷，以及媒体报道引发的舆情危机等。. **要点回顾：** 本案系一起刑民交叉的保险合同纠纷案件，争议标的额逾两亿元。中国联合工程公司通过友利银行向借款人发放贷款，该借款人虽已投保太平财产保险公司的贷款履约保证保险，但因涉嫌刑事诈骗无力偿贷后，保险公司以借款人涉刑为由拒绝向受益人联合工程赔付，遂引发诉讼。. **要点回顾：** 2023年4月，中国证监会认定泽达易盛IPO欺诈发行并处罚，东兴证券因未勤勉尽责被立案调查。上海金融法院受理投资者诉讼。中伦所代理东兴证券，通过主张争议焦点及创新司法调解方案，促成调解，东兴证券支付金额低于诉请。. **要点回顾：** 流量推广方富阳泰奇与流量购买方分期乐签订广告推广协议，约定按点击量计费。合作期间，分期乐发现推广数据异常，拒绝向富阳泰奇支付部分费用。富阳泰奇遂起诉追讨120万元费用，分期乐则提起反诉，主张对方数据作弊，要求退还320万元服务费并索赔620万元违约金，总争议金额达1060万元。. **要点回顾：** 绿地集团因财务危机引发29起建设工程施工合同纠纷，涉案标的额约15亿元，案件分布于上海、江苏、河南、山东、广西、江西等多个省份。建领城达所深入调查财产信息，梳理资产优先级，采取精准保全措施控制关键资产，为诉讼与执行提供了有力保障。针对部分手续不全、无法常规保全的项目，律所通过与法院沟通，成功查封在建工程，确保了资产的可执行性。. **要点回顾：** 汇力物资与壳牌（中国）因横向垄断协议纠纷进入诉讼程序。汇力物资主张壳牌通过协调和组织经销商投标达成横向垄断协议，侵害其合法权益。一审法院认定壳牌的行为不具有排除、限制竞争效果，未完全支持汇力物资请求。二审法院经审理撤销一审判决，并要求壳牌停止协调经销商达成横向垄断协议的行为。. | **不幸中寻求共赢：精密仪器海损纠纷**作者： 杨学光和王舸峥，**广信君达律师事务所** |  |. #### 作者： 杨学光和王舸峥，**广信君达律师事务所**. Grandall Law Firm-国浩律师事务所-DOTY 2023. Grandall Law Firm-国浩律师事务所-DOTY 2023. Jointwin Law Firm-正策律师事务所-DOTY 2023. Jointwin Law Firm-正策律师事务所-DOTY 2023. Zhonglun W&D Law Firm-中伦文德律师事务所-DOTY 2023. Zhonglun W&D Law Firm-中伦文德律师事务所-DOTY 2023.",
+      "score": 0.24261406,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.ey.com/content/dam/ey-unified-site/ey-com/zh-cn/insights/china-overseas-investment-network/documents/ey-progress-and-outlook-for-jointly-building-the-digital-silk-road.pdf",
+      "title": "[PDF] 共建数字丝绸之路进展、 形势与展望 - EY",
+      "content": "数字文娱在近些年持续发展，中国企业“走出去”不仅可以发展海外市场，还可 以借助娱乐产业和文化交流推动与共建国家和地区的“民心相通”。目前游戏行 业是中国数字文娱“走出去”发展中较为强势的行业之一，企业出海数量多，在 包括音乐、短视频、长视频和网络文学等在内的其他数字文娱领域，中企也正 在积极拓展市场。 未来，数字丝绸之路的建设仍有多重挑战，不仅面临发展中国家数字基础设施薄弱、 数字基建成本高昂等传统问题，也因日益频繁的数据跨境流动带来了数据合规及网 络安全新挑战，同时大国间的科技博弈也带来前所未有的地缘政治风险。为更好地 应对可能发生的问题和挑战，建议中国及“一带一路”共建国家和地区：1）加强 “一带一路”政策协调，尊重各国自主发展道路；2）推动网络基础设施建设，缩小 数字鸿沟；3）调整就业结构，注重数字化人才培养；4）完善法律法规体系，从 制度上保障网络空间安全。从多方面、各领域提升自身实力，让数字化发展切实成 为推动经济发展的新动能。 共建数字丝绸之路进展、形势与展望 数字金融：作为传统金融业与现代科技相结合的产物，数字金融是金融创 新和金融科技的发展方向，数字金融以及数字普惠金融在中国现阶段快速 发展，使中国与“一带一路”共建国家在数字经济时代的有很大的合作空间。 数字医疗：在全球范围内，数字技术正成为推动医疗健康全方位升级的重 要引擎。中国与“一带一路”共建国家和地区在数字医疗领域的合作将实现 双赢，各国在医疗保健系统中融入数字技术将极大提高本国医疗系统的运 营效率，而合作还将有助于中国提高其数字医疗和生物技术标准。 5 1 数字丝绸之路是数字经济发展和“一带一路”倡议的结合，旨在提高中国与“一带一 路”共建国家的数字互联互通水平，助推共建国家的数字经济发展水平。这个概念 被首次明确提出要追溯到2017年首届“一带一路”国际合作高峰论坛，中国国家主 席习近平提出“要坚持创新驱动发展，加强在数字经济、人工智能、纳米技术、量 子计算机等前沿领域合作，推动大数据、云计算、智慧城市建设，连接成21世纪 的数字丝绸之路”。至此，数字丝绸之路有了更明确的发展方向，也成为“一带一路” 倡议下的发展重点之一。 什么是数字经济？许多国际机构和组织都做出了概括，以2016年G20杭州峰会发 布的《二十国集团数字经济发展与合作倡议》中的定义最具代表性：“数字经济是 指以使用数字化的知识和信息作为关键生产要素、以现代信息网络作为重要载体、 以信息通信技术的有效使用作为效率提升和经济结构优化的重要推动力的一系列经 济活动。”作为衡量数字经济发展水平的重要统计标准，2021年5月，中国国家统 计局公布了《数字经济及其核心产业统计分类（2021）》(以下简称《数字经济分 类》)，首次确定了数字经济的基本范围。从“数字产业化”和“产业数字化”两个方 面，确定了数字经济的基本范围，将其分为五大类：数字产品制造业、数字产品服 务业、数字技术应用业、数字要素驱动业和数字化效率提升业。 数字丝绸之路是推动“一带一路” 倡议发展的重要引擎 共建数字丝绸之路进展、形势与展望 图表1：数字经济的构成与特点 资料来源：《数字经济及其核心产业统计分类（2021）》，安永分析 数字产业化 数字经济核心产业 产业数字化 应用数字技术和数据资源为传统产 业带来的产出增加和效率提升 是数字经济发展的基础 是数字技术与实体经济的融合 数字产品制造业 数字产品服务业 数字技术应用业 数字要素驱动业 数字经济 关键要素 核心 主线 数据资源 价值释放 数据赋能 6 数 字 化 效 率 提 升 业 54% 45% 27% 25% 25% 24% 23% 23% 22% 21% 20% 20% 20% 19% 19% 18% 17% 17% 16% 14% 0% 50% 100% 韩 国 新 加 坡 爱 沙 尼 亚 马 来 西 亚 克 罗 地 亚 匈 牙 利 保 加 利 亚 捷 克 罗 马 尼 亚 南 非 意 大 利 卢 森 堡 波 兰 俄 罗 斯 拉 脱 维 亚 立 陶 宛 越 南 斯 洛 文 尼 亚 塞 浦 路 斯 泰 国 2021年数字经济占GDP百分比 共建数字丝绸之路进展、形势与展望 7 中国信息通信研究院测算了全球47 个国家2021年数字经济增加值，总规模达到 38.1 万亿美元。从规模上看，数字经济相对其他产业更具有垄断性，发达国家和 发展中国家数字经济发展差距巨大，排名第一的美国占全球（测算值）比重超四 成，规模为排名第二的中国的两倍以上。此外，数字经济占GDP比重最高的三个 国家分别为德国（68.0%）、英国（67.8%）和美国（66.3%）。2021年，中国 数字经济占GDP的比重已达到40.8%，虽与部分发达国家仍有差距，但其规模较 2018年增长49%，为主要国家中近年来增长最多的国家。目前，中国数字经济发 展已具备良好产业基础，预计未来仍有较大的市场空间。 在有测算的“一带一路”共建国家中，除韩国和新加坡外，其他国家数字经济占 GDP的比重均小于30%，仍具有较大的发展潜力。 图表2：2021年主要国家数字经济规模（万亿美元）及其全球份额占比（%） 资料来源：《全球数字经济白皮书（2022）》，中国信息通信研究院，2022年12月；安永分析 注：图表显示数据由于四舍五⼊的缘故，其合计数未必与总计数相等 图表4：“一带一路”部分共建国家数字经济占GDP百分比（按占比从大到小） 图表3：“一带一路” 部分共建国家数字经济规模（亿美元） 9,631 4,285 3,348 1,729 1,473 1,325 937 801 724 651 649 623 548 473 441 328 311 245 183 韩 国 意 大 利 俄 罗 斯 新 加 坡 印 度 尼 西 亚 波 兰 马 来 西 亚 南 非 泰 国 土 耳 其 捷 克 罗 马 尼 亚 奥 地 利 越 南 匈 牙 利 新 西 兰 葡 萄 牙 希 腊 保 加 利 亚 2021年数字经济规模 资料来源：《全球数字经济白皮书（2022）》，中国信息通信研究院，2022年12月；UNCTAD、安 永分析 （40%） 其他国家 5.1 （13%） （7%） （19%） （8%） （6%） 法国1.4 （4%） 印 度 0.7 （3%） （2%） 发达国家和发展中国家在数字经济领域前期布局存在巨大差异，发达国家由于基 础设施完善，技术布局超前，尽管经济也面临诸多挑战，但经济复苏节奏明显快 于发展中国家，数字经济对经济整体的支撑作用凸显。“一带一路”共建国家和地 区多为发展中国家，许多国家的信息基础设施仍不完善，对发展数字经济仍存在 较大制约，但近些年这些国家的政府和民众也意识到经济数字化转型的重要性和 迫切性，无论是政府资金还是私人资金，未来都将加大向数字经济倾斜，为推动 数字丝绸之路创造机遇。 对于信息基础设施建设相对较完善的“一带一路”共建国家和地区近年来大幅提高 了数字经济的发展速度，一些在数字经济较发达国家被验证过的成功经验也被迅 速复制。目前，东南亚已成为全球数字经济发展最活跃的地区之一。根据谷歌、 淡马锡与贝恩公司联合发布的《2022东南亚数字经济报告》，东南亚六国（印度 尼西亚、马来西亚、菲律宾、新加坡、泰国和越南）2022年数字经济商品交易总 额（Gross Merchandise Value, GMV）接近2,000亿美元，较2019年近乎翻番， 且过去三年东南亚地区互联网用户增长1亿。报告预计，到2025年，东南亚六国 数字经济GMV将达到约3,300亿美元。 印度尼西亚数字经济仍处于东南亚领先地位，随后是泰国，在近期内越南有望成 为东南亚地区数字经济增速最快的国家，预计到2025年越南的数字经济规模较 2022年将增加一倍以上。 8 共建数字丝绸之路进展、形势与展望 77 35 23 21 20 18 130 53 49 34 35 28 印度尼西亚 泰国 越南 马来西亚 菲律宾 新加坡 2022 2025 图表5：东南亚六国数字经济商品交易总额（十亿美元） 复合增长率 19% 15% 31% 17% 20%",
+      "score": 0.11925444,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.xiaoyuzhoufm.com/podcast/64f83ff13fa4090b744fc93a",
+      "title": "Cryptoria｜说Web3和加密世界 - 小宇宙播客",
+      "content": "普通人防御指南总结 • 养成良好钱包习惯 - 每次收款使用新地址 - 不公开固定地址反复使用 - 确认币在哈希化地址类型里 - 从地址发过币后视为\"已污染\",不再存放大量资金 - 确保钱包找零机制正常运作 06:04 量子计算威胁现实性:Christopher Wood抛售比特币转投黄金 07:19 Google Willow处理器与量子计算竞赛正式开赛 08:35 全球政府540亿美元投资,中美在不同领域领先 10:18 常见误区澄清:不是平行宇宙计算,而是三大物理现象 11:49 叠加态、纠缠、干涉详解:硬币旋转的瞬间 13:33 迷宫比喻详细展开:传统计算vs量子计算 14:42 物理比特vs逻辑比特:脆弱性与纠错机制 18:22 2025年转折点:纠错技术突破而非比特数量 22:00 比特币地址安全等级分析:哈希保护vs公钥暴露 30:00 比特币钱包安全铁律 38:00 四种潜在攻击者模型 54:46 核武器历史参照:时间窗口极短,技术扩散快速 57:58 AI加速量子计算:纠错优化与材料发现 01:00:01 量子计算加速AI:突破存储墙瓶颈 01:02:54 量子计算正面应用:药物研发、材料科学、金融领域 01:05:37 技术发展双面性:互联网与原子弹的后悔 01:06:23 普通人防御指南 01:09:23 预测市场追踪量子威胁:Polymarket实例分析 01:10:49 专家时间线预测:2030-2040年窗口期 01:13:17 留给比特币社区的时间不多 关键词: 量子计算、物理比特、逻辑比特、叠加态、量子纠缠、干涉、比特币、加密货币、椭圆曲线加密、公钥、私钥、数字签名、哈希、Google、Willow、量子处理器、中本聪、冷钱包、热钱包、国家安全、情报机构、NSA、军备竞赛、核武器、AI、人工智能、机器学习、神经网络、DeepMind、NVIDIA、量子研究中心、生成式AI、药物研发、材料科学、超导材料、蛋白质折叠、电池材料、太阳能、二氧化碳捕获、金融、风险评估、预测市场、Polymarket、后量子密码学、A16z、黄金、美国、中国、俄罗斯、北朝鲜、黑客、犯罪组织、情报收集、战略储备、能耗 主播： Vivienne (Twitter @Vivienne\\_smile) Zhiyang (Twitter @zhiyangxyz) Twitter：@0x\\_cryptoria 小助手微信：trifoliumlabs 微信公众号：Cryptoria加密投研 免责声明: 所有观点纯属主播个人意见仅供分享，不构成任何投资建议。加密货币投资风险巨大，在做出任何投资决定前，请先做好充分调查并咨询相关专业人士. 节目总结 - 2025年从政治阴谋变成助推行业催化剂 - 政策明晰终归是好事 - 稳定币既是美元霸权新载体, 也是机构争夺新战场 - RWA从国债到私人信贷、从股票到商品加速上链 - 问题：万物皆可代币化？ 00:52 传统金融与Crypto融合, 2024夹缝求生到2025反击战 03:22 加密政策历史, 2011年起打击比特币, 政府与加密天然对立 05:52 Operation Choke Point 2.0系统性封杀银行服务 08:22 Gary Gensler执法式监管, 125起诉讼60亿美元罚款 10:50 2024大选转折点, Coinbase和Ripple投入1.19亿美元 14:38 特朗普包装成加密总统, 此前坚定反Crypto 17:12 政策火箭速转向, Gensler辞职, 成立加密工作组 19:18 废除SAB 121, 解除银行托管限制 24:00 GENIUS法案通过, 首个稳定币监管框架 30:20 稳定币市场3000亿美元, 从工具到国家战略武器 34:30 Tether年利润超100亿, 人均利润最高公司之一 38:45 稳定币收益来源, 储备金超2500亿年化收入75-125亿 44:50 收益型稳定币Ethena USDE, 市值峰值148亿美元 48:00 Delta中性机制, sUSDE年化6%高出国库券60% 55:20 Crypto可组合性, USDE抵押循环, Pendle分离收益 59:49 资金费率市场, 永续合约平衡机制, 可持续捕获价差 01:04:40 新兴收益型稳定币, 2025年收益来自真实现金流 01:08:27 RWA终于落地, 链上收益T+0结算, 许可与无许可光谱 01:12:39 RWA市值181亿, 国债占一半私人信贷占另一半 01:16:30 商品代币化36亿, 机构基金27亿9倍增长 01:18:38 DTCC获授权代币化, 美国金融市场准备上链 01:21:37 从政治阴谋到催化剂, 万物皆可代币化 关键词: 加密货币、传统金融、监管转变、SEC、特朗普、政治机会、选举、Coinbase、Ripple、政治献金、Sab 121、托管、资产负债表、GENIUS法案、稳定币、储备金、USDT、USDC、Tether、Circle、Paxos、美元霸权、国家战略、Ethena、USDE、sUSDE、基差交易、永续合约、套利、可组合性、Aave、Morpho、Pendle、DeFi、NUO、USDai、RWA、代币化、国债、私人信贷、商品、黄金、股票、ETF、机构基金、Ondo、USDY、Tether Gold、Paxos Gold、区块链升级、HashKey Group、资产上链、BlackRock、摩根大通、巴菲特、美联储、Kraken、Gemini、百慕大、新加坡、出海、AI、TVL、流动性 主播： Vivienne (Twitter @Vivienne\\_smile) Zhiyang (Twitter @zhiyangxyz) Twitter：@0x\\_cryptoria 小助手微信：trifoliumlabs 微信公众号：Cryptoria加密投研 免责声明: 所有观点纯属主播个人意见仅供分享，不构成任何投资建议。加密货币投资风险巨大，在做出任何投资决定前，请先做好充分调查并咨询相关专业人士.",
+      "score": 0.08550305,
+      "raw_content": null
+    },
+    {
+      "url": "https://media.iese.edu/research/pdfs/75892.pdf",
+      "title": "[PDF] 企业巨头如何能更好地 与深科技创业企业合作。 东亚和东南亚案例分析",
+      "content": "George S.Dayand Paul J.H.Schoemaker, “Avoiding the Pitfalls of Emerg-ing Technologies.”California Management Review,42卷,2期,2000年1月1 日,8–33, https://doi.org/10.2307/41166030. Raji Srinivasan, “Sources, characteristics and effects of emerging technologies:Research opportunities in innovation.”Industrial Marketing Management,37卷,6期,2008年8月,633–640, https://doi.org/10.1016/j. Erwin Danneels, “Disruptive Technology Reconsidered:A Critique and Research Agenda.Journal of Product Innovation Manage-ment,21卷,4期,2004年7月,246–258, https://doi.org/10.1111/j.0737-6782.2004.00076.x. 70. Henry Chesbrough, “Assembling the elephant:A review of empirical studies on the impact of technical change upon incumbent firms.”Re-search on Technological Innovation, Management and Policy; Com-parative Studies of Technological Evolution,7卷,2001年10月30日,1–36, https://doi.org/10.1016/s0737-1071(01)01002-2. Gary Dushnitsky和Michael J.Lenox, “When do incumbents learn from entrepreneurial ventures?:Corporate venture capital and investing firm innovation rates.”Research Policy,34卷,5期,2005年6月,615–639, https:// doi.org/10.1016/j.respol.2005.01.017. Chen Lin, Ping Lin, Frank M.Song和Chuntao Li, “Managerial incentives, CEO characteristics and corporate innovation in China’s private sector.”-Journal of Comparative Economics,39卷,2期,2011年6月,176–190, https:// doi.org/10.1016/j.jce.2009.12.001. B.Bowonder和T.Miyake, “A model of corporate innovation manage-ment:some recent high tech innovations in Japan.”R&D Management,22 卷,4期,1992年10月,319–336, https://doi.org/10.1111/j.1467-9310.1992. Jarno Poskela和Miia Martinsuo, “Management Control and Strategic Renewal in the Front End of Innovation.”Journal of Product Innovation Management,26卷,6期,2009年8月,671–684, https://doi.org/10.1111/ j.1540-5885.2009.00692.x. 173.",
+      "score": 0.054243922,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.99,
+  "request_id": "f9f4383e-5364-468e-b3ea-1218796e329e"
+}
+2026-03-22 08:49:25,226 - DeepResearch - INFO - 开始从 21 个搜索结果中筛选前 10 个最佳 URL (目标读取: 5)
+2026-03-22 08:49:25,226 - DeepResearch - INFO - 正在加载本地多语言 Embedding 模型 (paraphrase-multilingual-MiniLM-L12-v2)...
+2026-03-22 08:49:35,736 - DeepResearch - INFO - 本地多语言 Embedding 模型加载完成。
+2026-03-22 08:49:36,064 - DeepResearch - INFO - 本地 Embedding 模型筛选出的 URL (10个): ['https://www.reddit.com/r/kungfu/comments/11ddgxa/fighting_games_characters_and_chinese_martial_arts/?tl=zh-hant', 'https://www.reddit.com/r/thepunisher/comments/1c341jz/where_does_punisher_rank_in_marvels_best_martial/?tl=zh-hans', 'https://huggingface.co/datasets/BAAI/IndustryCorpus2_game/viewer', 'https://www.yfchuhai.com/ranks/100.html', 'https://zh.moegirl.org.cn/%E6%8B%B3%E5%A4%B4%E6%B8%B8%E6%88%8F', 'https://gp.qq.com/story/lite.html', 'https://newkomica-kari.fandom.com/zh-tw/wiki/%E6%8B%B3%E7%9A%87%E7%B3%BB%E5%88%97%E5%8E%9F%E5%89%B5%E4%BA%BA%E7%89%A9%E5%88%97%E8%A1%A8-part_1', 'https://zhuanlan.zhihu.com/p/29293153726', 'https://www.reddit.com/r/kungfu/comments/11ddgxa/fighting_games_characters_and_chinese_martial_arts/?tl=zh-hans', 'https://www.reddit.com/r/StreetFighter/comments/1bvsmol/do_fighting_games_in_general_become_harder_to/?tl=zh-hans']
+2026-03-22 08:49:36,065 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.reddit.com/r/kungfu/comments/11ddgxa/fighting_games_characters_and_chinese_martial_arts/?tl=zh-hant
+2026-03-22 08:49:36,065 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.reddit.com/r/thepunisher/comments/1c341jz/where_does_punisher_rank_in_marvels_best_martial/?tl=zh-hans
+2026-03-22 08:49:36,066 - DeepResearch - DEBUG - Cache hit for URL: https://huggingface.co/datasets/BAAI/IndustryCorpus2_game/viewer
+2026-03-22 08:49:36,066 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.yfchuhai.com/ranks/100.html
+2026-03-22 08:49:36,066 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://zh.moegirl.org.cn/%E6%8B%B3%E5%A4%B4%E6%B8%B8%E6%88%8F
+2026-03-22 08:49:37,763 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 549
+2026-03-22 08:49:37,763 - DeepResearch - DEBUG - Cached content for URL: https://www.reddit.com/r/thepunisher/comments/1c341jz/where_does_punisher_rank_in_marvels_best_martial/?tl=zh-hans
+2026-03-22 08:49:39,029 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 546
+2026-03-22 08:49:39,030 - DeepResearch - DEBUG - Cached content for URL: https://www.reddit.com/r/kungfu/comments/11ddgxa/fighting_games_characters_and_chinese_martial_arts/?tl=zh-hant
+2026-03-22 08:49:41,150 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 14279
+2026-03-22 08:49:41,150 - DeepResearch - DEBUG - Cached content for URL: https://www.yfchuhai.com/ranks/100.html
+2026-03-22 08:49:42,409 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 192728
+2026-03-22 08:49:42,409 - DeepResearch - DEBUG - Cached content for URL: https://zh.moegirl.org.cn/%E6%8B%B3%E5%A4%B4%E6%B8%B8%E6%88%8F
+2026-03-22 08:49:51,513 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:49:51,513 - DeepResearch - DEBUG - Cache hit for URL: https://gp.qq.com/story/lite.html
+2026-03-22 08:49:52,471 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:49:52,472 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://newkomica-kari.fandom.com/zh-tw/wiki/%E6%8B%B3%E7%9A%87%E7%B3%BB%E5%88%97%E5%8E%9F%E5%89%B5%E4%BA%BA%E7%89%A9%E5%88%97%E8%A1%A8-part_1
+2026-03-22 08:49:52,770 - DeepResearch - WARNING - Jina Reader 返回非 200 状态码: 451, URL: https://newkomica-kari.fandom.com/zh-tw/wiki/%E6%8B%B3%E7%9A%87%E7%B3%BB%E5%88%97%E5%8E%9F%E5%89%B5%E4%BA%BA%E7%89%A9%E5%88%97%E8%A1%A8-part_1
+2026-03-22 08:49:52,771 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://zhuanlan.zhihu.com/p/29293153726
+2026-03-22 08:49:54,519 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:49:54,519 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.reddit.com/r/kungfu/comments/11ddgxa/fighting_games_characters_and_chinese_martial_arts/?tl=zh-hans
+2026-03-22 08:49:57,592 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 546
+2026-03-22 08:49:57,733 - DeepResearch - DEBUG - Cached content for URL: https://www.reddit.com/r/kungfu/comments/11ddgxa/fighting_games_characters_and_chinese_martial_arts/?tl=zh-hans
+2026-03-22 08:50:11,351 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 168
+2026-03-22 08:50:11,353 - DeepResearch - DEBUG - Cached content for URL: https://zhuanlan.zhihu.com/p/29293153726
+2026-03-22 08:50:15,767 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:50:15,768 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.reddit.com/r/StreetFighter/comments/1bvsmol/do_fighting_games_in_general_become_harder_to/?tl=zh-hans
+2026-03-22 08:50:17,296 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 548
+2026-03-22 08:50:17,297 - DeepResearch - DEBUG - Cached content for URL: https://www.reddit.com/r/StreetFighter/comments/1bvsmol/do_fighting_games_in_general_become_harder_to/?tl=zh-hans
+2026-03-22 08:50:24,288 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:50:30,082 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:50:33,614 - DeepResearch - DEBUG - 提取的关键信息: 根据提供的网页内容，以下是提取的与搜索查询相关的有用信息点。这些信息点部分匹配查询中的元素（如亚洲科技巨头收购北美游戏公司），但网页内容未涉及量子计算、移动格斗游戏的具体发行或年龄偏大的武术教官角色。提取基于网页原始内容，保持准确性：
+
+- **腾讯公司（亚洲科技巨头）全资收购北美游戏公司**：  
+  腾讯公司于2015年底完成对拳头游戏（Riot Games）的百分百控股。拳头游戏是美国的一家游戏开发公司，总部位于洛杉矶，属于北美游戏公司。收购时间（2015年）属于21世纪10年代（2010年代）。
+
+- **拳头游戏的移动游戏作品**：  
+  - 《英雄联盟:激斗峡谷》（League of Legends: Wild Rift）于2020年发布，支持Android和iOS移动平台，由腾讯游戏代理发行中国大陆版本（国服）。  
+  - 其他移动游戏包括《云顶之弈》（Teamfight Tactics）、《符文之地传说》（Legends of Runeterra）和《英雄联盟电竞经理》（LoL Esports Manager），但这些均非格斗游戏类型。
+
+- **未来格斗游戏作品（非移动端）**：  
+  《2XKO》（原代号）计划于2025年发售，是一款以《英雄联盟》为背景的PvP格斗游戏，但平台为Microsoft Windows、PlayStation 5和Xbox Series X/S，非移动端。由拳头游戏自主发行。
+
+- **无相关角色信息**：  
+  网页内容未提及任何游戏中包含年龄偏大的武术教官角色，也未提供游戏角色的具体细节。
+
+- **无量子计算信息**：  
+  网页内容未涉及腾讯公司或其他实体涉足量子计算的相关描述。
+
+- **代理发行关系**：  
+  腾讯游戏代理发行拳头游戏多款作品的中国大陆版本，例如《英雄联盟》国服（2011年上线）和《无畏契约》（VALORANT）国服（2023年公测），但未明确提及其代理发行的移动格斗游戏。
+2026-03-22 08:50:33,622 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:50:53,019 - DeepResearch - DEBUG - 提取的关键信息: 根据用户提供的网页内容（来自和平精英故事站，腾讯游戏官方网站），我仔细分析了搜索查询："由亚洲科技巨头（涉足量子计算，并在21世纪10年代全资收购北美游戏公司）代理发行的移动格斗游戏中，哪一款包含一名年龄偏大的武术教官角色？"。以下是提取的关键信息点，这些点部分匹配查询要求，或提供背景知识、数据支持或相关细节（如匹配发行商特征、游戏类型、角色描述）。提取基于网页原始内容，保持准确性，不做概括。
+
+任务要求是提取任何部分相关的信息，即使不完整。网页内容描述了和平精英游戏的多个角色，其中：
+- 发行商腾讯游戏符合"亚洲科技巨头"特征（腾讯总部在中国，涉足量子计算领域，并在2010年代全资收购北美游戏公司Riot Games）。
+- 游戏类型为移动射击类游戏（非纯格斗游戏），但包含战斗和角色元素，可能部分相关。
+- 角色中，驰风飞将（Gale General）被描述为武道修行者和职业导师，年龄28岁（虽不算偏大，但比其他年轻角色年龄稍大，且与武术教官概念部分相关）。
+
+如果以下列表中无元素完全匹配查询，但每个点都提供部分价值（如背景、支持数据）。列表形式如下：
+
+1. **游戏名称**: 和平精英（Game for Peace），是一款移动游戏，由腾讯游戏代理发行。内容中多次提到游戏背景和角色，属于战斗射击类游戏（非纯格斗，但包含格斗元素如近战技能）。
+2. **发行商特征**: 腾讯游戏（Tencent Games），作为亚洲科技巨头（总部位于中国），在量子计算领域有投资（例如，腾讯量子实验室的研究），并在2010年代（具体在2015年）全资收购了北美游戏公司Riot Games（英雄联盟开发商）。这直接匹配查询中的发行商描述。
+3. **角色信息**: 驰风飞将（Gale General），身份为"超体对抗职业导师"，年龄28岁，职业为武道修行者，擅长骑马、射箭等武术技能。相关描述包括："承袭龙脊关的武道底蕴"，"在擂台上直面那些全副武装的挑战者"，技能如"骑射精通"和"箭过留痕"。虽然28岁不严格符合"年龄偏大"（查询中未定义具体年龄，但28岁相对其他角色如20岁的云舟更年长），但部分匹配武术教官的概念（作为导师角色）。
+4. **背景支持**: 游戏为移动平台，可通过官方网站（https://gp.qq.com/story/lite.html）访问。角色设定中强调武道和战斗教学，提供角色年龄、技能和背景细节，部分支持查询中的"武术教官"元素。其他角色（如卡德尔少将32岁）年龄稍大但非武术相关；无直接年龄偏大（如40+）的武术教官角色。
+
+这些信息点基于网页原始内容提取，仅反映部分相关性。例如：
+- 驰风飞将的年龄和导师身份提供背景，但未明确指定为查询中的游戏。
+- 发行商腾讯完全匹配查询要求，证明游戏可能由符合条件的公司发行。
+- 整体，网页未完全回答查询，但提供了有价值的上下文和数据支持，因此提取了以上信息。
+2026-03-22 08:50:53,020 - DeepResearch - INFO - 开始分析搜索结果，当前查询: 由亚洲科技巨头（涉足量子计算，并在21世纪10年代全资收购北美游戏公司）代理发行的移动格斗游戏中，哪一款包含一名年龄偏大的武术教官角色？
+2026-03-22 08:51:14,685 - DeepResearch - DEBUG - 分析结果原始响应: {
+    "extracted_info": [
+        "腾讯是一家总部位于中国的亚洲科技巨头，在量子计算领域有投资，如腾讯量子实验室的研究。",
+        "腾讯在2010年代的2015年全资收购了北美游戏公司Riot Games。",
+        "和平精英是由腾讯游戏代理发行的移动游戏，可通过官方渠道如腾讯游戏故事站访问。",
+        "和平精英游戏中有一个角色叫驰风飞将（Gale General），年龄28岁。",
+        "驰风飞将的身份是超体对抗职业导师，职业为武道修行者，承袭龙脊关的武道底蕴。",
+        "驰风飞将在游戏中的技能包括武术相关元素，如骑射精通和箭过留痕。"
+    ]
+}
+2026-03-22 08:51:14,685 - DeepResearch - INFO - 开始规划下一步，原始问题: 一位物理学领域的学者为一种经典棋盘游戏设计的评分系统，后来被一家北美游戏公司广泛应用于其一款多人在线战术竞技游戏中。这家公司的母公司是一家亚洲科技巨头，该巨头在21世纪10年代完成了对前者的全资收购，并涉足量子计算等前沿科技领域。在这家北美公司开发的另一款第一人称射击游戏中，有一件适合近距离作战的武器，其名称与上述亚洲巨头代理发行的一款格斗手游中的一名在登场角色中年龄偏大的武术教官角色相同。这款格斗手游的名字是什么？
+2026-03-22 08:52:31,943 - DeepResearch - DEBUG - 规划下一步原始响应: {
+    "think": [
+        "当前已确认事实：腾讯是亚洲科技巨头且涉足量子计算；腾讯于2015年全资收购北美公司Riot Games；腾讯代理发行游戏《和平精英》；《和平精英》中存在角色驰风飞将，28岁，身份为武道修行者。",
+        "高置信推断与待核验点：推断《英雄联盟》为MOBA游戏（应用物理学者设计的Elo评分系统），但需核验细节；推断《无畏契约》（Valorant）为FPS游戏，但需核验其中近距离武器名称；推断《和平精英》非正确格斗手游（因其为战术竞技游戏且角色28岁不符\"年龄偏大\"特征）；待核验点：腾讯代理发行的正统格斗手游身份及具体角色匹配。",
+        "当前唯一瓶颈缺口：格斗手游具体名称未确认，因类型不匹配和角色年龄不符阻塞证据链闭环。",
+        "下一跳信息增益最高原因：直接针对格斗手游设计强约束查询（腾讯+武术教官+年龄偏大属性），可一次验证缺口并区分非格斗类作品；跳过武器名称等查询，因属下游线索且增益低，避免冗余。最后一个核验点为：确认格斗手游名称及角色存在后即可链接武器名称完成闭环。"
+    ],
+    "is_fully_answered": false,
+    "final_answer": "",
+    "next_question": "搜索：由腾讯代理发行的移动格斗游戏中，哪一款包含一名年龄40岁以上且作为武术教官的角色？"
+}
+2026-03-22 08:52:31,943 - DeepResearch - INFO - 规划下一步完成，耗时 68.73s，history_text 长度 872
+2026-03-22 08:52:31,944 - DeepResearch - INFO - 开始拆解用户问题: 搜索：由腾讯代理发行的移动格斗游戏中，哪一款包含一名年龄40岁以上且作为武术教官的角色？
+2026-03-22 08:52:55,461 - DeepResearch - DEBUG - LLM 拆解问题原始响应: ["腾讯代理发行 移动格斗游戏", "腾讯移动格斗游戏 武术教官角色", "移动格斗游戏 武术教官 年龄40岁以上", "腾讯 移动格斗游戏 武术教官 年龄40岁以上"]
+2026-03-22 08:52:55,462 - DeepResearch - INFO - 生成的子查询列表: ['腾讯代理发行 移动格斗游戏', '腾讯移动格斗游戏 武术教官角色', '移动格斗游戏 武术教官 年龄40岁以上', '腾讯 移动格斗游戏 武术教官 年龄40岁以上']
+2026-03-22 08:52:55,462 - DeepResearch - INFO - 第 2 轮搜索查询: ['腾讯 移动格斗游戏 武术教官 年龄40岁以上', '腾讯代理发行 移动格斗游戏', '腾讯移动格斗游戏 武术教官角色', '移动格斗游戏 武术教官 年龄40岁以上', '搜索：由腾讯代理发行的移动格斗游戏中，哪一款包含一名年龄40岁以上且作为武术教官的角色？']
+2026-03-22 08:52:55,463 - DeepResearch - INFO - 正在执行搜索查询: 腾讯 移动格斗游戏 武术教官 年龄40岁以上
+2026-03-22 08:52:55,463 - DeepResearch - INFO - 正在执行搜索查询: 腾讯代理发行 移动格斗游戏
+2026-03-22 08:52:55,465 - DeepResearch - INFO - 正在执行搜索查询: 腾讯移动格斗游戏 武术教官角色
+2026-03-22 08:52:55,465 - DeepResearch - INFO - 正在执行搜索查询: 移动格斗游戏 武术教官 年龄40岁以上
+2026-03-22 08:52:55,466 - DeepResearch - INFO - 正在执行搜索查询: 搜索：由腾讯代理发行的移动格斗游戏中，哪一款包含一名年龄40岁以上且作为武术教官的角色？
+2026-03-22 08:52:56,840 - DeepResearch - DEBUG - 搜索查询 '搜索：由腾讯代理发行的移动格斗游戏中，哪一款包含一名年龄40岁以上且作为武术教官的角色？' 的原始结果:
+{
+  "query": "搜索：由腾讯代理发行的移动格斗游戏中，哪一款包含一名年龄40岁以上且作为武术教官的角色？",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://huggingface.co/openbmb/cpm-bee-5b/raw/main/vocab.txt",
+      "title": "vocab.txt - Hugging Face",
+      "content": "... 一乙二十丁厂七卜八人入儿匕几九刁了刀力乃又三干于亏工土士才下寸大丈与万上小口 ... 中贝冈内水见午牛手气毛壬升夭长仁什片仆化仇币仍仅斤爪反介父从仑今凶分乏",
+      "score": 0.027358351,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.68,
+  "request_id": "03403819-13fe-4aec-976e-6805e9b27da8"
+}
+2026-03-22 08:52:56,935 - DeepResearch - DEBUG - 搜索查询 '移动格斗游戏 武术教官 年龄40岁以上' 的原始结果:
+{
+  "query": "移动格斗游戏 武术教官 年龄40岁以上",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.reddit.com/r/martialarts/comments/1di5uah/martial_arts_at_40/?tl=zh-hans",
+      "title": "40岁学武术？ : r/martialarts - Reddit",
+      "content": "我一直想学武术，但我现在都40了。选择可太多了…我该选哪个呢？我不想参加比赛，也不想真的去揍人。我只想学点防身术和反击，我觉得，不过也欢迎大家给",
+      "score": 0.9976404,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.reddit.com/r/karate/comments/1b6u9a7/is_it_possible_for_a_34_year_old_overweight_woman/?tl=zh-hans",
+      "title": "一个34岁超重的女人可以开始学空手道吗？她必须先减肥 ... - Reddit",
+      "content": "我41岁开始重新学习武术，之前停了大约23年。我自己是个胖子。空手道适合所有年龄段的人。如果你超重，有些运动要尽量避免，比如高跳踢腿/活动……为了保护你的",
+      "score": 0.1431877,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.scribd.com/document/930167671/FBI%E6%95%99%E4%BD%A0%E5%AE%9E%E7%94%A8%E9%98%B2%E8%BA%AB%E6%8A%80%E5%B7%A7-%E6%9F%A5%E5%85%8B-%E4%B9%94%E4%BC%8A%E7%BA%B3-ChuckJoyner",
+      "title": "FBI教你实用防身技巧- 查克- 乔伊纳(ChuckJoyner) - Scribd",
+      "content": "全美知名武术专家，在4项搏击拳种中获得黑带，其中两项获得大师资格， 2006年进入美国搏击名人堂。1983年至1987年，查克受雇于美国中央情报局（CIA）。",
+      "score": 0.010052368,
+      "raw_content": null
+    },
+    {
+      "url": "https://sspai.com/post/99818",
+      "title": "十年拿到马伽术「黑带」，这是我的一些心得和随感 - 少数派",
+      "content": "马伽术的进阶级别称为Graduate，从最低的G1 到最高的G5，同样也有5 级。其中G1 级别是获得教官资质的最低等级要求。G 级别的核心目的是「对抗有一定训练经验",
+      "score": 0.009783876,
+      "raw_content": null
+    },
+    {
+      "url": "https://zh.wikipedia.org/zh-cn/%E6%93%AC%E5%AF%B6%E7%8F%A0%E7%BA%8F",
+      "title": "乌龙派出所角色列表 - 维基百科",
+      "content": "... 年龄推测35岁: 葛饰署地域课警员，具有佣兵经验，职称为射击组教官，随身携带各式枪炮弹药，号称“活动兵器库”，但因为无法适应日本警察的用枪规则，闹出不少危险镜头",
+      "score": 0.006463138,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.74,
+  "request_id": "5512eca1-87bb-4490-ac0c-503921d88836"
+}
+2026-03-22 08:52:56,936 - DeepResearch - DEBUG - 搜索查询 '腾讯代理发行 移动格斗游戏' 的原始结果:
+{
+  "query": "腾讯代理发行 移动格斗游戏",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "http://news.17173.com/content/2013-02-02/20130202001134132_all.shtml",
+      "title": "街机风浓厚腾讯代理《核心格斗》试玩 - 新闻- 17173",
+      "content": "《Mystic Fighter》（暂译：核心格斗，中文名未公布）是由韩国Dadam GAME公司开发、CJ E&M netmarble公司（韩国）发行的一款2D动作游戏，腾讯游戏已正式宣布代理",
+      "score": 0.69274646,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.gameres.com/473084.html",
+      "title": "传腾讯拿下Nekki手游产品《暗影格斗2》代理权 - GameRes游资网",
+      "content": "日前，外媒传出消息，腾讯已经拿下俄罗斯第二大游戏公司Nekki的格斗类手游产品《暗影格斗2》（Shadow Fight 2）的代理权，现在该产品安卓版已经可以通过",
+      "score": 0.64182705,
+      "raw_content": null
+    },
+    {
+      "url": "https://game.qq.com/m/m201910/introduce.html",
+      "title": "游戏介绍- 腾讯游戏",
+      "content": "《火影忍者》是由万代南梦宫正版授权、腾讯游戏研发的唯一正版火影格斗手游。 ... 《多多自走棋》是腾讯游戏代理发行、龙渊网络与巨鸟多多工作室联合研发的正统自走",
+      "score": 0.55565286,
+      "raw_content": null
+    },
+    {
+      "url": "https://feiyu.com/news/4-25.html",
+      "title": "飞鱼科技格斗手游大作《三国之刃》全平台登陆微信",
+      "content": "# **飞鱼科技格斗手游大作《三国之刃》全平台登陆微信** 2014年10月21日 00:00. 由腾讯游戏发行的格斗类动作手游《三国之刃》现已正式上架App Store，该游戏的Android版本先于iOS版本在腾讯手Q和微信平台进行不删档测试。从腾讯官方透露的消息，Android版本取得不错的成绩。经过漫长的等待，《三国之刃》终于在iOS平台与广大玩家见面，期许该游戏继续给广大iOS玩家带来眼前一亮的游戏体验。. 《三国之刃》是由飞鱼科技旗下翼逗网络研发、腾讯独家代理的一款横版格斗游戏，为腾讯首款三国题材的动作格斗手游。截止记者发稿，该游戏已登顶App Store免费榜榜首，畅销榜前十。日前，《三国之刃》开发商飞鱼科技在港交所正式公示招股书，《三国之刃》双平台的上线对其想必也会产生极为利好的影响。. 作为一款立足于三国大背景的动作游戏，将再现三国时期烽烟四起、群雄争霸的宏伟画面。该作游戏画面与其他同类产品相比并不逊色，细腻的中国风画面堪称精湛。游戏目前提供三大职业角色，可以以微信或QQ帐号登录游戏与好友进行互动。游戏的操控方式非常多变，自由度很高。空中攻击、技能自由组合、无限连击战不停等都是值得玩家体验的玩点。尔等谁敢来战，何等豪气冲天！. 移动游戏在经过2014年之前市场的培育，用户对游戏类型的选择正在逐渐发生变化。不管是研发还是发行，对于动作类、策略类的游戏都开始表现出强烈的尝试欲望，腾讯游戏继《天天炫斗》先后发行多款中重度游戏，以“精品产业链”策略布局中重度游戏领域。《三国之刃》作为腾讯游戏发行的首款三国题材格斗动作手游，游戏在操作手感上相当不错，并且上手相对简单。游戏中，玩家只要利用双手操控按钮，根据战斗中的需求自由拆分组合每一个动作并能随战机变化随时变幻出招。其中，随着角色的成长还能解锁灵兽以及获得神兵利器，在战斗过程中使用炫丽的神兽技能和兵器技能。. 值得一提的是，《三国之刃》是一款以三国时代为背景的极具中国风的动作类游戏。借助“三国”在广大用户心中的地位，将三国剧情融入到游戏玩法与游戏关卡中，进一步的提升了玩家的代入感。三国中耳熟能详的三国茅庐、赤壁之战、江陵之困等历史典故均完美重现于游戏中，以接地气的方式再度引起玩家的共鸣。. 手游市场逐步走向规范化与品牌化，腾讯游戏也将发行精品游戏为主流。目前，《三国之刃》安卓、iOS版本均已上线，在腾讯游戏自有优质平台的推荐下配以《三国之刃》游戏本身高品质的游戏质量，双平台发力势必要掀起一场三国格斗之风。. :   一步两步 兽化三国 神仙道3 神仙道 霓虹深渊 保卫萝卜4 更多游戏. 隐私条款   用户协议   廉正合规   儿童个人信息保护规则   防沉迷自律公约. Copyright © 2008-2026 Feiyu Technology International Company Ltd. 飞鱼科技版权所有. 闽ICP备12009245号  闽ICP备12009245号-10  增值电信业务经营许可证闽B2-20140009. 游戏健康忠告：抵制不良游戏 拒绝盗版游戏 注意自我保护 谨防受骗上当 适度游戏益脑 沉迷游戏伤身 合理安排时间 享受健康生活。.",
+      "score": 0.5530473,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.tencent.com/zh-cn/articles/2201060.html",
+      "title": "腾讯游戏年度发布会宣布全新游戏产品与合作",
+      "content": "《地下城与勇士》手游在传承2D横版过关格斗玩法与IP经典特色的同时，通过自定义键位、一键连招、滑屏等操作方式的创新优化，确保移动端打击操作的流畅舒适；",
+      "score": 0.5054935,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.79,
+  "request_id": "5cba7513-550b-431e-8349-87a0b9424100"
+}
+2026-03-22 08:52:57,041 - DeepResearch - DEBUG - 搜索查询 '腾讯 移动格斗游戏 武术教官 年龄40岁以上' 的原始结果:
+{
+  "query": "腾讯 移动格斗游戏 武术教官 年龄40岁以上",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://huggingface.co/craigchen/BART-139M-ecommerce-customer-service-query-to-intent-generation/commit/afb159c9266ab3fea6ff8c2b458af5a784e03114.diff?file=tokenizer.json",
+      "title": "https://huggingface.co/craigchen/BART-139M-ecommer...",
+      "content": "1\", + \"9 .1\", + \"99 9\", + \"9 99\", + \":7 5\", + \": 75\", + \";4 、\", + \"; 4、\", + \"OL E\", + \"O LE\", + \"et f\", + \"e tf\", + \"if t\", + \"i ft\", + \"ip t\", + \"i pt\", + \"li s\", + \"l is\", + \"ms n\", + \"of f\", + \"o ff\", + \"om m\", + \"o mm\", + \"pa r\", + \"p ar\", + \"pp t\", + \"p pt\", + \"ve s\", + \"v es\", + \"”。 (\", + \"” 。(\", + \"∶ 00\", + \"▁M P\", + \"▁ MP\", + \"▁与 此\", + \"▁ 与此\", + \"▁云 清\", + \"▁假 如\", + \"▁ 假如\", + \"▁分 享\", + \"▁ 分享\", + \"▁ 创作\", + \"▁合 作\", + \"▁ 合作\", + \"▁合 肥\", + \"▁ 合肥\", + \"▁回 到\", + \"▁ 回到\", + \"▁在 这\", + \"▁ 在这\", + \"▁定 义\", + \"▁ 定义\", + \"▁导 读\", + \"▁ 导读\", + \"▁年 度\", + \"▁ 年度\", + \"▁广 告\", + \"▁ 广告\", + \"▁快 乐\", + \"▁ 快乐\", + \"▁想 要\", + \"▁ 想要\", + \"▁我 会\", + \"▁ 我会\", + \"▁文 件\", + \"▁ 文件\", + \"▁星 洲\", + \"▁最 多\", + \"▁ 最多\", + \"▁ 案例\", + \"▁ 母亲\", + \"▁生 产\", + \"▁ 生产\", + \"▁精 彩\", + \"▁ 精彩\", + \"▁精 神\", + \"▁ 精神\", + \"▁而 在\", + \"▁ 而在\", + \"▁色 彩\", + \"▁ 色彩\", + \"▁ 警方\", + \"▁说 起\", + \"▁ 说起\", + \"▁连 续\", + \"▁ 连续\", + \"▁都 市\", + \"▁ 都市\", + \"▁ 额定\", + \"一个 好\", + \"一 个好\", + \"一整 天\", + \"一 整天\", + \"一无 所\", + \"一 无所\", + \"三个 人\", + \"三 个人\", + \"上市 后\", + \"不久 的\", + \"不到 位\", + \"不 到位\", + \"不同 时\", + \"不 同时\", + \"不对 称\", + \"不 对称\", + \"不要 在\", + \"不 要在\", +",
+      "score": 0.0006263342,
+      "raw_content": null
+    },
+    {
+      "url": "https://seekerwjk.wordpress.com/2012/04/22/%E4%B8%AD%E5%9B%BD%E8%BF%91%E4%BB%A3%E7%9A%84%E7%89%9B%E4%BA%BA%E4%BB%AC/",
+      "title": "中国近代的牛人们 - On The Way",
+      "content": "Home > China Observation, History, Politics > 中国近代的牛人们. * Share on Facebook (Opens in new window) Facebook. * Share on X (Opens in new window) X. * Share on LinkedIn (Opens in new window) LinkedIn. ACM Branchout Charity China China-Japan Cloud Computing Market Cloudsourcing Coll Computer Science Crisis Culture Design Development E-commerce ecommerce Economy Education Enterprise EU facebook Finance Food France France Election French Gender Gap Google History Hong Kong HTML5 Industry Instagram International Internet IT IT Education Jeremy Lin Kitchen Life Linux Microsoft Military Misc mobile Mobile Market Movie MSRA News Obama Oklahoma City bombing Opinion Oversea Pervasive Computing Photography Picture Politics Real Estate Reform Religion RMB social network Society Startups Technology TED Travel Ubuntu US Video Web Design World WSN WWII Youtube 中国. Hedge Fund Market Wizards: How Winning Traders Win. The Black Swan: The Impact of the Highly Improbable. * [[中国实时报 文化] 让港人又爱又恨的《盛女爱作战》](https://seekerwjk.wordpress.com/2012/04/21/%e4%b8%ad%e5%9b%bd%e5%ae%9e%e6%97%b6%e6%8a%a5-%e6%96%87%e5%8c%96-%e8%ae%a9%e6%b8%af%e4%ba%ba%e5%8f%88%e7%88%b1%e5%8f%88%e6%81%a8%e7%9a%84%e3%80%8a%e7%9b%9b%e5%a5%b3%e7%88%b1%e4%bd%9c%e6%88%98/). * [恶搞奥巴马锦集[9P]](https://seekerwjk.wordpress.com/2012/04/20/%e6%81%b6%e6%90%9e%e5%a5%a5%e5%b7%b4%e9%a9%ac%e9%94%a6%e9%9b%869p/). * [知恶方识善[Know Evil Know Good]](https://seekerwjk.wordpress.com/2012/04/19/%e7%9f%a5%e6%81%b6%e6%96%b9%e8%af%86%e5%96%84know-evil-know-good/). * [[转载] 大明英烈传](https://seekerwjk.wordpress.com/2012/04/19/%e8%bd%ac%e8%bd%bd-%e5%a4%a7%e6%98%8e%e8%8b%b1%e7%83%88%e4%bc%a0/). * [[转]三峡，无解的“政治决定”](https://seekerwjk.wordpress.com/2012/04/19/%e8%bd%ac%e4%b8%89%e5%b3%a1%ef%bc%8c%e6%97%a0%e8%a7%a3%e7%9a%84%e6%94%bf%e6%b2%bb%e5%86%b3%e5%ae%9a/).",
+      "score": 0.00025966475,
+      "raw_content": null
+    },
+    {
+      "url": "http://m.qiaonanbook.com/cid/22.html",
+      "title": "热门小说推荐小说点击排行榜_桥南中文网",
+      "content": "简介：我真的倒了八辈子血霉了，碰上你！ 蔡徐坤，爱上你是我最大的幸运 玉儿 “少爷！您下来啊” 玉儿 “夫人知道了会责罚奴婢的！” 朱正廷 “额....我就出去一会儿” 朱正廷 “实在不行你就说我在茅厕！”说完就从墙上跳了下去 玉儿 “少爷！” 朱正廷拍拍衣服上的灰尘，朝着大街走去 朱正廷 “老板，来串糖葫芦”从兜里掏出（作者:一串糖葫芦多少钱啊在古代？） 作者 行吧，我就写现代的钱数 朱正廷 从兜里掏出一块钱给了卖糖葫芦的人 朱正廷 拿好糖葫芦就开吃了 朱正廷 走着走着就瞥见眼前突然倒下一个人 朱正廷 “我c”被吓一跳 蔡徐坤 粘着鲜血的手拉着朱正廷的纯白的衣服 周围的人看到都在一旁议论，并没有人来帮忙 朱正廷 惊恐的看着眼前的人又看向一旁的群众 路人 “小兄弟，快走吧！别被这人讹上了” 群众 “什么呀，你看那人的样子，像碰瓷的吗？” 群众 “我看是这人打了人不想承认吧” 朱正廷 听着话就来气了，刚刚的害怕也消失了“我哪不承认了，不是，我哪里打人了，我打他干嘛！” 群众 “你们看看...恼羞成怒了吧” 朱正廷 “诶？不是你这人怎么.....”后面的话被一声闷哼打断了 蔡徐坤 开口想说些什么“你....” 朱正廷 【这兄弟要给我洗白了？】 蔡徐坤 “你大爷的....”说完就晕了过去 朱正廷 满脸不可置信“我大爷的？我做什么了你骂我大爷，谁大爷？你大爷！” 群众 “这人怎么这么过分，把人打成这样...”在一旁嘀咕 路人 “赶紧把人送大夫那去啊” 朱正廷 为了面子把人抗了起来朝医馆走去“我真是倒了八辈子血霉了...” 朱正廷 “我第一次偷偷溜出门就遇见你这个劳什子”一脸幽怨. 蔡徐坤 要不你去上一楼吧！ ella （有猫腻啊）好吧好吧，那下次我来这儿？ 蔡徐坤 下次再说 ella 好吧 蔡徐坤 你们宿舍有刘雨昕吗？ 安崎 在对面，老师 蔡徐坤 哦好，你们早点休息 走后 蔡徐坤 雨昕？ 刘雨昕 哦…坤学长有事吗？ 蔡徐坤 嗯，跟我出来下 宿舍楼下 刘雨昕 学长有什么事？没事的话，我练舞去了 蔡徐坤 我陪你啊 刘雨昕 不用的 蔡徐坤 没事，我可以帮你 刘雨昕 嗯…好吧 练到1点多 刘雨昕 我稍微躺下 蔡徐坤 要不，回宿舍吧 刘雨昕 好吧 刘雨昕 我自己回去就行了，拜拜 坤跟丞视频通话中 范丞丞 坤哥，看你面泛桃花啊 1 蔡徐坤 一边待着去 范丞丞 怎么样，这么多女孩有心动的没 蔡徐坤 瞎起什么哄啊 范丞丞 我看那许佳琪，喻言挺好的 蔡徐坤 你如果真能一脸看到我能相中的，你咋不去当媒婆呢 范丞丞 别扯犊子 范丞丞 从实招来 蔡徐坤 就有个我挺欣赏的 范丞丞 哈！看吧，欣赏就是爱慕，爱慕就是喜欢，喜欢就是爱情，爱情就是心动 1 蔡徐坤 （无语） 范丞丞 哪个，头发长不长，腿长不长，漂亮不漂亮 蔡徐坤 嗯…你想套我，待会我说了，就代表我认了呗 范丞丞 那你就说你欣赏哪个 蔡徐坤 头发短，腿挺长，这，应该漂亮吧（脸红） 范丞丞 那不就是许佳琪吗 蔡徐坤 不是 范丞丞 那是谁 蔡徐坤 刘雨昕 范丞丞 瓦特！这不得了啊，你居然喜欢中性风 蔡徐坤 咋了，不行 范丞丞 哈哈哈，还是被我套到了吧！ 范丞丞 我先去告诉其他七个了，拜拜喽 蔡徐坤 你…！ ------ 早上 许佳琪 刘老师，帮我看下动作吧 刘雨昕 好 刘雨昕 （讲述）一点就通 公演现场 … 蔡徐坤 请到等候区等待你们的结果 刘雨昕获得小组中第一 小组排名第三 许佳琪 刘老师，我们还在一个班 刘雨昕 嗯，还在一起 蔡徐坤 （她应该没事吧） 蔡徐坤 第一次公演结束后，下一个任务是—主题曲考核 跳（因为记不清） 蔡徐坤 你的膝盖没事吧 刘雨昕 没事的，抹点药就行了 蔡徐坤 今天抹过了吗？ 刘雨昕 待会儿回宿舍抹就可以了 蔡徐坤 那你肚子饿不饿… 刘雨昕 有一点，待会儿到饭点去吃 蔡徐坤 走，我带你去吃吧 刘雨昕 不了，PD 蔡徐坤 你怎么什么都待会儿啊？走（拉起就走） 刘雨昕 （懵） 蔡徐坤 要吃什么？我请你啊 刘雨昕 随便，你点吧 蔡徐坤 雨昕，你心动过吗 刘雨昕 啊？学长，问这个干嘛 蔡徐坤 问一下而已啦 刘雨昕 嗯…我不知道 龙套 菜来了，二位慢用 蔡徐坤 给（递餐具） 刘雨昕 谢谢学长 龙套 你觉得那人像不像明星啊 嗯嗯，好像是蔡徐坤哎 龙套 啊？拍照拍照！ 龙套 （咔嚓） 蔡徐坤 雨昕，我们快走！.",
+      "score": 2.0593236e-05,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.91,
+  "request_id": "1d0c0c5c-0025-4f82-ae90-549ca2954a26"
+}
+2026-03-22 08:52:57,152 - DeepResearch - DEBUG - 搜索查询 '腾讯移动格斗游戏 武术教官角色' 的原始结果:
+{
+  "query": "腾讯移动格斗游戏 武术教官角色",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://gp.qq.com/story/lite.html",
+      "title": "和平精英官方网站-腾讯游戏",
+      "content": "角色信息. 武道昌盛的龙脊关，让霍驰风磨练出强健的筋骨，而身上流淌的将门血脉，让他更添几分不服输的韧劲。年少成名的他，凭借骑射绝技横扫龙脊关，唯雷枪少年行云，能与之",
+      "score": 0.20635012,
+      "raw_content": null
+    },
+    {
+      "url": "https://news.ifeng.com/nhkc/tzwe/jixi-94260540/",
+      "title": "众购彩票平台正规吗应用工具",
+      "content": "是一款非常有趣的竞技类游戏，它拥有着可爱的动物形象和毛茸茸的尾巴，简单易上手的玩法，竞技对战的实力比拼，多样化的游戏模式以及互动社交的功能。",
+      "score": 0.036456086,
+      "raw_content": null
+    },
+    {
+      "url": "https://sites.google.com/hhx.rehearsalk.com/xty6co/bg%E7%9C%9F%E4%BA%BA%E5%85%85%E5%80%BC%E7%BD%91%E7%AB%99",
+      "title": "澳門角子機玩法- BG真人充值网站",
+      "content": "mg电子游戏平台官方网站 · 用真钱的10大棋牌 · 天空彩票149 · 在线炸金花网络游戏 · 麻将胡PG电子平台游戏 · 九游APP平台 · CQ9电子海滨消消乐游戏 · PG赢财神电子爆分视频.",
+      "score": 0.029493442,
+      "raw_content": null
+    },
+    {
+      "url": "https://sites.google.com/hhx.rehearsalk.com/wvwb7/%E7%BE%8E%E5%9B%BDvps%E8%BF%90%E7%BB%B4%E4%BB%A3%E7%AE%A1",
+      "title": "抗投诉域名批量注册防封- 美国VPS运维代管",
+      "content": "美国VPS运维代管服务为您提供专业、高效、可靠的服务器管理解决方案。无论您是初创公司还是大型企业，我们都能根据您的需求，提供24/7全天候监控、故障响应、系统优化等全",
+      "score": 0.0116793895,
+      "raw_content": null
+    },
+    {
+      "url": "https://sites.google.com/iia.xintaitong.com/0h9se3/%E4%BA%A4%E6%98%93%E5%B9%B3%E5%8F%B0%E5%9F%9F%E5%90%8D%E6%8E%A8%E8%8D%90",
+      "title": "域名批量方案- 交易平台域名推荐",
+      "content": "无论是电商、金融还是服务类平台，一个简洁、易记且与业务相关的域名是成功的第一步。我们提供专业的**交易平台域名推荐**服务，帮助您找到最符合品牌形象和市场定位的域名。",
+      "score": 0.009837972,
+      "raw_content": null
+    }
+  ],
+  "response_time": 1.04,
+  "request_id": "14042810-cb3f-4c3d-8830-46a14ce8e729"
+}
+2026-03-22 08:52:57,153 - DeepResearch - INFO - 开始从 19 个搜索结果中筛选前 10 个最佳 URL (目标读取: 5)
+2026-03-22 08:52:57,264 - DeepResearch - INFO - 本地 Embedding 模型筛选出的 URL (10个): ['https://www.reddit.com/r/martialarts/comments/1di5uah/martial_arts_at_40/?tl=zh-hans', 'https://zh.wikipedia.org/zh-cn/%E6%93%AC%E5%AF%B6%E7%8F%A0%E7%BA%8F', 'https://gp.qq.com/story/lite.html', 'http://news.17173.com/content/2013-02-02/20130202001134132_all.shtml', 'https://www.tencent.com/zh-cn/articles/2201060.html', 'https://www.reddit.com/r/karate/comments/1b6u9a7/is_it_possible_for_a_34_year_old_overweight_woman/?tl=zh-hans', 'https://game.qq.com/m/m201910/introduce.html', 'https://www.scribd.com/document/930167671/FBI%E6%95%99%E4%BD%A0%E5%AE%9E%E7%94%A8%E9%98%B2%E8%BA%AB%E6%8A%80%E5%B7%A7-%E6%9F%A5%E5%85%8B-%E4%B9%94%E4%BC%8A%E7%BA%B3-ChuckJoyner', 'https://www.gameres.com/473084.html', 'https://sites.google.com/hhx.rehearsalk.com/xty6co/bg%E7%9C%9F%E4%BA%BA%E5%85%85%E5%80%BC%E7%BD%91%E7%AB%99']
+2026-03-22 08:52:57,264 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.reddit.com/r/martialarts/comments/1di5uah/martial_arts_at_40/?tl=zh-hans
+2026-03-22 08:52:57,266 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://zh.wikipedia.org/zh-cn/%E6%93%AC%E5%AF%B6%E7%8F%A0%E7%BA%8F
+2026-03-22 08:52:57,267 - DeepResearch - DEBUG - Cache hit for URL: https://gp.qq.com/story/lite.html
+2026-03-22 08:52:57,267 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: http://news.17173.com/content/2013-02-02/20130202001134132_all.shtml
+2026-03-22 08:52:57,268 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.tencent.com/zh-cn/articles/2201060.html
+2026-03-22 08:52:59,063 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 182256
+2026-03-22 08:52:59,063 - DeepResearch - DEBUG - Cached content for URL: https://zh.wikipedia.org/zh-cn/%E6%93%AC%E5%AF%B6%E7%8F%A0%E7%BA%8F
+2026-03-22 08:53:04,044 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 7993
+2026-03-22 08:53:04,045 - DeepResearch - DEBUG - Cached content for URL: https://www.tencent.com/zh-cn/articles/2201060.html
+2026-03-22 08:53:05,029 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 519
+2026-03-22 08:53:05,165 - DeepResearch - DEBUG - Cached content for URL: https://www.reddit.com/r/martialarts/comments/1di5uah/martial_arts_at_40/?tl=zh-hans
+2026-03-22 08:53:10,659 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 27522
+2026-03-22 08:53:10,660 - DeepResearch - DEBUG - Cached content for URL: http://news.17173.com/content/2013-02-02/20130202001134132_all.shtml
+2026-03-22 08:53:17,334 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:53:17,335 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.reddit.com/r/karate/comments/1b6u9a7/is_it_possible_for_a_34_year_old_overweight_woman/?tl=zh-hans
+2026-03-22 08:53:19,636 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 545
+2026-03-22 08:53:19,636 - DeepResearch - DEBUG - Cached content for URL: https://www.reddit.com/r/karate/comments/1b6u9a7/is_it_possible_for_a_34_year_old_overweight_woman/?tl=zh-hans
+2026-03-22 08:53:21,688 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:53:21,689 - DeepResearch - DEBUG - Cache hit for URL: https://game.qq.com/m/m201910/introduce.html
+2026-03-22 08:53:22,471 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:53:22,472 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.scribd.com/document/930167671/FBI%E6%95%99%E4%BD%A0%E5%AE%9E%E7%94%A8%E9%98%B2%E8%BA%AB%E6%8A%80%E5%B7%A7-%E6%9F%A5%E5%85%8B-%E4%B9%94%E4%BC%8A%E7%BA%B3-ChuckJoyner
+2026-03-22 08:53:22,714 - DeepResearch - WARNING - Jina Reader 返回非 200 状态码: 451, URL: https://www.scribd.com/document/930167671/FBI%E6%95%99%E4%BD%A0%E5%AE%9E%E7%94%A8%E9%98%B2%E8%BA%AB%E6%8A%80%E5%B7%A7-%E6%9F%A5%E5%85%8B-%E4%B9%94%E4%BC%8A%E7%BA%B3-ChuckJoyner
+2026-03-22 08:53:22,715 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.gameres.com/473084.html
+2026-03-22 08:53:32,321 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 6838
+2026-03-22 08:53:32,321 - DeepResearch - DEBUG - Cached content for URL: https://www.gameres.com/473084.html
+2026-03-22 08:53:40,949 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:53:40,949 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://sites.google.com/hhx.rehearsalk.com/xty6co/bg%E7%9C%9F%E4%BA%BA%E5%85%85%E5%80%BC%E7%BD%91%E7%AB%99
+2026-03-22 08:53:43,310 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 22124
+2026-03-22 08:53:43,311 - DeepResearch - DEBUG - Cached content for URL: https://sites.google.com/hhx.rehearsalk.com/xty6co/bg%E7%9C%9F%E4%BA%BA%E5%85%85%E5%80%BC%E7%BD%91%E7%AB%99
+2026-03-22 08:53:43,833 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:53:55,670 - DeepResearch - DEBUG - 提取的关键信息: 根据任务要求，我仔细阅读了提供的网页内容，并提取了所有与搜索查询相关的有用信息。查询要求查找腾讯代理发行的移动格斗游戏中，包含一名年龄40岁以上且作为武术教官的角色。网页内容中没有直接提到任何角色的年龄或职业信息（如武术教官），但提供了关于腾讯代理发行的移动格斗游戏的背景信息，特别是提到了两款可能相关的游戏：  
+- 网页介绍了腾讯代理发行的《地下城与勇士》手游（DNF手游），该游戏被描述为具有“格斗玩法”和“格斗体验”，符合移动格斗游戏类别。  
+- 另一款游戏《合金弹头》手游也被提及，但原版属于射击游戏，网页未强调其格斗元素，相关性较低。  
+
+虽然网页没有提供角色细节（如年龄或职业），但这些信息对查询有部分支持作用，因为它证实了腾讯代理发行的移动游戏中有格斗元素的作品，可作为背景知识。我提取的关键信息点均基于原文，保持原始准确性，未添加推测或概括。  
+
+以下是提取的关键信息点列表：  
+- 腾讯游戏代理发行了《地下城与勇士》手游（由NEOPLE INC.研发），该游戏传承“2D横版过关格斗玩法”，并针对移动端优化了操作方式（如自定义键位、一键连招），提供“新鲜的格斗体验”。  
+- 腾讯游戏在发布会上宣布了《合金弹头》手游（名称待定，由天美工作室群与SNK合作研发），但网页描述其“完美再现了原版合金弹头”，原版更偏向动作射击而非格斗游戏，因此格斗元素相关性较弱。  
+- 网页未提及任何游戏角色的具体年龄、职业（如武术教官）或其他角色细节。
+2026-03-22 08:53:55,980 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:54:00,135 - DeepResearch - DEBUG - 提取的关键信息: 根据提供的网页内容，我仔细分析了与搜索查询“由腾讯代理发行的移动格斗游戏中，哪一款包含一名年龄40岁以上且作为武术教官的角色？”相关的信息。网页内容主要描述了腾讯代理的游戏《核心格斗》（或《魂之猎手》），但内容聚焦于游戏玩法、职业和副本设计，没有提及任何角色的年龄、背景故事或具体职业（如武术教官）。此外，游戏被描述为“2D动作网络游戏”，强调街机风格，但未明确是移动平台游戏（查询指定移动端）。网页中也没有提到其他腾讯代理的移动格斗游戏或相关角色细节。
+
+因此，网页内容完全不包含与搜索查询相关的任何有价值信息（如游戏名称、角色年龄、武术教官等细节）。根据任务要求，返回如下：
+
+无相关信息
+2026-03-22 08:54:07,978 - DeepResearch - DEBUG - 提取的关键信息: 以下是基于提供的网页内容，提取与搜索查询“由腾讯代理发行的移动格斗游戏中，哪一款包含一名年龄40岁以上且作为武术教官的角色？”相关的所有有用信息点。根据任务要求，信息提取聚焦于部分回答查询、提供背景知识或相关细节（如腾讯代理的移动格斗游戏名称、游戏类型等），并保持原始准确性。网页内容未提及任何角色的年龄、职业（如武术教官）等细节，因此无法回答角色相关部分。但网页提供了腾讯代理移动格斗游戏的背景信息，这些被视为有价值的相关细节。
+
+提取的关键信息点列表：
+- 腾讯已拿下移动格斗游戏《暗影格斗2》（Shadow Fight 2）的代理权，安卓版本已在腾讯应用宝平台提供下载。
+- 《暗影格斗2》是由俄罗斯公司Nekki开发的格斗类手游产品，属于移动格斗游戏类别。
+- 游戏描述为“一款以人物剪影为表现形式的横版2D对战格斗游戏”，玩家可通过不同按键组合使用招数进行战斗。
+2026-03-22 08:54:07,979 - DeepResearch - INFO - 开始分析搜索结果，当前查询: 搜索：由腾讯代理发行的移动格斗游戏中，哪一款包含一名年龄40岁以上且作为武术教官的角色？
+2026-03-22 08:54:37,054 - DeepResearch - DEBUG - 分析结果原始响应: {
+    "extracted_info": [
+        "腾讯游戏代理发行了《地下城与勇士》手游（由NEOPLE INC.研发），该游戏传承2D横版过关格斗玩法，并针对移动端优化了操作方式（如自定义键位、一键连招），提供新鲜的格斗体验。",
+        "腾讯游戏在发布会上宣布了《合金弹头》手游（名称待定，由天美工作室群与SNK合作研发），该游戏完美再现了原版合金弹头，但原版更偏向动作射击而非格斗游戏。",
+        "腾讯已拿下移动格斗游戏《暗影格斗2》的代理权，安卓版本已在腾讯应用宝平台提供下载。",
+        "《暗影格斗2》是由俄罗斯公司Nekki开发的格斗类手游产品，属于移动格斗游戏类别，描述为以人物剪影为表现形式的横版2D对战格斗游戏。",
+        "根据来源内容，未提及任何游戏角色的具体年龄、职业信息（如武术教官）。"
+    ]
+}
+2026-03-22 08:54:37,055 - DeepResearch - INFO - 开始规划下一步，原始问题: 一位物理学领域的学者为一种经典棋盘游戏设计的评分系统，后来被一家北美游戏公司广泛应用于其一款多人在线战术竞技游戏中。这家公司的母公司是一家亚洲科技巨头，该巨头在21世纪10年代完成了对前者的全资收购，并涉足量子计算等前沿科技领域。在这家北美公司开发的另一款第一人称射击游戏中，有一件适合近距离作战的武器，其名称与上述亚洲巨头代理发行的一款格斗手游中的一名在登场角色中年龄偏大的武术教官角色相同。这款格斗手游的名字是什么？
+2026-03-22 08:55:13,327 - DeepResearch - DEBUG - 规划下一步原始响应: {
+    "think": [
+        "当前已确认事实：腾讯是亚洲科技巨头（涉足量子计算）并在2015年全资收购Riot Games；腾讯代理发行《暗影格斗2》，一款格斗类手游。",
+        "高置信推断与待核验点：推断《Valorant》为Riot Games的FPS游戏，其中一件武器的名称可能与格斗手游中角色相同；待核验《暗影格斗2》中是否存在年龄偏大的武术教官角色（具体名称未知），以及是否存在其他腾讯代理的格斗手游满足该条件。",
+        "当前唯一瓶颈缺口：格斗手游具体名称及其中年龄偏大武术教官角色的确认阻塞证据链闭环，因第2轮观察中《暗影格斗2》无角色细节报告。",
+        "为何该下一跳信息增益最高：直接针对《暗影格斗2》（腾讯代理+已识别格斗类型）查询特定角色属性（年龄偏大+武术教官），使用游戏名称与角色属性双锚点区分度高，可一次性验证或排除该候选；跳过武器名称查询等下游线索，因当前核心缺憾为角色存在性验证，且冗余方向增益低。",
+        "最后一个核验点：若确认该角色存在即可链接FPS武器名称完成证据链；若不存在则需回溯其他手游候选。"
+    ],
+    "is_fully_answered": false,
+    "final_answer": "",
+    "next_question": "在腾讯代理发行的移动格斗游戏《暗影格斗2》中，是否存在一名被明确描述为年龄偏大（40岁以上）且担任武术教官角色的角色？若有，其具体角色名称是什么？"
+}
+2026-03-22 08:55:13,328 - DeepResearch - INFO - 规划下一步完成，耗时 33.58s，history_text 长度 1766
+2026-03-22 08:55:13,328 - DeepResearch - INFO - 开始拆解用户问题: 在腾讯代理发行的移动格斗游戏《暗影格斗2》中，是否存在一名被明确描述为年龄偏大（40岁以上）且担任武术教官角色的角色？若有，其具体角色名称是什么？
+2026-03-22 08:55:38,455 - DeepResearch - DEBUG - LLM 拆解问题原始响应: ["腾讯代理暗影格斗2角色列表", "暗影格斗2武术教官角色介绍", "暗影格斗2年长角色40岁以上", "暗影格斗2武术教官角色名称"]
+2026-03-22 08:55:38,456 - DeepResearch - INFO - 生成的子查询列表: ['腾讯代理暗影格斗2角色列表', '暗影格斗2武术教官角色介绍', '暗影格斗2年长角色40岁以上', '暗影格斗2武术教官角色名称']
+2026-03-22 08:55:38,456 - DeepResearch - INFO - 第 3 轮搜索查询: ['在腾讯代理发行的移动格斗游戏《暗影格斗2》中，是否存在一名被明确描述为年龄偏大（40岁以上）且担任武术教官角色的角色？若有，其具体角色名称是什么？', '暗影格斗2武术教官角色名称', '暗影格斗2年长角色40岁以上', '腾讯代理暗影格斗2角色列表', '暗影格斗2武术教官角色介绍']
+2026-03-22 08:55:38,457 - DeepResearch - INFO - 正在执行搜索查询: 在腾讯代理发行的移动格斗游戏《暗影格斗2》中，是否存在一名被明确描述为年龄偏大（40岁以上）且担任武术教官角色的角色？若有，其具体角色名称是什么？
+2026-03-22 08:55:38,458 - DeepResearch - INFO - 正在执行搜索查询: 暗影格斗2武术教官角色名称
+2026-03-22 08:55:38,460 - DeepResearch - INFO - 正在执行搜索查询: 暗影格斗2年长角色40岁以上
+2026-03-22 08:55:38,460 - DeepResearch - INFO - 正在执行搜索查询: 腾讯代理暗影格斗2角色列表
+2026-03-22 08:55:38,463 - DeepResearch - INFO - 正在执行搜索查询: 暗影格斗2武术教官角色介绍
+2026-03-22 08:55:39,875 - DeepResearch - DEBUG - 搜索查询 '暗影格斗2武术教官角色名称' 的原始结果:
+{
+  "query": "暗影格斗2武术教官角色名称",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.9game.cn/aygd3/9691713.html",
+      "title": "暗影格斗3暗影教官怎么样暗影格斗3暗影教官详细介绍 - 九游",
+      "content": "暗影教官在游戏中可不仅是个可去选择的角色，更是个指导与辅助玩家成长的存在，他们拥有丰富战斗经验与知识，并且擅长使用各种战斗的技巧，玩家可通过和暗影教官进行互动、接受",
+      "score": 0.990732,
+      "raw_content": null
+    },
+    {
+      "url": "https://app.3dmgame.com/android/469979.html",
+      "title": "暗影格斗2 无限满级版 - 3DM手游",
+      "content": "1、山猫：. 不要以为山猫只会扔飞镖，虽然12年时的版本是这样的。 ... 2、隐士： ... 魔法的施法僵直比较长，所以你如果离他很近而且很有信心的话就可以打断吟唱。",
+      "score": 0.983343,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.wandoujia.com/apps/8398924/9637767642737110752.html",
+      "title": "暗影格斗3审判者怎么打暗影格斗3审判者打法介绍 - 豌豆荚",
+      "content": "暗影格斗3的主线之中，博洛，这位被称为舞龙，又称老头的强大BOSS，以其独特的战斗风格和强大的恢复能力，成为了众多玩家挑战路上的难关。今天小编分享一下暗影",
+      "score": 0.7839885,
+      "raw_content": null
+    },
+    {
+      "url": "https://zh.wikipedia.org/zh-hans/%E8%A1%97%E9%A0%AD%E9%9C%B8%E7%8E%8B%E7%B3%BB%E5%88%97",
+      "title": "街头霸王系列- 维基百科，自由的百科全书",
+      "content": "角色名字, 角色汉字/译名, 格斗流派, 备注. Juni, 优妮, 影罗格斗术, 贝卡亲卫队“Dolls”（十二月份）中的成员之一。 原籍德国，名字含义为德语的六月。 Juli（Julia Hawk）, 优",
+      "score": 0.48633155,
+      "raw_content": null
+    },
+    {
+      "url": "https://zh.moegirl.org.cn/zh-tw/%E5%8F%8C%E8%8A%82%E6%A3%8D",
+      "title": "雙節棍 - 萌娘百科",
+      "content": "在ACG作品中，雙節棍通常出現于格斗題材的作品中，大多由武術高手類的角色使用。 ... 《暗影格鬥2》/《暗影格鬥3》：雙節棍是系列中可用的武器。 《蓓優妮塔獵",
+      "score": 0.16559312,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.7,
+  "request_id": "dee569c6-87b2-4372-a7e4-ff8e9f3ef80f"
+}
+2026-03-22 08:55:39,965 - DeepResearch - DEBUG - 搜索查询 '暗影格斗2武术教官角色介绍' 的原始结果:
+{
+  "query": "暗影格斗2武术教官角色介绍",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.9game.cn/aygd3/9691713.html",
+      "title": "暗影格斗3暗影教官怎么样暗影格斗3暗影教官详细介绍 - 九游",
+      "content": "暗影教官在游戏中可不仅是个可去选择的角色，更是个指导与辅助玩家成长的存在，他们拥有丰富战斗经验与知识，并且擅长使用各种战斗的技巧，玩家可通过和暗影教官进行互动、接受",
+      "score": 0.9990601,
+      "raw_content": null
+    },
+    {
+      "url": "https://app.3dmgame.com/android/469979.html",
+      "title": "暗影格斗2 无限满级版 - 3DM手游",
+      "content": "1、山猫：. 不要以为山猫只会扔飞镖，虽然12年时的版本是这样的。 ... 2、隐士： ... 魔法的施法僵直比较长，所以你如果离他很近而且很有信心的话就可以打断吟唱。",
+      "score": 0.96378,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.9game.cn/aygd3/10373100.html",
+      "title": "暗影格斗3创造者怎么打boss击败技巧推荐 - 九游",
+      "content": "在对战的时候，首先会和角色的第一条生命开战，在这个阶段下，暗影教官会使用飞镖和暗影球不断发起进攻，需要猜对方攻击的时候及时进行躲避，然后找准相应的机会进行输出。",
+      "score": 0.7745834,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.wandoujia.com/apps/8398924/3118086968770430611.html",
+      "title": "暗影格斗3创造者怎么打暗影格斗3创造者打法分享 - 豌豆荚",
+      "content": "在游戏里想要战胜创造者需要本身有一定的能力，在对战的时候还要有比较快速的攻击，这样才能快速制衡对手，让对方没有反击的机会，游戏里角色会释放出方块恢复",
+      "score": 0.037326884,
+      "raw_content": null
+    },
+    {
+      "url": "https://zh.wikipedia.org/zh-hans/%E8%A1%97%E9%A0%AD%E9%9C%B8%E7%8E%8B%E7%B3%BB%E5%88%97",
+      "title": "街头霸王系列- 维基百科，自由的百科全书",
+      "content": "非操作角色（NPC） ; Somsak, 宋萨克, 泰拳拳手，败给真琴 ; Azam, 阿扎姆, 作为保镖跟随少爷拉希德周游列国 ; Byran Taylor, 布莱恩·泰勒, 美国空军上将，盖尔的上司，桑搏高手.",
+      "score": 0.004331502,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.82,
+  "request_id": "2fbaf471-0484-4055-93dc-d84b714e1db0"
+}
+2026-03-22 08:55:40,015 - DeepResearch - DEBUG - 搜索查询 '暗影格斗2年长角色40岁以上' 的原始结果:
+{
+  "query": "暗影格斗2年长角色40岁以上",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.reddit.com/r/gachagaming/comments/17vuqje/how_would_you_like_old_playable_women_in_gacha/?tl=zh-hans",
+      "title": "你喜欢在抽卡游戏里有可以玩的老年女性角色吗？ : r/gachagaming",
+      "content": "30-40岁的，看起来还很火辣的，跟楼主说的“老女人”还是不一样的。辣妈没问题，游戏里角色不都得是16岁也行。但为啥抽卡游戏里没有“老女人”，原因很明显。而且，",
+      "score": 0.2650086,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.9game.cn/wenda/450216.html",
+      "title": "暗影格斗2全攻略介绍_游戏问答 - 九游",
+      "content": "首先长刀的原名叫做忍者刀，基础的伤害只有55，相对于转到来说提高了15，获取的方式也很简单，只要将角色等级升级到五级，商城里面就会开放购买渠道，购买的价格",
+      "score": 0.16242018,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.reddit.com/r/truegaming/comments/n4xgmg/have_games_actually_gotten_more_dumbed_down_over/?tl=zh-hans",
+      "title": "这些年来游戏真的变得“更傻”了吗，还是这是狂热社区内部回音室的 ...",
+      "content": "... 角色简化和可预测性迎合了大众的喜好和休闲玩家（尤其是年轻人）短暂的注意力。 我再过几年就40岁了，我还记得游戏都局限于简单的显示和声音的时候",
+      "score": 0.15126614,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.reddit.com/r/videogames/comments/1hcxz48/gamers_that_are_40what_do_you_play/?tl=zh-hans",
+      "title": "40岁以上的游戏玩家都在玩什么？ : r/videogames - Reddit",
+      "content": "我今年41岁，在玩了大约2年的“魂类”游戏和铁拳8之后，我开始对复古游戏更感兴趣，目前在玩古墓丽影重制版。我只认识两个和我同龄的游戏玩家。",
+      "score": 0.14600226,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.reddit.com/r/RedditForGrownups/comments/i3ijkq/gamers_over_40/?tl=zh-hans",
+      "title": "40 岁以上的游戏玩家 - Reddit",
+      "content": "我看到一些关于对游戏失去兴趣的人的帖子，所以我想为仍然玩游戏的人开一个帖子，特别是如果他们超过40 岁。 所以，一些问题：. 你喜欢什么类型的游戏？",
+      "score": 0.08234999,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.9,
+  "request_id": "5e333f63-5856-4499-b858-81b57e7a30d8"
+}
+2026-03-22 08:55:40,066 - DeepResearch - DEBUG - 搜索查询 '腾讯代理暗影格斗2角色列表' 的原始结果:
+{
+  "query": "腾讯代理暗影格斗2角色列表",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "url": "https://www.gameres.com/473084.html",
+      "title": "传腾讯拿下Nekki手游产品《暗影格斗2》代理权 - GameRes游资网",
+      "content": "# 传腾讯拿下Nekki手游产品《暗影格斗2》代理权. 日前，外媒传出消息，腾讯已经拿下俄罗斯第二大游戏公司Nekki的格斗类手游产品《暗影格斗2》（Shadow Fight 2）的代理权，现在该产品安卓版已经可以通过腾讯应用宝下载。. 虽然腾讯方面尚未在国内传出过官方消息，但在应用宝搜索到的《暗影格斗2》已经在icon右下角打上了腾讯游戏的角标。如果按照腾讯移动游戏平台最初确立的规则来讲，这已经意味着该产品的中国版本将由腾讯代理发行。不过另一方面，《暗影格斗2》在iOS平台的业务目前仍由Nekki自行处理，该产品在AppStore中的产品页上传者ID仍为Nekki。. 据AppAnnie统计称，《暗影格斗2》的东家俄罗斯Nekki已经是俄罗斯排名第二的游戏发行商，该公司旗下产品在移动平台、社交和网页游戏平台的总下载量已经突破2.5亿次。旗下两款旗拳头产品《矢量跑酷》（Vector）和《暗影格斗2》（Shadow Fight 2）的累计下载量均超过8000万次。. 研发 : 凉屋游戏 三国志：王道天下 *战争*. 僵尸守卫战 丹墨三国：弈-Danmo Three Kingdoms: Battle of Wits 降妖伏魔录 斗道世界. ### 微信公众号. ### 微博. ### 头条号. 关于本站 | 投稿发布 | 产品发布 | 广告投放 | 投诉反馈.",
+      "score": 0.9961456,
+      "raw_content": null
+    },
+    {
+      "url": "https://baike.baidu.com/item/%E6%9A%97%E5%BD%B1%E6%A0%BC%E9%AC%A52/12277765?noadapt=1",
+      "title": "暗影格斗2 - 百度百科",
+      "content": "六大恶魔是暗影之门被打开后释放的六位恶魔统治者，分别统治六个世界，分别是山猫（Lynx）、隐士（Hermit）、屠夫（Butcher）、黄蜂（Wasp）、寡妇（Widow）、将军（Shogun）。暗影需要",
+      "score": 0.9785493,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.3dmgame.com/bgqlIILjY4c3r.html",
+      "title": "科普|“BET365代理“知识课堂 - 3DM游戏网",
+      "content": "暗影格斗2无限附魔珠内购破解版下载-暗影格斗2破解版无限附魔珠下载v2.9.38 安卓角色满级版-2265手游网 查看详情 · 蜗米商城app下载-蜗米商城v3.4.9最新",
+      "score": 0.96323055,
+      "raw_content": null
+    },
+    {
+      "url": "https://www.gamersky.com/news/2031282_33233/List_202.html",
+      "title": "攻略_标签列表_游民星空Gamersky.com",
+      "content": "《地下城与勇士》是由腾讯代理引进的一款超人气格斗网游作品，深受玩家喜爱，下面为大家带来DNF更新内容详解。 2018-05-18 15:58:46. 3699. 0.",
+      "score": 0.2991052,
+      "raw_content": null
+    },
+    {
+      "url": "https://sj.qq.com/topic/200452093",
+      "title": "热血格斗手游精选，拳拳到肉爽翻天 - 应用宝",
+      "content": "---原作角色轮番登场，组建全明星格斗战队--- 原作当中的数十位角色将轮番登场，在游戏中可以选择并操作不同的格斗家进行战斗，每一名格斗家都是一种全新的格斗体验！ 《拳皇97",
+      "score": 0.23934935,
+      "raw_content": null
+    }
+  ],
+  "response_time": 0.94,
+  "request_id": "0edb8f61-dbb2-4108-972d-1927de9185f4"
+}
+2026-03-22 08:55:40,996 - DeepResearch - DEBUG - 搜索查询 '在腾讯代理发行的移动格斗游戏《暗影格斗2》中，是否存在一名被明确描述为年龄偏大（40岁以上）且担任武术教官角色的角色？若有，其具体角色名称是什么？' 的原始结果:
+{
+  "query": "在腾讯代理发行的移动格斗游戏《暗影格斗2》中，是否存在一名被明确描述为年龄偏大（40岁以上）且担任武术教官角色的角色？若有，其具体角色名称是什么？",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "title": "暗影格斗2剧情解析 暗影格斗2游戏剧情介绍_暗影格斗2_九游手机游戏",
+      "url": "https://www.9game.cn/aygd2/9317576.html",
+      "content": "在这款游戏中大家将会扮演的一名角色叫做暗影，在故事背景中他是一个追求力量的男性，为了提升自己的战斗能力他走南闯北，在冒险的旅途中找到了一个暗影之门，他不知道这是什么就将门打开来了，没想到就将古老的封印给破坏了，从而导致异世界的恶魔被放出来了。",
+      "score": 0.22815649,
+      "raw_content": null
+    },
+    {
+      "title": "暗影格斗 2 - Shadow Fight 2 | indienova GameDB 游戏库",
+      "url": "https://indienova.com/game/shadow-fight-2",
+      "content": "May 1, 2014 - 类型： 格斗 , 角色扮演 · 视角： 侧面视角",
+      "score": 0.15713686,
+      "raw_content": null
+    },
+    {
+      "title": "暗影格斗3 - 萌娘百科 万物皆可萌的百科全书",
+      "url": "https://mzh.moegirl.org.cn/暗影格斗3",
+      "content": "伽林大师的前首席弟子，在落败于主角后加入铁鹰转修先锋流派，但在百院联赛中二度被主角击败。之后又出现在军团的监狱，其时他已经吸纳了三种风格的精髓练就了独属于自己的战斗风格。 · 在“琼的层面”中代替已故的伽林担任武馆教师，相比主层面更为沉稳，被称作“疯狂大师”。 · 在“马库斯的层面”中认铁甲为义父，与铁甲及其帮派在北境“永恒安眠之地”的竞技场以打架为乐。",
+      "score": 0.11516223,
+      "raw_content": null
+    },
+    {
+      "title": "暗影格斗2_百度百科",
+      "url": "https://baike.baidu.com/item/暗影格斗2/12277765",
+      "content": "《暗影格斗2》是Nekki开发的一款融合了RPG元素的格斗游戏，发行于2013年10月18日，游戏平台为Android、iOS、windows phone8.0/8.1。 · 《暗影格斗2》中玩家扮演主角暗影，通过学习武术动作、使用武器和护甲来对抗各种敌人和强大的BOSS。游戏讲述了暗影为了寻找有意义的战斗而意外释放六大恶魔的故事。为了恢复自己的身体，暗影必须击败恶魔，重新获得封印并再次打开暗影之门。在异世界中，暗影结识了新伙伴，最终面对并击败被泰坦控制的梅儿和最终BOSS泰坦。游戏以暗影恢复真身和与梅儿幸福生活的结局画上句号。 [1]",
+      "score": 0.10230471,
+      "raw_content": null
+    },
+    {
+      "title": "《暗影格斗3》再次席卷全球 Nekki独家分享其背后的研发故事 - GameRes游资网",
+      "url": "https://www.gameres.com/796025.html",
+      "content": "February 20, 2018 - Tom Borovskis：《暗影格斗2》在世界各地都取得了不错的成绩，我们的玩家遍布全球。在西欧、东欧和美国，《暗影格斗2》拥有百万级的粉丝。我们对此也很欣慰——《暗影格斗2》在亚洲也取得了非常好的成绩，我们的许多忠实玩家来自于中国大陆、香港和台湾地区。在我们看来，这款游戏之所以能够在中国取得成功的主要原因是中国悠久的武术传统，武术和中国文化密不可分。因此，作为第一个在移动平台上的格斗游戏，《暗影格斗2》受到了众多中国玩家的热烈欢迎，尤其是受到了武术爱好者的欢迎。 · GameRes游资网：那为何没有立马推出暗影的续作，而是推出了《矢量跑酷》（Vector）系列？能介绍《矢量跑酷》这个系列作品吗？",
+      "score": 0.035948325,
+      "raw_content": null
+    }
+  ],
+  "response_time": 1.94,
+  "request_id": "6e6f34bc-7500-472c-b927-2aaf67662063"
+}
+2026-03-22 08:55:40,998 - DeepResearch - INFO - 开始从 22 个搜索结果中筛选前 10 个最佳 URL (目标读取: 5)
+2026-03-22 08:55:41,141 - DeepResearch - INFO - 本地 Embedding 模型筛选出的 URL (10个): ['https://www.reddit.com/r/videogames/comments/1hcxz48/gamers_that_are_40what_do_you_play/?tl=zh-hans', 'https://www.9game.cn/aygd3/9691713.html', 'https://www.reddit.com/r/gachagaming/comments/17vuqje/how_would_you_like_old_playable_women_in_gacha/?tl=zh-hans', 'https://zh.moegirl.org.cn/zh-tw/%E5%8F%8C%E8%8A%82%E6%A3%8D', 'https://sj.qq.com/topic/200452093', 'https://mzh.moegirl.org.cn/暗影格斗3', 'https://www.9game.cn/wenda/450216.html', 'https://baike.baidu.com/item/暗影格斗2/12277765', 'https://indienova.com/game/shadow-fight-2', 'https://www.gamersky.com/news/2031282_33233/List_202.html']
+2026-03-22 08:55:41,142 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.reddit.com/r/videogames/comments/1hcxz48/gamers_that_are_40what_do_you_play/?tl=zh-hans
+2026-03-22 08:55:41,143 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.9game.cn/aygd3/9691713.html
+2026-03-22 08:55:41,144 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.reddit.com/r/gachagaming/comments/17vuqje/how_would_you_like_old_playable_women_in_gacha/?tl=zh-hans
+2026-03-22 08:55:41,145 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://zh.moegirl.org.cn/zh-tw/%E5%8F%8C%E8%8A%82%E6%A3%8D
+2026-03-22 08:55:41,146 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://sj.qq.com/topic/200452093
+2026-03-22 08:55:42,731 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 547
+2026-03-22 08:55:42,852 - DeepResearch - DEBUG - Cached content for URL: https://www.reddit.com/r/gachagaming/comments/17vuqje/how_would_you_like_old_playable_women_in_gacha/?tl=zh-hans
+2026-03-22 08:55:43,398 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 534
+2026-03-22 08:55:43,398 - DeepResearch - DEBUG - Cached content for URL: https://www.reddit.com/r/videogames/comments/1hcxz48/gamers_that_are_40what_do_you_play/?tl=zh-hans
+2026-03-22 08:55:50,176 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 12774
+2026-03-22 08:55:50,177 - DeepResearch - DEBUG - Cached content for URL: https://sj.qq.com/topic/200452093
+2026-03-22 08:55:58,721 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:55:58,722 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://mzh.moegirl.org.cn/暗影格斗3
+2026-03-22 08:55:59,790 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 22743
+2026-03-22 08:55:59,790 - DeepResearch - DEBUG - Cached content for URL: https://www.9game.cn/aygd3/9691713.html
+2026-03-22 08:56:01,028 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:56:01,029 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.9game.cn/wenda/450216.html
+2026-03-22 08:56:05,681 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 16262
+2026-03-22 08:56:05,682 - DeepResearch - DEBUG - Cached content for URL: https://mzh.moegirl.org.cn/暗影格斗3
+2026-03-22 08:56:08,331 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 931
+2026-03-22 08:56:08,481 - DeepResearch - DEBUG - Cached content for URL: https://www.9game.cn/wenda/450216.html
+2026-03-22 08:56:14,261 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 556390
+2026-03-22 08:56:14,261 - DeepResearch - DEBUG - Cached content for URL: https://zh.moegirl.org.cn/zh-tw/%E5%8F%8C%E8%8A%82%E6%A3%8D
+2026-03-22 08:56:18,043 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:56:18,044 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://baike.baidu.com/item/暗影格斗2/12277765
+2026-03-22 08:56:22,032 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:56:22,032 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://indienova.com/game/shadow-fight-2
+2026-03-22 08:56:23,167 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:56:23,168 - DeepResearch - INFO - 正在使用 Jina Reader 读取 URL: https://www.gamersky.com/news/2031282_33233/List_202.html
+2026-03-22 08:56:29,420 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:56:33,281 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 5387
+2026-03-22 08:56:33,281 - DeepResearch - DEBUG - Cached content for URL: https://www.gamersky.com/news/2031282_33233/List_202.html
+2026-03-22 08:56:33,938 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 30376
+2026-03-22 08:56:33,938 - DeepResearch - DEBUG - Cached content for URL: https://baike.baidu.com/item/暗影格斗2/12277765
+2026-03-22 08:56:40,096 - DeepResearch - DEBUG - Jina Reader 读取成功，内容长度: 17286
+2026-03-22 08:56:40,097 - DeepResearch - DEBUG - Cached content for URL: https://indienova.com/game/shadow-fight-2
+2026-03-22 08:56:45,546 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:56:48,918 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:57:04,005 - DeepResearch - DEBUG - 提取的关键信息: 无相关信息
+2026-03-22 08:57:20,951 - DeepResearch - DEBUG - 提取的关键信息: 根据提供的网页内容，提取与搜索查询相关的信息点如下。搜索查询聚焦于《暗影格斗2》中是否存在一名年龄偏大（40岁以上）且担任武术教官角色的角色，并询问其具体名称。网页内容未明确提及任何角色的年龄（包括40岁以上），但提供了与武术教官角色相关的部分细节。以下是提取的关键信息点，基于网页内容的原始描述：
+
+1. **存在武术教官角色**：  
+   - 网页在"游戏角色"部分提到一个名为"师父"（Sensei）的角色，被描述为"暗影的导师"，在暗影失去身体后"给予其指导和帮助"。这暗示师父担任武术指导或教官的角色。
+
+2. **角色名称**：  
+   - 该角色的具体名称为"师父"（英文名：Sensei）。
+
+3. **角色背景**：  
+   - 在剧情中，师父是暗影的导师，帮助主角击败恶魔。回忆中提到师父曾"为保护王子而与山猫及其手下战斗"，这进一步强化了其作为武术教官的定位。
+   - 然而，网页未提供师父的年龄描述，包括是否"40岁以上"或其他具体年龄信息。
+
+4. **其他相关细节**：  
+   - 游戏设定中，师父是主角的指导者，但未明确其年龄或外貌特征。其他角色（如山猫、隐士、屠夫等）被描述为恶魔或敌人，未提及担任武术教官。
+   - 关于代理发行：网页在"开发过程"部分提到"其电脑版（Windows）在中国大陆地区的代理发行商为上海钛芒科技中心"，未涉及"腾讯代理"的信息。这可能与查询的"腾讯代理"不符。
+
+**总结**：  
+- 网页内容确认存在一个名为"师父"的武术教官角色，但未提供年龄信息（如40岁以上）。  
+- 因此，部分回答查询：角色存在，名称为"师父"，但年龄未被明确描述。
+2026-03-22 08:57:20,952 - DeepResearch - INFO - 开始分析搜索结果，当前查询: 在腾讯代理发行的移动格斗游戏《暗影格斗2》中，是否存在一名被明确描述为年龄偏大（40岁以上）且担任武术教官角色的角色？若有，其具体角色名称是什么？
+2026-03-22 08:57:46,453 - DeepResearch - DEBUG - 分析结果原始响应: {
+    "extracted_info": [
+        "存在一个名为'师父'(英文名: Sensei)的角色，被描述为'暗影的导师'。",
+        "'师父'担任武术教官角色，在暗影失去身体后给予其指导和帮助。",
+        "在剧情中，'师父'帮助主角击败恶魔，并回忆中曾'为保护王子而与山猫及其手下战斗'。",
+        "网页内容未提供任何关于'师父'年龄的描述，包括是否40岁以上。",
+        "游戏在中国大陆地区的电脑版(Windows)代理发行商为上海钛芒科技中心。"
+    ]
+}
+2026-03-22 08:57:46,454 - DeepResearch - INFO - 开始强制生成最终回答，原始问题: 一位物理学领域的学者为一种经典棋盘游戏设计的评分系统，后来被一家北美游戏公司广泛应用于其一款多人在线战术竞技游戏中。这家公司的母公司是一家亚洲科技巨头，该巨头在21世纪10年代完成了对前者的全资收购，并涉足量子计算等前沿科技领域。在这家北美公司开发的另一款第一人称射击游戏中，有一件适合近距离作战的武器，其名称与上述亚洲巨头代理发行的一款格斗手游中的一名在登场角色中年龄偏大的武术教官角色相同。这款格斗手游的名字是什么？
+2026-03-22 08:58:38,724 - DeepResearch - DEBUG - 强制生成回答: 暗影格斗2
